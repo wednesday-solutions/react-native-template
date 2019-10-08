@@ -1,0 +1,41 @@
+/**
+ * Test sagas
+ */
+
+/* eslint-disable redux-saga/yield-effects */
+
+import { takeLatest, call, put } from 'redux-saga/effects'
+import exampleScreenSaga, { fetchUser } from '../saga'
+import {  ExampleTypes } from '../reducer'
+import { getUser } from 'app/services/UserService'
+import { apiResponseGenerator } from '../../../utils/sagaUtils';
+
+describe('exampleScreenSaga Saga',  () => {
+  const generator = exampleScreenSaga()
+  
+  it('should start task to watch for FETCH_USER action', () => {
+    expect(generator.next().value).toEqual(takeLatest(ExampleTypes.FETCH_USER, fetchUser));
+  })
+
+  it('FETCH_USER_SUCCESS is fired',async () => {
+    const method = fetchUser();
+    expect(method.next().value).toEqual(put({type: ExampleTypes.FETCH_USER_LOADING}))
+    const res = method.next().value
+    expect(res).toEqual(call(getUser))
+    expect(method.next(apiResponseGenerator(false)).value).toEqual(put({type: ExampleTypes.FETCH_USER_FAILURE, errorMessage: 'There was an error while fetching user informations.'}))
+    })
+    
+    it('FETCH_USER_SUCCESS is fired',async () => {
+      const method = fetchUser();
+      expect(method.next().value).toEqual(put({type: ExampleTypes.FETCH_USER_LOADING}))
+      const res = method.next().value
+      expect(res).toEqual(call(getUser))
+      const userResponse = { 
+          quote: 'Thank you. Come again.',
+          character: 'Mohammed Ali Chherawalla',
+          image: 'https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FApuNahasapeemapetilon.png?1497567511629',
+          characterDirection: 'Left' 
+        }
+      expect(method.next(apiResponseGenerator(true, [userResponse])).value).toEqual(put({type: ExampleTypes.FETCH_USER_SUCCESS, user: userResponse} ))
+      })
+})

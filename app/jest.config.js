@@ -1,4 +1,5 @@
 /* eslint-disable */
+const jestPreset = require('@testing-library/react-native/jest-preset');
 module.exports = {
   collectCoverageFrom: [
     'app/**/*.{js,jsx}',
@@ -16,6 +17,7 @@ module.exports = {
       lines: 50,
     },
   },
+  preset: ['@testing-library/react-native'],
   moduleDirectories: ['node_modules', 'app'],
   moduleNameMapper: {
     '@app(.*)$': '<rootDir>/app/$1',

@@ -6,10 +6,11 @@
  *
  */
 
+/* global shallowWithIntl */
+/* eslint no-undef: "error" */
 import React from 'react'
-import Enzyme, { shallow } from 'enzyme'
+import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-// import 'jest-dom/extend-expect' // add some helpful assertions
 
 import T from '../index'
 
@@ -17,7 +18,7 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('<T />', () => {
   it('Should render and match the snapshot', () => {
-    const component = shallow(<T />)
+    const component = shallowWithIntl(<T id="test" />)
     expect(component).toMatchSnapshot()
   })
 })

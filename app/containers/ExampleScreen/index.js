@@ -31,7 +31,7 @@ const Container = styled(AppContainer)`
 `
 
 const TextBox = styled.Text`
-  ${Fonts.style.normal}
+  ${Fonts.style.normal};
   text-align: center;
   margin-bottom: 5px;
 `
@@ -55,7 +55,7 @@ const CharacterImage = styled.Image`
   margin: 0 auto;
 `
 const Error = styled.Text`
-  ${Fonts.style.normal}
+  ${Fonts.style.normal};
   text-align: center;
   margin-bottom: 5px;
   color: red;

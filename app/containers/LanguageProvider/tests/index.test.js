@@ -1,27 +1,20 @@
 import React from 'react'
-import { render } from 'react-testing-library'
-import { FormattedMessage, defineMessages } from 'react-intl'
+import 'react-native'
+import { render } from '@testing-library/react-native'
 import { Provider } from 'react-redux'
-import { browserHistory } from 'react-router-dom'
-
+import T from 'app/components/T'
+import createStore from 'app/rootReducer'
 import ConnectedLanguageProvider, { LanguageProvider } from '../index'
-import configureStore from '../../../configureStore'
-
 import { translationMessages } from '../../../i18n'
 
-const messages = defineMessages({
-  someMessage: {
-    id: 'some.id',
-    defaultMessage: 'This is some default message',
-    en: 'This is some en message'
-  }
-})
+/* global shallowWithIntl */
+/* eslint no-undef: "error" */
 
 describe('<LanguageProvider />', () => {
   it('should render its children', () => {
     const children = <h1>Test</h1>
-    const { container } = render(
-      <LanguageProvider messages={messages} locale="en">
+    const container = shallowWithIntl(
+      <LanguageProvider messages={translationMessages} locale="en">
         {children}
       </LanguageProvider>
     )
@@ -30,20 +23,21 @@ describe('<LanguageProvider />', () => {
 })
 
 describe('<ConnectedLanguageProvider />', () => {
-  let store
+  let reduxStore
 
   beforeAll(() => {
-    store = configureStore({}, browserHistory)
+    const { store } = createStore()
+    reduxStore = store
   })
 
   it('should render the default language messages', () => {
     const { queryByText } = render(
-      <Provider store={store}>
+      <Provider store={reduxStore}>
         <ConnectedLanguageProvider messages={translationMessages}>
-          <FormattedMessage {...messages.someMessage} />
+          <T id="because" />
         </ConnectedLanguageProvider>
       </Provider>
     )
-    expect(queryByText(messages.someMessage.defaultMessage)).not.toBeNull()
+    expect(queryByText('because')).not.toBeNull()
   })
 })

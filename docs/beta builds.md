@@ -20,7 +20,7 @@ If you love this documentation, give us a star, you will be a ray of sunshine in
 ```
 
 _This documentation is a part of a React Native project template for building solid applications through separation of concerns between the UI, state management and business logic._
-_Just navigate to the [project home page](https://github.com/thecodingmachine/react-native-boilerplate) if you want to see more._
+_Just navigate to the [project home page](https://github.com/wednesday-solutions/react-native-template) if you want to see more._
 
 ## Installing Fastlane
 

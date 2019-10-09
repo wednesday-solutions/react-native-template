@@ -1,0 +1,2459 @@
+{
+  "/Users/mac/wednesday/react-native-boilerplate/app/app.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/app.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 9, "column": 29 },
+        "end": { "line": 9, "column": 42 }
+      },
+      "1": {
+        "start": { "line": 11, "column": 12 },
+        "end": { "line": 19, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 12, "column": 2 },
+        "end": { "line": 18, "column": 13 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 11, "column": 12 },
+          "end": { "line": 11, "column": 13 }
+        },
+        "loc": {
+          "start": { "line": 12, "column": 2 },
+          "end": { "line": 18, "column": 13 }
+        },
+        "line": 12
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 1, "2": 1 },
+    "f": { "0": 1 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "0f1428b770f6217809fff91e06c6714e655cfda5"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 10, "column": 22 },
+        "end": { "line": 10, "column": 57 }
+      },
+      "1": {
+        "start": { "line": 12, "column": 21 },
+        "end": { "line": 12, "column": 57 }
+      },
+      "2": {
+        "start": { "line": 14, "column": 30 },
+        "end": { "line": 14, "column": 63 }
+      },
+      "3": {
+        "start": { "line": 16, "column": 0 },
+        "end": { "line": 16, "column": 27 }
+      },
+      "4": {
+        "start": { "line": 18, "column": 30 },
+        "end": { "line": 18, "column": 34 }
+      },
+      "5": {
+        "start": { "line": 21, "column": 26 },
+        "end": { "line": 23, "column": 1 }
+      },
+      "6": {
+        "start": { "line": 25, "column": 41 },
+        "end": { "line": 38, "column": 1 }
+      },
+      "7": {
+        "start": { "line": 27, "column": 4 },
+        "end": { "line": 29, "column": 10 }
+      },
+      "8": {
+        "start": { "line": 30, "column": 35 },
+        "end": { "line": 36, "column": 3 }
+      },
+      "9": {
+        "start": { "line": 32, "column": 6 },
+        "end": { "line": 34, "column": 23 }
+      },
+      "10": {
+        "start": { "line": 35, "column": 4 },
+        "end": { "line": 35, "column": 72 }
+      },
+      "11": {
+        "start": { "line": 37, "column": 2 },
+        "end": { "line": 37, "column": 67 }
+      },
+      "12": {
+        "start": { "line": 40, "column": 35 },
+        "end": { "line": 42, "column": 1 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 25, "column": 41 },
+          "end": { "line": 25, "column": 42 }
+        },
+        "loc": {
+          "start": { "line": 25, "column": 63 },
+          "end": { "line": 38, "column": 1 }
+        },
+        "line": 25
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 30, "column": 35 },
+          "end": { "line": 30, "column": 36 }
+        },
+        "loc": {
+          "start": { "line": 30, "column": 63 },
+          "end": { "line": 36, "column": 3 }
+        },
+        "line": 30
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 27, "column": 4 },
+          "end": { "line": 29, "column": 10 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 28, "column": 8 },
+            "end": { "line": 28, "column": 72 }
+          },
+          {
+            "start": { "line": 29, "column": 8 },
+            "end": { "line": 29, "column": 10 }
+          }
+        ],
+        "line": 27
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 32, "column": 6 },
+          "end": { "line": 34, "column": 23 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 33, "column": 10 },
+            "end": { "line": 33, "column": 39 }
+          },
+          {
+            "start": { "line": 34, "column": 10 },
+            "end": { "line": 34, "column": 23 }
+          }
+        ],
+        "line": 32
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 32, "column": 6 },
+          "end": { "line": 32, "column": 49 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 32, "column": 6 },
+            "end": { "line": 32, "column": 20 }
+          },
+          {
+            "start": { "line": 32, "column": 24 },
+            "end": { "line": 32, "column": 49 }
+          }
+        ],
+        "line": 32
+      }
+    },
+    "s": {
+      "0": 7,
+      "1": 7,
+      "2": 7,
+      "3": 7,
+      "4": 7,
+      "5": 7,
+      "6": 7,
+      "7": 10,
+      "8": 10,
+      "9": 37,
+      "10": 37,
+      "11": 10,
+      "12": 7
+    },
+    "f": { "0": 10, "1": 37 },
+    "b": { "0": [1, 9], "1": [1, 36], "2": [37, 1] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "970e2e0fee008d20914f7e206ddfbe07830bcae1"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 22 },
+        "end": { "line": 9, "column": 4 }
+      },
+      "1": {
+        "start": { "line": 11, "column": 2 },
+        "end": { "line": 11, "column": 46 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 6, "column": 15 },
+          "end": { "line": 6, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 6, "column": 21 },
+          "end": { "line": 12, "column": 1 }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 6, "1": 6 },
+    "f": { "0": 6 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "6f86eaf7e326209a38ae1f1ff5287d5c2d46bdfe"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 6, "column": 2 },
+        "end": { "line": 6, "column": 25 }
+      },
+      "1": {
+        "start": { "line": 7, "column": 2 },
+        "end": { "line": 7, "column": 25 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "root",
+        "decl": {
+          "start": { "line": 5, "column": 25 },
+          "end": { "line": 5, "column": 29 }
+        },
+        "loc": {
+          "start": { "line": 5, "column": 32 },
+          "end": { "line": 8, "column": 1 }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 6, "1": 6 },
+    "f": { "0": 6 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "1c98a54f720eec5edfee8825879ce65bf583af1d"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "3d94afbcb363d7e2cad449c169f6a869f6ac8813"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 0 },
+        "end": { "line": 4, "column": 6 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 3 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "dc80bfbecf8ffbb8f36cf602fdfe3c663c2e406a"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 10, "column": 24 },
+        "end": { "line": 13, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 14, "column": 18 },
+        "end": { "line": 14, "column": 66 }
+      },
+      "2": {
+        "start": { "line": 14, "column": 36 },
+        "end": { "line": 14, "column": 66 }
+      },
+      "3": {
+        "start": { "line": 16, "column": 0 },
+        "end": { "line": 16, "column": 24 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 14, "column": 18 },
+          "end": { "line": 14, "column": 19 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 36 },
+          "end": { "line": 14, "column": 66 }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 4, "1": 4, "2": 8, "3": 4 },
+    "f": { "0": 8 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "43e8fa1c275c526975dea1c98d4eb1289d4a3a45"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 6, "column": 18 },
+        "end": { "line": 11, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 13, "column": 13 },
+        "end": { "line": 20, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 22, "column": 21 },
+        "end": { "line": 28, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 23, "column": 2 },
+        "end": { "line": 27, "column": 14 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 22, "column": 21 },
+          "end": { "line": 22, "column": 22 }
+        },
+        "loc": {
+          "start": { "line": 23, "column": 2 },
+          "end": { "line": 27, "column": 14 }
+        },
+        "line": 23
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 2, "1": 2, "2": 2, "3": 2 },
+    "f": { "0": 2 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "2badf4d1c15ba4f3296a5c5997254e59a4a0b640"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 13, "column": 10 },
+        "end": { "line": 15, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 14, "column": 58 }
+      },
+      "2": {
+        "start": { "line": 17, "column": 0 },
+        "end": { "line": 21, "column": 1 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 13, "column": 10 },
+          "end": { "line": 13, "column": 11 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 2 },
+          "end": { "line": 14, "column": 58 }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 4, "1": 7, "2": 4 },
+    "f": { "0": 7 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d0e277b436040405a9ca61f07021d1993c0988e2"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 22 },
+        "end": { "line": 3, "column": 1 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 5 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d6e171b5ca08da90501dcec193bfac9d955780f5"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 28, "column": 18 },
+        "end": { "line": 32, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 34, "column": 16 },
+        "end": { "line": 38, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 40, "column": 21 },
+        "end": { "line": 45, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 47, "column": 15 },
+        "end": { "line": 51, "column": 1 }
+      },
+      "4": {
+        "start": { "line": 53, "column": 23 },
+        "end": { "line": 57, "column": 1 }
+      },
+      "5": {
+        "start": { "line": 58, "column": 14 },
+        "end": { "line": 63, "column": 1 }
+      },
+      "6": {
+        "start": { "line": 65, "column": 22 },
+        "end": { "line": 69, "column": 1 }
+      },
+      "7": {
+        "start": { "line": 70, "column": 13 },
+        "end": { "line": 73, "column": 1 }
+      },
+      "8": {
+        "start": { "line": 75, "column": 22 },
+        "end": { "line": 79, "column": 1 }
+      },
+      "9": {
+        "start": { "line": 80, "column": 21 },
+        "end": { "line": 82, "column": 1 }
+      },
+      "10": {
+        "start": { "line": 83, "column": 21 },
+        "end": { "line": 87, "column": 2 }
+      },
+      "11": {
+        "start": { "line": 91, "column": 4 },
+        "end": { "line": 91, "column": 29 }
+      },
+      "12": {
+        "start": { "line": 94, "column": 27 },
+        "end": { "line": 96, "column": 3 }
+      },
+      "13": {
+        "start": { "line": 95, "column": 4 },
+        "end": { "line": 95, "column": 26 }
+      },
+      "14": {
+        "start": { "line": 99, "column": 4 },
+        "end": { "line": 136, "column": 5 }
+      },
+      "15": {
+        "start": { "line": 140, "column": 0 },
+        "end": { "line": 145, "column": 1 }
+      },
+      "16": {
+        "start": { "line": 147, "column": 24 },
+        "end": { "line": 151, "column": 2 }
+      },
+      "17": {
+        "start": { "line": 153, "column": 27 },
+        "end": { "line": 155, "column": 2 }
+      },
+      "18": {
+        "start": { "line": 153, "column": 40 },
+        "end": { "line": 155, "column": 1 }
+      },
+      "19": {
+        "start": { "line": 154, "column": 19 },
+        "end": { "line": 154, "column": 55 }
+      },
+      "20": {
+        "start": { "line": 157, "column": 20 },
+        "end": { "line": 160, "column": 1 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 90, "column": 2 },
+          "end": { "line": 90, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 90, "column": 22 },
+          "end": { "line": 92, "column": 3 }
+        },
+        "line": 90
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 94, "column": 21 },
+          "end": { "line": 94, "column": 22 }
+        },
+        "loc": {
+          "start": { "line": 94, "column": 27 },
+          "end": { "line": 96, "column": 3 }
+        },
+        "line": 94
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 94, "column": 27 },
+          "end": { "line": 94, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 94, "column": 33 },
+          "end": { "line": 96, "column": 3 }
+        },
+        "line": 94
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 98, "column": 2 },
+          "end": { "line": 98, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 98, "column": 11 },
+          "end": { "line": 137, "column": 3 }
+        },
+        "line": 98
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 153, "column": 27 },
+          "end": { "line": 153, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 153, "column": 40 },
+          "end": { "line": 155, "column": 1 }
+        },
+        "line": 153
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 154, "column": 13 },
+          "end": { "line": 154, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 154, "column": 19 },
+          "end": { "line": 154, "column": 55 }
+        },
+        "line": 154
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 101, "column": 9 },
+          "end": { "line": 134, "column": 9 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 102, "column": 10 },
+            "end": { "line": 102, "column": 76 }
+          },
+          {
+            "start": { "line": 104, "column": 10 },
+            "end": { "line": 133, "column": 17 }
+          }
+        ],
+        "line": 101
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 110, "column": 13 },
+          "end": { "line": 131, "column": 13 }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 111, "column": 14 },
+            "end": { "line": 111, "column": 58 }
+          },
+          {
+            "start": { "line": 113, "column": 14 },
+            "end": { "line": 130, "column": 30 }
+          }
+        ],
+        "line": 110
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 118, "column": 32 },
+          "end": { "line": 118, "column": 80 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 118, "column": 32 },
+            "end": { "line": 118, "column": 65 }
+          },
+          {
+            "start": { "line": 118, "column": 69 },
+            "end": { "line": 118, "column": 80 }
+          }
+        ],
+        "line": 118
+      }
+    },
+    "s": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 5,
+      "12": 8,
+      "13": 5,
+      "14": 5,
+      "15": 2,
+      "16": 2,
+      "17": 2,
+      "18": 1,
+      "19": 1,
+      "20": 2
+    },
+    "f": { "0": 5, "1": 8, "2": 5, "3": 5, "4": 1, "5": 1 },
+    "b": { "0": [2, 3], "1": [0, 3], "2": [3, 3] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "cb33c839ef96cd66d413dbe0215830eee2c75ac3"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 4, "column": 65 },
+        "end": { "line": 13, "column": 2 }
+      },
+      "1": {
+        "start": { "line": 15, "column": 28 },
+        "end": { "line": 19, "column": 2 }
+      },
+      "2": {
+        "start": { "line": 21, "column": 32 },
+        "end": { "line": 22, "column": 64 }
+      },
+      "3": {
+        "start": { "line": 22, "column": 2 },
+        "end": { "line": 22, "column": 64 }
+      },
+      "4": {
+        "start": { "line": 24, "column": 32 },
+        "end": { "line": 28, "column": 34 }
+      },
+      "5": {
+        "start": { "line": 25, "column": 2 },
+        "end": { "line": 28, "column": 34 }
+      },
+      "6": {
+        "start": { "line": 30, "column": 32 },
+        "end": { "line": 34, "column": 42 }
+      },
+      "7": {
+        "start": { "line": 31, "column": 2 },
+        "end": { "line": 34, "column": 42 }
+      },
+      "8": {
+        "start": { "line": 39, "column": 39 },
+        "end": { "line": 51, "column": 4 }
+      },
+      "9": {
+        "start": { "line": 40, "column": 2 },
+        "end": { "line": 51, "column": 4 }
+      },
+      "10": {
+        "start": { "line": 41, "column": 4 },
+        "end": { "line": 50, "column": 5 }
+      },
+      "11": {
+        "start": { "line": 43, "column": 8 },
+        "end": { "line": 43, "column": 46 }
+      },
+      "12": {
+        "start": { "line": 45, "column": 8 },
+        "end": { "line": 45, "column": 46 }
+      },
+      "13": {
+        "start": { "line": 47, "column": 8 },
+        "end": { "line": 47, "column": 46 }
+      },
+      "14": {
+        "start": { "line": 49, "column": 8 },
+        "end": { "line": 49, "column": 20 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 21, "column": 32 },
+          "end": { "line": 21, "column": 33 }
+        },
+        "loc": {
+          "start": { "line": 22, "column": 2 },
+          "end": { "line": 22, "column": 64 }
+        },
+        "line": 22
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 24, "column": 32 },
+          "end": { "line": 24, "column": 33 }
+        },
+        "loc": {
+          "start": { "line": 25, "column": 2 },
+          "end": { "line": 28, "column": 34 }
+        },
+        "line": 25
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 30, "column": 32 },
+          "end": { "line": 30, "column": 33 }
+        },
+        "loc": {
+          "start": { "line": 31, "column": 2 },
+          "end": { "line": 34, "column": 42 }
+        },
+        "line": 31
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 39, "column": 39 },
+          "end": { "line": 39, "column": 40 }
+        },
+        "loc": {
+          "start": { "line": 40, "column": 2 },
+          "end": { "line": 51, "column": 4 }
+        },
+        "line": 40
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 40, "column": 17 },
+          "end": { "line": 40, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 40, "column": 23 },
+          "end": { "line": 51, "column": 3 }
+        },
+        "line": 40
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 39, "column": 40 },
+          "end": { "line": 39, "column": 60 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 39, "column": 48 },
+            "end": { "line": 39, "column": 60 }
+          }
+        ],
+        "line": 39
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 41, "column": 4 },
+          "end": { "line": 50, "column": 5 }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": { "line": 42, "column": 6 },
+            "end": { "line": 43, "column": 46 }
+          },
+          {
+            "start": { "line": 44, "column": 6 },
+            "end": { "line": 45, "column": 46 }
+          },
+          {
+            "start": { "line": 46, "column": 6 },
+            "end": { "line": 47, "column": 46 }
+          },
+          {
+            "start": { "line": 48, "column": 6 },
+            "end": { "line": 49, "column": 20 }
+          }
+        ],
+        "line": 41
+      }
+    },
+    "s": {
+      "0": 7,
+      "1": 7,
+      "2": 7,
+      "3": 3,
+      "4": 7,
+      "5": 1,
+      "6": 7,
+      "7": 1,
+      "8": 7,
+      "9": 35,
+      "10": 35,
+      "11": 3,
+      "12": 1,
+      "13": 1,
+      "14": 30
+    },
+    "f": { "0": 3, "1": 1, "2": 1, "3": 35, "4": 35 },
+    "b": { "0": [19], "1": [3, 1, 1, 30] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "e8fdac203152e254a371ce03e67e7d9f6b092339"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 13, "column": 2 },
+        "end": { "line": 13, "column": 46 }
+      },
+      "1": {
+        "start": { "line": 16, "column": 19 },
+        "end": { "line": 16, "column": 38 }
+      },
+      "2": {
+        "start": { "line": 17, "column": 2 },
+        "end": { "line": 26, "column": 3 }
+      },
+      "3": {
+        "start": { "line": 18, "column": 21 },
+        "end": { "line": 18, "column": 29 }
+      },
+      "4": {
+        "start": { "line": 19, "column": 4 },
+        "end": { "line": 19, "column": 62 }
+      },
+      "5": {
+        "start": { "line": 21, "column": 4 },
+        "end": { "line": 25, "column": 5 }
+      },
+      "6": {
+        "start": { "line": 30, "column": 2 },
+        "end": { "line": 30, "column": 54 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "fetchUser",
+        "decl": {
+          "start": { "line": 12, "column": 17 },
+          "end": { "line": 12, "column": 26 }
+        },
+        "loc": {
+          "start": { "line": 12, "column": 29 },
+          "end": { "line": 27, "column": 1 }
+        },
+        "line": 12
+      },
+      "1": {
+        "name": "searchListContainerSaga",
+        "decl": {
+          "start": { "line": 29, "column": 25 },
+          "end": { "line": 29, "column": 48 }
+        },
+        "loc": {
+          "start": { "line": 29, "column": 51 },
+          "end": { "line": 31, "column": 1 }
+        },
+        "line": 29
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 17, "column": 2 },
+          "end": { "line": 26, "column": 3 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 17, "column": 2 },
+            "end": { "line": 26, "column": 3 }
+          },
+          {
+            "start": { "line": 17, "column": 2 },
+            "end": { "line": 26, "column": 3 }
+          }
+        ],
+        "line": 17
+      }
+    },
+    "s": { "0": 4, "1": 4, "2": 2, "3": 1, "4": 1, "5": 1, "6": 7 },
+    "f": { "0": 4, "1": 7 },
+    "b": { "0": [1, 1] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "17f822bc0ff5bfd8f311d251646bf38ca03109ff"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 5, "column": 35 },
+        "end": { "line": 6, "column": 40 }
+      },
+      "1": {
+        "start": { "line": 6, "column": 2 },
+        "end": { "line": 6, "column": 40 }
+      },
+      "2": {
+        "start": { "line": 8, "column": 26 },
+        "end": { "line": 12, "column": 3 }
+      },
+      "3": {
+        "start": { "line": 9, "column": 2 },
+        "end": { "line": 12, "column": 3 }
+      },
+      "4": {
+        "start": { "line": 11, "column": 16 },
+        "end": { "line": 11, "column": 43 }
+      },
+      "5": {
+        "start": { "line": 14, "column": 35 },
+        "end": { "line": 18, "column": 3 }
+      },
+      "6": {
+        "start": { "line": 15, "column": 2 },
+        "end": { "line": 18, "column": 3 }
+      },
+      "7": {
+        "start": { "line": 17, "column": 16 },
+        "end": { "line": 17, "column": 52 }
+      },
+      "8": {
+        "start": { "line": 20, "column": 38 },
+        "end": { "line": 24, "column": 3 }
+      },
+      "9": {
+        "start": { "line": 21, "column": 2 },
+        "end": { "line": 24, "column": 3 }
+      },
+      "10": {
+        "start": { "line": 23, "column": 16 },
+        "end": { "line": 23, "column": 55 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 5, "column": 35 },
+          "end": { "line": 5, "column": 36 }
+        },
+        "loc": {
+          "start": { "line": 6, "column": 2 },
+          "end": { "line": 6, "column": 40 }
+        },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 8, "column": 26 },
+          "end": { "line": 8, "column": 27 }
+        },
+        "loc": {
+          "start": { "line": 9, "column": 2 },
+          "end": { "line": 12, "column": 3 }
+        },
+        "line": 9
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 11, "column": 4 },
+          "end": { "line": 11, "column": 5 }
+        },
+        "loc": {
+          "start": { "line": 11, "column": 16 },
+          "end": { "line": 11, "column": 43 }
+        },
+        "line": 11
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 14, "column": 35 },
+          "end": { "line": 14, "column": 36 }
+        },
+        "loc": {
+          "start": { "line": 15, "column": 2 },
+          "end": { "line": 18, "column": 3 }
+        },
+        "line": 15
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 17, "column": 4 },
+          "end": { "line": 17, "column": 5 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 16 },
+          "end": { "line": 17, "column": 52 }
+        },
+        "line": 17
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 20, "column": 38 },
+          "end": { "line": 20, "column": 39 }
+        },
+        "loc": {
+          "start": { "line": 21, "column": 2 },
+          "end": { "line": 24, "column": 3 }
+        },
+        "line": 21
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 23, "column": 4 },
+          "end": { "line": 23, "column": 5 }
+        },
+        "loc": {
+          "start": { "line": 23, "column": 16 },
+          "end": { "line": 23, "column": 55 }
+        },
+        "line": 23
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 6, "column": 3 },
+          "end": { "line": 6, "column": 32 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 6, "column": 3 },
+            "end": { "line": 6, "column": 16 }
+          },
+          {
+            "start": { "line": 6, "column": 20 },
+            "end": { "line": 6, "column": 32 }
+          }
+        ],
+        "line": 6
+      }
+    },
+    "s": {
+      "0": 3,
+      "1": 6,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 3,
+      "6": 3,
+      "7": 2,
+      "8": 3,
+      "9": 3,
+      "10": 2
+    },
+    "f": { "0": 6, "1": 3, "2": 2, "3": 3, "4": 2, "5": 3, "6": 2 },
+    "b": { "0": [6, 0] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "b5d193b30751138ea47c553328b11e0af30af7cf"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/actions.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/actions.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 10, "column": 2 },
+        "end": { "line": 13, "column": 3 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "changeLocale",
+        "decl": {
+          "start": { "line": 9, "column": 16 },
+          "end": { "line": 9, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 9, "column": 45 },
+          "end": { "line": 14, "column": 1 }
+        },
+        "line": 9
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1 },
+    "f": { "0": 1 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "f7a9a07a8ef306db8897d9c3d98fb0f69b821872"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 29 },
+        "end": { "line": 7, "column": 63 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 7 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "d57b64ce25c514cb1b6b1d93908b905ce255dcdc"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 18, "column": 2 },
+        "end": { "line": 26, "column": 3 }
+      },
+      "1": {
+        "start": { "line": 29, "column": 0 },
+        "end": { "line": 33, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 35, "column": 24 },
+        "end": { "line": 40, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 37, "column": 13 },
+        "end": { "line": 39, "column": 3 }
+      },
+      "4": {
+        "start": { "line": 43, "column": 2 },
+        "end": { "line": 45, "column": 3 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "LanguageProvider",
+        "decl": {
+          "start": { "line": 17, "column": 16 },
+          "end": { "line": 17, "column": 32 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 40 },
+          "end": { "line": 27, "column": 1 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 37, "column": 2 },
+          "end": { "line": 37, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 37, "column": 13 },
+          "end": { "line": 39, "column": 3 }
+        },
+        "line": 37
+      },
+      "2": {
+        "name": "mapDispatchToProps",
+        "decl": {
+          "start": { "line": 42, "column": 9 },
+          "end": { "line": 42, "column": 27 }
+        },
+        "loc": {
+          "start": { "line": 42, "column": 38 },
+          "end": { "line": 46, "column": 1 }
+        },
+        "line": 42
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 7, "1": 4, "2": 4, "3": 3, "4": 6 },
+    "f": { "0": 7, "1": 3, "2": 6 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "5d7cf2acd40495a306db1be0a9340aaa56216ecd"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 11, "column": 28 },
+        "end": { "line": 13, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 16, "column": 32 },
+        "end": { "line": 23, "column": 4 }
+      },
+      "2": {
+        "start": { "line": 17, "column": 2 },
+        "end": { "line": 23, "column": 4 }
+      },
+      "3": {
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 22, "column": 5 }
+      },
+      "4": {
+        "start": { "line": 20, "column": 8 },
+        "end": { "line": 20, "column": 36 }
+      },
+      "5": {
+        "start": { "line": 21, "column": 8 },
+        "end": { "line": 21, "column": 13 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 16, "column": 32 },
+          "end": { "line": 16, "column": 33 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 2 },
+          "end": { "line": 23, "column": 4 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 17, "column": 17 },
+          "end": { "line": 17, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 26 },
+          "end": { "line": 23, "column": 3 }
+        },
+        "line": 17
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 16, "column": 33 },
+          "end": { "line": 16, "column": 53 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 16, "column": 41 },
+            "end": { "line": 16, "column": 53 }
+          }
+        ],
+        "line": 16
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 18, "column": 4 },
+          "end": { "line": 22, "column": 5 }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": { "line": 19, "column": 6 },
+            "end": { "line": 21, "column": 13 }
+          }
+        ],
+        "line": 18
+      }
+    },
+    "s": { "0": 6, "1": 6, "2": 2, "3": 2, "4": 1, "5": 1 },
+    "f": { "0": 2, "1": 2 },
+    "b": { "0": [2], "1": [1] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "e32f3d2974c2018c18e16f0cc54085e2cec1d64c"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 23 },
+        "end": { "line": 7, "column": 62 }
+      },
+      "1": {
+        "start": { "line": 7, "column": 32 },
+        "end": { "line": 7, "column": 62 }
+      },
+      "2": {
+        "start": { "line": 13, "column": 25 },
+        "end": { "line": 17, "column": 3 }
+      },
+      "3": {
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 17, "column": 3 }
+      },
+      "4": {
+        "start": { "line": 16, "column": 21 },
+        "end": { "line": 16, "column": 41 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 7, "column": 23 },
+          "end": { "line": 7, "column": 24 }
+        },
+        "loc": {
+          "start": { "line": 7, "column": 32 },
+          "end": { "line": 7, "column": 62 }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 13, "column": 25 },
+          "end": { "line": 13, "column": 26 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 2 },
+          "end": { "line": 17, "column": 3 }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 16, "column": 4 },
+          "end": { "line": 16, "column": 5 }
+        },
+        "loc": {
+          "start": { "line": 16, "column": 21 },
+          "end": { "line": 16, "column": 41 }
+        },
+        "line": 16
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 7, "column": 32 },
+          "end": { "line": 7, "column": 62 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 7, "column": 32 },
+            "end": { "line": 7, "column": 46 }
+          },
+          {
+            "start": { "line": 7, "column": 50 },
+            "end": { "line": 7, "column": 62 }
+          }
+        ],
+        "line": 7
+      }
+    },
+    "s": { "0": 5, "1": 9, "2": 5, "3": 4, "4": 3 },
+    "f": { "0": 9, "1": 4, "2": 3 },
+    "b": { "0": [9, 8] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "94019a0b332442c295a9741ac323458a61542a31"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 12, "column": 4 },
+        "end": { "line": 12, "column": 24 }
+      },
+      "1": {
+        "start": { "line": 16, "column": 4 },
+        "end": { "line": 16, "column": 56 }
+      },
+      "2": {
+        "start": { "line": 20, "column": 4 },
+        "end": { "line": 27, "column": 5 }
+      },
+      "3": {
+        "start": { "line": 31, "column": 0 },
+        "end": { "line": 33, "column": 1 }
+      },
+      "4": {
+        "start": { "line": 35, "column": 27 },
+        "end": { "line": 37, "column": 2 }
+      },
+      "5": {
+        "start": { "line": 35, "column": 40 },
+        "end": { "line": 37, "column": 1 }
+      },
+      "6": {
+        "start": { "line": 36, "column": 17 },
+        "end": { "line": 36, "column": 47 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 10, "column": 2 },
+          "end": { "line": 10, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 10, "column": 22 },
+          "end": { "line": 13, "column": 3 }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 15, "column": 30 },
+          "end": { "line": 15, "column": 31 }
+        },
+        "loc": {
+          "start": { "line": 15, "column": 46 },
+          "end": { "line": 17, "column": 3 }
+        },
+        "line": 15
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 19, "column": 2 },
+          "end": { "line": 19, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 19, "column": 11 },
+          "end": { "line": 28, "column": 3 }
+        },
+        "line": 19
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 35, "column": 27 },
+          "end": { "line": 35, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 40 },
+          "end": { "line": 37, "column": 1 }
+        },
+        "line": 35
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 36, "column": 11 },
+          "end": { "line": 36, "column": 12 }
+        },
+        "loc": {
+          "start": { "line": 36, "column": 17 },
+          "end": { "line": 36, "column": 47 }
+        },
+        "line": 36
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1 },
+    "f": { "0": 1, "1": 1, "2": 1, "3": 1, "4": 1 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "0ecc8bd2a92fc4c6bd33e386550bb6b372b9f690"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 3, "column": 57 },
+        "end": { "line": 6, "column": 2 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 4 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "e539315ae75fcfbd2ade87646939a3a951d21ce3"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 10, "column": 2 },
+        "end": { "line": 10, "column": 39 }
+      },
+      "1": {
+        "start": { "line": 11, "column": 2 },
+        "end": { "line": 11, "column": 50 }
+      },
+      "2": {
+        "start": { "line": 15, "column": 2 },
+        "end": { "line": 15, "column": 52 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "startup",
+        "decl": {
+          "start": { "line": 9, "column": 17 },
+          "end": { "line": 9, "column": 24 }
+        },
+        "loc": {
+          "start": { "line": 9, "column": 27 },
+          "end": { "line": 12, "column": 1 }
+        },
+        "line": 9
+      },
+      "1": {
+        "name": "startUpSaga",
+        "decl": {
+          "start": { "line": 14, "column": 25 },
+          "end": { "line": 14, "column": 36 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 39 },
+          "end": { "line": 16, "column": 1 }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 1, "2": 6 },
+    "f": { "0": 1, "1": 6 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "4f203cb447e82f6c034cdf2db6f612401cebe250"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 10, "column": 23 },
+        "end": { "line": 25, "column": 1 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 1 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "9e93bf478a2270f91c528741de60b29e8bf0c9a2"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 15, "column": 2 },
+        "end": { "line": 15, "column": 26 }
+      },
+      "1": {
+        "start": { "line": 25, "column": 2 },
+        "end": { "line": 30, "column": 3 }
+      },
+      "2": {
+        "start": { "line": 43, "column": 2 },
+        "end": { "line": 54, "column": 3 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "setTopLevelNavigator",
+        "decl": {
+          "start": { "line": 14, "column": 9 },
+          "end": { "line": 14, "column": 29 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 44 },
+          "end": { "line": 16, "column": 1 }
+        },
+        "line": 14
+      },
+      "1": {
+        "name": "navigate",
+        "decl": {
+          "start": { "line": 24, "column": 9 },
+          "end": { "line": 24, "column": 17 }
+        },
+        "loc": {
+          "start": { "line": 24, "column": 37 },
+          "end": { "line": 31, "column": 1 }
+        },
+        "line": 24
+      },
+      "2": {
+        "name": "navigateAndReset",
+        "decl": {
+          "start": { "line": 42, "column": 9 },
+          "end": { "line": 42, "column": 25 }
+        },
+        "loc": {
+          "start": { "line": 42, "column": 45 },
+          "end": { "line": 55, "column": 1 }
+        },
+        "line": 42
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 0, "2": 1 },
+    "f": { "0": 1, "1": 0, "2": 1 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "c8391a5c3e528a16f91d0fcd067f5b2181f8be66"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 3, "column": 18 },
+        "end": { "line": 3, "column": 48 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 23 },
+        "end": { "line": 4, "column": 60 }
+      },
+      "2": {
+        "start": { "line": 4, "column": 29 },
+        "end": { "line": 4, "column": 60 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 4, "column": 23 },
+          "end": { "line": 4, "column": 24 }
+        },
+        "loc": {
+          "start": { "line": 4, "column": 29 },
+          "end": { "line": 4, "column": 60 }
+        },
+        "line": 4
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 5, "1": 5, "2": 3 },
+    "f": { "0": 3 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "a897752d8b8853420618fba1786f7c229317729e"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "ca948910c49d40f0e826abeee27e7c84054300b2"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 4, "column": 16 },
+        "end": { "line": 6, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 22 },
+        "end": { "line": 6, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 7, "column": 14 },
+        "end": { "line": 9, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 7, "column": 20 },
+        "end": { "line": 9, "column": 1 }
+      },
+      "4": {
+        "start": { "line": 10, "column": 12 },
+        "end": { "line": 12, "column": 1 }
+      },
+      "5": {
+        "start": { "line": 10, "column": 18 },
+        "end": { "line": 12, "column": 1 }
+      },
+      "6": {
+        "start": { "line": 13, "column": 14 },
+        "end": { "line": 15, "column": 1 }
+      },
+      "7": {
+        "start": { "line": 13, "column": 20 },
+        "end": { "line": 15, "column": 1 }
+      },
+      "8": {
+        "start": { "line": 18, "column": 14 },
+        "end": { "line": 20, "column": 1 }
+      },
+      "9": {
+        "start": { "line": 18, "column": 20 },
+        "end": { "line": 20, "column": 1 }
+      },
+      "10": {
+        "start": { "line": 21, "column": 13 },
+        "end": { "line": 23, "column": 1 }
+      },
+      "11": {
+        "start": { "line": 21, "column": 19 },
+        "end": { "line": 23, "column": 1 }
+      },
+      "12": {
+        "start": { "line": 25, "column": 15 },
+        "end": { "line": 27, "column": 1 }
+      },
+      "13": {
+        "start": { "line": 25, "column": 21 },
+        "end": { "line": 27, "column": 1 }
+      },
+      "14": {
+        "start": { "line": 30, "column": 16 },
+        "end": { "line": 33, "column": 1 }
+      },
+      "15": {
+        "start": { "line": 30, "column": 22 },
+        "end": { "line": 33, "column": 1 }
+      },
+      "16": {
+        "start": { "line": 35, "column": 19 },
+        "end": { "line": 38, "column": 1 }
+      },
+      "17": {
+        "start": { "line": 35, "column": 25 },
+        "end": { "line": 38, "column": 1 }
+      },
+      "18": {
+        "start": { "line": 40, "column": 17 },
+        "end": { "line": 43, "column": 1 }
+      },
+      "19": {
+        "start": { "line": 40, "column": 23 },
+        "end": { "line": 43, "column": 1 }
+      },
+      "20": {
+        "start": { "line": 45, "column": 16 },
+        "end": { "line": 48, "column": 1 }
+      },
+      "21": {
+        "start": { "line": 45, "column": 22 },
+        "end": { "line": 48, "column": 1 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 4, "column": 16 },
+          "end": { "line": 4, "column": 17 }
+        },
+        "loc": {
+          "start": { "line": 4, "column": 22 },
+          "end": { "line": 6, "column": 1 }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 7, "column": 14 },
+          "end": { "line": 7, "column": 15 }
+        },
+        "loc": {
+          "start": { "line": 7, "column": 20 },
+          "end": { "line": 9, "column": 1 }
+        },
+        "line": 7
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 10, "column": 12 },
+          "end": { "line": 10, "column": 13 }
+        },
+        "loc": {
+          "start": { "line": 10, "column": 18 },
+          "end": { "line": 12, "column": 1 }
+        },
+        "line": 10
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 13, "column": 14 },
+          "end": { "line": 13, "column": 15 }
+        },
+        "loc": {
+          "start": { "line": 13, "column": 20 },
+          "end": { "line": 15, "column": 1 }
+        },
+        "line": 13
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 18, "column": 14 },
+          "end": { "line": 18, "column": 15 }
+        },
+        "loc": {
+          "start": { "line": 18, "column": 20 },
+          "end": { "line": 20, "column": 1 }
+        },
+        "line": 18
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 21, "column": 13 },
+          "end": { "line": 21, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 21, "column": 19 },
+          "end": { "line": 23, "column": 1 }
+        },
+        "line": 21
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 25, "column": 15 },
+          "end": { "line": 25, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 25, "column": 21 },
+          "end": { "line": 27, "column": 1 }
+        },
+        "line": 25
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": { "line": 30, "column": 16 },
+          "end": { "line": 30, "column": 17 }
+        },
+        "loc": {
+          "start": { "line": 30, "column": 22 },
+          "end": { "line": 33, "column": 1 }
+        },
+        "line": 30
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": { "line": 35, "column": 19 },
+          "end": { "line": 35, "column": 20 }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 25 },
+          "end": { "line": 38, "column": 1 }
+        },
+        "line": 35
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": { "line": 40, "column": 17 },
+          "end": { "line": 40, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 40, "column": 23 },
+          "end": { "line": 43, "column": 1 }
+        },
+        "line": 40
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": { "line": 45, "column": 16 },
+          "end": { "line": 45, "column": 17 }
+        },
+        "loc": {
+          "start": { "line": 45, "column": 22 },
+          "end": { "line": 48, "column": 1 }
+        },
+        "line": 45
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 4,
+      "1": 11,
+      "2": 4,
+      "3": 3,
+      "4": 4,
+      "5": 3,
+      "6": 4,
+      "7": 3,
+      "8": 4,
+      "9": 1,
+      "10": 4,
+      "11": 5,
+      "12": 4,
+      "13": 13,
+      "14": 4,
+      "15": 2,
+      "16": 4,
+      "17": 2,
+      "18": 4,
+      "19": 10,
+      "20": 4,
+      "21": 2
+    },
+    "f": {
+      "0": 11,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 1,
+      "5": 5,
+      "6": 13,
+      "7": 2,
+      "8": 2,
+      "9": 10,
+      "10": 2
+    },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "e1a772b0612849443657ba95d0062f51af5699be"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "b9afc5d36af1de384261b42bc4947c747ee25dbf"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "b84c05aa1b08acfeae7d5699c6b8afbb4314b4cb"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 6, "column": 26 },
+        "end": { "line": 9, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 10, "column": 28 },
+        "end": { "line": 10, "column": 68 }
+      },
+      "2": {
+        "start": { "line": 10, "column": 52 },
+        "end": { "line": 10, "column": 68 }
+      },
+      "3": {
+        "start": { "line": 11, "column": 33 },
+        "end": { "line": 20, "column": 1 }
+      },
+      "4": {
+        "start": { "line": 12, "column": 2 },
+        "end": { "line": 19, "column": 3 }
+      },
+      "5": {
+        "start": { "line": 14, "column": 6 },
+        "end": { "line": 14, "column": 69 }
+      },
+      "6": {
+        "start": { "line": 15, "column": 6 },
+        "end": { "line": 15, "column": 29 }
+      },
+      "7": {
+        "start": { "line": 17, "column": 6 },
+        "end": { "line": 17, "column": 71 }
+      },
+      "8": {
+        "start": { "line": 18, "column": 6 },
+        "end": { "line": 18, "column": 31 }
+      },
+      "9": {
+        "start": { "line": 22, "column": 44 },
+        "end": { "line": 43, "column": 1 }
+      },
+      "10": {
+        "start": { "line": 23, "column": 14 },
+        "end": { "line": 26, "column": 4 }
+      },
+      "11": {
+        "start": { "line": 27, "column": 2 },
+        "end": { "line": 33, "column": 4 }
+      },
+      "12": {
+        "start": { "line": 28, "column": 25 },
+        "end": { "line": 28, "column": 33 }
+      },
+      "13": {
+        "start": { "line": 29, "column": 4 },
+        "end": { "line": 31, "column": 5 }
+      },
+      "14": {
+        "start": { "line": 30, "column": 6 },
+        "end": { "line": 30, "column": 64 }
+      },
+      "15": {
+        "start": { "line": 30, "column": 48 },
+        "end": { "line": 30, "column": 63 }
+      },
+      "16": {
+        "start": { "line": 32, "column": 4 },
+        "end": { "line": 32, "column": 19 }
+      },
+      "17": {
+        "start": { "line": 35, "column": 2 },
+        "end": { "line": 41, "column": 4 }
+      },
+      "18": {
+        "start": { "line": 36, "column": 21 },
+        "end": { "line": 36, "column": 28 }
+      },
+      "19": {
+        "start": { "line": 37, "column": 4 },
+        "end": { "line": 39, "column": 5 }
+      },
+      "20": {
+        "start": { "line": 38, "column": 6 },
+        "end": { "line": 38, "column": 63 }
+      },
+      "21": {
+        "start": { "line": 38, "column": 47 },
+        "end": { "line": 38, "column": 62 }
+      },
+      "22": {
+        "start": { "line": 40, "column": 4 },
+        "end": { "line": 40, "column": 18 }
+      },
+      "23": {
+        "start": { "line": 42, "column": 2 },
+        "end": { "line": 42, "column": 12 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 10, "column": 28 },
+          "end": { "line": 10, "column": 29 }
+        },
+        "loc": {
+          "start": { "line": 10, "column": 52 },
+          "end": { "line": 10, "column": 68 }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 11, "column": 33 },
+          "end": { "line": 11, "column": 34 }
+        },
+        "loc": {
+          "start": { "line": 11, "column": 57 },
+          "end": { "line": 20, "column": 1 }
+        },
+        "line": 11
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 22, "column": 44 },
+          "end": { "line": 22, "column": 45 }
+        },
+        "loc": {
+          "start": { "line": 22, "column": 55 },
+          "end": { "line": 43, "column": 1 }
+        },
+        "line": 22
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 27, "column": 27 },
+          "end": { "line": 27, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 27, "column": 39 },
+          "end": { "line": 33, "column": 3 }
+        },
+        "line": 27
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 30, "column": 40 },
+          "end": { "line": 30, "column": 41 }
+        },
+        "loc": {
+          "start": { "line": 30, "column": 48 },
+          "end": { "line": 30, "column": 63 }
+        },
+        "line": 30
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 35, "column": 26 },
+          "end": { "line": 35, "column": 27 }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 37 },
+          "end": { "line": 41, "column": 3 }
+        },
+        "line": 35
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 38, "column": 39 },
+          "end": { "line": 38, "column": 40 }
+        },
+        "loc": {
+          "start": { "line": 38, "column": 47 },
+          "end": { "line": 38, "column": 62 }
+        },
+        "line": 38
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 10, "column": 29 },
+          "end": { "line": 10, "column": 47 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 10, "column": 36 },
+            "end": { "line": 10, "column": 47 }
+          }
+        ],
+        "line": 10
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 11, "column": 34 },
+          "end": { "line": 11, "column": 52 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 11, "column": 41 },
+            "end": { "line": 11, "column": 52 }
+          }
+        ],
+        "line": 11
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 12, "column": 2 },
+          "end": { "line": 19, "column": 3 }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": { "line": 13, "column": 4 },
+            "end": { "line": 15, "column": 29 }
+          },
+          {
+            "start": { "line": 16, "column": 4 },
+            "end": { "line": 18, "column": 31 }
+          }
+        ],
+        "line": 12
+      },
+      "3": {
+        "loc": {
+          "start": { "line": 29, "column": 4 },
+          "end": { "line": 31, "column": 5 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 29, "column": 4 },
+            "end": { "line": 31, "column": 5 }
+          },
+          {
+            "start": { "line": 29, "column": 4 },
+            "end": { "line": 31, "column": 5 }
+          }
+        ],
+        "line": 29
+      },
+      "4": {
+        "loc": {
+          "start": { "line": 29, "column": 8 },
+          "end": { "line": 29, "column": 18 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 29, "column": 8 },
+            "end": { "line": 29, "column": 10 }
+          },
+          {
+            "start": { "line": 29, "column": 14 },
+            "end": { "line": 29, "column": 18 }
+          }
+        ],
+        "line": 29
+      },
+      "5": {
+        "loc": {
+          "start": { "line": 37, "column": 4 },
+          "end": { "line": 39, "column": 5 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 37, "column": 4 },
+            "end": { "line": 39, "column": 5 }
+          },
+          {
+            "start": { "line": 37, "column": 4 },
+            "end": { "line": 39, "column": 5 }
+          }
+        ],
+        "line": 37
+      }
+    },
+    "s": {
+      "0": 5,
+      "1": 5,
+      "2": 1,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 0,
+      "8": 0,
+      "9": 5,
+      "10": 5,
+      "11": 5,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 4,
+      "16": 1,
+      "17": 5,
+      "18": 3,
+      "19": 3,
+      "20": 0,
+      "21": 0,
+      "22": 3,
+      "23": 5
+    },
+    "f": { "0": 1, "1": 5, "2": 5, "3": 1, "4": 4, "5": 3, "6": 0 },
+    "b": {
+      "0": [1],
+      "1": [0],
+      "2": [5, 0],
+      "3": [1, 0],
+      "4": [1, 1],
+      "5": [0, 3]
+    },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "9f373ea696474a187220f7f918c5e5962c9bde0b"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 16, "column": 22 },
+        "end": { "line": 26, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 29, "column": 21 },
+        "end": { "line": 29, "column": 23 }
+      },
+      "2": {
+        "start": { "line": 30, "column": 20 },
+        "end": { "line": 30, "column": 22 }
+      },
+      "3": {
+        "start": { "line": 33, "column": 25 },
+        "end": { "line": 33, "column": 47 }
+      },
+      "4": {
+        "start": { "line": 34, "column": 2 },
+        "end": { "line": 34, "column": 33 }
+      },
+      "5": {
+        "start": { "line": 36, "column": 2 },
+        "end": { "line": 36, "column": 48 }
+      },
+      "6": {
+        "start": { "line": 39, "column": 27 },
+        "end": { "line": 39, "column": 69 }
+      },
+      "7": {
+        "start": { "line": 41, "column": 16 },
+        "end": { "line": 41, "column": 68 }
+      },
+      "8": {
+        "start": { "line": 42, "column": 20 },
+        "end": { "line": 42, "column": 39 }
+      },
+      "9": {
+        "start": { "line": 45, "column": 2 },
+        "end": { "line": 45, "column": 30 }
+      },
+      "10": {
+        "start": { "line": 47, "column": 2 },
+        "end": { "line": 47, "column": 29 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 28, "column": 15 },
+          "end": { "line": 28, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 28, "column": 42 },
+          "end": { "line": 48, "column": 1 }
+        },
+        "line": 28
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 4,
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 6,
+      "8": 6,
+      "9": 6,
+      "10": 6
+    },
+    "f": { "0": 6 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "9624cc8100bb6aaa1ba71bceda753b1b8d05091b"
+  },
+  "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js": {
+    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 36 },
+        "end": { "line": 10, "column": 2 }
+      },
+      "1": {
+        "start": { "line": 7, "column": 51 },
+        "end": { "line": 10, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 12, "column": 30 },
+        "end": { "line": 21, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 13, "column": 20 },
+        "end": { "line": 13, "column": 33 }
+      },
+      "4": {
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 20, "column": 3 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 7, "column": 36 },
+          "end": { "line": 7, "column": 37 }
+        },
+        "loc": {
+          "start": { "line": 7, "column": 51 },
+          "end": { "line": 10, "column": 1 }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 12, "column": 30 },
+          "end": { "line": 12, "column": 31 }
+        },
+        "loc": {
+          "start": { "line": 12, "column": 42 },
+          "end": { "line": 21, "column": 1 }
+        },
+        "line": 12
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 2, "1": 2, "2": 2, "3": 4, "4": 4 },
+    "f": { "0": 2, "1": 4 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "045f05a531d11019deb701037372b70fae1d48a8"
+  }
+}

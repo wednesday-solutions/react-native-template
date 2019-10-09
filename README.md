@@ -1,16 +1,12 @@
-# React Native boilerplate
+# React Native template
 
-This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
+This project is a [React Native](https://facebook.github.io/react-native/) template that can be used to kickstart a mobile application.
 
-The boilerplate provides **an architecture optimized for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. It is extremely documented so that each piece of code that lands in your application can be understood and used.
-
-```
-If you love this boilerplate, give us a star, you will be a ray of sunshine in our lives :)
-```
+The template provides **an architecture optimized for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. It is extremely documented so that each piece of code that lands in your application can be understood and used.
 
 ## Architecture
 
-The driving goal of the architecture of the boilerplate is separation of concerns. Namely:
+The driving goal of the architecture of the template is separation of concerns. Namely:
 
 - **Presentational components are separated from containers** (aka "screens").
 
@@ -36,7 +32,7 @@ The driving goal of the architecture of the boilerplate is separation of concern
 
 The boilerplate contains:
 
-- a [React Native](https://facebook.github.io/react-native/) (v**0.60.5**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
+- a [React Native](https://facebook.github.io/react-native/) (v**0.60.6**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
 - a [clear directory layout](#directory-layout) to provide a base architecture for your application
 - [Redux](https://redux.js.org/) (v4.0.1) to help manage state
 - [Redux Persist](https://github.com/rt2zz/redux-persist) (v5.10.0) to persist the Redux state
@@ -46,7 +42,7 @@ The boilerplate contains:
 - [apisauce](https://github.com/infinitered/apisauce/) to make API calls (v0.19.0)
 - [prettier](https://prettier.io/) and [eslint](https://eslint.org/) preconfigured for React Native
 
-The boilerplate includes an example (displaying fake user data) from UI components to the saga. The example is easy to remove so that it doesn't get in the way.
+The template includes an example (displaying fake user data) from UI components to the saga. The example is easy to remove so that it doesn't get in the way.
 
 ## Directory layout
 
@@ -57,7 +53,7 @@ The boilerplate includes an example (displaying fake user data) from UI componen
 - [`App/navigators`](App/navigators): react navigation navigators 
 - [`app/services`](app/services): application services, e.g. API clients
 - [`app/utils`](app/utils): Util methods and constants
-- [`app/theme`](app/theme): base styles for the application
+- [`app/themes`](app/themes): base styles for the application
 
 For more information on each directory, click the link and read the directory's README.
 
@@ -71,14 +67,14 @@ You also need to install the dependencies required by React Native:
 - for [iOS development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies)
 
 
-## Using the boilerplate
+## Using the template
 
-To create a new project using the boilerplate:
+To create a new project using the template:
 
 - clone this repository
 - remove the previous git history: `yarn initialize`
 - install the npm dependencies by running `yarn`
-- rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` (the default name is `Boilerplate`)
+- rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` (the default name is `ReactNativeApplication`)
 - remove the LICENSE file and the "License" section from the README if your project is not open source
 
 

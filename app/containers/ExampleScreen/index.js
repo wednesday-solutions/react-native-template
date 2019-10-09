@@ -89,7 +89,7 @@ const instructions = Platform.select({
 
 class ExampleScreen extends React.Component {
   componentDidMount() {
-    this.requestFetchUser()
+    this.requestFetchUser()()
   }
 
   requestFetchUser = () => () => {
@@ -100,9 +100,9 @@ class ExampleScreen extends React.Component {
     return (
       <Container>
         {this.props.userIsLoading ? (
-          <ActivityIndicator size="large" color="#0000ff" />
+          <ActivityIndicator testID="loader" size="large" color="#0000ff" />
         ) : (
-          <View>
+          <View testID="exampleContainerContent">
             <LogoContainer>
               <Logo source={Images.logo} resizeMode="contain" />
             </LogoContainer>
@@ -116,7 +116,7 @@ class ExampleScreen extends React.Component {
                   <T
                     id="wednesday_lover"
                     values={{
-                      username: get(this.props, 'user.character') || 'character'
+                      username: get(this.props.user, 'character') || 'character'
                     }}
                   />
                 </Result>
@@ -125,9 +125,9 @@ class ExampleScreen extends React.Component {
                 </Result>
                 <CharacterImage
                   resizeMode="contain"
-                  source={{ uri: get(this.props, 'user.image')}}
+                  source={{ uri: get(this.props.user, 'image') }}
                 />
-                <Result>{get(this.props, 'user.quote')}</Result>
+                <Result>{get(this.props.user, 'quote')}</Result>
               </SeparatedView>
             )}
             <CustomButton onPress={this.requestFetchUser()} title="Refresh" />
@@ -163,3 +163,4 @@ export default compose(
   withConnect,
   injectIntl
 )(ExampleScreen)
+export { ExampleScreen as ExampleScreenTest }

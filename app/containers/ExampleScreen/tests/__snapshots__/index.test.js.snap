@@ -1,3 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ExampleScreen /> Should render and match the snapshot 1`] = `ShallowWrapper {}`;
+exports[`<ExampleScreen /> Should render and match the snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "display": "flex",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginLeft": 30,
+        "marginRight": 30,
+        "marginTop": 30,
+      },
+    ]
+  }
+>
+  <View
+    testID="exampleContainerContent"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 150,
+            "marginBottom": 25,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/logo.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": "100%",
+              "width": "100%",
+            },
+          ]
+        }
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      To get started, edit App.js
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontStyle": "italic",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Press Cmd+R to reload,
+Cmd+D or shake for dev menu.
+    </Text>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        <Text>
+          character loves Wednesday
+        </Text>
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        <Text>
+          because
+        </Text>
+      </Text>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 80,
+              "marginBottom": 0,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "marginTop": 0,
+              "width": 80,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+      />
+    </View>
+    <Button
+      style={
+        Array [
+          Object {
+            "marginTop": 40,
+          },
+        ]
+      }
+      title="Refresh"
+    />
+  </View>
+</View>
+`;

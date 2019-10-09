@@ -5,10 +5,10 @@
 /* eslint-disable redux-saga/yield-effects */
 
 import { takeLatest, call, put } from 'redux-saga/effects'
+import { getUser } from 'app/services/UserService'
 import exampleScreenSaga, { fetchUser } from '../saga'
 import { ExampleTypes } from '../reducer'
-import { getUser } from 'app/services/UserService'
-import { apiResponseGenerator } from '../../../utils/sagaUtils'
+import { apiResponseGenerator } from '../../../utils/testUtils'
 
 describe('exampleScreenSaga Saga', () => {
   const generator = exampleScreenSaga()

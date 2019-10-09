@@ -3,8 +3,8 @@ import mapKeysDeep from 'map-keys-deep'
 import { camelCase, snakeCase } from 'lodash'
 import { Config } from 'app/config'
 
-const apiClients = {
-  github: null,
+export const apiClients = {
+  configApi: null,
   default: null
 }
 export const getApiClient = (type = 'configApi') => apiClients[type]

@@ -1,6 +1,5 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import { fromJS } from 'immutable'
 import AsyncStorage from '@react-native-community/async-storage'
 import { persistReducer, persistStore } from 'redux-persist'
 import immutableTransform from 'redux-persist-transform-immutable'

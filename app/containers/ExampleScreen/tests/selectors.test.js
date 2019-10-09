@@ -1,9 +1,9 @@
+import { fromJS } from 'immutable'
 import {
   selectUser,
   selectUserIsLoading,
   selectUserErrorMessage
 } from '../selectors'
-import { fromJS } from 'immutable'
 
 describe('selectExample', () => {
   let mockedState

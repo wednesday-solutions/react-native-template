@@ -1,11 +1,4 @@
-// import produce from 'immer'
-import {
-  exampleContainerReducer,
-  initialState,
-  ExampleActions,
-  ExampleTypes
-} from '../reducer'
-import { fromJS } from 'immutable'
+import { exampleContainerReducer, initialState, ExampleTypes } from '../reducer'
 // import { someAction } from '../actions'
 
 /* eslint-disable default-case, no-param-reassign */

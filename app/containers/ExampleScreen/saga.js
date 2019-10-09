@@ -1,4 +1,4 @@
-import { put, call, all, takeLatest } from 'redux-saga/effects'
+import { put, call, takeLatest } from 'redux-saga/effects'
 import { get } from 'lodash'
 import { getUser } from 'app/services/UserService'
 import { ExampleActions, ExampleTypes } from './reducer'

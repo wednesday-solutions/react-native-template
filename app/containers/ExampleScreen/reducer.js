@@ -18,25 +18,20 @@ export const initialState = fromJS({
   userErrorMessage: null
 })
 
-export const fetchUserLoading = state => {
-  state = state.set('userIsLoading', true)
-  state = state.set('userErrorMessage', null)
-  return state
-}
+export const fetchUserLoading = state =>
+  state.set('userIsLoading', true).set('userErrorMessage', null)
 
-export const fetchUserSuccess = (state, { user }) => {
-  state = state.set('user', user)
-  state = state.set('userIsLoading', false)
-  state = state.set('userErrorMessage', null)
-  return state
-}
+export const fetchUserSuccess = (state, { user }) =>
+  state
+    .set('user', user)
+    .set('userIsLoading', false)
+    .set('userErrorMessage', null)
 
-export const fetchUserFailure = (state, { errorMessage }) => {
-  state = state.set('user', {})
-  state = state.set('userIsLoading', false)
-  state = state.set('userErrorMessage', errorMessage)
-  return state
-}
+export const fetchUserFailure = (state, { errorMessage }) =>
+  state
+    .set('user', {})
+    .set('userIsLoading', false)
+    .set('userErrorMessage', errorMessage)
 
 /**
  * @see https://github.com/infinitered/reduxsauce#createreducer

@@ -7,8 +7,7 @@ import styled from 'styled-components/native'
 import { createStructuredSelector } from 'reselect'
 import { get } from 'lodash'
 import { injectIntl } from 'react-intl'
-import { Images } from 'app/themes'
-import Fonts from 'app/themes/fonts'
+import { images, fonts } from 'app/themes'
 import AppContainer from 'app/components/Container'
 import T from 'app/components/T'
 
@@ -33,20 +32,20 @@ const Container = styled(AppContainer)`
 `
 
 const TextBox = styled.Text`
-  ${Fonts.style.normal};
+  ${fonts.style.standard()};
   text-align: center;
   margin-bottom: 5px;
 `
 
 const Instructions = styled.Text`
-  ${Fonts.style.normal};
+  ${fonts.style.standard()};
   text-align: center;
   margin-bottom: 5;
   font-style: italic;
 `
 
 const Result = styled.Text`
-  ${Fonts.style.normal};
+  ${fonts.style.standard()};
   text-align: center;
   margin-bottom: 5;
 `
@@ -57,7 +56,7 @@ const CharacterImage = styled.Image`
   margin: 0 auto;
 `
 const Error = styled.Text`
-  ${Fonts.style.normal};
+  ${fonts.style.standard()};
   text-align: center;
   margin-bottom: 5px;
   color: red;
@@ -104,7 +103,7 @@ class ExampleScreen extends React.Component {
         ) : (
           <View testID="exampleContainerContent">
             <LogoContainer>
-              <Logo source={Images.logo} resizeMode="contain" />
+              <Logo source={images.logo} resizeMode="contain" />
             </LogoContainer>
             <TextBox>To get started, edit App.js</TextBox>
             <Instructions>{instructions}</Instructions>

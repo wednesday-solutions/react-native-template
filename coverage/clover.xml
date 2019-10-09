@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570590319077" clover="3.2.0">
-  <project timestamp="1570590319077" name="All files">
-    <metrics statements="168" coveredstatements="164" conditionals="35" coveredconditionals="26" methods="58" coveredmethods="56" elements="261" coveredelements="246" complexity="0" loc="168" ncloc="168" packages="13" files="34" classes="34"/>
+<coverage generated="1570591248448" clover="3.2.0">
+  <project timestamp="1570591248448" name="All files">
+    <metrics statements="161" coveredstatements="157" conditionals="35" coveredconditionals="26" methods="58" coveredmethods="56" elements="254" coveredelements="239" complexity="0" loc="161" ncloc="161" packages="13" files="34" classes="34"/>
     <package name="app">
       <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="3" methods="5" coveredmethods="5"/>
       <file name="app.js" path="/Users/mac/wednesday/react-native-boilerplate/app/app.js">
@@ -84,7 +84,7 @@
       </file>
     </package>
     <package name="app.containers.ExampleScreen">
-      <metrics statements="60" coveredstatements="60" conditionals="15" coveredconditionals="13" methods="20" coveredmethods="20"/>
+      <metrics statements="53" coveredstatements="53" conditionals="15" coveredconditionals="13" methods="20" coveredmethods="20"/>
       <file name="index.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js">
         <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="6"/>
         <line num="29" count="2" type="stmt"/>
@@ -109,30 +109,22 @@
         <line num="158" count="2" type="stmt"/>
       </file>
       <file name="reducer.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js">
-        <metrics statements="23" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="5"/>
+        <metrics statements="15" coveredstatements="15" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="5"/>
         <line num="4" count="7" type="stmt"/>
         <line num="15" count="7" type="stmt"/>
         <line num="21" count="7" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="27" count="7" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="34" count="7" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="44" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="45" count="35" type="stmt"/>
-        <line num="46" count="35" type="cond" truecount="4" falsecount="0"/>
-        <line num="48" count="3" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
-        <line num="54" count="30" type="stmt"/>
+        <line num="39" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="35" type="stmt"/>
+        <line num="41" count="35" type="cond" truecount="4" falsecount="0"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="30" type="stmt"/>
       </file>
       <file name="saga.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -145,17 +137,18 @@
         <line num="30" count="7" type="stmt"/>
       </file>
       <file name="selectors.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js">
-        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="7"/>
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="7"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="6" type="cond" truecount="1" falsecount="1"/>
         <line num="8" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
       </file>
     </package>
     <package name="app.containers.LanguageProvider">
@@ -291,17 +284,17 @@
       </file>
       <file name="createStore.js" path="/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="17" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
         <line num="30" count="6" type="stmt"/>
-        <line num="31" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
         <line num="34" count="6" type="stmt"/>
-        <line num="35" count="6" type="stmt"/>
-        <line num="37" count="6" type="stmt"/>
-        <line num="40" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="41" count="6" type="stmt"/>
         <line num="42" count="6" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="48" count="6" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
       </file>
       <file name="testUtils.js" path="/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>

@@ -1,29 +1,68 @@
-const size = {
-  h1: 38,
-  h2: 34,
-  h3: 30,
-  input: 18,
-  regular: 17,
-  medium: 14,
-  small: 12
-}
+import { css } from 'styled-components'
 
-const style = {
-  h1: {
-    fontSize: size.h1
-  },
-  h2: {
-    fontSize: size.h2
-  },
-  h3: {
-    fontSize: size.h3
-  },
-  normal: {
-    fontSize: size.regular
-  }
-}
+// sizes
+const regular = () => css`
+  font-size: 17px;
+`
+const small = () => css`
+  font-size: 14px;
+`
+const big = () => css`
+  font-size: 20px;
+`
+const large = () => css`
+  font-size: 24px;
+`
+
+// weights
+const light = () => css`
+  font-weight: light;
+`
+const bold = () => css`
+  font-weight: bold;
+`
+
+const normal = () => css`
+  font-weight: normal;
+`
+
+// styles
+const heading = () => css`
+  ${large()};
+  ${bold()}
+`
+
+const subheading = () => css`
+  ${big()};
+  ${bold()}
+`
+
+const standard = () => css`
+  ${regular()};
+  ${normal()}
+`
+
+const subText = () => css`
+  ${small()};
+  ${normal()}
+`
 
 export default {
-  size,
-  style
+  size: {
+    regular,
+    small,
+    big,
+    large
+  },
+  style: {
+    heading,
+    subheading,
+    standard,
+    subText
+  },
+  weights: {
+    light,
+    bold,
+    normal
+  }
 }

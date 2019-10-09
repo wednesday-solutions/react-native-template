@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components/native'
 import AppContainer from 'app/components/Container'
-import { Colors, Images } from 'app/themes'
+import { colors, images } from 'app/themes'
 
 const Container = styled(AppContainer)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${Colors.primary};
+  background-color: ${colors.primary};
 `
 
 const Logo = styled.View`
@@ -22,7 +22,7 @@ const Logo = styled.View`
 const SplashScreen = () => (
   <Container>
     <Logo>
-      <Logo source={Images.wednesdayLogo} resizeMode="contain" />
+      <Logo source={images.wednesdayLogo} resizeMode="contain" />
     </Logo>
   </Container>
 )

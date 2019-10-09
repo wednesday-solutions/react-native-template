@@ -59,6 +59,7 @@ exports[`<ExampleScreen /> Should render and match the snapshot 1`] = `
         Array [
           Object {
             "fontSize": 17,
+            "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "center",
           },
@@ -73,6 +74,7 @@ exports[`<ExampleScreen /> Should render and match the snapshot 1`] = `
           Object {
             "fontSize": 17,
             "fontStyle": "italic",
+            "fontWeight": "normal",
             "marginBottom": 5,
             "textAlign": "center",
           },
@@ -94,6 +96,7 @@ Cmd+D or shake for dev menu.
           Array [
             Object {
               "fontSize": 17,
+              "fontWeight": "normal",
               "marginBottom": 5,
               "textAlign": "center",
             },
@@ -109,6 +112,7 @@ Cmd+D or shake for dev menu.
           Array [
             Object {
               "fontSize": 17,
+              "fontWeight": "normal",
               "marginBottom": 5,
               "textAlign": "center",
             },
@@ -144,6 +148,7 @@ Cmd+D or shake for dev menu.
           Array [
             Object {
               "fontSize": 17,
+              "fontWeight": "normal",
               "marginBottom": 5,
               "textAlign": "center",
             },

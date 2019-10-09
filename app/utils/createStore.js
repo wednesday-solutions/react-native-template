@@ -1,8 +1,9 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
+import { fromJS } from 'immutable'
 import AsyncStorage from '@react-native-community/async-storage'
 import { persistReducer, persistStore } from 'redux-persist'
-
+import immutableTransform from 'redux-persist-transform-immutable'
 /**
  * This import defaults to localStorage for web and AsyncStorage for react-native.
  *
@@ -15,6 +16,7 @@ import { persistReducer, persistStore } from 'redux-persist'
 
 const persistConfig = {
   key: 'root',
+  transforms: [immutableTransform()],
   storage: AsyncStorage,
   /**
    * Blacklist state that we do not need/want to persist

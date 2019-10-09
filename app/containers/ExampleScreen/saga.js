@@ -10,8 +10,6 @@ import { ExampleActions, ExampleTypes } from './reducer'
  * Feel free to remove it.
  */
 export function* fetchUser() {
-  // Dispatch a redux action using `put()`
-  // @see https://redux-saga.js.org/docs/basics/DispatchingActions.html
   yield put(ExampleActions.fetchUserLoading())
 
   // Fetch user informations from an API
@@ -29,5 +27,5 @@ export function* fetchUser() {
 }
 
 export default function* searchListContainerSaga() {
-  yield all([takeLatest(ExampleTypes.FETCH_USER, fetchUser)])
+  yield takeLatest(ExampleTypes.FETCH_USER, fetchUser)
 }

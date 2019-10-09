@@ -16,7 +16,6 @@ import ExampleScreen from '../index'
 Enzyme.configure({ adapter: new Adapter() })
 
 describe('<ExampleScreen />', () => {
-
   it('Should render and match the snapshot', () => {
     const component = shallow(<ExampleScreen />)
     expect(component).toMatchSnapshot()

@@ -5,16 +5,18 @@ import { compose } from 'redux'
 import { PropTypes } from 'prop-types'
 import styled from 'styled-components/native'
 import { createStructuredSelector } from 'reselect'
+import { get } from 'lodash'
 import { injectIntl } from 'react-intl'
 import { Images } from 'app/themes'
 import Fonts from 'app/themes/fonts'
 import AppContainer from 'app/components/Container'
 import T from 'app/components/T'
+
 import {
   selectUser,
   selectUserIsLoading,
   selectUserErrorMessage
-} from './selector'
+} from './selectors'
 import { ExampleActions } from './reducer'
 
 /**
@@ -114,7 +116,7 @@ class ExampleScreen extends React.Component {
                   <T
                     id="wednesday_lover"
                     values={{
-                      username: this.props.user.character || 'character'
+                      username: get(this.props, 'user.character') || 'character'
                     }}
                   />
                 </Result>
@@ -123,9 +125,9 @@ class ExampleScreen extends React.Component {
                 </Result>
                 <CharacterImage
                   resizeMode="contain"
-                  source={{ uri: this.props.user.image }}
+                  source={{ uri: get(this.props, 'user.image')}}
                 />
-                <Result>{this.props.user.quote}</Result>
+                <Result>{get(this.props, 'user.quote')}</Result>
               </SeparatedView>
             )}
             <CustomButton onPress={this.requestFetchUser()} title="Refresh" />

@@ -54,6 +54,8 @@ The template includes an example (displaying fake user data) from UI components 
 - [`app/services`](app/services): application services, e.g. API clients
 - [`app/utils`](app/utils): Util methods and constants
 - [`app/themes`](app/themes): base styles for the application
+- [`app/rootSaga`](app/rootSaga): all the individual sagas need to be added here.
+- [`app/rootReducer`](app/rootReducer): all the individual reducers need to be added here.
 
 For more information on each directory, click the link and read the directory's README.
 

@@ -6,13 +6,11 @@ export const {
   Creators: exampleScreenActions
 } = createActions({
   // Fetch user informations
-  fetchUser: null,
-  // The operation has started and is loading
-  fetchUserLoading: null,
+  requestFetchUser: null,
   // User information was successfully fetched
-  fetchUserSuccess: ['user'],
+  successFetchUser: ['user'],
   // An error occurred
-  fetchUserFailure: ['errorMessage']
+  failureFetchUser: ['errorMessage']
 })
 
 export const initialState = fromJS({
@@ -21,16 +19,16 @@ export const initialState = fromJS({
   userErrorMessage: null
 })
 
-export const fetchUserLoading = state =>
+export const fetchUser = state =>
   state.set('userIsLoading', true).set('userErrorMessage', null)
 
-export const fetchUserSuccess = (state, { user }) =>
+export const successFetchUser = (state, { user }) =>
   state
     .set('user', user)
     .set('userIsLoading', false)
     .set('userErrorMessage', null)
 
-export const fetchUserFailure = (state, { errorMessage }) =>
+export const failureFetchUser = (state, { errorMessage }) =>
   state
     .set('user', {})
     .set('userIsLoading', false)
@@ -42,12 +40,12 @@ export const fetchUserFailure = (state, { errorMessage }) =>
 export const exampleContainerReducer = (state = initialState, action) =>
   produce(state, () => {
     switch (action.type) {
-      case exampleScreenTypes.FETCH_USER_LOADING:
-        return fetchUserLoading(state, action)
-      case exampleScreenTypes.FETCH_USER_SUCCESS:
-        return fetchUserSuccess(state, action)
-      case exampleScreenTypes.FETCH_USER_FAILURE:
-        return fetchUserFailure(state, action)
+      case exampleScreenTypes.REQUEST_FETCH_USER:
+        return fetchUser(state, action)
+      case exampleScreenTypes.SUCCESS_FETCH_USER:
+        return successFetchUser(state, action)
+      case exampleScreenTypes.FAILURE_FETCH_USER:
+        return failureFetchUser(state, action)
       default:
         return state
     }

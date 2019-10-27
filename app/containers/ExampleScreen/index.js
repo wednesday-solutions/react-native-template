@@ -151,7 +151,7 @@ const mapStateToProps = createStructuredSelector({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchUser: () => dispatch(exampleScreenActions.fetchUser())
+  fetchUser: () => dispatch(exampleScreenActions.requestFetchUser())
 })
 
 const withConnect = connect(

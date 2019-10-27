@@ -5,15 +5,13 @@ import { Provider } from 'react-redux'
 import T from 'app/components/T'
 import createStore from 'app/rootReducer'
 import { translationMessages } from 'app/i18n'
+import { renderWithIntl } from 'app/utils/testUtils'
 import ConnectedLanguageProvider, { LanguageProvider } from '../index'
-
-/* global shallowWithIntl */
-/* eslint no-undef: "error" */
 
 describe('<LanguageProvider />', () => {
   it('should render its children', () => {
     const children = <h1>Test</h1>
-    const container = shallowWithIntl(
+    const container = renderWithIntl(
       <LanguageProvider messages={translationMessages} locale="en">
         {children}
       </LanguageProvider>

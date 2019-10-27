@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest --detectOpenHandles",
-    "test:staged": "jest --bail --env=jsdom --findRelatedTests",
+    "test": "jest --detectOpenHandles --coverage",
+    "test:staged": "jest --findRelatedTests",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint src/**/*.js",
     "lint:eslint": "eslint --ignore-path .gitignore",
@@ -28,7 +28,7 @@
     "*.js": [
       "npm run lint:eslint:fix",
       "git add --force",
-      "jest --bail --env=jsdom --findRelatedTests"
+      "jest --findRelatedTests $STAGED_FILES"
     ],
     "*.json": [
       "prettier --write",

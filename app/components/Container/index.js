@@ -11,7 +11,9 @@ const StyledContainer = styled.View`
   display: flex;
   flex: 1;
 `
-const Container = ({ ...props }) => <StyledContainer {...props} />
+const Container = ({ ...props }) => (
+  <StyledContainer testID="container" {...props} />
+)
 
 Container.propTypes = {}
 

@@ -10,20 +10,16 @@ const Container = styled(AppContainer)`
   background-color: ${colors.primary};
 `
 
-const Logo = styled.View`
+const Logo = styled.Image`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  width: 70px;
-  background-color: white;
+  width: 200px;
 `
 
 const SplashScreen = () => (
-  <Container>
-    <Logo>
-      <Logo source={images.wednesdayLogo} resizeMode="contain" />
-    </Logo>
+  <Container testID="splash-screen">
+    <Logo source={images.wednesdayLogo} resizeMode="contain" />
   </Container>
 )
 

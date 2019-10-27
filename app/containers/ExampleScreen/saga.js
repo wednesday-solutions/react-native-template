@@ -1,7 +1,7 @@
 import { put, call, takeLatest } from 'redux-saga/effects'
 import { get } from 'lodash'
 import { getUser } from 'app/services/UserService'
-import { ExampleActions, ExampleTypes } from './reducer'
+import { exampleScreenActions, exampleScreenTypes } from './reducer'
 
 /**
  * A saga can contain multiple functions.
@@ -10,16 +10,15 @@ import { ExampleActions, ExampleTypes } from './reducer'
  * Feel free to remove it.
  */
 export function* fetchUser() {
-  yield put(ExampleActions.fetchUserLoading())
-
+  yield put(exampleScreenActions.fetchUserLoading())
   // Fetch user informations from an API
   const response = yield call(getUser)
   if (response.ok) {
     const { data } = response
-    yield put(ExampleActions.fetchUserSuccess(get(data, '0')))
+    yield put(exampleScreenActions.fetchUserSuccess(get(data, '0')))
   } else {
     yield put(
-      ExampleActions.fetchUserFailure(
+      exampleScreenActions.fetchUserFailure(
         'There was an error while fetching user informations.'
       )
     )
@@ -27,5 +26,5 @@ export function* fetchUser() {
 }
 
 export default function* searchListContainerSaga() {
-  yield takeLatest(ExampleTypes.FETCH_USER, fetchUser)
+  yield takeLatest(exampleScreenTypes.FETCH_USER, fetchUser)
 }

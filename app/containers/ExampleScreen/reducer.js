@@ -1,7 +1,10 @@
 import { createActions } from 'reduxsauce'
 import { fromJS } from 'immutable'
 import produce from 'immer'
-export const { Types: ExampleTypes, Creators: ExampleActions } = createActions({
+export const {
+  Types: exampleScreenTypes,
+  Creators: exampleScreenActions
+} = createActions({
   // Fetch user informations
   fetchUser: null,
   // The operation has started and is loading
@@ -39,11 +42,11 @@ export const fetchUserFailure = (state, { errorMessage }) =>
 export const exampleContainerReducer = (state = initialState, action) =>
   produce(state, () => {
     switch (action.type) {
-      case ExampleTypes.FETCH_USER_LOADING:
+      case exampleScreenTypes.FETCH_USER_LOADING:
         return fetchUserLoading(state, action)
-      case ExampleTypes.FETCH_USER_SUCCESS:
+      case exampleScreenTypes.FETCH_USER_SUCCESS:
         return fetchUserSuccess(state, action)
-      case ExampleTypes.FETCH_USER_FAILURE:
+      case exampleScreenTypes.FETCH_USER_FAILURE:
         return fetchUserFailure(state, action)
       default:
         return state

@@ -5,20 +5,18 @@
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
  */
-
-/* global shallowWithIntl */
-/* eslint no-undef: "error" */
 import React from 'react'
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-
+import { renderWithIntl } from 'app/utils/testUtils'
 import T from '../index'
-
-Enzyme.configure({ adapter: new Adapter() })
 
 describe('<T />', () => {
   it('Should render and match the snapshot', () => {
-    const component = shallowWithIntl(<T id="test" />)
-    expect(component).toMatchSnapshot()
+    const { baseElement } = renderWithIntl(<T />)
+    expect(baseElement).toMatchSnapshot()
+  })
+
+  it('Should contain 1 t', () => {
+    const { getAllByTestId } = renderWithIntl(<T id="soemthing" />)
+    expect(getAllByTestId('t').length).toBe(1)
   })
 })

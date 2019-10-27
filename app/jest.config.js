@@ -8,6 +8,7 @@ module.exports = {
     '!app/app.js',
     '!app/global-styles.js',
     '!app/*/*/Loadable.{js,jsx}',
+    '!**/coverage/**',
   ],
   coverageThreshold: {
     global: {

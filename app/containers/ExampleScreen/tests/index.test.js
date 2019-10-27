@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import { renderProvider } from '../../../utils/testUtils'
+import { renderProvider } from 'app/utils/testUtils'
 import { ExampleScreenTest } from '../index'
 
 describe('<ExampleScreen />', () => {
@@ -18,10 +18,10 @@ describe('<ExampleScreen />', () => {
   })
 
   it('Should render and match the snapshot', () => {
-    const { container } = renderProvider(
+    const { baseElement } = renderProvider(
       <ExampleScreenTest fetchUser={submitSpy} />
     )
-    expect(container.children[0]).toMatchSnapshot()
+    expect(baseElement).toMatchSnapshot()
   })
 
   it('should fetch the user data on mount', () => {
@@ -42,7 +42,7 @@ describe('<ExampleScreen />', () => {
     const { getByTestId } = renderProvider(
       <ExampleScreenTest fetchUser={submitSpy} userIsLoading={false} />
     )
-    expect(getByTestId('exampleContainerContent').type).toBe('View')
+    expect(getByTestId('example-container-content').type).toBe('View')
     expect(submitSpy).toHaveBeenCalled()
   })
 })

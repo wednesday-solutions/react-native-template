@@ -1,28 +1,28 @@
-import { ExampleTypes, ExampleActions } from '../reducer'
+import { exampleScreenTypes, exampleScreenActions } from '../reducer'
 
 describe('ExampleScreen actions', () => {
   it('should fire action of type FETCH_USER', () => {
     const expected = {
-      type: ExampleTypes.FETCH_USER
+      type: exampleScreenTypes.FETCH_USER
     }
-    expect(ExampleActions.fetchUser()).toEqual(expected)
+    expect(exampleScreenActions.fetchUser()).toEqual(expected)
   })
   it('should fire action of type FETCH_USER_LOADING', () => {
     const expected = {
-      type: ExampleTypes.FETCH_USER_LOADING
+      type: exampleScreenTypes.FETCH_USER_LOADING
     }
-    expect(ExampleActions.fetchUserLoading()).toEqual(expected)
+    expect(exampleScreenActions.fetchUserLoading()).toEqual(expected)
   })
   it('should fire action of type FETCH_USER_SUCCESS', () => {
     const expected = {
-      type: ExampleTypes.FETCH_USER_SUCCESS
+      type: exampleScreenTypes.FETCH_USER_SUCCESS
     }
-    expect(ExampleActions.fetchUserSuccess()).toEqual(expected)
+    expect(exampleScreenActions.fetchUserSuccess()).toEqual(expected)
   })
   it('should fire action of type FETCH_USER_FAILURE', () => {
     const expected = {
-      type: ExampleTypes.FETCH_USER_FAILURE
+      type: exampleScreenTypes.FETCH_USER_FAILURE
     }
-    expect(ExampleActions.fetchUserFailure()).toEqual(expected)
+    expect(exampleScreenActions.fetchUserFailure()).toEqual(expected)
   })
 })

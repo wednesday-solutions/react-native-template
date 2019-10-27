@@ -175,22 +175,22 @@
       }
     },
     "s": {
-      "0": 7,
-      "1": 7,
-      "2": 7,
-      "3": 7,
-      "4": 7,
-      "5": 7,
-      "6": 7,
-      "7": 10,
-      "8": 10,
-      "9": 37,
-      "10": 37,
-      "11": 10,
-      "12": 7
+      "0": 12,
+      "1": 12,
+      "2": 12,
+      "3": 12,
+      "4": 12,
+      "5": 12,
+      "6": 12,
+      "7": 15,
+      "8": 15,
+      "9": 62,
+      "10": 62,
+      "11": 15,
+      "12": 12
     },
-    "f": { "0": 10, "1": 37 },
-    "b": { "0": [1, 9], "1": [1, 36], "2": [37, 1] },
+    "f": { "0": 15, "1": 62 },
+    "b": { "0": [1, 14], "1": [1, 61], "2": [62, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
     "hash": "970e2e0fee008d20914f7e206ddfbe07830bcae1"
   },
@@ -270,7 +270,7 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 3 },
+    "s": { "0": 4 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -286,7 +286,7 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 3 },
+    "s": { "0": 4 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -301,15 +301,15 @@
       },
       "1": {
         "start": { "line": 14, "column": 18 },
-        "end": { "line": 14, "column": 66 }
+        "end": { "line": 16, "column": 1 }
       },
       "2": {
-        "start": { "line": 14, "column": 36 },
-        "end": { "line": 14, "column": 66 }
+        "start": { "line": 15, "column": 2 },
+        "end": { "line": 15, "column": 51 }
       },
       "3": {
-        "start": { "line": 16, "column": 0 },
-        "end": { "line": 16, "column": 24 }
+        "start": { "line": 18, "column": 0 },
+        "end": { "line": 18, "column": 24 }
       }
     },
     "fnMap": {
@@ -320,18 +320,18 @@
           "end": { "line": 14, "column": 19 }
         },
         "loc": {
-          "start": { "line": 14, "column": 36 },
-          "end": { "line": 14, "column": 66 }
+          "start": { "line": 15, "column": 2 },
+          "end": { "line": 15, "column": 51 }
         },
-        "line": 14
+        "line": 15
       }
     },
     "branchMap": {},
-    "s": { "0": 4, "1": 4, "2": 8, "3": 4 },
-    "f": { "0": 8 },
+    "s": { "0": 5, "1": 5, "2": 16, "3": 5 },
+    "f": { "0": 16 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "43e8fa1c275c526975dea1c98d4eb1289d4a3a45"
+    "hash": "a31568d53af7f1b5bd67270677961aa4476555fa"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js",
@@ -342,37 +342,37 @@
       },
       "1": {
         "start": { "line": 13, "column": 13 },
-        "end": { "line": 20, "column": 1 }
+        "end": { "line": 18, "column": 1 }
       },
       "2": {
-        "start": { "line": 22, "column": 21 },
-        "end": { "line": 28, "column": 1 }
+        "start": { "line": 20, "column": 21 },
+        "end": { "line": 24, "column": 1 }
       },
       "3": {
-        "start": { "line": 23, "column": 2 },
-        "end": { "line": 27, "column": 14 }
+        "start": { "line": 21, "column": 2 },
+        "end": { "line": 23, "column": 14 }
       }
     },
     "fnMap": {
       "0": {
         "name": "(anonymous_0)",
         "decl": {
-          "start": { "line": 22, "column": 21 },
-          "end": { "line": 22, "column": 22 }
+          "start": { "line": 20, "column": 21 },
+          "end": { "line": 20, "column": 22 }
         },
         "loc": {
-          "start": { "line": 23, "column": 2 },
-          "end": { "line": 27, "column": 14 }
+          "start": { "line": 21, "column": 2 },
+          "end": { "line": 23, "column": 14 }
         },
-        "line": 23
+        "line": 21
       }
     },
     "branchMap": {},
-    "s": { "0": 2, "1": 2, "2": 2, "3": 2 },
-    "f": { "0": 2 },
+    "s": { "0": 3, "1": 3, "2": 3, "3": 6 },
+    "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "2badf4d1c15ba4f3296a5c5997254e59a4a0b640"
+    "hash": "af6d7b5e682a0028f6be28112e56a5fff263459d"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js",
@@ -383,11 +383,15 @@
       },
       "1": {
         "start": { "line": 14, "column": 2 },
-        "end": { "line": 14, "column": 58 }
+        "end": { "line": 14, "column": 69 }
       },
       "2": {
         "start": { "line": 17, "column": 0 },
         "end": { "line": 21, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 22, "column": 0 },
+        "end": { "line": 24, "column": 1 }
       }
     },
     "fnMap": {
@@ -399,17 +403,17 @@
         },
         "loc": {
           "start": { "line": 14, "column": 2 },
-          "end": { "line": 14, "column": 58 }
+          "end": { "line": 14, "column": 69 }
         },
         "line": 14
       }
     },
     "branchMap": {},
-    "s": { "0": 4, "1": 7, "2": 4 },
-    "f": { "0": 7 },
+    "s": { "0": 5, "1": 9, "2": 5, "3": 5 },
+    "f": { "0": 9 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d0e277b436040405a9ca61f07021d1993c0988e2"
+    "hash": "4f139d21c42b5b9b7d44afedf378b650a4a4a8fe"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js",
@@ -421,7 +425,7 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 5 },
+    "s": { "0": 10 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -508,7 +512,7 @@
       },
       "19": {
         "start": { "line": 154, "column": 19 },
-        "end": { "line": 154, "column": 55 }
+        "end": { "line": 154, "column": 61 }
       },
       "20": {
         "start": { "line": 157, "column": 20 },
@@ -584,7 +588,7 @@
         },
         "loc": {
           "start": { "line": 154, "column": 19 },
-          "end": { "line": 154, "column": 55 }
+          "end": { "line": 154, "column": 61 }
         },
         "line": 154
       }
@@ -646,253 +650,253 @@
       }
     },
     "s": {
-      "0": 2,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 2,
-      "5": 2,
-      "6": 2,
-      "7": 2,
-      "8": 2,
-      "9": 2,
-      "10": 2,
-      "11": 5,
-      "12": 8,
-      "13": 5,
-      "14": 5,
-      "15": 2,
-      "16": 2,
-      "17": 2,
-      "18": 1,
-      "19": 1,
-      "20": 2
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 4,
+      "12": 7,
+      "13": 4,
+      "14": 4,
+      "15": 3,
+      "16": 3,
+      "17": 3,
+      "18": 0,
+      "19": 0,
+      "20": 3
     },
-    "f": { "0": 5, "1": 8, "2": 5, "3": 5, "4": 1, "5": 1 },
-    "b": { "0": [2, 3], "1": [0, 3], "2": [3, 3] },
+    "f": { "0": 4, "1": 7, "2": 4, "3": 4, "4": 0, "5": 0 },
+    "b": { "0": [1, 3], "1": [0, 3], "2": [3, 3] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "cb33c839ef96cd66d413dbe0215830eee2c75ac3"
+    "hash": "f829a1ca6f75ce33aa31be147d8dd3bc478a99e0"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js",
     "statementMap": {
       "0": {
-        "start": { "line": 4, "column": 65 },
-        "end": { "line": 13, "column": 2 }
+        "start": { "line": 7, "column": 4 },
+        "end": { "line": 16, "column": 2 }
       },
       "1": {
-        "start": { "line": 15, "column": 28 },
-        "end": { "line": 19, "column": 2 }
+        "start": { "line": 18, "column": 28 },
+        "end": { "line": 22, "column": 2 }
       },
       "2": {
-        "start": { "line": 21, "column": 32 },
-        "end": { "line": 22, "column": 64 }
+        "start": { "line": 24, "column": 32 },
+        "end": { "line": 25, "column": 64 }
       },
       "3": {
-        "start": { "line": 22, "column": 2 },
-        "end": { "line": 22, "column": 64 }
+        "start": { "line": 25, "column": 2 },
+        "end": { "line": 25, "column": 64 }
       },
       "4": {
-        "start": { "line": 24, "column": 32 },
-        "end": { "line": 28, "column": 34 }
+        "start": { "line": 27, "column": 32 },
+        "end": { "line": 31, "column": 34 }
       },
       "5": {
-        "start": { "line": 25, "column": 2 },
-        "end": { "line": 28, "column": 34 }
+        "start": { "line": 28, "column": 2 },
+        "end": { "line": 31, "column": 34 }
       },
       "6": {
-        "start": { "line": 30, "column": 32 },
-        "end": { "line": 34, "column": 42 }
+        "start": { "line": 33, "column": 32 },
+        "end": { "line": 37, "column": 42 }
       },
       "7": {
-        "start": { "line": 31, "column": 2 },
-        "end": { "line": 34, "column": 42 }
+        "start": { "line": 34, "column": 2 },
+        "end": { "line": 37, "column": 42 }
       },
       "8": {
-        "start": { "line": 39, "column": 39 },
-        "end": { "line": 51, "column": 4 }
+        "start": { "line": 42, "column": 39 },
+        "end": { "line": 54, "column": 4 }
       },
       "9": {
-        "start": { "line": 40, "column": 2 },
-        "end": { "line": 51, "column": 4 }
+        "start": { "line": 43, "column": 2 },
+        "end": { "line": 54, "column": 4 }
       },
       "10": {
-        "start": { "line": 41, "column": 4 },
-        "end": { "line": 50, "column": 5 }
+        "start": { "line": 44, "column": 4 },
+        "end": { "line": 53, "column": 5 }
       },
       "11": {
-        "start": { "line": 43, "column": 8 },
-        "end": { "line": 43, "column": 46 }
+        "start": { "line": 46, "column": 8 },
+        "end": { "line": 46, "column": 46 }
       },
       "12": {
-        "start": { "line": 45, "column": 8 },
-        "end": { "line": 45, "column": 46 }
+        "start": { "line": 48, "column": 8 },
+        "end": { "line": 48, "column": 46 }
       },
       "13": {
-        "start": { "line": 47, "column": 8 },
-        "end": { "line": 47, "column": 46 }
+        "start": { "line": 50, "column": 8 },
+        "end": { "line": 50, "column": 46 }
       },
       "14": {
-        "start": { "line": 49, "column": 8 },
-        "end": { "line": 49, "column": 20 }
+        "start": { "line": 52, "column": 8 },
+        "end": { "line": 52, "column": 20 }
       }
     },
     "fnMap": {
       "0": {
         "name": "(anonymous_0)",
         "decl": {
-          "start": { "line": 21, "column": 32 },
-          "end": { "line": 21, "column": 33 }
-        },
-        "loc": {
-          "start": { "line": 22, "column": 2 },
-          "end": { "line": 22, "column": 64 }
-        },
-        "line": 22
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
           "start": { "line": 24, "column": 32 },
           "end": { "line": 24, "column": 33 }
         },
         "loc": {
           "start": { "line": 25, "column": 2 },
-          "end": { "line": 28, "column": 34 }
+          "end": { "line": 25, "column": 64 }
         },
         "line": 25
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 27, "column": 32 },
+          "end": { "line": 27, "column": 33 }
+        },
+        "loc": {
+          "start": { "line": 28, "column": 2 },
+          "end": { "line": 31, "column": 34 }
+        },
+        "line": 28
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
-          "start": { "line": 30, "column": 32 },
-          "end": { "line": 30, "column": 33 }
+          "start": { "line": 33, "column": 32 },
+          "end": { "line": 33, "column": 33 }
         },
         "loc": {
-          "start": { "line": 31, "column": 2 },
-          "end": { "line": 34, "column": 42 }
+          "start": { "line": 34, "column": 2 },
+          "end": { "line": 37, "column": 42 }
         },
-        "line": 31
+        "line": 34
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
-          "start": { "line": 39, "column": 39 },
-          "end": { "line": 39, "column": 40 }
+          "start": { "line": 42, "column": 39 },
+          "end": { "line": 42, "column": 40 }
         },
         "loc": {
-          "start": { "line": 40, "column": 2 },
-          "end": { "line": 51, "column": 4 }
+          "start": { "line": 43, "column": 2 },
+          "end": { "line": 54, "column": 4 }
         },
-        "line": 40
+        "line": 43
       },
       "4": {
         "name": "(anonymous_4)",
         "decl": {
-          "start": { "line": 40, "column": 17 },
-          "end": { "line": 40, "column": 18 }
+          "start": { "line": 43, "column": 17 },
+          "end": { "line": 43, "column": 18 }
         },
         "loc": {
-          "start": { "line": 40, "column": 23 },
-          "end": { "line": 51, "column": 3 }
+          "start": { "line": 43, "column": 23 },
+          "end": { "line": 54, "column": 3 }
         },
-        "line": 40
+        "line": 43
       }
     },
     "branchMap": {
       "0": {
         "loc": {
-          "start": { "line": 39, "column": 40 },
-          "end": { "line": 39, "column": 60 }
+          "start": { "line": 42, "column": 40 },
+          "end": { "line": 42, "column": 60 }
         },
         "type": "default-arg",
         "locations": [
           {
-            "start": { "line": 39, "column": 48 },
-            "end": { "line": 39, "column": 60 }
+            "start": { "line": 42, "column": 48 },
+            "end": { "line": 42, "column": 60 }
           }
         ],
-        "line": 39
+        "line": 42
       },
       "1": {
         "loc": {
-          "start": { "line": 41, "column": 4 },
-          "end": { "line": 50, "column": 5 }
+          "start": { "line": 44, "column": 4 },
+          "end": { "line": 53, "column": 5 }
         },
         "type": "switch",
         "locations": [
           {
-            "start": { "line": 42, "column": 6 },
-            "end": { "line": 43, "column": 46 }
+            "start": { "line": 45, "column": 6 },
+            "end": { "line": 46, "column": 46 }
           },
           {
-            "start": { "line": 44, "column": 6 },
-            "end": { "line": 45, "column": 46 }
+            "start": { "line": 47, "column": 6 },
+            "end": { "line": 48, "column": 46 }
           },
           {
-            "start": { "line": 46, "column": 6 },
-            "end": { "line": 47, "column": 46 }
+            "start": { "line": 49, "column": 6 },
+            "end": { "line": 50, "column": 46 }
           },
           {
-            "start": { "line": 48, "column": 6 },
-            "end": { "line": 49, "column": 20 }
+            "start": { "line": 51, "column": 6 },
+            "end": { "line": 52, "column": 20 }
           }
         ],
-        "line": 41
+        "line": 44
       }
     },
     "s": {
-      "0": 7,
-      "1": 7,
-      "2": 7,
-      "3": 3,
-      "4": 7,
+      "0": 12,
+      "1": 12,
+      "2": 12,
+      "3": 1,
+      "4": 12,
       "5": 1,
-      "6": 7,
+      "6": 12,
       "7": 1,
-      "8": 7,
-      "9": 35,
-      "10": 35,
-      "11": 3,
+      "8": 12,
+      "9": 31,
+      "10": 31,
+      "11": 1,
       "12": 1,
       "13": 1,
-      "14": 30
+      "14": 28
     },
-    "f": { "0": 3, "1": 1, "2": 1, "3": 35, "4": 35 },
-    "b": { "0": [19], "1": [3, 1, 1, 30] },
+    "f": { "0": 1, "1": 1, "2": 1, "3": 31, "4": 31 },
+    "b": { "0": [19], "1": [1, 1, 1, 28] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e8fdac203152e254a371ce03e67e7d9f6b092339"
+    "hash": "e291f206bd3bc9f773f0a5db1fe11438a615a0b8"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 13, "column": 2 },
-        "end": { "line": 13, "column": 46 }
+        "end": { "line": 13, "column": 52 }
       },
       "1": {
-        "start": { "line": 16, "column": 19 },
-        "end": { "line": 16, "column": 38 }
+        "start": { "line": 15, "column": 19 },
+        "end": { "line": 15, "column": 38 }
       },
       "2": {
-        "start": { "line": 17, "column": 2 },
-        "end": { "line": 26, "column": 3 }
+        "start": { "line": 16, "column": 2 },
+        "end": { "line": 25, "column": 3 }
       },
       "3": {
-        "start": { "line": 18, "column": 21 },
-        "end": { "line": 18, "column": 29 }
+        "start": { "line": 17, "column": 21 },
+        "end": { "line": 17, "column": 29 }
       },
       "4": {
-        "start": { "line": 19, "column": 4 },
-        "end": { "line": 19, "column": 62 }
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 18, "column": 68 }
       },
       "5": {
-        "start": { "line": 21, "column": 4 },
-        "end": { "line": 25, "column": 5 }
+        "start": { "line": 20, "column": 4 },
+        "end": { "line": 24, "column": 5 }
       },
       "6": {
-        "start": { "line": 30, "column": 2 },
-        "end": { "line": 30, "column": 54 }
+        "start": { "line": 29, "column": 2 },
+        "end": { "line": 29, "column": 60 }
       }
     },
     "fnMap": {
@@ -904,48 +908,48 @@
         },
         "loc": {
           "start": { "line": 12, "column": 29 },
-          "end": { "line": 27, "column": 1 }
+          "end": { "line": 26, "column": 1 }
         },
         "line": 12
       },
       "1": {
         "name": "searchListContainerSaga",
         "decl": {
-          "start": { "line": 29, "column": 25 },
-          "end": { "line": 29, "column": 48 }
+          "start": { "line": 28, "column": 25 },
+          "end": { "line": 28, "column": 48 }
         },
         "loc": {
-          "start": { "line": 29, "column": 51 },
-          "end": { "line": 31, "column": 1 }
+          "start": { "line": 28, "column": 51 },
+          "end": { "line": 30, "column": 1 }
         },
-        "line": 29
+        "line": 28
       }
     },
     "branchMap": {
       "0": {
         "loc": {
-          "start": { "line": 17, "column": 2 },
-          "end": { "line": 26, "column": 3 }
+          "start": { "line": 16, "column": 2 },
+          "end": { "line": 25, "column": 3 }
         },
         "type": "if",
         "locations": [
           {
-            "start": { "line": 17, "column": 2 },
-            "end": { "line": 26, "column": 3 }
+            "start": { "line": 16, "column": 2 },
+            "end": { "line": 25, "column": 3 }
           },
           {
-            "start": { "line": 17, "column": 2 },
-            "end": { "line": 26, "column": 3 }
+            "start": { "line": 16, "column": 2 },
+            "end": { "line": 25, "column": 3 }
           }
         ],
-        "line": 17
+        "line": 16
       }
     },
-    "s": { "0": 4, "1": 4, "2": 2, "3": 1, "4": 1, "5": 1, "6": 7 },
-    "f": { "0": 4, "1": 7 },
+    "s": { "0": 2, "1": 2, "2": 2, "3": 1, "4": 1, "5": 1, "6": 7 },
+    "f": { "0": 2, "1": 7 },
     "b": { "0": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "17f822bc0ff5bfd8f311d251646bf38ca03109ff"
+    "hash": "ca940b11c7634d64641532fb8f4064c93d83dfbe"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js",
@@ -1102,20 +1106,20 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 6,
-      "2": 3,
-      "3": 3,
-      "4": 2,
-      "5": 3,
-      "6": 3,
-      "7": 2,
-      "8": 3,
-      "9": 3,
-      "10": 2
+      "0": 4,
+      "1": 3,
+      "2": 4,
+      "3": 4,
+      "4": 1,
+      "5": 4,
+      "6": 4,
+      "7": 1,
+      "8": 4,
+      "9": 4,
+      "10": 1
     },
-    "f": { "0": 6, "1": 3, "2": 2, "3": 3, "4": 2, "5": 3, "6": 2 },
-    "b": { "0": [6, 0] },
+    "f": { "0": 3, "1": 4, "2": 1, "3": 4, "4": 1, "5": 4, "6": 1 },
+    "b": { "0": [3, 0] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
     "hash": "b5d193b30751138ea47c553328b11e0af30af7cf"
   },
@@ -1158,7 +1162,7 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 7 },
+    "s": { "0": 12 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -1227,7 +1231,7 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 7, "1": 4, "2": 4, "3": 3, "4": 6 },
+    "s": { "0": 7, "1": 9, "2": 9, "3": 3, "4": 6 },
     "f": { "0": 7, "1": 3, "2": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -1317,7 +1321,7 @@
         "line": 18
       }
     },
-    "s": { "0": 6, "1": 6, "2": 2, "3": 2, "4": 1, "5": 1 },
+    "s": { "0": 11, "1": 11, "2": 2, "3": 2, "4": 1, "5": 1 },
     "f": { "0": 2, "1": 2 },
     "b": { "0": [2], "1": [1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -1405,9 +1409,9 @@
         "line": 7
       }
     },
-    "s": { "0": 5, "1": 9, "2": 5, "3": 4, "4": 3 },
-    "f": { "0": 9, "1": 4, "2": 3 },
-    "b": { "0": [9, 8] },
+    "s": { "0": 10, "1": 8, "2": 10, "3": 9, "4": 3 },
+    "f": { "0": 8, "1": 9, "2": 3 },
+    "b": { "0": [8, 7] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
     "hash": "94019a0b332442c295a9741ac323458a61542a31"
   },
@@ -1440,7 +1444,7 @@
       },
       "6": {
         "start": { "line": 36, "column": 17 },
-        "end": { "line": 36, "column": 47 }
+        "end": { "line": 36, "column": 54 }
       }
     },
     "fnMap": {
@@ -1500,82 +1504,168 @@
         },
         "loc": {
           "start": { "line": 36, "column": 17 },
-          "end": { "line": 36, "column": 47 }
+          "end": { "line": 36, "column": 54 }
         },
         "line": 36
       }
     },
     "branchMap": {},
-    "s": { "0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1 },
-    "f": { "0": 1, "1": 1, "2": 1, "3": 1, "4": 1 },
+    "s": { "0": 4, "1": 4, "2": 4, "3": 2, "4": 2, "5": 1, "6": 1 },
+    "f": { "0": 4, "1": 4, "2": 4, "3": 1, "4": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "0ecc8bd2a92fc4c6bd33e386550bb6b372b9f690"
+    "hash": "61d13a83bf7ad6c045e96bd093147a6409da7252"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js",
     "statementMap": {
       "0": {
-        "start": { "line": 3, "column": 57 },
-        "end": { "line": 6, "column": 2 }
+        "start": { "line": 7, "column": 4 },
+        "end": { "line": 10, "column": 2 }
+      },
+      "1": {
+        "start": { "line": 12, "column": 28 },
+        "end": { "line": 14, "column": 2 }
+      },
+      "2": {
+        "start": { "line": 16, "column": 36 },
+        "end": { "line": 22, "column": 4 }
+      },
+      "3": {
+        "start": { "line": 17, "column": 2 },
+        "end": { "line": 22, "column": 4 }
+      },
+      "4": {
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 21, "column": 5 }
+      },
+      "5": {
+        "start": { "line": 20, "column": 8 },
+        "end": { "line": 20, "column": 20 }
       }
     },
-    "fnMap": {},
-    "branchMap": {},
-    "s": { "0": 4 },
-    "f": {},
-    "b": {},
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 16, "column": 36 },
+          "end": { "line": 16, "column": 37 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 2 },
+          "end": { "line": 22, "column": 4 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 17, "column": 17 },
+          "end": { "line": 17, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 23 },
+          "end": { "line": 22, "column": 3 }
+        },
+        "line": 17
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 16, "column": 37 },
+          "end": { "line": 16, "column": 57 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 16, "column": 45 },
+            "end": { "line": 16, "column": 57 }
+          }
+        ],
+        "line": 16
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 18, "column": 4 },
+          "end": { "line": 21, "column": 5 }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": { "line": 19, "column": 6 },
+            "end": { "line": 20, "column": 20 }
+          }
+        ],
+        "line": 18
+      }
+    },
+    "s": { "0": 10, "1": 10, "2": 10, "3": 2, "4": 2, "5": 2 },
+    "f": { "0": 2, "1": 2 },
+    "b": { "0": [1], "1": [2] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e539315ae75fcfbd2ade87646939a3a951d21ce3"
+    "hash": "bdf30ff410006068576689fb4ffa06eee7fef288"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js",
     "statementMap": {
       "0": {
-        "start": { "line": 10, "column": 2 },
-        "end": { "line": 10, "column": 39 }
+        "start": { "line": 9, "column": 2 },
+        "end": { "line": 9, "column": 74 }
       },
       "1": {
-        "start": { "line": 11, "column": 2 },
-        "end": { "line": 11, "column": 50 }
+        "start": { "line": 9, "column": 19 },
+        "end": { "line": 9, "column": 67 }
       },
       "2": {
-        "start": { "line": 15, "column": 2 },
-        "end": { "line": 15, "column": 52 }
+        "start": { "line": 13, "column": 2 },
+        "end": { "line": 13, "column": 52 }
       }
     },
     "fnMap": {
       "0": {
         "name": "startup",
         "decl": {
-          "start": { "line": 9, "column": 17 },
-          "end": { "line": 9, "column": 24 }
+          "start": { "line": 8, "column": 17 },
+          "end": { "line": 8, "column": 24 }
         },
         "loc": {
-          "start": { "line": 9, "column": 27 },
-          "end": { "line": 12, "column": 1 }
+          "start": { "line": 8, "column": 27 },
+          "end": { "line": 10, "column": 1 }
+        },
+        "line": 8
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 9, "column": 13 },
+          "end": { "line": 9, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 9, "column": 19 },
+          "end": { "line": 9, "column": 67 }
         },
         "line": 9
       },
-      "1": {
+      "2": {
         "name": "startUpSaga",
         "decl": {
-          "start": { "line": 14, "column": 25 },
-          "end": { "line": 14, "column": 36 }
+          "start": { "line": 12, "column": 25 },
+          "end": { "line": 12, "column": 36 }
         },
         "loc": {
-          "start": { "line": 14, "column": 39 },
-          "end": { "line": 16, "column": 1 }
+          "start": { "line": 12, "column": 39 },
+          "end": { "line": 14, "column": 1 }
         },
-        "line": 14
+        "line": 12
       }
     },
     "branchMap": {},
-    "s": { "0": 1, "1": 1, "2": 6 },
-    "f": { "0": 1, "1": 6 },
+    "s": { "0": 3, "1": 1, "2": 7 },
+    "f": { "0": 3, "1": 1, "2": 7 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "4f203cb447e82f6c034cdf2db6f612401cebe250"
+    "hash": "4d793686790e90f8dc9aa3d2b85f731541f6d60b"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js",
@@ -1587,7 +1677,7 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 1 },
+    "s": { "0": 2 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
@@ -1648,8 +1738,8 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 1, "1": 0, "2": 1 },
-    "f": { "0": 1, "1": 0, "2": 1 },
+    "s": { "0": 4, "1": 0, "2": 0 },
+    "f": { "0": 4, "1": 0, "2": 0 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
     "hash": "c8391a5c3e528a16f91d0fcd067f5b2181f8be66"
@@ -1685,8 +1775,8 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 5, "1": 5, "2": 3 },
-    "f": { "0": 3 },
+    "s": { "0": 10, "1": 10, "2": 1 },
+    "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
     "hash": "a897752d8b8853420618fba1786f7c229317729e"
@@ -1930,40 +2020,40 @@
     },
     "branchMap": {},
     "s": {
-      "0": 4,
-      "1": 11,
-      "2": 4,
+      "0": 5,
+      "1": 15,
+      "2": 5,
       "3": 3,
-      "4": 4,
+      "4": 5,
       "5": 3,
-      "6": 4,
+      "6": 5,
       "7": 3,
-      "8": 4,
+      "8": 5,
       "9": 1,
-      "10": 4,
+      "10": 5,
       "11": 5,
-      "12": 4,
-      "13": 13,
-      "14": 4,
+      "12": 5,
+      "13": 17,
+      "14": 5,
       "15": 2,
-      "16": 4,
+      "16": 5,
       "17": 2,
-      "18": 4,
-      "19": 10,
-      "20": 4,
+      "18": 5,
+      "19": 14,
+      "20": 5,
       "21": 2
     },
     "f": {
-      "0": 11,
+      "0": 15,
       "1": 3,
       "2": 3,
       "3": 3,
       "4": 1,
       "5": 5,
-      "6": 13,
+      "6": 17,
       "7": 2,
       "8": 2,
-      "9": 10,
+      "9": 14,
       "10": 2
     },
     "b": {},
@@ -2281,39 +2371,39 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 10,
+      "1": 10,
       "2": 1,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
+      "3": 10,
+      "4": 10,
+      "5": 10,
+      "6": 10,
       "7": 0,
       "8": 0,
-      "9": 5,
-      "10": 5,
-      "11": 5,
+      "9": 10,
+      "10": 10,
+      "11": 10,
       "12": 1,
       "13": 1,
       "14": 1,
       "15": 4,
       "16": 1,
-      "17": 5,
-      "18": 3,
-      "19": 3,
+      "17": 10,
+      "18": 1,
+      "19": 1,
       "20": 0,
       "21": 0,
-      "22": 3,
-      "23": 5
+      "22": 1,
+      "23": 10
     },
-    "f": { "0": 1, "1": 5, "2": 5, "3": 1, "4": 4, "5": 3, "6": 0 },
+    "f": { "0": 1, "1": 10, "2": 10, "3": 1, "4": 4, "5": 1, "6": 0 },
     "b": {
       "0": [1],
       "1": [0],
-      "2": [5, 0],
+      "2": [10, 0],
       "3": [1, 0],
       "4": [1, 1],
-      "5": [0, 3]
+      "5": [0, 1]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
     "hash": "9f373ea696474a187220f7f918c5e5962c9bde0b"
@@ -2382,7 +2472,7 @@
     },
     "branchMap": {},
     "s": {
-      "0": 4,
+      "0": 9,
       "1": 6,
       "2": 6,
       "3": 6,
@@ -2403,57 +2493,124 @@
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js",
     "statementMap": {
       "0": {
-        "start": { "line": 7, "column": 36 },
-        "end": { "line": 10, "column": 2 }
+        "start": { "line": 9, "column": 36 },
+        "end": { "line": 12, "column": 2 }
       },
       "1": {
-        "start": { "line": 7, "column": 51 },
-        "end": { "line": 10, "column": 1 }
+        "start": { "line": 9, "column": 51 },
+        "end": { "line": 12, "column": 1 }
       },
       "2": {
-        "start": { "line": 12, "column": 30 },
-        "end": { "line": 21, "column": 1 }
+        "start": { "line": 13, "column": 30 },
+        "end": { "line": 21, "column": 3 }
       },
       "3": {
-        "start": { "line": 13, "column": 20 },
-        "end": { "line": 13, "column": 33 }
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 21, "column": 3 }
       },
       "4": {
-        "start": { "line": 14, "column": 2 },
-        "end": { "line": 20, "column": 3 }
+        "start": { "line": 23, "column": 30 },
+        "end": { "line": 32, "column": 1 }
+      },
+      "5": {
+        "start": { "line": 24, "column": 20 },
+        "end": { "line": 24, "column": 33 }
+      },
+      "6": {
+        "start": { "line": 25, "column": 2 },
+        "end": { "line": 31, "column": 3 }
+      },
+      "7": {
+        "start": { "line": 34, "column": 23 },
+        "end": { "line": 34, "column": 76 }
+      },
+      "8": {
+        "start": { "line": 34, "column": 29 },
+        "end": { "line": 34, "column": 76 }
+      },
+      "9": {
+        "start": { "line": 34, "column": 52 },
+        "end": { "line": 34, "column": 75 }
       }
     },
     "fnMap": {
       "0": {
         "name": "(anonymous_0)",
         "decl": {
-          "start": { "line": 7, "column": 36 },
-          "end": { "line": 7, "column": 37 }
+          "start": { "line": 9, "column": 36 },
+          "end": { "line": 9, "column": 37 }
         },
         "loc": {
-          "start": { "line": 7, "column": 51 },
-          "end": { "line": 10, "column": 1 }
+          "start": { "line": 9, "column": 51 },
+          "end": { "line": 12, "column": 1 }
         },
-        "line": 7
+        "line": 9
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
-          "start": { "line": 12, "column": 30 },
-          "end": { "line": 12, "column": 31 }
+          "start": { "line": 13, "column": 30 },
+          "end": { "line": 13, "column": 31 }
         },
         "loc": {
-          "start": { "line": 12, "column": 42 },
-          "end": { "line": 21, "column": 1 }
+          "start": { "line": 14, "column": 2 },
+          "end": { "line": 21, "column": 3 }
         },
-        "line": 12
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 23, "column": 30 },
+          "end": { "line": 23, "column": 31 }
+        },
+        "loc": {
+          "start": { "line": 23, "column": 42 },
+          "end": { "line": 32, "column": 1 }
+        },
+        "line": 23
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 34, "column": 23 },
+          "end": { "line": 34, "column": 24 }
+        },
+        "loc": {
+          "start": { "line": 34, "column": 29 },
+          "end": { "line": 34, "column": 76 }
+        },
+        "line": 34
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 34, "column": 41 },
+          "end": { "line": 34, "column": 42 }
+        },
+        "loc": {
+          "start": { "line": 34, "column": 52 },
+          "end": { "line": 34, "column": 75 }
+        },
+        "line": 34
       }
     },
     "branchMap": {},
-    "s": { "0": 2, "1": 2, "2": 2, "3": 4, "4": 4 },
-    "f": { "0": 2, "1": 4 },
+    "s": {
+      "0": 7,
+      "1": 2,
+      "2": 7,
+      "3": 9,
+      "4": 7,
+      "5": 4,
+      "6": 4,
+      "7": 7,
+      "8": 3,
+      "9": 3
+    },
+    "f": { "0": 2, "1": 9, "2": 4, "3": 3, "4": 3 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "045f05a531d11019deb701037372b70fae1d48a8"
+    "hash": "e9b082a2caa0f8d29a11b1ba3f5f0092be31d609"
   }
 }

@@ -16,7 +16,7 @@ import {
   selectUserIsLoading,
   selectUserErrorMessage
 } from './selectors'
-import { ExampleActions } from './reducer'
+import { exampleScreenActions } from './reducer'
 
 /**
  * This is an example of a container component.
@@ -101,7 +101,7 @@ class ExampleScreen extends React.Component {
         {this.props.userIsLoading ? (
           <ActivityIndicator testID="loader" size="large" color="#0000ff" />
         ) : (
-          <View testID="exampleContainerContent">
+          <View testID="example-container-content">
             <LogoContainer>
               <Logo source={images.logo} resizeMode="contain" />
             </LogoContainer>
@@ -151,7 +151,7 @@ const mapStateToProps = createStructuredSelector({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchUser: () => dispatch(ExampleActions.fetchUser())
+  fetchUser: () => dispatch(exampleScreenActions.fetchUser())
 })
 
 const withConnect = connect(

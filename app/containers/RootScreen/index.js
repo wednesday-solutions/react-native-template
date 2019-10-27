@@ -4,9 +4,9 @@ import AppNavigator from 'app/navigators/AppNavigator'
 import Container from 'app/components/Container'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
-import { AppActions } from './reducer'
+import { rootScreenActions } from './reducer'
 
-class RootScreen extends Component {
+export class RootScreen extends Component {
   componentDidMount() {
     // Run the startup saga when the application is starting
     this.props.startup()
@@ -18,7 +18,7 @@ class RootScreen extends Component {
 
   render() {
     return (
-      <Container>
+      <Container testID="root-screen">
         <AppNavigator
           // Initialize the NavigationService (see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html)
           ref={this.setRefForTopLevelNavigtor}
@@ -33,7 +33,7 @@ RootScreen.propTypes = {
 }
 
 const mapDispatchToProps = dispatch => ({
-  startup: () => dispatch(AppActions.startup())
+  startup: () => dispatch(rootScreenActions.startup())
 })
 
 export default connect(

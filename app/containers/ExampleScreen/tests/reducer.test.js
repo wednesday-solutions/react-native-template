@@ -1,4 +1,8 @@
-import { exampleContainerReducer, initialState, ExampleTypes } from '../reducer'
+import {
+  exampleContainerReducer,
+  initialState,
+  exampleScreenTypes
+} from '../reducer'
 // import { someAction } from '../actions'
 
 /* eslint-disable default-case, no-param-reassign */
@@ -18,7 +22,7 @@ describe('exampleContainerReducer', () => {
     // user api the state should remain unchanged
     expect(
       exampleContainerReducer(state, {
-        type: ExampleTypes.FETCH_USER,
+        type: exampleScreenTypes.FETCH_USER,
         user: 'Mohammed Ali Chherawalla'
       })
     ).toEqual(state)
@@ -30,7 +34,7 @@ describe('exampleContainerReducer', () => {
       .set('userErrorMessage', null)
     expect(
       exampleContainerReducer(state, {
-        type: ExampleTypes.FETCH_USER_LOADING
+        type: exampleScreenTypes.FETCH_USER_LOADING
       })
     ).toEqual(expectedResult)
   })
@@ -42,7 +46,7 @@ describe('exampleContainerReducer', () => {
       .set('userErrorMessage', null)
     expect(
       exampleContainerReducer(state, {
-        type: ExampleTypes.FETCH_USER_SUCCESS,
+        type: exampleScreenTypes.FETCH_USER_SUCCESS,
         user: { name: 'Mohammed Ali Chherawalla' }
       })
     ).toEqual(expectedResult)
@@ -55,7 +59,7 @@ describe('exampleContainerReducer', () => {
       .set('userErrorMessage', 'There was some error bro')
     expect(
       exampleContainerReducer(state, {
-        type: ExampleTypes.FETCH_USER_FAILURE,
+        type: exampleScreenTypes.FETCH_USER_FAILURE,
         errorMessage: 'There was some error bro'
       })
     ).toEqual(expectedResult)

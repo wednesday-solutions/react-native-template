@@ -4,8 +4,8 @@ import { render } from '@testing-library/react-native'
 import { Provider } from 'react-redux'
 import T from 'app/components/T'
 import createStore from 'app/rootReducer'
+import { translationMessages } from 'app/i18n'
 import ConnectedLanguageProvider, { LanguageProvider } from '../index'
-import { translationMessages } from '../../../i18n'
 
 /* global shallowWithIntl */
 /* eslint no-undef: "error" */

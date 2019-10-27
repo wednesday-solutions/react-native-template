@@ -13,32 +13,26 @@ import { exampleScreenTypes } from '../reducer'
 describe('exampleScreenSaga Saga', () => {
   const generator = exampleScreenSaga()
 
-  it('should start task to watch for FETCH_USER action', () => {
+  it('should start task to watch for REQUEST_FETCH_USER action', () => {
     expect(generator.next().value).toEqual(
-      takeLatest(exampleScreenTypes.FETCH_USER, fetchUser)
+      takeLatest(exampleScreenTypes.REQUEST_FETCH_USER, fetchUser)
     )
   })
 
-  it('should ensure that the action FETCH_USER_FAILURE is dispatched when the api call fails', () => {
+  it('should ensure that the action FAILURE_FETCH_USER is dispatched when the api call fails', () => {
     const method = fetchUser()
-    expect(method.next().value).toEqual(
-      put({ type: exampleScreenTypes.FETCH_USER_LOADING })
-    )
     const res = method.next().value
     expect(res).toEqual(call(getUser))
     expect(method.next(apiResponseGenerator(false)).value).toEqual(
       put({
-        type: exampleScreenTypes.FETCH_USER_FAILURE,
+        type: exampleScreenTypes.FAILURE_FETCH_USER,
         errorMessage: 'There was an error while fetching user informations.'
       })
     )
   })
 
-  it('should ensure that the action FETCH_USER_SUCCESS is dispatched when the api call succeeds', () => {
+  it('should ensure that the action SUCCESS_FETCH_USER is dispatched when the api call succeeds', () => {
     const method = fetchUser()
-    expect(method.next().value).toEqual(
-      put({ type: exampleScreenTypes.FETCH_USER_LOADING })
-    )
     const res = method.next().value
     expect(res).toEqual(call(getUser))
     const userResponse = {
@@ -51,7 +45,7 @@ describe('exampleScreenSaga Saga', () => {
     expect(
       method.next(apiResponseGenerator(true, [userResponse])).value
     ).toEqual(
-      put({ type: exampleScreenTypes.FETCH_USER_SUCCESS, user: userResponse })
+      put({ type: exampleScreenTypes.SUCCESS_FETCH_USER, user: userResponse })
     )
   })
 })

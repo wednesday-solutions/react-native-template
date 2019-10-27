@@ -10,15 +10,14 @@ import { exampleScreenActions, exampleScreenTypes } from './reducer'
  * Feel free to remove it.
  */
 export function* fetchUser() {
-  yield put(exampleScreenActions.fetchUserLoading())
   // Fetch user informations from an API
   const response = yield call(getUser)
   if (response.ok) {
     const { data } = response
-    yield put(exampleScreenActions.fetchUserSuccess(get(data, '0')))
+    yield put(exampleScreenActions.successFetchUser(get(data, '0')))
   } else {
     yield put(
-      exampleScreenActions.fetchUserFailure(
+      exampleScreenActions.failureFetchUser(
         'There was an error while fetching user informations.'
       )
     )
@@ -26,5 +25,5 @@ export function* fetchUser() {
 }
 
 export default function* searchListContainerSaga() {
-  yield takeLatest(exampleScreenTypes.FETCH_USER, fetchUser)
+  yield takeLatest(exampleScreenTypes.REQUEST_FETCH_USER, fetchUser)
 }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ExampleScreen /> Should render and match the snapshot 1`] = `
+exports[`<ExampleScreen /> Container tests should render and match the snapshot 1`] = `
 <View
   pointerEvents="box-none"
   style={
@@ -270,35 +270,35 @@ Cmd+D or shake for dev menu.
                   Object {
                     "arguments": Array [],
                     "column": 21,
-                    "file": "/Users/mac/wednesday/react-native-boilerplate/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
+                    "file": "/Users/Ali/Consulting/react-native-template/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
                     "lineNumber": 5938,
                     "methodName": "warn",
                   },
                   Object {
                     "arguments": Array [],
                     "column": 16,
-                    "file": "/Users/mac/wednesday/react-native-boilerplate/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
+                    "file": "/Users/Ali/Consulting/react-native-template/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
                     "lineNumber": 3585,
                     "methodName": "Root.callback [as each]",
                   },
                   Object {
                     "arguments": Array [],
                     "column": 14,
-                    "file": "/Users/mac/wednesday/react-native-boilerplate/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
+                    "file": "/Users/Ali/Consulting/react-native-template/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
                     "lineNumber": 5933,
                     "methodName": "InlineStyle.each [as generateStyleObject]",
                   },
                   Object {
                     "arguments": Array [],
                     "column": 24,
-                    "file": "/Users/mac/wednesday/react-native-boilerplate/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
+                    "file": "/Users/Ali/Consulting/react-native-template/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
                     "lineNumber": 6304,
                     "methodName": "StyledNativeComponent.generateStyleObject [as generateAndInjectStyles]",
                   },
                   Object {
                     "arguments": Array [],
                     "column": 38,
-                    "file": "/Users/mac/wednesday/react-native-boilerplate/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
+                    "file": "/Users/Ali/Consulting/react-native-template/node_modules/styled-components/native/dist/styled-components.native.cjs.js",
                     "lineNumber": 6233,
                     "methodName": "generateAndInjectStyles",
                   },

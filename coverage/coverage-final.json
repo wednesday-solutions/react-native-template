@@ -1,6 +1,6 @@
 {
-  "/Users/mac/wednesday/react-native-boilerplate/app/app.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/app.js",
+  "/Users/Ali/Consulting/react-native-template/app/app.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/app.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 29 },
@@ -34,10 +34,10 @@
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "0f1428b770f6217809fff91e06c6714e655cfda5"
+    "hash": "f2b64b6a7b72efe722d33b03e7ca39312bbcc435"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js",
+  "/Users/Ali/Consulting/react-native-template/app/i18n.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/i18n.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 22 },
@@ -53,7 +53,7 @@
       },
       "3": {
         "start": { "line": 16, "column": 0 },
-        "end": { "line": 16, "column": 27 }
+        "end": { "line": 16, "column": 28 }
       },
       "4": {
         "start": { "line": 18, "column": 30 },
@@ -81,11 +81,11 @@
       },
       "10": {
         "start": { "line": 35, "column": 4 },
-        "end": { "line": 35, "column": 72 }
+        "end": { "line": 35, "column": 73 }
       },
       "11": {
         "start": { "line": 37, "column": 2 },
-        "end": { "line": 37, "column": 67 }
+        "end": { "line": 37, "column": 68 }
       },
       "12": {
         "start": { "line": 40, "column": 35 },
@@ -192,10 +192,10 @@
     "f": { "0": 15, "1": 62 },
     "b": { "0": [1, 14], "1": [1, 61], "2": [62, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "970e2e0fee008d20914f7e206ddfbe07830bcae1"
+    "hash": "4bda3559adf2d4cb3007cb68aa6486f3f69fff45"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js",
+  "/Users/Ali/Consulting/react-native-template/app/rootReducer.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/rootReducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 22 },
@@ -203,7 +203,7 @@
       },
       "1": {
         "start": { "line": 11, "column": 2 },
-        "end": { "line": 11, "column": 46 }
+        "end": { "line": 11, "column": 47 }
       }
     },
     "fnMap": {
@@ -225,18 +225,18 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "6f86eaf7e326209a38ae1f1ff5287d5c2d46bdfe"
+    "hash": "c70a73f52b04b56708769e173a091d18e114f6da"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js",
+  "/Users/Ali/Consulting/react-native-template/app/rootSaga.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/rootSaga.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 2 },
-        "end": { "line": 6, "column": 25 }
+        "end": { "line": 6, "column": 26 }
       },
       "1": {
         "start": { "line": 7, "column": 2 },
-        "end": { "line": 7, "column": 25 }
+        "end": { "line": 7, "column": 26 }
       }
     },
     "fnMap": {
@@ -258,10 +258,10 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "1c98a54f720eec5edfee8825879ce65bf583af1d"
+    "hash": "7ea72d8dbf71b47b91bbbdb94cbe12431c9867b1"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png",
+  "/Users/Ali/Consulting/react-native-template/app/assets/images/logo.png": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/assets/images/logo.png",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -274,10 +274,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "3d94afbcb363d7e2cad449c169f6a869f6ac8813"
+    "hash": "c821ef125eac5bbab08332cc5b651d0ab713344b"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png",
+  "/Users/Ali/Consulting/react-native-template/app/assets/images/wednesday-logo.png": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/assets/images/wednesday-logo.png",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -290,10 +290,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "dc80bfbecf8ffbb8f36cf602fdfe3c663c2e406a"
+    "hash": "84ee5244f95d6de8d205efceada4f6c06fab8249"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/components/Container/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/components/Container/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 24 },
@@ -309,7 +309,7 @@
       },
       "3": {
         "start": { "line": 18, "column": 0 },
-        "end": { "line": 18, "column": 24 }
+        "end": { "line": 18, "column": 25 }
       }
     },
     "fnMap": {
@@ -331,10 +331,10 @@
     "f": { "0": 16 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a31568d53af7f1b5bd67270677961aa4476555fa"
+    "hash": "4eaccd60a2ce46ba0ee0c210b44f6999c8ee1215"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/components/SplashScreen/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/components/SplashScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 18 },
@@ -372,10 +372,10 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "af6d7b5e682a0028f6be28112e56a5fff263459d"
+    "hash": "2799bfdd450a7da56ea3c748240417fc8ccb0785"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/components/T/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/components/T/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 13, "column": 10 },
@@ -387,11 +387,11 @@
       },
       "2": {
         "start": { "line": 17, "column": 0 },
-        "end": { "line": 21, "column": 1 }
+        "end": { "line": 21, "column": 2 }
       },
       "3": {
         "start": { "line": 22, "column": 0 },
-        "end": { "line": 24, "column": 1 }
+        "end": { "line": 24, "column": 2 }
       }
     },
     "fnMap": {
@@ -413,10 +413,10 @@
     "f": { "0": 9 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "4f139d21c42b5b9b7d44afedf378b650a4a4a8fe"
+    "hash": "c786afa6b3c3f72bbdca8b097822090f5180ce5d"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/config/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/config/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 22 },
@@ -429,10 +429,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d6e171b5ca08da90501dcec193bfac9d955780f5"
+    "hash": "ddc9fe7d394a5db5f842f058fef7188cc55864b4"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 28, "column": 18 },
@@ -480,7 +480,7 @@
       },
       "11": {
         "start": { "line": 91, "column": 4 },
-        "end": { "line": 91, "column": 29 }
+        "end": { "line": 91, "column": 30 }
       },
       "12": {
         "start": { "line": 94, "column": 27 },
@@ -488,15 +488,15 @@
       },
       "13": {
         "start": { "line": 95, "column": 4 },
-        "end": { "line": 95, "column": 26 }
+        "end": { "line": 95, "column": 27 }
       },
       "14": {
         "start": { "line": 99, "column": 4 },
-        "end": { "line": 136, "column": 5 }
+        "end": { "line": 136, "column": 6 }
       },
       "15": {
         "start": { "line": 140, "column": 0 },
-        "end": { "line": 145, "column": 1 }
+        "end": { "line": 145, "column": 2 }
       },
       "16": {
         "start": { "line": 147, "column": 24 },
@@ -675,10 +675,10 @@
     "f": { "0": 4, "1": 7, "2": 4, "3": 4, "4": 0, "5": 0 },
     "b": { "0": [1, 3], "1": [0, 3], "2": [3, 3] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "aa4587a80d0103b23603ed62d8ebf2fe5442bea2"
+    "hash": "649c57855a82bffc6a386e5ece960883a17c6bcd"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/reducer.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 4 },
@@ -726,19 +726,19 @@
       },
       "11": {
         "start": { "line": 44, "column": 8 },
-        "end": { "line": 44, "column": 39 }
+        "end": { "line": 44, "column": 40 }
       },
       "12": {
         "start": { "line": 46, "column": 8 },
-        "end": { "line": 46, "column": 46 }
+        "end": { "line": 46, "column": 47 }
       },
       "13": {
         "start": { "line": 48, "column": 8 },
-        "end": { "line": 48, "column": 46 }
+        "end": { "line": 48, "column": 47 }
       },
       "14": {
         "start": { "line": 50, "column": 8 },
-        "end": { "line": 50, "column": 20 }
+        "end": { "line": 50, "column": 21 }
       }
     },
     "fnMap": {
@@ -827,19 +827,19 @@
         "locations": [
           {
             "start": { "line": 43, "column": 6 },
-            "end": { "line": 44, "column": 39 }
+            "end": { "line": 44, "column": 40 }
           },
           {
             "start": { "line": 45, "column": 6 },
-            "end": { "line": 46, "column": 46 }
+            "end": { "line": 46, "column": 47 }
           },
           {
             "start": { "line": 47, "column": 6 },
-            "end": { "line": 48, "column": 46 }
+            "end": { "line": 48, "column": 47 }
           },
           {
             "start": { "line": 49, "column": 6 },
-            "end": { "line": 50, "column": 20 }
+            "end": { "line": 50, "column": 21 }
           }
         ],
         "line": 42
@@ -865,34 +865,34 @@
     "f": { "0": 1, "1": 1, "2": 1, "3": 30, "4": 30 },
     "b": { "0": [19], "1": [1, 1, 1, 27] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "389fc7edede350439b287eef9dd6be42a1ebc792"
+    "hash": "d62a1f7d8001819c1c44d46feee3dd989598bcf9"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/saga.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/saga.js",
     "statementMap": {
       "0": {
-        "start": { "line": 14, "column": 19 },
-        "end": { "line": 14, "column": 38 }
+        "start": { "line": 13, "column": 19 },
+        "end": { "line": 13, "column": 38 }
       },
       "1": {
-        "start": { "line": 15, "column": 2 },
-        "end": { "line": 24, "column": 3 }
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 23, "column": 3 }
       },
       "2": {
-        "start": { "line": 16, "column": 21 },
-        "end": { "line": 16, "column": 29 }
+        "start": { "line": 15, "column": 21 },
+        "end": { "line": 15, "column": 29 }
       },
       "3": {
-        "start": { "line": 17, "column": 4 },
-        "end": { "line": 17, "column": 68 }
+        "start": { "line": 16, "column": 4 },
+        "end": { "line": 16, "column": 69 }
       },
       "4": {
-        "start": { "line": 19, "column": 4 },
-        "end": { "line": 23, "column": 5 }
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 22, "column": 6 }
       },
       "5": {
-        "start": { "line": 28, "column": 2 },
-        "end": { "line": 28, "column": 68 }
+        "start": { "line": 27, "column": 2 },
+        "end": { "line": 27, "column": 69 }
       }
     },
     "fnMap": {
@@ -904,51 +904,51 @@
         },
         "loc": {
           "start": { "line": 12, "column": 29 },
-          "end": { "line": 25, "column": 1 }
+          "end": { "line": 24, "column": 1 }
         },
         "line": 12
       },
       "1": {
         "name": "searchListContainerSaga",
         "decl": {
-          "start": { "line": 27, "column": 25 },
-          "end": { "line": 27, "column": 48 }
+          "start": { "line": 26, "column": 25 },
+          "end": { "line": 26, "column": 48 }
         },
         "loc": {
-          "start": { "line": 27, "column": 51 },
-          "end": { "line": 29, "column": 1 }
+          "start": { "line": 26, "column": 51 },
+          "end": { "line": 28, "column": 1 }
         },
-        "line": 27
+        "line": 26
       }
     },
     "branchMap": {
       "0": {
         "loc": {
-          "start": { "line": 15, "column": 2 },
-          "end": { "line": 24, "column": 3 }
+          "start": { "line": 14, "column": 2 },
+          "end": { "line": 23, "column": 3 }
         },
         "type": "if",
         "locations": [
           {
-            "start": { "line": 15, "column": 2 },
-            "end": { "line": 24, "column": 3 }
+            "start": { "line": 14, "column": 2 },
+            "end": { "line": 23, "column": 3 }
           },
           {
-            "start": { "line": 15, "column": 2 },
-            "end": { "line": 24, "column": 3 }
+            "start": { "line": 14, "column": 2 },
+            "end": { "line": 23, "column": 3 }
           }
         ],
-        "line": 15
+        "line": 14
       }
     },
     "s": { "0": 2, "1": 2, "2": 1, "3": 1, "4": 1, "5": 7 },
     "f": { "0": 2, "1": 7 },
     "b": { "0": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "ceb234b090772d60b4074a004b6d2f9730cad1b9"
+    "hash": "bae5e482836cbb5eda52f70d0bd50d188a6e0508"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/selectors.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/selectors.js",
     "statementMap": {
       "0": {
         "start": { "line": 5, "column": 35 },
@@ -1117,14 +1117,14 @@
     "f": { "0": 3, "1": 4, "2": 1, "3": 4, "4": 1, "5": 4, "6": 1 },
     "b": { "0": [3, 0] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b5d193b30751138ea47c553328b11e0af30af7cf"
+    "hash": "567b2d0c9a73b442cbfa2a105bc23d67126003de"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/actions.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/actions.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/actions.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/actions.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 2 },
-        "end": { "line": 13, "column": 3 }
+        "end": { "line": 13, "column": 4 }
       }
     },
     "fnMap": {
@@ -1146,10 +1146,10 @@
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "f7a9a07a8ef306db8897d9c3d98fb0f69b821872"
+    "hash": "49920bd9dc90387cca31178b217780f49d9f4b38"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/constants.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/constants.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 29 },
@@ -1162,18 +1162,18 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d57b64ce25c514cb1b6b1d93908b905ce255dcdc"
+    "hash": "0334eb493494e8bd4684ecd8493ff832634dfa15"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 18, "column": 2 },
-        "end": { "line": 26, "column": 3 }
+        "end": { "line": 26, "column": 4 }
       },
       "1": {
         "start": { "line": 29, "column": 0 },
-        "end": { "line": 33, "column": 1 }
+        "end": { "line": 33, "column": 2 }
       },
       "2": {
         "start": { "line": 35, "column": 24 },
@@ -1185,7 +1185,7 @@
       },
       "4": {
         "start": { "line": 43, "column": 2 },
-        "end": { "line": 45, "column": 3 }
+        "end": { "line": 45, "column": 4 }
       }
     },
     "fnMap": {
@@ -1231,10 +1231,10 @@
     "f": { "0": 7, "1": 3, "2": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "5d7cf2acd40495a306db1be0a9340aaa56216ecd"
+    "hash": "b177f8e956b8c546e31d0f2a758f52bd1d97b9db"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/reducer.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 11, "column": 28 },
@@ -1254,11 +1254,11 @@
       },
       "4": {
         "start": { "line": 20, "column": 8 },
-        "end": { "line": 20, "column": 36 }
+        "end": { "line": 20, "column": 37 }
       },
       "5": {
         "start": { "line": 21, "column": 8 },
-        "end": { "line": 21, "column": 13 }
+        "end": { "line": 21, "column": 14 }
       }
     },
     "fnMap": {
@@ -1311,7 +1311,7 @@
         "locations": [
           {
             "start": { "line": 19, "column": 6 },
-            "end": { "line": 21, "column": 13 }
+            "end": { "line": 21, "column": 14 }
           }
         ],
         "line": 18
@@ -1321,10 +1321,10 @@
     "f": { "0": 2, "1": 2 },
     "b": { "0": [2], "1": [1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e32f3d2974c2018c18e16f0cc54085e2cec1d64c"
+    "hash": "6db8c57563b4e36d4dd782985ed92dca2c05456b"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/selectors.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/selectors.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 23 },
@@ -1409,26 +1409,26 @@
     "f": { "0": 8, "1": 9, "2": 3 },
     "b": { "0": [8, 7] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "94019a0b332442c295a9741ac323458a61542a31"
+    "hash": "5f09ea5926db91a95fcbc86e186d4141631a12fd"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 12, "column": 4 },
-        "end": { "line": 12, "column": 24 }
+        "end": { "line": 12, "column": 25 }
       },
       "1": {
         "start": { "line": 16, "column": 4 },
-        "end": { "line": 16, "column": 56 }
+        "end": { "line": 16, "column": 57 }
       },
       "2": {
         "start": { "line": 20, "column": 4 },
-        "end": { "line": 27, "column": 5 }
+        "end": { "line": 27, "column": 6 }
       },
       "3": {
         "start": { "line": 31, "column": 0 },
-        "end": { "line": 33, "column": 1 }
+        "end": { "line": 33, "column": 2 }
       },
       "4": {
         "start": { "line": 35, "column": 27 },
@@ -1510,10 +1510,10 @@
     "f": { "0": 4, "1": 4, "2": 4, "3": 1, "4": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "61d13a83bf7ad6c045e96bd093147a6409da7252"
+    "hash": "998fc0161cf510836bf5513a62c3381da8d900ca"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/reducer.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 4 },
@@ -1537,7 +1537,7 @@
       },
       "5": {
         "start": { "line": 20, "column": 8 },
-        "end": { "line": 20, "column": 20 }
+        "end": { "line": 20, "column": 21 }
       }
     },
     "fnMap": {
@@ -1590,7 +1590,7 @@
         "locations": [
           {
             "start": { "line": 19, "column": 6 },
-            "end": { "line": 20, "column": 20 }
+            "end": { "line": 20, "column": 21 }
           }
         ],
         "line": 18
@@ -1600,14 +1600,14 @@
     "f": { "0": 2, "1": 2 },
     "b": { "0": [1], "1": [2] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "bdf30ff410006068576689fb4ffa06eee7fef288"
+    "hash": "316b27a3e5e55185a8863d3e89ddd269a1e03f63"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js",
+  "/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/saga.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 2 },
-        "end": { "line": 9, "column": 74 }
+        "end": { "line": 9, "column": 75 }
       },
       "1": {
         "start": { "line": 9, "column": 19 },
@@ -1615,7 +1615,7 @@
       },
       "2": {
         "start": { "line": 13, "column": 2 },
-        "end": { "line": 13, "column": 52 }
+        "end": { "line": 13, "column": 53 }
       }
     },
     "fnMap": {
@@ -1661,10 +1661,10 @@
     "f": { "0": 3, "1": 1, "2": 7 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "4d793686790e90f8dc9aa3d2b85f731541f6d60b"
+    "hash": "a4da0000408999d5982c7389b746d9695c0d8ce6"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js",
+  "/Users/Ali/Consulting/react-native-template/app/navigators/AppNavigator.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/navigators/AppNavigator.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 23 },
@@ -1677,22 +1677,22 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9e93bf478a2270f91c528741de60b29e8bf0c9a2"
+    "hash": "306a8c8f35cc34bb4b9a591cd40f13eabfb149fc"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js",
+  "/Users/Ali/Consulting/react-native-template/app/services/NavigationService.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/services/NavigationService.js",
     "statementMap": {
       "0": {
         "start": { "line": 15, "column": 2 },
-        "end": { "line": 15, "column": 26 }
+        "end": { "line": 15, "column": 27 }
       },
       "1": {
         "start": { "line": 25, "column": 2 },
-        "end": { "line": 30, "column": 3 }
+        "end": { "line": 30, "column": 4 }
       },
       "2": {
         "start": { "line": 43, "column": 2 },
-        "end": { "line": 54, "column": 3 }
+        "end": { "line": 54, "column": 4 }
       }
     },
     "fnMap": {
@@ -1738,10 +1738,10 @@
     "f": { "0": 4, "1": 0, "2": 0 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "c8391a5c3e528a16f91d0fcd067f5b2181f8be66"
+    "hash": "966b7a749563c9de6ffc0af118916353e3650527"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js",
+  "/Users/Ali/Consulting/react-native-template/app/services/UserService.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/services/UserService.js",
     "statementMap": {
       "0": {
         "start": { "line": 3, "column": 18 },
@@ -1775,10 +1775,10 @@
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a897752d8b8853420618fba1786f7c229317729e"
+    "hash": "445710f22dd2e7291f08ac62f8527a7e99e18caf"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js",
+  "/Users/Ali/Consulting/react-native-template/app/themes/colors.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/themes/colors.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1786,10 +1786,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "ca948910c49d40f0e826abeee27e7c84054300b2"
+    "hash": "4e5ba1fe56428ae8e6698876e777ec6f5f5685db"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js",
+  "/Users/Ali/Consulting/react-native-template/app/themes/fonts.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/themes/fonts.js",
     "statementMap": {
       "0": {
         "start": { "line": 4, "column": 16 },
@@ -2054,10 +2054,10 @@
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e1a772b0612849443657ba95d0062f51af5699be"
+    "hash": "ae26e3d5316fa783f3608aec4a2727ac9ce5b087"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js",
+  "/Users/Ali/Consulting/react-native-template/app/themes/images.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/themes/images.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -2065,10 +2065,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b9afc5d36af1de384261b42bc4947c747ee25dbf"
+    "hash": "ff31a5825641cc994a06188b25130e1c0fb63706"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js",
+  "/Users/Ali/Consulting/react-native-template/app/themes/index.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/themes/index.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -2076,10 +2076,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b84c05aa1b08acfeae7d5699c6b8afbb4314b4cb"
+    "hash": "51f1ad6b5af30714765f6264bc259d1766762afe"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js",
+  "/Users/Ali/Consulting/react-native-template/app/utils/apiUtils.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/utils/apiUtils.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 26 },
@@ -2103,19 +2103,19 @@
       },
       "5": {
         "start": { "line": 14, "column": 6 },
-        "end": { "line": 14, "column": 69 }
+        "end": { "line": 14, "column": 70 }
       },
       "6": {
         "start": { "line": 15, "column": 6 },
-        "end": { "line": 15, "column": 29 }
+        "end": { "line": 15, "column": 30 }
       },
       "7": {
         "start": { "line": 17, "column": 6 },
-        "end": { "line": 17, "column": 71 }
+        "end": { "line": 17, "column": 72 }
       },
       "8": {
         "start": { "line": 18, "column": 6 },
-        "end": { "line": 18, "column": 31 }
+        "end": { "line": 18, "column": 32 }
       },
       "9": {
         "start": { "line": 22, "column": 44 },
@@ -2127,7 +2127,7 @@
       },
       "11": {
         "start": { "line": 27, "column": 2 },
-        "end": { "line": 33, "column": 4 }
+        "end": { "line": 33, "column": 5 }
       },
       "12": {
         "start": { "line": 28, "column": 25 },
@@ -2139,7 +2139,7 @@
       },
       "14": {
         "start": { "line": 30, "column": 6 },
-        "end": { "line": 30, "column": 64 }
+        "end": { "line": 30, "column": 65 }
       },
       "15": {
         "start": { "line": 30, "column": 48 },
@@ -2147,11 +2147,11 @@
       },
       "16": {
         "start": { "line": 32, "column": 4 },
-        "end": { "line": 32, "column": 19 }
+        "end": { "line": 32, "column": 20 }
       },
       "17": {
         "start": { "line": 35, "column": 2 },
-        "end": { "line": 41, "column": 4 }
+        "end": { "line": 41, "column": 5 }
       },
       "18": {
         "start": { "line": 36, "column": 21 },
@@ -2163,7 +2163,7 @@
       },
       "20": {
         "start": { "line": 38, "column": 6 },
-        "end": { "line": 38, "column": 63 }
+        "end": { "line": 38, "column": 64 }
       },
       "21": {
         "start": { "line": 38, "column": 47 },
@@ -2171,11 +2171,11 @@
       },
       "22": {
         "start": { "line": 40, "column": 4 },
-        "end": { "line": 40, "column": 18 }
+        "end": { "line": 40, "column": 19 }
       },
       "23": {
         "start": { "line": 42, "column": 2 },
-        "end": { "line": 42, "column": 12 }
+        "end": { "line": 42, "column": 13 }
       }
     },
     "fnMap": {
@@ -2302,11 +2302,11 @@
         "locations": [
           {
             "start": { "line": 13, "column": 4 },
-            "end": { "line": 15, "column": 29 }
+            "end": { "line": 15, "column": 30 }
           },
           {
             "start": { "line": 16, "column": 4 },
-            "end": { "line": 18, "column": 31 }
+            "end": { "line": 18, "column": 32 }
           }
         ],
         "line": 12
@@ -2402,10 +2402,10 @@
       "5": [0, 1]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9f373ea696474a187220f7f918c5e5962c9bde0b"
+    "hash": "bb9a3641a06e177fc5fb89281416758aeaacf992"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js",
+  "/Users/Ali/Consulting/react-native-template/app/utils/createStore.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/utils/createStore.js",
     "statementMap": {
       "0": {
         "start": { "line": 16, "column": 22 },
@@ -2425,11 +2425,11 @@
       },
       "4": {
         "start": { "line": 34, "column": 2 },
-        "end": { "line": 34, "column": 33 }
+        "end": { "line": 34, "column": 34 }
       },
       "5": {
         "start": { "line": 36, "column": 2 },
-        "end": { "line": 36, "column": 48 }
+        "end": { "line": 36, "column": 49 }
       },
       "6": {
         "start": { "line": 39, "column": 27 },
@@ -2445,11 +2445,11 @@
       },
       "9": {
         "start": { "line": 45, "column": 2 },
-        "end": { "line": 45, "column": 30 }
+        "end": { "line": 45, "column": 31 }
       },
       "10": {
         "start": { "line": 47, "column": 2 },
-        "end": { "line": 47, "column": 29 }
+        "end": { "line": 47, "column": 30 }
       }
     },
     "fnMap": {
@@ -2483,10 +2483,10 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9624cc8100bb6aaa1ba71bceda753b1b8d05091b"
+    "hash": "615fa51567dd0d52afa40bd0d980092f5eff988c"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js",
+  "/Users/Ali/Consulting/react-native-template/app/utils/testUtils.js": {
+    "path": "/Users/Ali/Consulting/react-native-template/app/utils/testUtils.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 36 },
@@ -2514,7 +2514,7 @@
       },
       "6": {
         "start": { "line": 25, "column": 2 },
-        "end": { "line": 31, "column": 3 }
+        "end": { "line": 31, "column": 4 }
       },
       "7": {
         "start": { "line": 34, "column": 23 },
@@ -2607,6 +2607,6 @@
     "f": { "0": 2, "1": 10, "2": 4, "3": 3, "4": 3 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e9b082a2caa0f8d29a11b1ba3f5f0092be31d609"
+    "hash": "3a7cf478fbb60ce8aa7425555544fcb7a25588d9"
   }
 }

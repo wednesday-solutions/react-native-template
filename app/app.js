@@ -1,12 +1,12 @@
-import React from 'react'
-import { Provider } from 'react-redux'
-import { PersistGate } from 'redux-persist/lib/integration/react'
-import LanguageProvider from 'app/containers/LanguageProvider'
-import createStore from 'app/rootReducer'
-import { translationMessages } from './i18n'
-import RootScreen from './containers/RootScreen'
+import React from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+import LanguageProvider from 'app/containers/LanguageProvider';
+import createStore from 'app/rootReducer';
+import { translationMessages } from './i18n';
+import RootScreen from './containers/RootScreen';
 
-const { store, persistor } = createStore()
+const { store, persistor } = createStore();
 
 const App = () => (
   <Provider store={store}>
@@ -16,6 +16,6 @@ const App = () => (
       </PersistGate>
     </LanguageProvider>
   </Provider>
-)
+);
 
-export default App
+export default App;

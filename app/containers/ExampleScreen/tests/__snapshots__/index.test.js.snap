@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ExampleScreen /> Should render and match the snapshot 1`] = `
+exports[`<ExampleScreen /> Container tests should render and match the snapshot 1`] = `
 <View
   pointerEvents="box-none"
   style={

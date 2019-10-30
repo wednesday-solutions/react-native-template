@@ -14,3 +14,4 @@ jest.useFakeTimers();
 it('renders correctly', async () => {
   renderer.create(<App />);
 });
+ 

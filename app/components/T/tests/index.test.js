@@ -2,8 +2,6 @@
  *
  * Tests for T
  *
- * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
- *
  */
 import React from 'react';
 import { renderWithIntl } from 'app/utils/testUtils';

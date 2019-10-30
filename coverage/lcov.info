@@ -1,5 +1,5 @@
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/app.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/app.js
 FN:11,(anonymous_0)
 FNF:1
 FNH:1
@@ -13,7 +13,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/i18n.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/i18n.js
 FN:25,(anonymous_0)
 FN:30,(anonymous_1)
 FNF:2
@@ -45,7 +45,7 @@ BRF:6
 BRH:6
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/rootReducer.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js
 FN:6,(anonymous_0)
 FNF:1
 FNH:1
@@ -58,7 +58,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/rootSaga.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js
 FN:5,root
 FNF:1
 FNH:1
@@ -71,7 +71,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/assets/images/logo.png
+SF:/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png
 FNF:0
 FNH:0
 DA:1,4
@@ -81,7 +81,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/assets/images/wednesday-logo.png
+SF:/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png
 FNF:0
 FNH:0
 DA:1,4
@@ -91,7 +91,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/components/Container/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js
 FN:14,(anonymous_0)
 FNF:1
 FNH:1
@@ -106,7 +106,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/components/SplashScreen/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js
 FN:20,(anonymous_0)
 FNF:1
 FNH:1
@@ -121,7 +121,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/components/T/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js
 FN:13,(anonymous_0)
 FNF:1
 FNH:1
@@ -136,7 +136,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/config/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/config/index.js
 FNF:0
 FNH:0
 DA:1,10
@@ -146,7 +146,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js
 FN:90,(anonymous_0)
 FN:94,(anonymous_1)
 FN:94,(anonymous_2)
@@ -193,7 +193,7 @@ BRF:6
 BRH:5
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/reducer.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js
 FN:22,(anonymous_0)
 FN:25,(anonymous_1)
 FN:31,(anonymous_2)
@@ -232,7 +232,7 @@ BRF:5
 BRH:5
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/saga.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js
 FN:12,fetchUser
 FN:26,searchListContainerSaga
 FNF:2
@@ -253,7 +253,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/ExampleScreen/selectors.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js
 FN:5,(anonymous_0)
 FN:8,(anonymous_1)
 FN:11,(anonymous_2)
@@ -289,7 +289,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/actions.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/actions.js
 FN:9,changeLocale
 FNF:1
 FNH:1
@@ -301,7 +301,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/constants.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js
 FNF:0
 FNH:0
 DA:7,12
@@ -311,7 +311,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js
 FN:17,LanguageProvider
 FN:37,(anonymous_1)
 FN:42,mapDispatchToProps
@@ -331,7 +331,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/reducer.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js
 FN:16,(anonymous_0)
 FN:17,(anonymous_1)
 FNF:2
@@ -352,7 +352,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/LanguageProvider/selectors.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js
 FN:7,(anonymous_0)
 FN:13,(anonymous_1)
 FN:16,(anonymous_2)
@@ -373,7 +373,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js
 FN:10,(anonymous_0)
 FN:15,(anonymous_1)
 FN:19,(anonymous_2)
@@ -398,7 +398,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/reducer.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js
 FN:16,(anonymous_0)
 FN:17,(anonymous_1)
 FNF:2
@@ -419,7 +419,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/containers/RootScreen/saga.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js
 FN:8,startup
 FN:9,(anonymous_1)
 FN:12,startUpSaga
@@ -436,7 +436,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/navigators/AppNavigator.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js
 FNF:0
 FNH:0
 DA:10,2
@@ -446,7 +446,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/services/NavigationService.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js
 FN:14,setTopLevelNavigator
 FN:24,navigate
 FN:42,navigateAndReset
@@ -464,7 +464,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/services/UserService.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:1
@@ -477,7 +477,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/themes/colors.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js
 FNF:0
 FNH:0
 LF:0
@@ -486,7 +486,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/themes/fonts.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js
 FN:4,(anonymous_0)
 FN:7,(anonymous_1)
 FN:10,(anonymous_2)
@@ -528,7 +528,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/themes/images.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js
 FNF:0
 FNH:0
 LF:0
@@ -537,7 +537,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/themes/index.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js
 FNF:0
 FNH:0
 LF:0
@@ -546,7 +546,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/utils/apiUtils.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js
 FN:10,(anonymous_0)
 FN:11,(anonymous_1)
 FN:22,(anonymous_2)
@@ -600,7 +600,7 @@ BRF:10
 BRH:6
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/utils/createStore.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js
 FN:28,(anonymous_0)
 FNF:1
 FNH:1
@@ -622,7 +622,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/Ali/Consulting/react-native-template/app/utils/testUtils.js
+SF:/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js
 FN:9,(anonymous_0)
 FN:13,(anonymous_1)
 FN:23,(anonymous_2)

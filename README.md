@@ -30,7 +30,7 @@ The driving goal of the architecture of the template is separation of concerns. 
 
 ## Content
 
-The boilerplate contains:
+The React Native Template contains:
 
 - a [React Native](https://facebook.github.io/react-native/) (v**0.60.6**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
 - a [clear directory layout](#directory-layout) to provide a base architecture for your application

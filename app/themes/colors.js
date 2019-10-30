@@ -12,4 +12,4 @@ export default {
   primary: '#fcedda',
   success: '#28a745',
   error: '#dc3545'
-}
+};

@@ -4,17 +4,17 @@
  *
  */
 
-import React from 'react'
-import styled from 'styled-components/native'
+import React from 'react';
+import styled from 'styled-components/native';
 
 const StyledContainer = styled.View`
   display: flex;
   flex: 1;
-`
+`;
 const Container = ({ ...props }) => (
   <StyledContainer testID="container" {...props} />
-)
+);
 
-Container.propTypes = {}
+Container.propTypes = {};
 
-export default Container
+export default Container;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1572203439763" clover="3.2.0">
-  <project timestamp="1572203439763" name="All files">
+<coverage generated="1572468924605" clover="3.2.0">
+  <project timestamp="1572468924605" name="All files">
     <metrics statements="174" coveredstatements="168" conditionals="37" coveredconditionals="31" methods="75" coveredmethods="70" elements="286" coveredelements="269" complexity="0" loc="174" ncloc="174" packages="13" files="32" classes="32"/>
     <package name="app">
       <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
@@ -130,12 +130,12 @@
       </file>
       <file name="saga.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="28" count="7" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
       </file>
       <file name="selectors.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js">
         <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="7"/>

@@ -53,7 +53,7 @@
       },
       "3": {
         "start": { "line": 16, "column": 0 },
-        "end": { "line": 16, "column": 27 }
+        "end": { "line": 16, "column": 28 }
       },
       "4": {
         "start": { "line": 18, "column": 30 },
@@ -81,11 +81,11 @@
       },
       "10": {
         "start": { "line": 35, "column": 4 },
-        "end": { "line": 35, "column": 72 }
+        "end": { "line": 35, "column": 73 }
       },
       "11": {
         "start": { "line": 37, "column": 2 },
-        "end": { "line": 37, "column": 67 }
+        "end": { "line": 37, "column": 68 }
       },
       "12": {
         "start": { "line": 40, "column": 35 },
@@ -192,7 +192,7 @@
     "f": { "0": 15, "1": 62 },
     "b": { "0": [1, 14], "1": [1, 61], "2": [62, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "970e2e0fee008d20914f7e206ddfbe07830bcae1"
+    "hash": "f52a914cfed15811ba95ba40867a4797c0935705"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js",
@@ -203,7 +203,7 @@
       },
       "1": {
         "start": { "line": 11, "column": 2 },
-        "end": { "line": 11, "column": 46 }
+        "end": { "line": 11, "column": 47 }
       }
     },
     "fnMap": {
@@ -225,18 +225,18 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "6f86eaf7e326209a38ae1f1ff5287d5c2d46bdfe"
+    "hash": "d2fbbe88503bb3f020b29d1f03c04625209a9161"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 2 },
-        "end": { "line": 6, "column": 25 }
+        "end": { "line": 6, "column": 26 }
       },
       "1": {
         "start": { "line": 7, "column": 2 },
-        "end": { "line": 7, "column": 25 }
+        "end": { "line": 7, "column": 26 }
       }
     },
     "fnMap": {
@@ -258,7 +258,7 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "1c98a54f720eec5edfee8825879ce65bf583af1d"
+    "hash": "5c01e8d9f0d51dfea679065a0673c779d440e66f"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png",
@@ -309,7 +309,7 @@
       },
       "3": {
         "start": { "line": 18, "column": 0 },
-        "end": { "line": 18, "column": 24 }
+        "end": { "line": 18, "column": 25 }
       }
     },
     "fnMap": {
@@ -331,7 +331,7 @@
     "f": { "0": 16 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a31568d53af7f1b5bd67270677961aa4476555fa"
+    "hash": "58e8f6ff1f1be4d8f67998753c8ae50af629d583"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js",
@@ -387,11 +387,11 @@
       },
       "2": {
         "start": { "line": 17, "column": 0 },
-        "end": { "line": 21, "column": 1 }
+        "end": { "line": 21, "column": 2 }
       },
       "3": {
         "start": { "line": 22, "column": 0 },
-        "end": { "line": 24, "column": 1 }
+        "end": { "line": 24, "column": 2 }
       }
     },
     "fnMap": {
@@ -413,7 +413,7 @@
     "f": { "0": 9 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "4f139d21c42b5b9b7d44afedf378b650a4a4a8fe"
+    "hash": "2c88b1427d7cb34c39fdf61b2598c5698c836b0a"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js",
@@ -480,7 +480,7 @@
       },
       "11": {
         "start": { "line": 91, "column": 4 },
-        "end": { "line": 91, "column": 29 }
+        "end": { "line": 91, "column": 30 }
       },
       "12": {
         "start": { "line": 94, "column": 27 },
@@ -488,15 +488,15 @@
       },
       "13": {
         "start": { "line": 95, "column": 4 },
-        "end": { "line": 95, "column": 26 }
+        "end": { "line": 95, "column": 27 }
       },
       "14": {
         "start": { "line": 99, "column": 4 },
-        "end": { "line": 136, "column": 5 }
+        "end": { "line": 136, "column": 6 }
       },
       "15": {
         "start": { "line": 140, "column": 0 },
-        "end": { "line": 145, "column": 1 }
+        "end": { "line": 145, "column": 2 }
       },
       "16": {
         "start": { "line": 147, "column": 24 },
@@ -675,7 +675,7 @@
     "f": { "0": 4, "1": 7, "2": 4, "3": 4, "4": 0, "5": 0 },
     "b": { "0": [1, 3], "1": [0, 3], "2": [3, 3] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "aa4587a80d0103b23603ed62d8ebf2fe5442bea2"
+    "hash": "a62396a0e434c59419b1bc1ce5327a113c633097"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js",
@@ -726,19 +726,19 @@
       },
       "11": {
         "start": { "line": 44, "column": 8 },
-        "end": { "line": 44, "column": 39 }
+        "end": { "line": 44, "column": 40 }
       },
       "12": {
         "start": { "line": 46, "column": 8 },
-        "end": { "line": 46, "column": 46 }
+        "end": { "line": 46, "column": 47 }
       },
       "13": {
         "start": { "line": 48, "column": 8 },
-        "end": { "line": 48, "column": 46 }
+        "end": { "line": 48, "column": 47 }
       },
       "14": {
         "start": { "line": 50, "column": 8 },
-        "end": { "line": 50, "column": 20 }
+        "end": { "line": 50, "column": 21 }
       }
     },
     "fnMap": {
@@ -827,19 +827,19 @@
         "locations": [
           {
             "start": { "line": 43, "column": 6 },
-            "end": { "line": 44, "column": 39 }
+            "end": { "line": 44, "column": 40 }
           },
           {
             "start": { "line": 45, "column": 6 },
-            "end": { "line": 46, "column": 46 }
+            "end": { "line": 46, "column": 47 }
           },
           {
             "start": { "line": 47, "column": 6 },
-            "end": { "line": 48, "column": 46 }
+            "end": { "line": 48, "column": 47 }
           },
           {
             "start": { "line": 49, "column": 6 },
-            "end": { "line": 50, "column": 20 }
+            "end": { "line": 50, "column": 21 }
           }
         ],
         "line": 42
@@ -865,34 +865,34 @@
     "f": { "0": 1, "1": 1, "2": 1, "3": 30, "4": 30 },
     "b": { "0": [19], "1": [1, 1, 1, 27] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "389fc7edede350439b287eef9dd6be42a1ebc792"
+    "hash": "72f7a497bbc551e95a90c36d627e03540d6adf36"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js",
     "statementMap": {
       "0": {
-        "start": { "line": 14, "column": 19 },
-        "end": { "line": 14, "column": 38 }
+        "start": { "line": 13, "column": 19 },
+        "end": { "line": 13, "column": 38 }
       },
       "1": {
-        "start": { "line": 15, "column": 2 },
-        "end": { "line": 24, "column": 3 }
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 23, "column": 3 }
       },
       "2": {
-        "start": { "line": 16, "column": 21 },
-        "end": { "line": 16, "column": 29 }
+        "start": { "line": 15, "column": 21 },
+        "end": { "line": 15, "column": 29 }
       },
       "3": {
-        "start": { "line": 17, "column": 4 },
-        "end": { "line": 17, "column": 68 }
+        "start": { "line": 16, "column": 4 },
+        "end": { "line": 16, "column": 69 }
       },
       "4": {
-        "start": { "line": 19, "column": 4 },
-        "end": { "line": 23, "column": 5 }
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 22, "column": 6 }
       },
       "5": {
-        "start": { "line": 28, "column": 2 },
-        "end": { "line": 28, "column": 68 }
+        "start": { "line": 27, "column": 2 },
+        "end": { "line": 27, "column": 69 }
       }
     },
     "fnMap": {
@@ -904,48 +904,48 @@
         },
         "loc": {
           "start": { "line": 12, "column": 29 },
-          "end": { "line": 25, "column": 1 }
+          "end": { "line": 24, "column": 1 }
         },
         "line": 12
       },
       "1": {
         "name": "searchListContainerSaga",
         "decl": {
-          "start": { "line": 27, "column": 25 },
-          "end": { "line": 27, "column": 48 }
+          "start": { "line": 26, "column": 25 },
+          "end": { "line": 26, "column": 48 }
         },
         "loc": {
-          "start": { "line": 27, "column": 51 },
-          "end": { "line": 29, "column": 1 }
+          "start": { "line": 26, "column": 51 },
+          "end": { "line": 28, "column": 1 }
         },
-        "line": 27
+        "line": 26
       }
     },
     "branchMap": {
       "0": {
         "loc": {
-          "start": { "line": 15, "column": 2 },
-          "end": { "line": 24, "column": 3 }
+          "start": { "line": 14, "column": 2 },
+          "end": { "line": 23, "column": 3 }
         },
         "type": "if",
         "locations": [
           {
-            "start": { "line": 15, "column": 2 },
-            "end": { "line": 24, "column": 3 }
+            "start": { "line": 14, "column": 2 },
+            "end": { "line": 23, "column": 3 }
           },
           {
-            "start": { "line": 15, "column": 2 },
-            "end": { "line": 24, "column": 3 }
+            "start": { "line": 14, "column": 2 },
+            "end": { "line": 23, "column": 3 }
           }
         ],
-        "line": 15
+        "line": 14
       }
     },
     "s": { "0": 2, "1": 2, "2": 1, "3": 1, "4": 1, "5": 7 },
     "f": { "0": 2, "1": 7 },
     "b": { "0": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "ceb234b090772d60b4074a004b6d2f9730cad1b9"
+    "hash": "43ca774600136691c26eca4473cc9f1151c0c53d"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js",
@@ -1124,7 +1124,7 @@
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 2 },
-        "end": { "line": 13, "column": 3 }
+        "end": { "line": 13, "column": 4 }
       }
     },
     "fnMap": {
@@ -1146,7 +1146,7 @@
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "f7a9a07a8ef306db8897d9c3d98fb0f69b821872"
+    "hash": "6c06449d19fe8e8819d16f3bb37e77dfe04f6f98"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js",
@@ -1169,11 +1169,11 @@
     "statementMap": {
       "0": {
         "start": { "line": 18, "column": 2 },
-        "end": { "line": 26, "column": 3 }
+        "end": { "line": 26, "column": 4 }
       },
       "1": {
         "start": { "line": 29, "column": 0 },
-        "end": { "line": 33, "column": 1 }
+        "end": { "line": 33, "column": 2 }
       },
       "2": {
         "start": { "line": 35, "column": 24 },
@@ -1185,7 +1185,7 @@
       },
       "4": {
         "start": { "line": 43, "column": 2 },
-        "end": { "line": 45, "column": 3 }
+        "end": { "line": 45, "column": 4 }
       }
     },
     "fnMap": {
@@ -1231,7 +1231,7 @@
     "f": { "0": 7, "1": 3, "2": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "5d7cf2acd40495a306db1be0a9340aaa56216ecd"
+    "hash": "1cec730eba761b667ba796ca5f04477463c0708a"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js",
@@ -1254,11 +1254,11 @@
       },
       "4": {
         "start": { "line": 20, "column": 8 },
-        "end": { "line": 20, "column": 36 }
+        "end": { "line": 20, "column": 37 }
       },
       "5": {
         "start": { "line": 21, "column": 8 },
-        "end": { "line": 21, "column": 13 }
+        "end": { "line": 21, "column": 14 }
       }
     },
     "fnMap": {
@@ -1311,7 +1311,7 @@
         "locations": [
           {
             "start": { "line": 19, "column": 6 },
-            "end": { "line": 21, "column": 13 }
+            "end": { "line": 21, "column": 14 }
           }
         ],
         "line": 18
@@ -1321,7 +1321,7 @@
     "f": { "0": 2, "1": 2 },
     "b": { "0": [2], "1": [1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e32f3d2974c2018c18e16f0cc54085e2cec1d64c"
+    "hash": "99ffa95186b3c6b5e77b058eb47d41b00e8c4363"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js",
@@ -1416,19 +1416,19 @@
     "statementMap": {
       "0": {
         "start": { "line": 12, "column": 4 },
-        "end": { "line": 12, "column": 24 }
+        "end": { "line": 12, "column": 25 }
       },
       "1": {
         "start": { "line": 16, "column": 4 },
-        "end": { "line": 16, "column": 56 }
+        "end": { "line": 16, "column": 57 }
       },
       "2": {
         "start": { "line": 20, "column": 4 },
-        "end": { "line": 27, "column": 5 }
+        "end": { "line": 27, "column": 6 }
       },
       "3": {
         "start": { "line": 31, "column": 0 },
-        "end": { "line": 33, "column": 1 }
+        "end": { "line": 33, "column": 2 }
       },
       "4": {
         "start": { "line": 35, "column": 27 },
@@ -1510,7 +1510,7 @@
     "f": { "0": 4, "1": 4, "2": 4, "3": 1, "4": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "61d13a83bf7ad6c045e96bd093147a6409da7252"
+    "hash": "812340837baa8304026c4a304babbe70757cd8eb"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js",
@@ -1537,7 +1537,7 @@
       },
       "5": {
         "start": { "line": 20, "column": 8 },
-        "end": { "line": 20, "column": 20 }
+        "end": { "line": 20, "column": 21 }
       }
     },
     "fnMap": {
@@ -1590,7 +1590,7 @@
         "locations": [
           {
             "start": { "line": 19, "column": 6 },
-            "end": { "line": 20, "column": 20 }
+            "end": { "line": 20, "column": 21 }
           }
         ],
         "line": 18
@@ -1600,14 +1600,14 @@
     "f": { "0": 2, "1": 2 },
     "b": { "0": [1], "1": [2] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "bdf30ff410006068576689fb4ffa06eee7fef288"
+    "hash": "0e37950191b5013bfd32482dd84f1085b5e47d1a"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 2 },
-        "end": { "line": 9, "column": 74 }
+        "end": { "line": 9, "column": 75 }
       },
       "1": {
         "start": { "line": 9, "column": 19 },
@@ -1615,7 +1615,7 @@
       },
       "2": {
         "start": { "line": 13, "column": 2 },
-        "end": { "line": 13, "column": 52 }
+        "end": { "line": 13, "column": 53 }
       }
     },
     "fnMap": {
@@ -1661,7 +1661,7 @@
     "f": { "0": 3, "1": 1, "2": 7 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "4d793686790e90f8dc9aa3d2b85f731541f6d60b"
+    "hash": "fb0a961e846a2dcb87131cbf2ad82cf583ccd055"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js",
@@ -1684,15 +1684,15 @@
     "statementMap": {
       "0": {
         "start": { "line": 15, "column": 2 },
-        "end": { "line": 15, "column": 26 }
+        "end": { "line": 15, "column": 27 }
       },
       "1": {
         "start": { "line": 25, "column": 2 },
-        "end": { "line": 30, "column": 3 }
+        "end": { "line": 30, "column": 4 }
       },
       "2": {
         "start": { "line": 43, "column": 2 },
-        "end": { "line": 54, "column": 3 }
+        "end": { "line": 54, "column": 4 }
       }
     },
     "fnMap": {
@@ -1738,7 +1738,7 @@
     "f": { "0": 4, "1": 0, "2": 0 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "c8391a5c3e528a16f91d0fcd067f5b2181f8be66"
+    "hash": "b306c487dbc0436468e98e5b9812e55f02087028"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js",
@@ -2103,19 +2103,19 @@
       },
       "5": {
         "start": { "line": 14, "column": 6 },
-        "end": { "line": 14, "column": 69 }
+        "end": { "line": 14, "column": 70 }
       },
       "6": {
         "start": { "line": 15, "column": 6 },
-        "end": { "line": 15, "column": 29 }
+        "end": { "line": 15, "column": 30 }
       },
       "7": {
         "start": { "line": 17, "column": 6 },
-        "end": { "line": 17, "column": 71 }
+        "end": { "line": 17, "column": 72 }
       },
       "8": {
         "start": { "line": 18, "column": 6 },
-        "end": { "line": 18, "column": 31 }
+        "end": { "line": 18, "column": 32 }
       },
       "9": {
         "start": { "line": 22, "column": 44 },
@@ -2127,7 +2127,7 @@
       },
       "11": {
         "start": { "line": 27, "column": 2 },
-        "end": { "line": 33, "column": 4 }
+        "end": { "line": 33, "column": 5 }
       },
       "12": {
         "start": { "line": 28, "column": 25 },
@@ -2139,7 +2139,7 @@
       },
       "14": {
         "start": { "line": 30, "column": 6 },
-        "end": { "line": 30, "column": 64 }
+        "end": { "line": 30, "column": 65 }
       },
       "15": {
         "start": { "line": 30, "column": 48 },
@@ -2147,11 +2147,11 @@
       },
       "16": {
         "start": { "line": 32, "column": 4 },
-        "end": { "line": 32, "column": 19 }
+        "end": { "line": 32, "column": 20 }
       },
       "17": {
         "start": { "line": 35, "column": 2 },
-        "end": { "line": 41, "column": 4 }
+        "end": { "line": 41, "column": 5 }
       },
       "18": {
         "start": { "line": 36, "column": 21 },
@@ -2163,7 +2163,7 @@
       },
       "20": {
         "start": { "line": 38, "column": 6 },
-        "end": { "line": 38, "column": 63 }
+        "end": { "line": 38, "column": 64 }
       },
       "21": {
         "start": { "line": 38, "column": 47 },
@@ -2171,11 +2171,11 @@
       },
       "22": {
         "start": { "line": 40, "column": 4 },
-        "end": { "line": 40, "column": 18 }
+        "end": { "line": 40, "column": 19 }
       },
       "23": {
         "start": { "line": 42, "column": 2 },
-        "end": { "line": 42, "column": 12 }
+        "end": { "line": 42, "column": 13 }
       }
     },
     "fnMap": {
@@ -2302,11 +2302,11 @@
         "locations": [
           {
             "start": { "line": 13, "column": 4 },
-            "end": { "line": 15, "column": 29 }
+            "end": { "line": 15, "column": 30 }
           },
           {
             "start": { "line": 16, "column": 4 },
-            "end": { "line": 18, "column": 31 }
+            "end": { "line": 18, "column": 32 }
           }
         ],
         "line": 12
@@ -2402,7 +2402,7 @@
       "5": [0, 1]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9f373ea696474a187220f7f918c5e5962c9bde0b"
+    "hash": "96dd6f5009ae680f5cdd96c238f3251c21b84a4a"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js",
@@ -2425,11 +2425,11 @@
       },
       "4": {
         "start": { "line": 34, "column": 2 },
-        "end": { "line": 34, "column": 33 }
+        "end": { "line": 34, "column": 34 }
       },
       "5": {
         "start": { "line": 36, "column": 2 },
-        "end": { "line": 36, "column": 48 }
+        "end": { "line": 36, "column": 49 }
       },
       "6": {
         "start": { "line": 39, "column": 27 },
@@ -2445,11 +2445,11 @@
       },
       "9": {
         "start": { "line": 45, "column": 2 },
-        "end": { "line": 45, "column": 30 }
+        "end": { "line": 45, "column": 31 }
       },
       "10": {
         "start": { "line": 47, "column": 2 },
-        "end": { "line": 47, "column": 29 }
+        "end": { "line": 47, "column": 30 }
       }
     },
     "fnMap": {
@@ -2483,7 +2483,7 @@
     "f": { "0": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9624cc8100bb6aaa1ba71bceda753b1b8d05091b"
+    "hash": "a05574541198e043ca987ad5fe265c0568888ea8"
   },
   "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js": {
     "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js",
@@ -2514,7 +2514,7 @@
       },
       "6": {
         "start": { "line": 25, "column": 2 },
-        "end": { "line": 31, "column": 3 }
+        "end": { "line": 31, "column": 4 }
       },
       "7": {
         "start": { "line": 34, "column": 23 },
@@ -2607,6 +2607,6 @@
     "f": { "0": 2, "1": 10, "2": 4, "3": 3, "4": 3 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e9b082a2caa0f8d29a11b1ba3f5f0092be31d609"
+    "hash": "e3b22d7b9eb91527d7cfb71749a12581b851c582"
   }
 }

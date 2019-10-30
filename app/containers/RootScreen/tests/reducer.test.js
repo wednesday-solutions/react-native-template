@@ -1,17 +1,19 @@
-import { rootContainerReducer, initialState, rootScreenTypes } from '../reducer'
-// import { someAction } from '../actions'
+import {
+  rootContainerReducer,
+  initialState,
+  rootScreenTypes
+} from '../reducer';
 
 /* eslint-disable default-case, no-param-reassign */
-describe('rootContainerReducer', () => {
-  let state
+describe('Tests for RootScreen reducers', () => {
+  let state;
   beforeEach(() => {
-    state = initialState
-  })
+    state = initialState;
+  });
 
   it('should return the initial state', () => {
-    const expectedResult = state
-    expect(rootContainerReducer(undefined, {})).toEqual(expectedResult)
-  })
+    expect(rootContainerReducer(undefined, {})).toEqual(state);
+  });
 
   it('should return the initial state when an action of type STARTUP is dispatched', () => {
     // since startup is called to initiate screen navigation the store should remain intact
@@ -19,6 +21,6 @@ describe('rootContainerReducer', () => {
       rootContainerReducer(state, {
         type: rootScreenTypes.STARTUP
       })
-    ).toEqual(state)
-  })
-})
+    ).toEqual(state);
+  });
+});

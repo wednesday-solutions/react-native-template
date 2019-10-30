@@ -1,11 +1,11 @@
-import { selectLanguage } from '../selectors'
+import { selectLanguage } from '../selectors';
 
-describe('selectLanguage', () => {
+describe('Tests for LanguageProvider selectors', () => {
   it('should select the global state', () => {
-    const globalState = {}
+    const globalState = {};
     const mockedState = {
       language: globalState
-    }
-    expect(selectLanguage(mockedState)).toEqual(globalState)
-  })
-})
+    };
+    expect(selectLanguage(mockedState)).toEqual(globalState);
+  });
+});

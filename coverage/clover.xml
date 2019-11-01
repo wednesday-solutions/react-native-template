@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1572468924605" clover="3.2.0">
-  <project timestamp="1572468924605" name="All files">
-    <metrics statements="174" coveredstatements="168" conditionals="37" coveredconditionals="31" methods="75" coveredmethods="70" elements="286" coveredelements="269" complexity="0" loc="174" ncloc="174" packages="13" files="32" classes="32"/>
+<coverage generated="1572586283389" clover="3.2.0">
+  <project timestamp="1572586283389" name="All files">
+    <metrics statements="173" coveredstatements="167" conditionals="38" coveredconditionals="32" methods="74" coveredmethods="69" elements="285" coveredelements="268" complexity="0" loc="173" ncloc="173" packages="13" files="30" classes="30"/>
     <package name="app">
       <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
       <file name="app.js" path="/Users/mac/wednesday/react-native-boilerplate/app/app.js">
@@ -153,15 +153,7 @@
       </file>
     </package>
     <package name="app.containers.LanguageProvider">
-      <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
-      <file name="actions.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/actions.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-      </file>
-      <file name="constants.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/constants.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="12" type="stmt"/>
-      </file>
+      <metrics statements="16" coveredstatements="16" conditionals="5" coveredconditionals="5" methods="8" coveredmethods="8"/>
       <file name="index.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="18" count="7" type="stmt"/>
@@ -171,20 +163,21 @@
         <line num="43" count="6" type="stmt"/>
       </file>
       <file name="reducer.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js">
-        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="11" count="11" type="stmt"/>
-        <line num="16" count="11" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="23" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
       <file name="selectors.js" path="/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="7" count="10" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="10" type="stmt"/>
         <line num="14" count="9" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
       </file>
     </package>
     <package name="app.containers.RootScreen">

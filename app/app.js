@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/lib/integration/react';
-import LanguageProvider from 'app/containers/LanguageProvider';
+import LanguageProvider from '@atoms/LanguageProvider';
+import RootScreen from '@scenes/RootScreen';
 import createStore from 'app/rootReducer';
 import { translationMessages } from './i18n';
-import RootScreen from './containers/RootScreen';
 
 const { store, persistor } = createStore();
 

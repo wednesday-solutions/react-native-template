@@ -9,6 +9,7 @@ const prettierOptions = JSON.parse(
 // const app = JSON.parse(path.resolve(__dirname, 'app'));
 
 module.exports = {
+  root: true,
   parser: 'babel-eslint',
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['prettier', 'redux-saga', 'react-native', 'react', 'react-hooks', 'jsx-a11y'],
@@ -89,7 +90,16 @@ module.exports = {
         "app": "./app",
         "context": "app",
         "resolve": {
-          "app": "./app",
+          "alias": {
+            "@assets": "./app/assets",
+            "@components": "./app/components",
+            "@containers": "./app/containers",
+            "@config": "./app/config",
+            "@navigators": "./app/navigators",
+            "@services": "./app/services",
+            "@themes": "./app/themes",
+            "@utils": "./app/utils"
+          },
           "paths": ["app"],
           "modules": ["app", 'node_modules'],
           "extensions": ['.js', '.jsx', '.json', '.coffee', '.cjsx'],

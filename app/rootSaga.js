@@ -1,6 +1,6 @@
 import { fork } from 'redux-saga/effects';
-import exampleSaga from 'app/containers/ExampleScreen/saga';
-import startupSaga from 'app/containers/RootScreen/saga';
+import exampleSaga from '@scenes/ExampleScreen/saga';
+import startupSaga from '@scenes/RootScreen/saga';
 
 export default function* root() {
   yield fork(exampleSaga);

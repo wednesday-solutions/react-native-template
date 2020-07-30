@@ -4,7 +4,7 @@ import { render } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
 import createStore from 'app/rootReducer';
 import { DEFAULT_LOCALE, translationMessages } from 'app/i18n';
-import ConnectedLanguageProvider from 'app/containers/LanguageProvider';
+import ConnectedLanguageProvider from '@atoms/LanguageProvider';
 
 export const apiResponseGenerator = (ok, data) => ({
   ok,

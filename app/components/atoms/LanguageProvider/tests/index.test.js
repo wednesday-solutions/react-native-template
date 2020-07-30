@@ -2,10 +2,10 @@ import React from 'react';
 import 'react-native';
 import { render } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
-import T from 'app/components/T';
+import T from '@atoms/T';
 import createStore from 'app/rootReducer';
 import { translationMessages } from 'app/i18n';
-import { renderWithIntl } from 'app/utils/testUtils';
+import { renderWithIntl } from '@utils/testUtils';
 import ConnectedLanguageProvider, { LanguageProvider } from '../index';
 
 describe('<LanguageProvider /> container tests', () => {

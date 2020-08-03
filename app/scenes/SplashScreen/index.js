@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import AppContainer from 'app/components/Container';
-import { colors, images } from 'app/themes';
+import AppContainer from '@atoms/Container';
+import { colors, images } from '@themes';
 
 const Container = styled(AppContainer)`
   display: flex;

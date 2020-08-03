@@ -7,9 +7,9 @@ import styled from 'styled-components/native';
 import { createStructuredSelector } from 'reselect';
 import { get } from 'lodash';
 import { injectIntl } from 'react-intl';
-import { images, fonts } from 'app/themes';
-import AppContainer from 'app/components/Container';
-import T from 'app/components/T';
+import { images, fonts } from '@themes';
+import AppContainer from '@atoms/Container';
+import T from '@atoms/T';
 
 import {
   selectUser,

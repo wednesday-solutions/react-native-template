@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import NavigationService from 'app/services/NavigationService';
-import AppNavigator from 'app/navigators/AppNavigator';
-import Container from 'app/components/Container';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
+import NavigationService from '@services/NavigationService';
+import AppNavigator from '@navigators/AppNavigator';
+import Container from '@atoms/Container';
+
 import { rootScreenActions } from './reducer';
 
 export class RootScreen extends Component {

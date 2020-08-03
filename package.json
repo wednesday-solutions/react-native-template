@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest --detectOpenHandles --coverage",
-    "test:staged": "jest --findRelatedTests",
+    "test": "jest --detectOpenHandles --coverage --config=jest.config.js",
+    "test:staged": "jest --findRelatedTests --config=jest.config.js",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
     "lint:eslint:fix": "eslint --ignore-path .gitignore --fix",
@@ -87,6 +87,7 @@
     "babel-loader": "8.0.5",
     "babel-plugin-dynamic-import-node": "2.2.0",
     "babel-plugin-lodash": "3.3.4",
+    "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-react-intl": "3.0.1",
     "babel-plugin-styled-components": "1.10.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
@@ -97,7 +98,7 @@
     "eslint-import-resolver-babel-module": "^5.1.0",
     "eslint-import-resolver-node": "^0.3.2",
     "eslint-import-resolver-reactnative": "^1.0.2",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^22.5.1",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-node": "^8.0.1",
@@ -118,17 +119,5 @@
     "react-dom": "^16.10.2",
     "react-native-rename": "^2.4.1",
     "react-test-renderer": "16.8.6"
-  },
-  "jest": {
-    "preset": "@testing-library/react-native",
-    "setupFiles": [
-      "./node_modules/react-native-gesture-handler/jestSetup.js"
-    ],
-    "setupFilesAfterEnv": [
-      "./setupTests.js"
-    ],
-    "transformIgnorePatterns": [
-      "/node_modules/(?!react-native)/.+"
-    ]
   }
 }

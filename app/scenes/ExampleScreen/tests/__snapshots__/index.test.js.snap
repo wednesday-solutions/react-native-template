@@ -46,29 +46,26 @@ exports[`<ExampleScreen /> Container tests should render and match the snapshot 
       >
         <View
           style={
-            Array [
-              Object {
-                "height": 150,
-                "marginBottom": 25,
-                "width": "100%",
-              },
-            ]
+            Object {
+              "height": 150,
+              "marginBottom": 25,
+              "width": "100%",
+            }
           }
         >
           <Image
             resizeMode="contain"
             source={
               Object {
-                "testUri": "../../../app/assets/images/logo.png",
+                "testUri": "../../../app/assets/images/wednesday-logo-cropped.png",
               }
             }
             style={
-              Array [
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                },
-              ]
+              Object {
+                "alignSelf": "center",
+                "height": "100%",
+                "width": "100%",
+              }
             }
           />
         </View>
@@ -83,6 +80,7 @@ exports[`<ExampleScreen /> Container tests should render and match the snapshot 
               },
             ]
           }
+          testID="t"
         >
           To get started, edit App.js
         </Text>
@@ -98,6 +96,7 @@ exports[`<ExampleScreen /> Container tests should render and match the snapshot 
               },
             ]
           }
+          testID="t"
         >
           Press Cmd+R to reload,
 Cmd+D or shake for dev menu.
@@ -120,12 +119,9 @@ Cmd+D or shake for dev menu.
                 },
               ]
             }
+            testID="t"
           >
-            <Text
-              testID="t"
-            >
-              character loves Wednesday
-            </Text>
+            character loves Wednesday
           </Text>
           <Text
             style={
@@ -138,12 +134,9 @@ Cmd+D or shake for dev menu.
                 },
               ]
             }
+            testID="t"
           >
-            <Text
-              testID="t"
-            >
-              because
-            </Text>
+            because
           </Text>
           <Image
             resizeMode="contain"
@@ -176,7 +169,10 @@ Cmd+D or shake for dev menu.
                 },
               ]
             }
-          />
+            testID="t"
+          >
+            
+          </Text>
         </View>
         <Button
           style={

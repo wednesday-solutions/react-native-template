@@ -14,5 +14,5 @@ jobs:
       - name: Run tests
         run: |
           npm test
-      - name: Build
-        run: cd android && ./gradlew assembleRelease
+      - name: Build android
+        run: npm run build-android

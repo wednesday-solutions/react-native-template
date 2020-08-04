@@ -37,7 +37,7 @@ function LogoWithInstructions({ instructions }) {
       <View style={styles.logoContainer}>
         <Image
           style={styles.logo}
-          source={images.logoCropped}
+          source={images.wednesdayLogo}
           resizeMode="contain"
         />
       </View>

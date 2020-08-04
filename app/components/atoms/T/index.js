@@ -20,7 +20,7 @@ T.propTypes = {
   id: PropTypes.string,
   intl: PropTypes.object,
   values: PropTypes.object,
-  style: PropTypes.object,
+  style: PropTypes.arrayOf(PropTypes.object),
   text: PropTypes.string
 };
 T.defaultProps = {

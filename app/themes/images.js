@@ -3,10 +3,8 @@
  */
 import logo from 'app/assets/images/logo.png';
 import wednesdayLogo from 'app/assets/images/wednesday-logo.png';
-import logoCropped from 'app/assets/images/wednesday-logo-cropped.png';
 
 export default {
   logo,
-  logoCropped,
   wednesdayLogo
 };

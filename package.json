@@ -15,7 +15,8 @@
     "postinstall": "npx jetify",
     "precommit": "lint-staged",
     "prettify": "prettier --write",
-    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master"
+    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
+    "build-android": "cd android && ./gradlew assembleRelease"
   },
   "husky": {
     "hooks": {

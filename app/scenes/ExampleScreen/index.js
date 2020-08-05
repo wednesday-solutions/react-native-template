@@ -154,12 +154,6 @@ const mapDispatchToProps = dispatch => ({
   fetchUser: () => dispatch(exampleScreenActions.requestFetchUser())
 });
 
-const withConnect = connect(
-  mapStateToProps,
-  mapDispatchToProps
-);
-export default compose(
-  withConnect,
-  injectIntl
-)(ExampleScreen);
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+export default compose(withConnect, injectIntl)(ExampleScreen);
 export { ExampleScreen as ExampleScreenTest };

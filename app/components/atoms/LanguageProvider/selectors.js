@@ -11,9 +11,6 @@ const selectLanguage = state => (state.language || initialState).toJS();
  */
 
 const makeSelectLocale = () =>
-  createSelector(
-    selectLanguage,
-    languageState => languageState.locale
-  );
+  createSelector(selectLanguage, languageState => languageState.locale);
 
 export { selectLanguage, makeSelectLocale };

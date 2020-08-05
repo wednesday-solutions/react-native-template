@@ -29,9 +29,10 @@ function CharacterWithQuote({ user }) {
       <Result id="because" />
       <CharacterImage
         resizeMode="contain"
+        testID="character-image"
         source={{ uri: get(user, 'image') }}
       />
-      <Result>{get(user, 'quote')}</Result>
+      <Result text={get(user, 'quote')} />
     </>
   );
 }

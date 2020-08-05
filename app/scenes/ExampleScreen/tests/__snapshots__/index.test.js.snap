@@ -157,6 +157,7 @@ Cmd+D or shake for dev menu.
                 },
               ]
             }
+            testID="character-image"
           />
           <Text
             style={

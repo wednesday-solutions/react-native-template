@@ -47,7 +47,7 @@
     "immer": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
     "intl": "1.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "map-keys-deep": "^0.0.2",
     "metro-babel-register": "^0.56.0",
     "metro-react-native-babel-transformer": "^0.56.0",

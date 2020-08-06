@@ -16,7 +16,7 @@ describe('<SimpsonsLoveWednesday />', () => {
     const { baseElement } = renderWithIntl(<SimpsonsLoveWednesday />);
     expect(baseElement).toMatchSnapshot();
   });
-  it('Should render the Error component if userErrorMessage is true', () => {
+  it('Should render the Error component if userErrorMessage is not empty', () => {
     const props = {
       userErrorMessage: 'Fetch failed',
       instructions: 'PRESS CMD + D for iOS',

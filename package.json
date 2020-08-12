@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest --detectOpenHandles --coverage",
-    "test:staged": "jest --findRelatedTests",
+    "test": "jest --detectOpenHandles --coverage --config=jest.config.js",
+    "test:staged": "jest --findRelatedTests --config=jest.config.js",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
     "lint:eslint:fix": "eslint --ignore-path .gitignore --fix",
@@ -15,7 +15,8 @@
     "postinstall": "npx jetify",
     "precommit": "lint-staged",
     "prettify": "prettier --write",
-    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master"
+    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
+    "build-android": "cd android && ./gradlew assembleRelease"
   },
   "husky": {
     "hooks": {
@@ -52,11 +53,12 @@
     "metro-react-native-babel-transformer": "^0.56.0",
     "metro-source-map": "^0.56.0",
     "prop-types": "^15.7.2",
-    "react": "^16.10.2",
+    "react": "16.13.1",
     "react-intl": "2.8.0",
-    "react-native": "0.60.6",
+    "react-native": "0.63.2",
     "react-native-cli": "^2.0.1",
     "react-native-gesture-handler": "^1.3.0",
+    "react-native-screens": "^2.9.0",
     "react-navigation": "^3.11.2",
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.1.2",
@@ -70,7 +72,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.4.3",
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "7.4.0",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/plugin-transform-modules-commonjs": "7.4.3",
@@ -79,25 +81,26 @@
     "@babel/preset-env": "7.4.3",
     "@babel/preset-react": "7.0.0",
     "@babel/register": "7.4.0",
-    "@babel/runtime": "^7.5.5",
-    "@react-native-community/eslint-config": "^0.0.5",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
-    "babel-jest": "^24.5.0",
+    "babel-jest": "^25.1.0",
     "babel-loader": "8.0.5",
     "babel-plugin-dynamic-import-node": "2.2.0",
     "babel-plugin-lodash": "3.3.4",
+    "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-react-intl": "3.0.1",
     "babel-plugin-styled-components": "1.10.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
-    "eslint": "^6.1.0",
+    "eslint": "6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-import-resolver-babel-module": "^5.1.0",
     "eslint-import-resolver-node": "^0.3.2",
     "eslint-import-resolver-reactnative": "^1.0.2",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^22.5.1",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-node": "^8.0.1",
@@ -108,8 +111,8 @@
     "eslint-plugin-redux-saga": "^1.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^3.0.8",
-    "jest": "^24.5.0",
-    "metro-react-native-babel-preset": "^0.56.0",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
     "pre-commit": "1.2.2",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0",
@@ -117,18 +120,6 @@
     "pretty-quick": "^1.11.1",
     "react-dom": "^16.10.2",
     "react-native-rename": "^2.4.1",
-    "react-test-renderer": "16.8.6"
-  },
-  "jest": {
-    "preset": "@testing-library/react-native",
-    "setupFiles": [
-      "./node_modules/react-native-gesture-handler/jestSetup.js"
-    ],
-    "setupFilesAfterEnv": [
-      "./setupTests.js"
-    ],
-    "transformIgnorePatterns": [
-      "/node_modules/(?!react-native)/.+"
-    ]
+    "react-test-renderer": "16.13.1"
   }
 }

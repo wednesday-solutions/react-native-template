@@ -4,7 +4,6 @@
 
 # Xcode
 #
-.expo/
 build/
 *.pbxuser
 !default.pbxuser
@@ -58,3 +57,5 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+.expo/*

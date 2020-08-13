@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, View, ActivityIndicator } from 'react-native';
+import { Platform, View, ActivityIndicator, Button, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { PropTypes } from 'prop-types';
@@ -101,37 +101,40 @@ class ExampleScreen extends React.Component {
         {this.props.userIsLoading ? (
           <ActivityIndicator testID="loader" size="large" color="#0000ff" />
         ) : (
-          <View testID="example-container-content">
-            <LogoContainer>
-              <Logo source={images.logo} resizeMode="contain" />
-            </LogoContainer>
-            <TextBox>To get started, edit App.js</TextBox>
-            <Instructions>{instructions}</Instructions>
-            {this.props.userErrorMessage ? (
-              <Error>{this.props.userErrorMessage}</Error>
-            ) : (
-              <SeparatedView>
-                <Result>
-                  <T
-                    id="wednesday_lover"
-                    values={{
-                      username: get(this.props.user, 'character') || 'character'
-                    }}
-                  />
-                </Result>
-                <Result>
-                  <T id="because" />
-                </Result>
-                <CharacterImage
-                  resizeMode="contain"
-                  source={{ uri: get(this.props.user, 'image') }}
-                />
-                <Result>{get(this.props.user, 'quote')}</Result>
-              </SeparatedView>
-            )}
-            <CustomButton onPress={this.requestFetchUser()} title="Refresh" />
-          </View>
-        )}
+            <View testID="example-container-content">
+              <LogoContainer>
+                <Logo source={images.logo} resizeMode="contain" />
+              </LogoContainer>
+              <TextBox>To get started, edit App.js</TextBox>
+              <Instructions>{instructions}</Instructions>
+              {this.props.userErrorMessage ? (
+                <Error>{this.props.userErrorMessage}</Error>
+              ) : (
+                  <SeparatedView>
+                    <Result>
+                      <T
+                        id="wednesday_lover"
+                        values={{
+                          username: get(this.props.user, 'character') || 'character'
+                        }}
+                      />
+                    </Result>
+                    <Result>
+                      <T id="because" />
+                    </Result>
+                    <CharacterImage
+                      resizeMode="contain"
+                      source={{ uri: get(this.props.user, 'image') }}
+                    />
+                    <Result>{get(this.props.user, 'quote')}</Result>
+                  </SeparatedView>
+                )}
+
+                
+
+              <CustomButton onPress={this.requestFetchUser()} title="Refresh" />
+            </View>
+          )}
       </Container>
     );
   }

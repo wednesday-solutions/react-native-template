@@ -19,10 +19,12 @@ export class RootScreen extends Component {
   render() {
     return (
       <Container testID="root-screen">
+
         <AppNavigator
           // Initialize the NavigationService (see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html)
           ref={this.setRefForTopLevelNavigtor}
         />
+
       </Container>
     );
   }

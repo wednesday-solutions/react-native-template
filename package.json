@@ -5,7 +5,20 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest --detectOpenHandles --coverage --config=jest.config.js",
+    "test:staged": "jest --findRelatedTests --config=jest.config.js",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore",
+    "lint:eslint:fix": "eslint --ignore-path .gitignore --fix",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint:staged": "lint-staged",
+    "rename": "react-native-rename",
+    "postinstall": "npx jetify",
+    "precommit": "lint-staged",
+    "prettify": "prettier --write",
+    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
+    "build-android": "cd android && ./gradlew assembleRelease"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1597387806338" clover="3.2.0">
+  <project timestamp="1597387806338" name="All files">
+    <metrics statements="170" coveredstatements="159" conditionals="38" coveredconditionals="32" methods="74" coveredmethods="66" elements="282" coveredelements="257" complexity="0" loc="170" ncloc="170" packages="14" files="33" classes="33"/>
+    <package name="app">
+      <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <file name="i18n.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/i18n.js">
+        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="16" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="27" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="14" type="stmt"/>
+        <line num="32" count="57" type="cond" truecount="4" falsecount="0"/>
+        <line num="35" count="57" type="stmt"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="40" count="11" type="stmt"/>
+      </file>
+      <file name="rootReducer.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/rootReducer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+      </file>
+      <file name="rootSaga.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/rootSaga.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.components.atoms.Container">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/Container/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.components.atoms.LanguageProvider">
+      <metrics statements="16" coveredstatements="14" conditionals="5" coveredconditionals="5" methods="9" coveredmethods="8"/>
+      <file name="actions.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/actions.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="constants.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/constants.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+      </file>
+      <file name="reducer.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/reducer.js">
+        <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="23" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+      <file name="selectors.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/selectors.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="7" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.components.atoms.T">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/T/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.components.molecules">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/molecules/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="app.components.organisms">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/components/organisms/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="app.config">
+      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.dev.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.dev.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="9" type="stmt"/>
+      </file>
+      <file name="index.production.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.production.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.navigators">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="AppNavigator.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/navigators/AppNavigator.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.scenes.ExampleScreen">
+      <metrics statements="51" coveredstatements="50" conditionals="15" coveredconditionals="13" methods="20" coveredmethods="18"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/index.js">
+        <metrics statements="20" coveredstatements="19" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="4"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
+        <line num="91" count="4" type="stmt"/>
+        <line num="94" count="7" type="stmt"/>
+        <line num="95" count="4" type="stmt"/>
+        <line num="99" count="4" type="stmt"/>
+        <line num="140" count="2" type="stmt"/>
+        <line num="147" count="2" type="stmt"/>
+        <line num="153" count="2" type="stmt"/>
+        <line num="154" count="0" type="stmt"/>
+        <line num="157" count="2" type="stmt"/>
+      </file>
+      <file name="reducer.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/reducer.js">
+        <metrics statements="15" coveredstatements="15" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="5"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="40" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="41" count="24" type="stmt"/>
+        <line num="42" count="24" type="cond" truecount="4" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="50" count="21" type="stmt"/>
+      </file>
+      <file name="saga.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/saga.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+      </file>
+      <file name="selectors.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/selectors.js">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="7"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.scenes.RootScreen">
+      <metrics statements="15" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="8"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/index.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+      </file>
+      <file name="reducer.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/reducer.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="16" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+      <file name="saga.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/saga.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.scenes.SplashScreen">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/SplashScreen/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.services">
+      <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="NavigationService.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/services/NavigationService.js">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+      </file>
+      <file name="UserService.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/services/UserService.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.themes">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+      <file name="colors.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/themes/colors.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="fonts.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/themes/fonts.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+        <line num="4" count="11" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+      </file>
+      <file name="images.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/themes/images.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/themes/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="app.utils">
+      <metrics statements="39" coveredstatements="36" conditionals="10" coveredconditionals="6" methods="13" coveredmethods="12"/>
+      <file name="apiUtils.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/utils/apiUtils.js">
+        <metrics statements="21" coveredstatements="18" conditionals="10" coveredconditionals="6" methods="7" coveredmethods="6"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="10" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="9" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="27" count="9" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="9" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="9" type="stmt"/>
+      </file>
+      <file name="createStore.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/utils/createStore.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+      </file>
+      <file name="testUtils.js" path="/Users/apple/Projects/expo_react_native/react-native-template/app/utils/testUtils.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -1,43 +1,6 @@
 {
-  "/Users/mac/wednesday/react-native-boilerplate/app/app.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/app.js",
-    "statementMap": {
-      "0": {
-        "start": { "line": 9, "column": 29 },
-        "end": { "line": 9, "column": 42 }
-      },
-      "1": {
-        "start": { "line": 11, "column": 12 },
-        "end": { "line": 19, "column": 1 }
-      },
-      "2": {
-        "start": { "line": 12, "column": 2 },
-        "end": { "line": 18, "column": 13 }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": { "line": 11, "column": 12 },
-          "end": { "line": 11, "column": 13 }
-        },
-        "loc": {
-          "start": { "line": 12, "column": 2 },
-          "end": { "line": 18, "column": 13 }
-        },
-        "line": 12
-      }
-    },
-    "branchMap": {},
-    "s": { "0": 1, "1": 1, "2": 1 },
-    "f": { "0": 1 },
-    "b": {},
-    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "0f1428b770f6217809fff91e06c6714e655cfda5"
-  },
-  "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/i18n.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/i18n.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/i18n.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 22 },
@@ -175,27 +138,27 @@
       }
     },
     "s": {
-      "0": 12,
-      "1": 12,
-      "2": 12,
-      "3": 12,
-      "4": 12,
-      "5": 12,
-      "6": 12,
-      "7": 15,
-      "8": 15,
-      "9": 62,
-      "10": 62,
-      "11": 15,
-      "12": 12
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11,
+      "7": 14,
+      "8": 14,
+      "9": 57,
+      "10": 57,
+      "11": 14,
+      "12": 11
     },
-    "f": { "0": 15, "1": 62 },
-    "b": { "0": [1, 14], "1": [1, 61], "2": [62, 1] },
+    "f": { "0": 14, "1": 57 },
+    "b": { "0": [1, 13], "1": [1, 56], "2": [57, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "f52a914cfed15811ba95ba40867a4797c0935705"
+    "hash": "e495c9d6628a2ad447f0836b7a72fef6d5b40765"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootReducer.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/rootReducer.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/rootReducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 22 },
@@ -221,14 +184,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 6, "1": 6 },
-    "f": { "0": 6 },
+    "s": { "0": 5, "1": 5 },
+    "f": { "0": 5 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d2fbbe88503bb3f020b29d1f03c04625209a9161"
+    "hash": "e8bd1c292fa508acdcef048d6fa3364333c36ea1"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/rootSaga.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/rootSaga.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/rootSaga.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 2 },
@@ -254,46 +217,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 6, "1": 6 },
-    "f": { "0": 6 },
+    "s": { "0": 5, "1": 5 },
+    "f": { "0": 5 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "5c01e8d9f0d51dfea679065a0673c779d440e66f"
+    "hash": "376647f0ef325346e61e29233ea34a01e4456aa6"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/logo.png",
-    "statementMap": {
-      "0": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 4, "column": 6 }
-      }
-    },
-    "fnMap": {},
-    "branchMap": {},
-    "s": { "0": 4 },
-    "f": {},
-    "b": {},
-    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "3d94afbcb363d7e2cad449c169f6a869f6ac8813"
-  },
-  "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/assets/images/wednesday-logo.png",
-    "statementMap": {
-      "0": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 4, "column": 6 }
-      }
-    },
-    "fnMap": {},
-    "branchMap": {},
-    "s": { "0": 4 },
-    "f": {},
-    "b": {},
-    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "dc80bfbecf8ffbb8f36cf602fdfe3c663c2e406a"
-  },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/Container/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/Container/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/Container/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 10, "column": 24 },
@@ -327,55 +258,312 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 5, "1": 5, "2": 16, "3": 5 },
-    "f": { "0": 16 },
+    "s": { "0": 4, "1": 4, "2": 14, "3": 4 },
+    "f": { "0": 14 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "58e8f6ff1f1be4d8f67998753c8ae50af629d583"
+    "hash": "67b4a572e3dd3ec2c66c6a7e16eb25f84c44ac78"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/SplashScreen/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/actions.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/actions.js",
     "statementMap": {
       "0": {
-        "start": { "line": 6, "column": 18 },
-        "end": { "line": 11, "column": 1 }
+        "start": { "line": 10, "column": 2 },
+        "end": { "line": 13, "column": 4 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "changeLocale",
+        "decl": {
+          "start": { "line": 9, "column": 16 },
+          "end": { "line": 9, "column": 28 }
+        },
+        "loc": {
+          "start": { "line": 9, "column": 45 },
+          "end": { "line": 14, "column": 1 }
+        },
+        "line": 9
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": { "0": 0 },
+    "b": {},
+    "hash": "de745cb5f018871c4022317adef10226baf396c2"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/constants.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/constants.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 29 },
+        "end": { "line": 1, "column": 43 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "071dcf869d87981b5caa0d008e813287b0e8e446"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 18, "column": 2 },
+        "end": { "line": 26, "column": 4 }
       },
       "1": {
-        "start": { "line": 13, "column": 13 },
-        "end": { "line": 18, "column": 1 }
+        "start": { "line": 29, "column": 0 },
+        "end": { "line": 33, "column": 2 }
       },
       "2": {
-        "start": { "line": 20, "column": 21 },
-        "end": { "line": 24, "column": 1 }
+        "start": { "line": 35, "column": 24 },
+        "end": { "line": 37, "column": 3 }
       },
       "3": {
-        "start": { "line": 21, "column": 2 },
-        "end": { "line": 23, "column": 14 }
+        "start": { "line": 35, "column": 70 },
+        "end": { "line": 37, "column": 1 }
+      },
+      "4": {
+        "start": { "line": 40, "column": 2 },
+        "end": { "line": 42, "column": 4 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "LanguageProvider",
+        "decl": {
+          "start": { "line": 17, "column": 16 },
+          "end": { "line": 17, "column": 32 }
+        },
+        "loc": {
+          "start": { "line": 17, "column": 40 },
+          "end": { "line": 27, "column": 1 }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 35, "column": 59 },
+          "end": { "line": 35, "column": 60 }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 70 },
+          "end": { "line": 37, "column": 1 }
+        },
+        "line": 35
+      },
+      "2": {
+        "name": "mapDispatchToProps",
+        "decl": {
+          "start": { "line": 39, "column": 9 },
+          "end": { "line": 39, "column": 27 }
+        },
+        "loc": {
+          "start": { "line": 39, "column": 38 },
+          "end": { "line": 43, "column": 1 }
+        },
+        "line": 39
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 6, "1": 8, "2": 8, "3": 2, "4": 5 },
+    "f": { "0": 6, "1": 2, "2": 5 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "aeafdbcebd6e377e68f7c8c8c8b2e51fdc2f7a06"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/reducer.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/reducer.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 14, "column": 4 },
+        "end": { "line": 16, "column": 2 }
+      },
+      "1": {
+        "start": { "line": 18, "column": 28 },
+        "end": { "line": 20, "column": 2 }
+      },
+      "2": {
+        "start": { "line": 23, "column": 39 },
+        "end": { "line": 31, "column": 4 }
+      },
+      "3": {
+        "start": { "line": 24, "column": 2 },
+        "end": { "line": 31, "column": 4 }
+      },
+      "4": {
+        "start": { "line": 25, "column": 4 },
+        "end": { "line": 30, "column": 5 }
+      },
+      "5": {
+        "start": { "line": 27, "column": 8 },
+        "end": { "line": 27, "column": 50 }
+      },
+      "6": {
+        "start": { "line": 29, "column": 8 },
+        "end": { "line": 29, "column": 21 }
       }
     },
     "fnMap": {
       "0": {
         "name": "(anonymous_0)",
         "decl": {
-          "start": { "line": 20, "column": 21 },
-          "end": { "line": 20, "column": 22 }
+          "start": { "line": 23, "column": 39 },
+          "end": { "line": 23, "column": 40 }
         },
         "loc": {
-          "start": { "line": 21, "column": 2 },
-          "end": { "line": 23, "column": 14 }
+          "start": { "line": 24, "column": 2 },
+          "end": { "line": 31, "column": 4 }
         },
-        "line": 21
+        "line": 24
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 24, "column": 17 },
+          "end": { "line": 24, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 24, "column": 34 },
+          "end": { "line": 31, "column": 3 }
+        },
+        "line": 24
       }
     },
-    "branchMap": {},
-    "s": { "0": 3, "1": 3, "2": 3, "3": 6 },
-    "f": { "0": 6 },
-    "b": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 23, "column": 40 },
+          "end": { "line": 23, "column": 60 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 23, "column": 48 },
+            "end": { "line": 23, "column": 60 }
+          }
+        ],
+        "line": 23
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 25, "column": 4 },
+          "end": { "line": 30, "column": 5 }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": { "line": 26, "column": 6 },
+            "end": { "line": 27, "column": 50 }
+          },
+          {
+            "start": { "line": 28, "column": 6 },
+            "end": { "line": 29, "column": 21 }
+          }
+        ],
+        "line": 25
+      }
+    },
+    "s": { "0": 10, "1": 10, "2": 10, "3": 2, "4": 2, "5": 1, "6": 1 },
+    "f": { "0": 2, "1": 2 },
+    "b": { "0": [2], "1": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "af6d7b5e682a0028f6be28112e56a5fff263459d"
+    "hash": "38eb4421cd107d52c92d1ae6357cab824942099c"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/components/T/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/selectors.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/LanguageProvider/selectors.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 23 },
+        "end": { "line": 7, "column": 71 }
+      },
+      "1": {
+        "start": { "line": 7, "column": 32 },
+        "end": { "line": 7, "column": 71 }
+      },
+      "2": {
+        "start": { "line": 13, "column": 25 },
+        "end": { "line": 14, "column": 71 }
+      },
+      "3": {
+        "start": { "line": 14, "column": 2 },
+        "end": { "line": 14, "column": 71 }
+      },
+      "4": {
+        "start": { "line": 14, "column": 50 },
+        "end": { "line": 14, "column": 70 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 7, "column": 23 },
+          "end": { "line": 7, "column": 24 }
+        },
+        "loc": {
+          "start": { "line": 7, "column": 32 },
+          "end": { "line": 7, "column": 71 }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 13, "column": 25 },
+          "end": { "line": 13, "column": 26 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 2 },
+          "end": { "line": 14, "column": 71 }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 14, "column": 33 },
+          "end": { "line": 14, "column": 34 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 50 },
+          "end": { "line": 14, "column": 70 }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 7, "column": 33 },
+          "end": { "line": 7, "column": 63 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 7, "column": 33 },
+            "end": { "line": 7, "column": 47 }
+          },
+          {
+            "start": { "line": 7, "column": 51 },
+            "end": { "line": 7, "column": 63 }
+          }
+        ],
+        "line": 7
+      }
+    },
+    "s": { "0": 9, "1": 6, "2": 9, "3": 8, "4": 5 },
+    "f": { "0": 6, "1": 8, "2": 5 },
+    "b": { "0": [6, 5] },
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "9025c520f04cd359dba26acccc998171e65b65bc"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/T/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/atoms/T/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 13, "column": 10 },
@@ -409,14 +597,34 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 5, "1": 9, "2": 5, "3": 5 },
+    "s": { "0": 4, "1": 9, "2": 4, "3": 4 },
     "f": { "0": 9 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "2c88b1427d7cb34c39fdf61b2598c5698c836b0a"
+    "hash": "e29c8e251ae1eac3a2fc95530e5241e6580eb1f2"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/config/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/molecules/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/molecules/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "hash": "79ea03f6ccb8b8db8de6e9f44fa1bbf2a90bff93"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/components/organisms/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/components/organisms/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "hash": "84df3ffd073b7f62aa6119e7cb1ab02eb15f9efe"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.dev.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.dev.js",
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 22 },
@@ -425,14 +633,60 @@
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 10 },
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "a4853b05a0948c6968818ca2eec992a8e499c253"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 22 },
+        "end": { "line": 3, "column": 1 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 9 },
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "d6e171b5ca08da90501dcec193bfac9d955780f5"
+    "hash": "234232d4f78954d380b1f1c111462ea7093b2e1a"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.production.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/config/index.production.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 22 },
+        "end": { "line": 3, "column": 1 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "3e1c7f942c1fd6e2fa33289c63ed8dc53ada343c"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/navigators/AppNavigator.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/navigators/AppNavigator.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 10, "column": 23 },
+        "end": { "line": 25, "column": 1 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 1 },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "ecf7e88b6dd0d86b751ac22a8154be87527839df"
+  },
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/index.js",
     "statementMap": {
       "0": {
         "start": { "line": 28, "column": 18 },
@@ -483,40 +737,44 @@
         "end": { "line": 91, "column": 30 }
       },
       "12": {
-        "start": { "line": 94, "column": 27 },
+        "start": { "line": 94, "column": 21 },
         "end": { "line": 96, "column": 3 }
       },
       "13": {
+        "start": { "line": 94, "column": 27 },
+        "end": { "line": 96, "column": 3 }
+      },
+      "14": {
         "start": { "line": 95, "column": 4 },
         "end": { "line": 95, "column": 27 }
       },
-      "14": {
+      "15": {
         "start": { "line": 99, "column": 4 },
         "end": { "line": 136, "column": 6 }
       },
-      "15": {
+      "16": {
         "start": { "line": 140, "column": 0 },
         "end": { "line": 145, "column": 2 }
       },
-      "16": {
+      "17": {
         "start": { "line": 147, "column": 24 },
         "end": { "line": 151, "column": 2 }
       },
-      "17": {
+      "18": {
         "start": { "line": 153, "column": 27 },
         "end": { "line": 155, "column": 2 }
       },
-      "18": {
+      "19": {
         "start": { "line": 153, "column": 40 },
         "end": { "line": 155, "column": 1 }
       },
-      "19": {
+      "20": {
         "start": { "line": 154, "column": 19 },
         "end": { "line": 154, "column": 68 }
       },
-      "20": {
+      "21": {
         "start": { "line": 157, "column": 20 },
-        "end": { "line": 160, "column": 1 }
+        "end": { "line": 157, "column": 64 }
       }
     },
     "fnMap": {
@@ -650,35 +908,36 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
       "11": 4,
-      "12": 7,
-      "13": 4,
+      "12": 4,
+      "13": 7,
       "14": 4,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 0,
+      "15": 4,
+      "16": 2,
+      "17": 2,
+      "18": 2,
       "19": 0,
-      "20": 3
+      "20": 0,
+      "21": 2
     },
     "f": { "0": 4, "1": 7, "2": 4, "3": 4, "4": 0, "5": 0 },
     "b": { "0": [1, 3], "1": [0, 3], "2": [3, 3] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a62396a0e434c59419b1bc1ce5327a113c633097"
+    "hash": "82d4c9162d30b0b35cd00bcd0bee0c6bb9953e3b"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/reducer.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/reducer.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 4 },
@@ -846,29 +1105,29 @@
       }
     },
     "s": {
-      "0": 11,
-      "1": 11,
-      "2": 11,
+      "0": 10,
+      "1": 10,
+      "2": 10,
       "3": 1,
-      "4": 11,
+      "4": 10,
       "5": 1,
-      "6": 11,
+      "6": 10,
       "7": 1,
-      "8": 11,
-      "9": 30,
-      "10": 30,
+      "8": 10,
+      "9": 24,
+      "10": 24,
       "11": 1,
       "12": 1,
       "13": 1,
-      "14": 27
+      "14": 21
     },
-    "f": { "0": 1, "1": 1, "2": 1, "3": 30, "4": 30 },
-    "b": { "0": [19], "1": [1, 1, 1, 27] },
+    "f": { "0": 1, "1": 1, "2": 1, "3": 24, "4": 24 },
+    "b": { "0": [16], "1": [1, 1, 1, 21] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "72f7a497bbc551e95a90c36d627e03540d6adf36"
+    "hash": "19bf4f5cad5cf3ccec52f7bbf0e244c3f95a9f33"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/saga.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/saga.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 13, "column": 19 },
@@ -941,14 +1200,14 @@
         "line": 14
       }
     },
-    "s": { "0": 2, "1": 2, "2": 1, "3": 1, "4": 1, "5": 7 },
-    "f": { "0": 2, "1": 7 },
+    "s": { "0": 2, "1": 2, "2": 1, "3": 1, "4": 1, "5": 6 },
+    "f": { "0": 2, "1": 6 },
     "b": { "0": [1, 1] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "43ca774600136691c26eca4473cc9f1151c0c53d"
+    "hash": "84699956d77a8d0b463cdafcac90d74f062e978f"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/ExampleScreen/selectors.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/selectors.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/ExampleScreen/selectors.js",
     "statementMap": {
       "0": {
         "start": { "line": 5, "column": 35 },
@@ -960,39 +1219,39 @@
       },
       "2": {
         "start": { "line": 8, "column": 26 },
-        "end": { "line": 12, "column": 3 }
+        "end": { "line": 9, "column": 78 }
       },
       "3": {
         "start": { "line": 9, "column": 2 },
-        "end": { "line": 12, "column": 3 }
+        "end": { "line": 9, "column": 78 }
       },
       "4": {
-        "start": { "line": 11, "column": 16 },
-        "end": { "line": 11, "column": 43 }
+        "start": { "line": 9, "column": 50 },
+        "end": { "line": 9, "column": 77 }
       },
       "5": {
-        "start": { "line": 14, "column": 35 },
-        "end": { "line": 18, "column": 3 }
+        "start": { "line": 11, "column": 35 },
+        "end": { "line": 14, "column": 3 }
       },
       "6": {
-        "start": { "line": 15, "column": 2 },
-        "end": { "line": 18, "column": 3 }
+        "start": { "line": 12, "column": 2 },
+        "end": { "line": 14, "column": 3 }
       },
       "7": {
-        "start": { "line": 17, "column": 16 },
-        "end": { "line": 17, "column": 52 }
+        "start": { "line": 13, "column": 4 },
+        "end": { "line": 13, "column": 40 }
       },
       "8": {
-        "start": { "line": 20, "column": 38 },
-        "end": { "line": 24, "column": 3 }
+        "start": { "line": 16, "column": 38 },
+        "end": { "line": 19, "column": 3 }
       },
       "9": {
-        "start": { "line": 21, "column": 2 },
-        "end": { "line": 24, "column": 3 }
+        "start": { "line": 17, "column": 2 },
+        "end": { "line": 19, "column": 3 }
       },
       "10": {
-        "start": { "line": 23, "column": 16 },
-        "end": { "line": 23, "column": 55 }
+        "start": { "line": 18, "column": 4 },
+        "end": { "line": 18, "column": 43 }
       }
     },
     "fnMap": {
@@ -1016,69 +1275,69 @@
         },
         "loc": {
           "start": { "line": 9, "column": 2 },
-          "end": { "line": 12, "column": 3 }
+          "end": { "line": 9, "column": 78 }
         },
         "line": 9
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
-          "start": { "line": 11, "column": 4 },
-          "end": { "line": 11, "column": 5 }
+          "start": { "line": 9, "column": 38 },
+          "end": { "line": 9, "column": 39 }
         },
         "loc": {
-          "start": { "line": 11, "column": 16 },
-          "end": { "line": 11, "column": 43 }
+          "start": { "line": 9, "column": 50 },
+          "end": { "line": 9, "column": 77 }
         },
-        "line": 11
+        "line": 9
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
-          "start": { "line": 14, "column": 35 },
-          "end": { "line": 14, "column": 36 }
+          "start": { "line": 11, "column": 35 },
+          "end": { "line": 11, "column": 36 }
         },
         "loc": {
-          "start": { "line": 15, "column": 2 },
-          "end": { "line": 18, "column": 3 }
+          "start": { "line": 12, "column": 2 },
+          "end": { "line": 14, "column": 3 }
         },
-        "line": 15
+        "line": 12
       },
       "4": {
         "name": "(anonymous_4)",
         "decl": {
-          "start": { "line": 17, "column": 4 },
-          "end": { "line": 17, "column": 5 }
+          "start": { "line": 12, "column": 38 },
+          "end": { "line": 12, "column": 39 }
         },
         "loc": {
-          "start": { "line": 17, "column": 16 },
-          "end": { "line": 17, "column": 52 }
+          "start": { "line": 13, "column": 4 },
+          "end": { "line": 13, "column": 40 }
         },
-        "line": 17
+        "line": 13
       },
       "5": {
         "name": "(anonymous_5)",
         "decl": {
-          "start": { "line": 20, "column": 38 },
-          "end": { "line": 20, "column": 39 }
+          "start": { "line": 16, "column": 38 },
+          "end": { "line": 16, "column": 39 }
         },
         "loc": {
-          "start": { "line": 21, "column": 2 },
-          "end": { "line": 24, "column": 3 }
+          "start": { "line": 17, "column": 2 },
+          "end": { "line": 19, "column": 3 }
         },
-        "line": 21
+        "line": 17
       },
       "6": {
         "name": "(anonymous_6)",
         "decl": {
-          "start": { "line": 23, "column": 4 },
-          "end": { "line": 23, "column": 5 }
+          "start": { "line": 17, "column": 38 },
+          "end": { "line": 17, "column": 39 }
         },
         "loc": {
-          "start": { "line": 23, "column": 16 },
-          "end": { "line": 23, "column": 55 }
+          "start": { "line": 18, "column": 4 },
+          "end": { "line": 18, "column": 43 }
         },
-        "line": 23
+        "line": 18
       }
     },
     "branchMap": {
@@ -1102,381 +1361,130 @@
       }
     },
     "s": {
-      "0": 4,
+      "0": 3,
       "1": 3,
-      "2": 4,
-      "3": 4,
+      "2": 3,
+      "3": 3,
       "4": 1,
-      "5": 4,
-      "6": 4,
+      "5": 3,
+      "6": 3,
       "7": 1,
-      "8": 4,
-      "9": 4,
+      "8": 3,
+      "9": 3,
       "10": 1
     },
-    "f": { "0": 3, "1": 4, "2": 1, "3": 4, "4": 1, "5": 4, "6": 1 },
+    "f": { "0": 3, "1": 3, "2": 1, "3": 3, "4": 1, "5": 3, "6": 1 },
     "b": { "0": [3, 0] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b5d193b30751138ea47c553328b11e0af30af7cf"
+    "hash": "14d0f028284fa99b6c6f82b6b5daab4620ede07a"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/index.js",
     "statementMap": {
       "0": {
-        "start": { "line": 18, "column": 2 },
-        "end": { "line": 26, "column": 4 }
+        "start": { "line": 13, "column": 4 },
+        "end": { "line": 13, "column": 25 }
       },
       "1": {
-        "start": { "line": 29, "column": 0 },
-        "end": { "line": 33, "column": 2 }
+        "start": { "line": 16, "column": 30 },
+        "end": { "line": 18, "column": 3 }
       },
       "2": {
-        "start": { "line": 35, "column": 24 },
-        "end": { "line": 40, "column": 1 }
+        "start": { "line": 17, "column": 4 },
+        "end": { "line": 17, "column": 57 }
       },
       "3": {
-        "start": { "line": 37, "column": 13 },
-        "end": { "line": 39, "column": 3 }
+        "start": { "line": 21, "column": 4 },
+        "end": { "line": 28, "column": 6 }
       },
       "4": {
-        "start": { "line": 43, "column": 2 },
-        "end": { "line": 45, "column": 4 }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "LanguageProvider",
-        "decl": {
-          "start": { "line": 17, "column": 16 },
-          "end": { "line": 17, "column": 32 }
-        },
-        "loc": {
-          "start": { "line": 17, "column": 40 },
-          "end": { "line": 27, "column": 1 }
-        },
-        "line": 17
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": { "line": 37, "column": 2 },
-          "end": { "line": 37, "column": 3 }
-        },
-        "loc": {
-          "start": { "line": 37, "column": 13 },
-          "end": { "line": 39, "column": 3 }
-        },
-        "line": 37
-      },
-      "2": {
-        "name": "mapDispatchToProps",
-        "decl": {
-          "start": { "line": 42, "column": 9 },
-          "end": { "line": 42, "column": 27 }
-        },
-        "loc": {
-          "start": { "line": 42, "column": 38 },
-          "end": { "line": 46, "column": 1 }
-        },
-        "line": 42
-      }
-    },
-    "branchMap": {},
-    "s": { "0": 7, "1": 9, "2": 9, "3": 3, "4": 6 },
-    "f": { "0": 7, "1": 3, "2": 6 },
-    "b": {},
-    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "1cec730eba761b667ba796ca5f04477463c0708a"
-  },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/reducer.js",
-    "statementMap": {
-      "0": {
-        "start": { "line": 14, "column": 4 },
-        "end": { "line": 16, "column": 2 }
-      },
-      "1": {
-        "start": { "line": 18, "column": 28 },
-        "end": { "line": 20, "column": 2 }
-      },
-      "2": {
-        "start": { "line": 23, "column": 39 },
-        "end": { "line": 31, "column": 4 }
-      },
-      "3": {
-        "start": { "line": 24, "column": 2 },
-        "end": { "line": 31, "column": 4 }
-      },
-      "4": {
-        "start": { "line": 25, "column": 4 },
-        "end": { "line": 30, "column": 5 }
+        "start": { "line": 32, "column": 0 },
+        "end": { "line": 34, "column": 2 }
       },
       "5": {
-        "start": { "line": 27, "column": 8 },
-        "end": { "line": 27, "column": 49 }
+        "start": { "line": 36, "column": 27 },
+        "end": { "line": 38, "column": 2 }
       },
       "6": {
-        "start": { "line": 29, "column": 8 },
-        "end": { "line": 29, "column": 20 }
+        "start": { "line": 36, "column": 40 },
+        "end": { "line": 38, "column": 1 }
+      },
+      "7": {
+        "start": { "line": 37, "column": 17 },
+        "end": { "line": 37, "column": 54 }
       }
     },
     "fnMap": {
       "0": {
         "name": "(anonymous_0)",
         "decl": {
-          "start": { "line": 23, "column": 39 },
-          "end": { "line": 23, "column": 40 }
+          "start": { "line": 11, "column": 2 },
+          "end": { "line": 11, "column": 3 }
         },
         "loc": {
-          "start": { "line": 24, "column": 2 },
-          "end": { "line": 31, "column": 4 }
+          "start": { "line": 11, "column": 22 },
+          "end": { "line": 14, "column": 3 }
         },
-        "line": 24
+        "line": 11
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
-          "start": { "line": 24, "column": 17 },
-          "end": { "line": 24, "column": 18 }
+          "start": { "line": 16, "column": 30 },
+          "end": { "line": 16, "column": 31 }
         },
         "loc": {
-          "start": { "line": 24, "column": 34 },
-          "end": { "line": 31, "column": 3 }
-        },
-        "line": 24
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": { "line": 23, "column": 40 },
-          "end": { "line": 23, "column": 60 }
-        },
-        "type": "default-arg",
-        "locations": [
-          {
-            "start": { "line": 23, "column": 48 },
-            "end": { "line": 23, "column": 60 }
-          }
-        ],
-        "line": 23
-      },
-      "1": {
-        "loc": {
-          "start": { "line": 25, "column": 4 },
-          "end": { "line": 30, "column": 5 }
-        },
-        "type": "switch",
-        "locations": [
-          {
-            "start": { "line": 26, "column": 6 },
-            "end": { "line": 27, "column": 49 }
-          },
-          {
-            "start": { "line": 28, "column": 6 },
-            "end": { "line": 29, "column": 20 }
-          }
-        ],
-        "line": 25
-      }
-    },
-    "s": { "0": 11, "1": 11, "2": 11, "3": 2, "4": 2, "5": 1, "6": 1 },
-    "f": { "0": 2, "1": 2 },
-    "b": { "0": [2], "1": [1, 1] },
-    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "f352d0caf65d8379a412d46724827fadda18e8c9"
-  },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/LanguageProvider/selectors.js",
-    "statementMap": {
-      "0": {
-        "start": { "line": 7, "column": 23 },
-        "end": { "line": 7, "column": 71 }
-      },
-      "1": {
-        "start": { "line": 7, "column": 32 },
-        "end": { "line": 7, "column": 71 }
-      },
-      "2": {
-        "start": { "line": 13, "column": 25 },
-        "end": { "line": 17, "column": 3 }
-      },
-      "3": {
-        "start": { "line": 14, "column": 2 },
-        "end": { "line": 17, "column": 3 }
-      },
-      "4": {
-        "start": { "line": 16, "column": 21 },
-        "end": { "line": 16, "column": 41 }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": { "line": 7, "column": 23 },
-          "end": { "line": 7, "column": 24 }
-        },
-        "loc": {
-          "start": { "line": 7, "column": 32 },
-          "end": { "line": 7, "column": 71 }
-        },
-        "line": 7
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": { "line": 13, "column": 25 },
-          "end": { "line": 13, "column": 26 }
-        },
-        "loc": {
-          "start": { "line": 14, "column": 2 },
-          "end": { "line": 17, "column": 3 }
-        },
-        "line": 14
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": { "line": 16, "column": 4 },
-          "end": { "line": 16, "column": 5 }
-        },
-        "loc": {
-          "start": { "line": 16, "column": 21 },
-          "end": { "line": 16, "column": 41 }
+          "start": { "line": 16, "column": 46 },
+          "end": { "line": 18, "column": 3 }
         },
         "line": 16
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": { "line": 7, "column": 33 },
-          "end": { "line": 7, "column": 63 }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": { "line": 7, "column": 33 },
-            "end": { "line": 7, "column": 47 }
-          },
-          {
-            "start": { "line": 7, "column": 51 },
-            "end": { "line": 7, "column": 63 }
-          }
-        ],
-        "line": 7
-      }
-    },
-    "s": { "0": 10, "1": 8, "2": 10, "3": 9, "4": 7 },
-    "f": { "0": 8, "1": 9, "2": 7 },
-    "b": { "0": [8, 7] },
-    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9c28c0edd0172d2ea531aea05cc8fd62f089d200"
-  },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/index.js",
-    "statementMap": {
-      "0": {
-        "start": { "line": 12, "column": 4 },
-        "end": { "line": 12, "column": 25 }
-      },
-      "1": {
-        "start": { "line": 16, "column": 4 },
-        "end": { "line": 16, "column": 57 }
-      },
-      "2": {
-        "start": { "line": 20, "column": 4 },
-        "end": { "line": 27, "column": 6 }
-      },
-      "3": {
-        "start": { "line": 31, "column": 0 },
-        "end": { "line": 33, "column": 2 }
-      },
-      "4": {
-        "start": { "line": 35, "column": 27 },
-        "end": { "line": 37, "column": 2 }
-      },
-      "5": {
-        "start": { "line": 35, "column": 40 },
-        "end": { "line": 37, "column": 1 }
-      },
-      "6": {
-        "start": { "line": 36, "column": 17 },
-        "end": { "line": 36, "column": 54 }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": { "line": 10, "column": 2 },
-          "end": { "line": 10, "column": 3 }
-        },
-        "loc": {
-          "start": { "line": 10, "column": 22 },
-          "end": { "line": 13, "column": 3 }
-        },
-        "line": 10
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": { "line": 15, "column": 30 },
-          "end": { "line": 15, "column": 31 }
-        },
-        "loc": {
-          "start": { "line": 15, "column": 46 },
-          "end": { "line": 17, "column": 3 }
-        },
-        "line": 15
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
-          "start": { "line": 19, "column": 2 },
-          "end": { "line": 19, "column": 3 }
+          "start": { "line": 20, "column": 2 },
+          "end": { "line": 20, "column": 3 }
         },
         "loc": {
-          "start": { "line": 19, "column": 11 },
-          "end": { "line": 28, "column": 3 }
+          "start": { "line": 20, "column": 11 },
+          "end": { "line": 29, "column": 3 }
         },
-        "line": 19
+        "line": 20
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
-          "start": { "line": 35, "column": 27 },
-          "end": { "line": 35, "column": 28 }
+          "start": { "line": 36, "column": 27 },
+          "end": { "line": 36, "column": 28 }
         },
         "loc": {
-          "start": { "line": 35, "column": 40 },
-          "end": { "line": 37, "column": 1 }
+          "start": { "line": 36, "column": 40 },
+          "end": { "line": 38, "column": 1 }
         },
-        "line": 35
+        "line": 36
       },
       "4": {
         "name": "(anonymous_4)",
         "decl": {
-          "start": { "line": 36, "column": 11 },
-          "end": { "line": 36, "column": 12 }
+          "start": { "line": 37, "column": 11 },
+          "end": { "line": 37, "column": 12 }
         },
         "loc": {
-          "start": { "line": 36, "column": 17 },
-          "end": { "line": 36, "column": 54 }
+          "start": { "line": 37, "column": 17 },
+          "end": { "line": 37, "column": 54 }
         },
-        "line": 36
+        "line": 37
       }
     },
     "branchMap": {},
-    "s": { "0": 4, "1": 4, "2": 4, "3": 2, "4": 2, "5": 1, "6": 1 },
-    "f": { "0": 4, "1": 4, "2": 4, "3": 1, "4": 1 },
+    "s": { "0": 3, "1": 3, "2": 3, "3": 3, "4": 1, "5": 1, "6": 0, "7": 0 },
+    "f": { "0": 3, "1": 3, "2": 3, "3": 0, "4": 0 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "812340837baa8304026c4a304babbe70757cd8eb"
+    "hash": "c87e53f6f9465ee0facd42fffb004c9d787a1600"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/reducer.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/reducer.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/reducer.js",
     "statementMap": {
       "0": {
         "start": { "line": 7, "column": 4 },
@@ -1559,14 +1567,14 @@
         "line": 18
       }
     },
-    "s": { "0": 10, "1": 10, "2": 10, "3": 2, "4": 2, "5": 2 },
+    "s": { "0": 9, "1": 9, "2": 9, "3": 2, "4": 2, "5": 2 },
     "f": { "0": 2, "1": 2 },
     "b": { "0": [1], "1": [2] },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "0e37950191b5013bfd32482dd84f1085b5e47d1a"
+    "hash": "93914385782d39c8c12926a66eaa23fa5492fa57"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/containers/RootScreen/saga.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/saga.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/RootScreen/saga.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 2 },
@@ -1620,30 +1628,55 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 3, "1": 1, "2": 7 },
-    "f": { "0": 3, "1": 1, "2": 7 },
+    "s": { "0": 2, "1": 1, "2": 6 },
+    "f": { "0": 2, "1": 1, "2": 6 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "fb0a961e846a2dcb87131cbf2ad82cf583ccd055"
+    "hash": "eddbd27140869cb2cb42c5a76ce7f1f23489dff1"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/navigators/AppNavigator.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/SplashScreen/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/scenes/SplashScreen/index.js",
     "statementMap": {
       "0": {
-        "start": { "line": 10, "column": 23 },
-        "end": { "line": 25, "column": 1 }
+        "start": { "line": 6, "column": 18 },
+        "end": { "line": 11, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 13, "column": 13 },
+        "end": { "line": 18, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 20, "column": 21 },
+        "end": { "line": 24, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 21, "column": 2 },
+        "end": { "line": 23, "column": 14 }
       }
     },
-    "fnMap": {},
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 20, "column": 21 },
+          "end": { "line": 20, "column": 22 }
+        },
+        "loc": {
+          "start": { "line": 21, "column": 2 },
+          "end": { "line": 23, "column": 14 }
+        },
+        "line": 21
+      }
+    },
     "branchMap": {},
-    "s": { "0": 2 },
-    "f": {},
+    "s": { "0": 2, "1": 2, "2": 2, "3": 5 },
+    "f": { "0": 5 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "9e93bf478a2270f91c528741de60b29e8bf0c9a2"
+    "hash": "aecc1af3d2985be9cf2b16e31a71fcbdd9fdfcb2"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/NavigationService.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/services/NavigationService.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/services/NavigationService.js",
     "statementMap": {
       "0": {
         "start": { "line": 15, "column": 2 },
@@ -1697,14 +1730,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 4, "1": 0, "2": 0 },
-    "f": { "0": 4, "1": 0, "2": 0 },
+    "s": { "0": 3, "1": 0, "2": 0 },
+    "f": { "0": 3, "1": 0, "2": 0 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b306c487dbc0436468e98e5b9812e55f02087028"
+    "hash": "39fd7eb78b2256e83a418e37cf2e8e839a650739"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/services/UserService.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/services/UserService.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/services/UserService.js",
     "statementMap": {
       "0": {
         "start": { "line": 3, "column": 18 },
@@ -1734,14 +1767,14 @@
       }
     },
     "branchMap": {},
-    "s": { "0": 10, "1": 10, "2": 1 },
+    "s": { "0": 9, "1": 9, "2": 1 },
     "f": { "0": 1 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a897752d8b8853420618fba1786f7c229317729e"
+    "hash": "37fa63316db6f3557eb953fc10701b38ec30a03c"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/colors.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/colors.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/colors.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1749,10 +1782,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "ca948910c49d40f0e826abeee27e7c84054300b2"
+    "hash": "339b7ab064d14ed81e17f8a709a6698928963e4a"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/fonts.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/fonts.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/fonts.js",
     "statementMap": {
       "0": {
         "start": { "line": 4, "column": 16 },
@@ -1979,48 +2012,48 @@
     },
     "branchMap": {},
     "s": {
-      "0": 5,
-      "1": 15,
-      "2": 5,
+      "0": 4,
+      "1": 11,
+      "2": 4,
       "3": 3,
-      "4": 5,
+      "4": 4,
       "5": 3,
-      "6": 5,
+      "6": 4,
       "7": 3,
-      "8": 5,
+      "8": 4,
       "9": 1,
-      "10": 5,
+      "10": 4,
       "11": 5,
-      "12": 5,
-      "13": 17,
-      "14": 5,
+      "12": 4,
+      "13": 13,
+      "14": 4,
       "15": 2,
-      "16": 5,
+      "16": 4,
       "17": 2,
-      "18": 5,
-      "19": 14,
-      "20": 5,
+      "18": 4,
+      "19": 10,
+      "20": 4,
       "21": 2
     },
     "f": {
-      "0": 15,
+      "0": 11,
       "1": 3,
       "2": 3,
       "3": 3,
       "4": 1,
       "5": 5,
-      "6": 17,
+      "6": 13,
       "7": 2,
       "8": 2,
-      "9": 14,
+      "9": 10,
       "10": 2
     },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e1a772b0612849443657ba95d0062f51af5699be"
+    "hash": "bb6864a4c3c4a5d53107ab0fb01402e3070fd85b"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/images.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/images.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/images.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -2028,10 +2061,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b9afc5d36af1de384261b42bc4947c747ee25dbf"
+    "hash": "44eab3bb3d2bca20b1c3eac8075d195c6df86c06"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/themes/index.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/index.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/themes/index.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -2039,10 +2072,10 @@
     "f": {},
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "b84c05aa1b08acfeae7d5699c6b8afbb4314b4cb"
+    "hash": "e3ea4be512d4fdc9b62da9908a0bdcd00775ce84"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/apiUtils.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/utils/apiUtils.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/utils/apiUtils.js",
     "statementMap": {
       "0": {
         "start": { "line": 6, "column": 26 },
@@ -2330,45 +2363,45 @@
       }
     },
     "s": {
-      "0": 10,
-      "1": 10,
+      "0": 9,
+      "1": 9,
       "2": 1,
-      "3": 10,
-      "4": 10,
-      "5": 10,
-      "6": 10,
+      "3": 9,
+      "4": 9,
+      "5": 9,
+      "6": 9,
       "7": 0,
       "8": 0,
-      "9": 10,
-      "10": 10,
-      "11": 10,
+      "9": 9,
+      "10": 9,
+      "11": 9,
       "12": 1,
       "13": 1,
       "14": 1,
       "15": 4,
       "16": 1,
-      "17": 10,
+      "17": 9,
       "18": 1,
       "19": 1,
       "20": 0,
       "21": 0,
       "22": 1,
-      "23": 10
+      "23": 9
     },
-    "f": { "0": 1, "1": 10, "2": 10, "3": 1, "4": 4, "5": 1, "6": 0 },
+    "f": { "0": 1, "1": 9, "2": 9, "3": 1, "4": 4, "5": 1, "6": 0 },
     "b": {
       "0": [1],
       "1": [0],
-      "2": [10, 0],
+      "2": [9, 0],
       "3": [1, 0],
       "4": [1, 1],
       "5": [0, 1]
     },
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "96dd6f5009ae680f5cdd96c238f3251c21b84a4a"
+    "hash": "e80ebe05c8ce623d16c43b1cca98d7447c64c08a"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/createStore.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/utils/createStore.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/utils/createStore.js",
     "statementMap": {
       "0": {
         "start": { "line": 16, "column": 22 },
@@ -2431,25 +2464,25 @@
     },
     "branchMap": {},
     "s": {
-      "0": 9,
-      "1": 6,
-      "2": 6,
-      "3": 6,
-      "4": 6,
-      "5": 6,
-      "6": 6,
-      "7": 6,
-      "8": 6,
-      "9": 6,
-      "10": 6
+      "0": 8,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 5,
+      "8": 5,
+      "9": 5,
+      "10": 5
     },
-    "f": { "0": 6 },
+    "f": { "0": 5 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "a05574541198e043ca987ad5fe265c0568888ea8"
+    "hash": "6191dcb62439e6f82843136dea8c29e7687d6693"
   },
-  "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js": {
-    "path": "/Users/mac/wednesday/react-native-boilerplate/app/utils/testUtils.js",
+  "/Users/apple/Projects/expo_react_native/react-native-template/app/utils/testUtils.js": {
+    "path": "/Users/apple/Projects/expo_react_native/react-native-template/app/utils/testUtils.js",
     "statementMap": {
       "0": {
         "start": { "line": 9, "column": 36 },
@@ -2570,6 +2603,6 @@
     "f": { "0": 2, "1": 10, "2": 4, "3": 3, "4": 3 },
     "b": {},
     "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    "hash": "e3b22d7b9eb91527d7cfb71749a12581b851c582"
+    "hash": "a2882353e9b47a3dd69387488a684eb836181075"
   }
 }

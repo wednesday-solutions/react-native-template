@@ -1,4 +1,4 @@
-<img align="left" src="https://github.com/wednesday-solutions/serverless/blob/master/serverless_github.svg" width="480" height="460" />
+<img align="left" src="https://github.com/wednesday-solutions/react-native-template/blob/master/react_native_template_github.svg" width="480" height="460" />
 
 <div>
   <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=serverless" align="left" style="margin-left: 0;">
@@ -35,12 +35,6 @@ An enterprise React Native template application showcasing - Testing strategies,
 
   <span>We’re always looking for people who value their work, so come and join us. <a href="https://www.wednesday.is/hiring">We are hiring!</a></span>
 </div>
-
-# React Native template
-
-This project is a [React Native](https://facebook.github.io/react-native/) template that can be used to kickstart a mobile application.
-
-The template provides **an architecture optimized for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. It is extremely documented so that each piece of code that lands in your application can be understood and used.
 
 ## Architecture
 

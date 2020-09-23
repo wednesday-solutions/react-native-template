@@ -1,4 +1,4 @@
-<img align="left" src="https://github.com/wednesday-solutions/react-native-template/blob/master/react_native_template_github.svg" width="480" height="460" />
+<img align="left" src="https://github.com/wednesday-solutions/react-native-template/blob/master/react_native_template_github.svg" width="480" height="510" />
 
 <div>
   <a href="https://www.wednesday.is?utm_source=gthb&utm_medium=repo&utm_campaign=serverless" align="left" style="margin-left: 0;">

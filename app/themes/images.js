@@ -3,6 +3,7 @@
  */
 import logo from 'app/assets/images/logo.png';
 import wednesdayLogo from 'app/assets/images/wednesday-logo.png';
+
 export default {
   logo,
   wednesdayLogo

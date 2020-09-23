@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CharacterWithQuote /> Should render and match the snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="t"
+    >
+      character loves Wednesday
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="t"
+    >
+      because
+    </Text>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "uri": undefined,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 80,
+            "marginBottom": 0,
+            "marginLeft": "auto",
+            "marginRight": "auto",
+            "marginTop": 0,
+            "width": 80,
+          },
+        ]
+      }
+      testID="character-image"
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="t"
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

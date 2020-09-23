@@ -10,8 +10,8 @@ export const apiResponseGenerator = (ok, data) => ({
   ok,
   data
 });
-export const renderWithIntl = children =>
-  render(
+export const renderWithIntl = (children, renderFunction = render) =>
+  renderFunction(
     <IntlProvider
       locale={DEFAULT_LOCALE}
       messages={translationMessages[DEFAULT_LOCALE]}

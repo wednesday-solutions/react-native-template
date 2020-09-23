@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 150,
+          "marginBottom": 25,
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/wednesday-logo.png",
+          }
+        }
+        style={
+          Object {
+            "alignSelf": "center",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="t"
+    >
+      To get started, edit App.js
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontStyle": "italic",
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="t"
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

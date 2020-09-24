@@ -1,6 +1,8 @@
+web-build/**
 node_modules/**
 android/**
 ios/**
 __tests__/**
 **/tests/***
 .eslintrc.js
+setupTests.js

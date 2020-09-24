@@ -127,7 +127,7 @@ To create a new project using the template:
 - remove the LICENSE file and the "License" section from the README if your project is not open source
 
 
-### Runing expo project
+### Running expo project
 
 ### Android
  - `yarn run ios`

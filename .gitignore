@@ -4,6 +4,7 @@
 
 # Xcode
 #
+web-build/**
 build/
 *.pbxuser
 !default.pbxuser

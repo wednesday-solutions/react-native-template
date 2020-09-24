@@ -127,30 +127,15 @@ To create a new project using the template:
 - remove the LICENSE file and the "License" section from the README if your project is not open source
 
 
-## Running the project
-
-Assuming you have all the requirements installed, you can setup and run the project by running:
-
-- `yarn install` to install the dependencies
-- create your [configuration file `app/config/index.js`](app/config) from `index.dev.js` (in you are in dev environment) and fill the missing values
-- run the following steps for your platform
+### Runing expo project
 
 ### Android
-
-- only the first time you run the project, you need to generate a debug key with :
-  - `cd android/app`
-  - `keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000`
-  - `cd ../..` to come back to the root folder
-- `react-native run-android` to run the Android application (remember to start a simulator or connect an Android phone)
+ - `yarn run ios`
 
 ### iOS
+- `yarn run ios`
 
-- `cd ios`
-- `pod install` to install pod dependencies
-- `cd ..` to come back to the root folder
-- `yarn start` to start the metro bundler, in a dedicated terminal
-- `react-native run-ios` to run the iOS application (remember to start a simulator or connect an iPhone)
-
+ 
 ## Useful documentation
 
 ### Deployment

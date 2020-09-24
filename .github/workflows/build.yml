@@ -19,10 +19,3 @@ jobs:
       - name: Run tests
         run: |
           npm test
-      - name: Build android
-        run: npm run build-android
-      - name: Upload Android APK artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: app-release.apk
-          path: android/app/build/outputs/apk/release/

@@ -4,5 +4,5 @@ android/**
 ios/**
 __tests__/**
 **/tests/***
-.eslintrc.js
 setupTests.js
+.eslintrc.js

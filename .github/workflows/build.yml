@@ -22,3 +22,6 @@ jobs:
       - name: Run tests
         run: |
           npm test
+      - name: eject expo
+        run: |
+          sudo expo eject

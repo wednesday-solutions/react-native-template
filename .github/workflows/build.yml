@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install expo-cli
-        run: |
-          sudo npm install -g expo-cli
       - name: Install npm dependencies
         run: |
           npm install
@@ -22,6 +19,3 @@ jobs:
       - name: Run tests
         run: |
           npm test
-      - name: eject expo
-        run: |
-          sudo expo eject

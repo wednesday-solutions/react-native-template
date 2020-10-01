@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install expo-cli
         run: |
-          npm install -g expo-cli
+          sudo npm install -g expo-cli
       - name: Install npm dependencies
         run: |
           npm install

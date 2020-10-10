@@ -18,7 +18,8 @@
     "precommit": "lint-staged",
     "prettify": "prettier --write",
     "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
-    "build-android": "cd android && ./gradlew assembleRelease"
+    "build-android": "cd android && ./gradlew assembleRelease",
+    "bundle-android": "cd android && ./gradlew bundleRelease"
   },
   "husky": {
     "hooks": {

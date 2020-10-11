@@ -138,17 +138,17 @@ To create a new project using the template:
 
 ## Building project
 
-### Android
+### 1) Android
 
-#### Generate android app bundle (.AAB) (Recommended)
-
-- `yarn build-apk`
-
-#### Generate androud application package (.APK)
+#### Generate android app bundle (.aab) (Recommended)
 
 - `yarn build-aab`
 
-### Ios
+#### Generate androud application package (.apk)
+
+- `yarn build-apk`
+
+### 2) Ios
 
 - `yarn build-ios`
 

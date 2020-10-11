@@ -138,7 +138,7 @@ To create a new project using the template:
 
 ## Building project
 
-### android
+### Android
 
 #### Generate android app bundle (.AAB) (Recommended)
 
@@ -148,7 +148,7 @@ To create a new project using the template:
 
 - `yarn build-aab`
 
-### ios
+### Ios
 
 - `yarn build-ios`
 

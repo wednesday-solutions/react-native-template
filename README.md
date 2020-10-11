@@ -144,11 +144,11 @@ To create a new project using the template:
 
 - `yarn build-aab`
 
-#### Generate androud application package (.apk)
+#### Generate android application package (.apk)
 
 - `yarn build-apk`
 
-### 2) Ios
+### 2) iOS
 
 - `yarn build-ios`
 

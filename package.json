@@ -19,7 +19,10 @@
     "prettify": "prettier --write",
     "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
     "build-android": "cd android && ./gradlew assembleRelease",
-    "bundle-android": "cd android && ./gradlew bundleRelease"
+    "build-aab": "expo build:android -t app-bundle",
+    "build-apk": "expo build:android",
+    "build-status": "expo build:stauts",
+    "build-ios": "expo build:ios"
   },
   "husky": {
     "hooks": {

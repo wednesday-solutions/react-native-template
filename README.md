@@ -96,8 +96,8 @@ The template includes an example (displaying fake user data) from UI components 
 - [`app/components/organisms`](app/components/organisms): organisms are one or more molecules
 - [`app/scenes`](app/components/scenes): scenes are screens that can be navigated to
 - [`app/config`](app/config): configuration of the application
-- [`App/assets`](App/Assets): assets (image, audio files, ...) used by the application
-- [`App/navigators`](App/navigators): react navigation navigators 
+- [`app/assets`](app/assets): assets (image, audio files, ...) used by the application
+- [`app/navigators`](app/navigators): react navigation navigators 
 - [`app/services`](app/services): application services, e.g. API clients
 - [`app/utils`](app/utils): Util methods and constants
 - [`app/themes`](app/themes): base styles for the application

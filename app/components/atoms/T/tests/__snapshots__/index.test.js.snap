@@ -1,28 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<T /> should render and match the snapshot 1`] = `
-<View
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    collapsable={true}
-    pointerEvents="box-none"
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <Text
-      testID="t"
-    >
-      
-    </Text>
-  </View>
-</View>
-`;
+exports[`<T /> should render and match the snapshot 1`] = `undefined`;

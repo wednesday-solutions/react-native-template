@@ -17,7 +17,7 @@ module.exports = {
       lines: 50,
     },
   },
-  preset: '@testing-library/react-native',
+  preset: 'react-native',
   moduleDirectories: ['node_modules', 'app'],
   moduleNameMapper: {
     '@app(.*)$': '<rootDir>/app/$1',

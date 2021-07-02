@@ -9,7 +9,7 @@ import T from '../index';
 
 describe('<T />', () => {
   it('should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(<T />);
+    const baseElement = renderWithIntl(<T />);
     expect(baseElement).toMatchSnapshot();
   });
 

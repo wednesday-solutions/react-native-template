@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<T /> should render and match the snapshot 1`] = `undefined`;
+exports[`<T /> should render and match the snapshot 1`] = `
+<Text
+  testID="t"
+>
+  
+</Text>
+`;

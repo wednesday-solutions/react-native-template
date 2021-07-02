@@ -13,7 +13,7 @@ import SimpsonsLoveWednesday from '../index';
 
 describe('<SimpsonsLoveWednesday />', () => {
   it('Should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(<SimpsonsLoveWednesday />);
+    const baseElement = renderWithIntl(<SimpsonsLoveWednesday />);
     expect(baseElement).toMatchSnapshot();
   });
   it('Should render the Error component if userErrorMessage is not empty', () => {

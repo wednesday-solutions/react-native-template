@@ -9,7 +9,7 @@ import Container from '../index';
 
 describe('<Container />', () => {
   it('should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(<Container />);
+    const baseElement = renderWithIntl(<Container />);
     expect(baseElement).toMatchSnapshot();
   });
 

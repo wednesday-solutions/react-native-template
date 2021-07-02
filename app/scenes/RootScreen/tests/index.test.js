@@ -16,9 +16,7 @@ describe('<HomeScreen /> container', () => {
   });
 
   it('should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(
-      <RootScreenTest startup={submitSpy} />
-    );
+    const baseElement = renderWithIntl(<RootScreenTest startup={submitSpy} />);
     expect(baseElement).toMatchSnapshot();
   });
 

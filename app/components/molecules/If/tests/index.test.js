@@ -14,7 +14,7 @@ import If from '../index';
 
 describe('<If />', () => {
   it('Should render and match the snapshot', () => {
-    const { baseElement } = render(<If />);
+    const baseElement = render(<If />);
     expect(baseElement).toMatchSnapshot();
   });
   it('Should render the correct prop component based on the condition', () => {

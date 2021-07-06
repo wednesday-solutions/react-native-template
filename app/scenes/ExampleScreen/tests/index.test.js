@@ -16,7 +16,7 @@ describe('<ExampleScreen /> Container tests', () => {
   });
 
   it('should render and match the snapshot', () => {
-    const { baseElement } = renderProvider(
+    const baseElement = renderProvider(
       <ExampleScreenTest fetchUser={submitSpy} />
     );
     expect(baseElement).toMatchSnapshot();

@@ -12,7 +12,7 @@ import LogoWithInstructions from '../index';
 
 describe('<LogoWithInstructions />', () => {
   it('Should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(<LogoWithInstructions />);
+    const baseElement = renderWithIntl(<LogoWithInstructions />);
     expect(baseElement).toMatchSnapshot();
   });
   it('should render the instructions pased as props', () => {

@@ -2,60 +2,41 @@
 
 exports[`<SplashScreen /> should render and match the snapshot 1`] = `
 <View
-  pointerEvents="box-none"
   style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    collapsable={true}
-    pointerEvents="box-none"
-    style={
+    Array [
       Object {
-        "flex": 1,
+        "display": "flex",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fcedda",
+        "display": "flex",
+        "justifyContent": "center",
+      },
+    ]
+  }
+  testID="splash-screen"
+>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../app/assets/images/wednesday-logo.png",
       }
     }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "display": "flex",
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#fcedda",
-            "display": "flex",
-            "justifyContent": "center",
-          },
-        ]
-      }
-      testID="splash-screen"
-    >
-      <Image
-        resizeMode="contain"
-        source={
-          Object {
-            "testUri": "../../../app/assets/images/wednesday-logo.png",
-          }
-        }
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "center",
-              "width": 200,
-            },
-          ]
-        }
-      />
-    </View>
-  </View>
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+          "width": 200,
+        },
+      ]
+    }
+  />
 </View>
 `;

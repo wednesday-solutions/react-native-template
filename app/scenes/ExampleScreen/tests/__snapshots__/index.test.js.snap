@@ -2,189 +2,201 @@
 
 exports[`<ExampleScreen /> Container tests should render and match the snapshot 1`] = `
 <View
-  pointerEvents="box-none"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "display": "flex",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginLeft": 30,
+        "marginRight": 30,
+        "marginTop": 30,
+      },
+    ]
   }
+  testID="container"
 >
   <View
-    collapsable={true}
-    pointerEvents="box-none"
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
+    testID="example-container-content"
   >
     <View
       style={
+        Object {
+          "height": 150,
+          "marginBottom": 25,
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/wednesday-logo.png",
+          }
+        }
+        style={
+          Object {
+            "alignSelf": "center",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
         Array [
           Object {
-            "display": "flex",
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "justifyContent": "center",
-            "marginBottom": 30,
-            "marginLeft": 30,
-            "marginRight": 30,
-            "marginTop": 30,
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
           },
         ]
       }
-      testID="container"
+      testID="t"
+    >
+      To get started, edit App.js
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontStyle": "italic",
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="t"
+    >
+      Press Cmd+R to reload,
+Cmd+D or shake for dev menu.
+    </Text>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "fontWeight": "normal",
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="t"
+      >
+        character loves Wednesday
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "fontWeight": "normal",
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="t"
+      >
+        because
+      </Text>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 80,
+              "marginBottom": 0,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "marginTop": 0,
+              "width": 80,
+            },
+          ]
+        }
+        testID="character-image"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "fontWeight": "normal",
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="t"
+      >
+        
+      </Text>
+    </View>
+    <View
+      accessibilityRole="button"
+      accessibilityState={Object {}}
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
     >
       <View
-        testID="example-container-content"
+        style={
+          Array [
+            Object {},
+          ]
+        }
       >
-        <View
-          style={
-            Object {
-              "height": 150,
-              "marginBottom": 25,
-              "width": "100%",
-            }
-          }
-        >
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../app/assets/images/wednesday-logo.png",
-              }
-            }
-            style={
-              Object {
-                "alignSelf": "center",
-                "height": "100%",
-                "width": "100%",
-              }
-            }
-          />
-        </View>
         <Text
           style={
             Array [
               Object {
-                "fontSize": 17,
-                "fontWeight": "normal",
-                "marginBottom": 5,
+                "color": "#007AFF",
+                "fontSize": 18,
+                "margin": 8,
                 "textAlign": "center",
               },
             ]
           }
-          testID="t"
         >
-          To get started, edit App.js
+          Refresh
         </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "fontSize": 17,
-                "fontStyle": "italic",
-                "fontWeight": "normal",
-                "marginBottom": 5,
-                "textAlign": "center",
-              },
-            ]
-          }
-          testID="t"
-        >
-          Press Cmd+R to reload,
-Cmd+D or shake for dev menu.
-        </Text>
-        <View
-          style={
-            Array [
-              Object {},
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "fontSize": 17,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "center",
-                },
-              ]
-            }
-            testID="t"
-          >
-            character loves Wednesday
-          </Text>
-          <Text
-            style={
-              Array [
-                Object {
-                  "fontSize": 17,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "center",
-                },
-              ]
-            }
-            testID="t"
-          >
-            because
-          </Text>
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "uri": undefined,
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 80,
-                  "marginBottom": 0,
-                  "marginLeft": "auto",
-                  "marginRight": "auto",
-                  "marginTop": 0,
-                  "width": 80,
-                },
-              ]
-            }
-            testID="character-image"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "fontSize": 17,
-                  "fontWeight": "normal",
-                  "marginBottom": 5,
-                  "textAlign": "center",
-                },
-              ]
-            }
-            testID="t"
-          >
-            
-          </Text>
-        </View>
-        <Button
-          style={
-            Array [
-              Object {
-                "marginTop": 40,
-              },
-            ]
-          }
-          title="Refresh"
-        />
       </View>
     </View>
   </View>

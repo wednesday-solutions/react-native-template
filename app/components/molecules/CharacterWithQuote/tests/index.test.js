@@ -13,7 +13,7 @@ import CharacterWithQuote from '../index';
 
 describe('<CharacterWithQuote />', () => {
   it('Should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(<CharacterWithQuote />);
+    const baseElement = renderWithIntl(<CharacterWithQuote />);
     expect(baseElement).toMatchSnapshot();
   });
 

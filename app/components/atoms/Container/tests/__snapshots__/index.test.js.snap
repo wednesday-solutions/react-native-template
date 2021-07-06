@@ -2,35 +2,16 @@
 
 exports[`<Container /> should render and match the snapshot 1`] = `
 <View
-  pointerEvents="box-none"
   style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    collapsable={true}
-    pointerEvents="box-none"
-    style={
+    Array [
       Object {
-        "flex": 1,
-      }
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "display": "flex",
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-          },
-        ]
-      }
-      testID="container"
-    />
-  </View>
-</View>
+        "display": "flex",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="container"
+/>
 `;

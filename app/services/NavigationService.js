@@ -1,4 +1,4 @@
-import { NavigationActions, StackActions } from 'react-navigation';
+import { NavigationActions, StackActions } from '@react-navigation/compat';
 
 /**
  * The navigation is implemented as a service so that it can be used outside of components, for example in sagas.
@@ -41,15 +41,9 @@ function navigate(routeName, params) {
  */
 function navigateAndReset(routeName, params) {
   navigator.dispatch(
-    StackActions.reset({
-      index: 0,
-      key: null,
-      actions: [
-        NavigationActions.navigate({
-          routeName,
-          params
-        })
-      ]
+    StackActions.replace({
+      routeName,
+      params
     })
   );
 }

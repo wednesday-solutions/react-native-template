@@ -9,7 +9,7 @@ import SplashScreen from '../index';
 
 describe('<SplashScreen />', () => {
   it('should render and match the snapshot', () => {
-    const { baseElement } = renderWithIntl(<SplashScreen />);
+    const baseElement = renderWithIntl(<SplashScreen />);
     expect(baseElement).toMatchSnapshot();
   });
 

@@ -17,8 +17,7 @@
     "postinstall": "npx jetify",
     "precommit": "lint-staged",
     "prettify": "prettier --write",
-    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
-    "build-android": "cd android && ./gradlew assembleRelease"
+    "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master"
   },
   "husky": {
     "hooks": {
@@ -49,7 +48,9 @@
     "babel-plugin-react-intl": "3.0.1",
     "babel-preset-react-native": "^4.0.1",
     "expo": "^41.0.0",
+    "expo-cli": "^4.7.3",
     "expo-status-bar": "~1.0.4",
+    "expo-updates": "^0.8.2",
     "global": "^4.4.0",
     "immer": "^4.0.0",
     "immutable": "^4.0.0-rc.12",

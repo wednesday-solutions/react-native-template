@@ -160,9 +160,10 @@ Cmd+D or shake for dev menu.
     </View>
     <View
       accessibilityRole="button"
-      accessibilityState={Object {}}
+      accessibilityStates={Array []}
       accessible={true}
       focusable={true}
+      isTVSelectable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -189,7 +190,7 @@ Cmd+D or shake for dev menu.
               Object {
                 "color": "#007AFF",
                 "fontSize": 18,
-                "margin": 8,
+                "padding": 8,
                 "textAlign": "center",
               },
             ]

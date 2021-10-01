@@ -130,7 +130,7 @@ To create a new project using the template:
 ### Running expo project
 
 ### Android
- - `yarn run ios`
+ - `yarn run android`
 
 ### iOS
 - `yarn run ios`

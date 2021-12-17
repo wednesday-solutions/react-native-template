@@ -42,7 +42,6 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
       >
         <RNSScreen
           activityState={2}
-          forwardedRef={[Function]}
           pointerEvents="box-none"
           style={
             Object {
@@ -126,7 +125,6 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
             >
               <View
                 collapsable={false}
-                forwardedRef={[Function]}
                 onGestureHandlerEvent={[Function]}
                 onGestureHandlerStateChange={[Function]}
                 style={

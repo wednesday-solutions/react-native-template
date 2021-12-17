@@ -1,8 +1,9 @@
 {
   "expo": {
     "name": "my-app",
+    "sdkVersion": "41.0.0",
     "slug": "my-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -15,7 +16,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reactNative.app",
+      "buildNumber": "1.0.1"
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.reactNative.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -6,6 +6,10 @@ import { fonts, images } from '@themes';
 import T from '@atoms/T';
 
 const styles = {
+  parentView: {
+    marginTop: 30,
+    marginBottom: 30
+  },
   logoContainer: {
     width: '100%',
     height: 150,
@@ -18,12 +22,6 @@ const styles = {
   }
 };
 
-const TextBox = styled(T)`
-  ${fonts.style.standard()};
-  text-align: center;
-  margin-bottom: 5px;
-`;
-
 const Instructions = styled(T)`
   ${fonts.style.standard()};
   text-align: center;
@@ -33,7 +31,7 @@ const Instructions = styled(T)`
 
 function LogoWithInstructions({ instructions }) {
   return (
-    <>
+    <View>
       <View style={styles.logoContainer}>
         <Image
           style={styles.logo}
@@ -41,9 +39,8 @@ function LogoWithInstructions({ instructions }) {
           resizeMode="contain"
         />
       </View>
-      <TextBox id="get_started" />
       <Instructions text={instructions} />
-    </>
+    </View>
   );
 }
 

@@ -76,7 +76,10 @@
     "redux-saga": "^1.0.2",
     "reduxsauce": "^1.0.1",
     "reselect": "^4.0.0",
-    "styled-components": "^4.4.0"
+    "styled-components": "^5.3.6"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "devDependencies": {
     "@babel/cli": "7.4.3",

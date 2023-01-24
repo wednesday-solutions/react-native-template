@@ -11,6 +11,8 @@ exports[`<ExampleScreen /> Container tests should render and match the snapshot 
         "flexShrink": 1,
       },
       Object {
+        "alignItems": "center",
+        "alignSelf": "center",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
@@ -19,71 +21,57 @@ exports[`<ExampleScreen /> Container tests should render and match the snapshot 
         "marginLeft": 30,
         "marginRight": 30,
         "marginTop": 30,
+        "maxWidth": 320,
       },
     ]
   }
-  testID="container"
 >
   <View
     testID="example-container-content"
   >
-    <View
-      style={
-        Object {
-          "height": 150,
-          "marginBottom": 25,
-          "width": "100%",
-        }
-      }
-    >
-      <Image
-        resizeMode="contain"
-        source={
-          Object {
-            "testUri": "../../../app/assets/images/wednesday-logo.png",
-          }
-        }
+    <View>
+      <View
         style={
           Object {
-            "alignSelf": "center",
-            "height": "100%",
+            "height": 150,
+            "marginBottom": 25,
             "width": "100%",
           }
         }
-      />
-    </View>
-    <Text
-      style={
-        Array [
-          Object {
-            "fontSize": 17,
-            "fontWeight": "normal",
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
-      }
-      testID="t"
-    >
-      To get started, edit App.js
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "fontSize": 17,
-            "fontStyle": "italic",
-            "fontWeight": "normal",
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
-      }
-      testID="t"
-    >
-      Press Cmd+R to reload,
+      >
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../app/assets/images/wednesday-logo.png",
+            }
+          }
+          style={
+            Object {
+              "alignSelf": "center",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 17,
+              "fontStyle": "italic",
+              "fontWeight": "normal",
+              "marginBottom": 5,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Press Cmd+R to reload,
 Cmd+D or shake for dev menu.
-    </Text>
+      </Text>
+    </View>
     <View
       style={
         Array [
@@ -102,7 +90,6 @@ Cmd+D or shake for dev menu.
             },
           ]
         }
-        testID="t"
       >
         character loves Wednesday
       </Text>
@@ -117,7 +104,6 @@ Cmd+D or shake for dev menu.
             },
           ]
         }
-        testID="t"
       >
         because
       </Text>
@@ -153,48 +139,59 @@ Cmd+D or shake for dev menu.
             },
           ]
         }
-        testID="t"
       />
     </View>
     <View
-      accessibilityRole="button"
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "opacity": 1,
-        }
+        Array [
+          Object {
+            "alignSelf": "center",
+            "marginTop": 40,
+            "maxWidth": 80,
+          },
+        ]
       }
     >
       <View
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          Array [
-            Object {},
-          ]
+          Object {
+            "opacity": 1,
+          }
         }
       >
-        <Text
+        <View
           style={
             Array [
-              Object {
-                "color": "#007AFF",
-                "fontSize": 18,
-                "margin": 8,
-                "textAlign": "center",
-              },
+              Object {},
             ]
           }
         >
-          Refresh
-        </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#007AFF",
+                  "fontSize": 18,
+                  "margin": 8,
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Refresh
+          </Text>
+        </View>
       </View>
     </View>
   </View>

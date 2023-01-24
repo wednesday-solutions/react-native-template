@@ -18,12 +18,6 @@ const styles = {
   }
 };
 
-const TextBox = styled(T)`
-  ${fonts.style.standard()};
-  text-align: center;
-  margin-bottom: 5px;
-`;
-
 const Instructions = styled(T)`
   ${fonts.style.standard()};
   text-align: center;
@@ -33,7 +27,7 @@ const Instructions = styled(T)`
 
 function LogoWithInstructions({ instructions }) {
   return (
-    <>
+    <View style={{ margin: '30px 0' }}>
       <View style={styles.logoContainer}>
         <Image
           style={styles.logo}
@@ -41,9 +35,8 @@ function LogoWithInstructions({ instructions }) {
           resizeMode="contain"
         />
       </View>
-      <TextBox id="get_started" />
       <Instructions text={instructions} />
-    </>
+    </View>
   );
 }
 

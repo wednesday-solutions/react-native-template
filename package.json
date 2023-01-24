@@ -56,7 +56,7 @@
     "immer": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
     "intl": "1.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "map-keys-deep": "^0.0.2",
     "prop-types": "^15.7.2",
     "react": "18.1.0",

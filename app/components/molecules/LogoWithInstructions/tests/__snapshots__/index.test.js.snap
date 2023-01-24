@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
-Array [
+<View>
   <View
     style={
       Object {
@@ -26,22 +26,7 @@ Array [
         }
       }
     />
-  </View>,
-  <Text
-    style={
-      Array [
-        Object {
-          "fontSize": 17,
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        },
-      ]
-    }
-    testID="t"
-  >
-    To get started, edit App.js
-  </Text>,
+  </View>
   <Text
     style={
       Array [
@@ -54,9 +39,6 @@ Array [
         },
       ]
     }
-    testID="t"
-  >
-    
-  </Text>,
-]
+  />
+</View>
 `;

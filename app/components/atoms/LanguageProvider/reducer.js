@@ -6,7 +6,7 @@
 import { createActions } from 'reduxsauce';
 import { fromJS } from 'immutable';
 import produce from 'immer';
-import { DEFAULT_LOCALE } from 'app/i18n';
+import { DEFAULT_LOCALE } from '@app/i18n';
 
 export const {
   Types: languageProviderTypes,

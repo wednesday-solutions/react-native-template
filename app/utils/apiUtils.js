@@ -1,7 +1,7 @@
 import { create } from 'apisauce';
 import mapKeysDeep from 'map-keys-deep';
 import { camelCase, snakeCase } from 'lodash';
-import { Config } from 'app/config';
+import { Config } from '@app/config/index';
 
 export const apiClients = {
   configApi: null,

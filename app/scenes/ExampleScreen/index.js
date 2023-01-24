@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, View, ActivityIndicator } from 'react-native';
+import { Button, Platform, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { PropTypes } from 'prop-types';
@@ -28,10 +28,15 @@ const Container = styled(AppContainer)`
   margin: 30px;
   flex: 1;
   justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  align-self: center;
 `;
 
-const CustomButton = styled.Button`
+const CustomButtonParentView = styled(View)`
   margin-top: 40px;
+  max-width: 80px;
+  align-self: center;
 `;
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu.',
@@ -60,7 +65,9 @@ class ExampleScreen extends React.Component {
               userErrorMessage={this.props.userErrorMessage}
               user={this.props.user}
             />
-            <CustomButton onPress={this.requestFetchUser()} title="Refresh" />
+            <CustomButtonParentView>
+              <Button onPress={this.requestFetchUser()} title="Refresh" />
+            </CustomButtonParentView>
           </View>
         )}
       </Container>

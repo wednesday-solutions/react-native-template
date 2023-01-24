@@ -13,7 +13,6 @@ Array [
         },
       ]
     }
-    testID="t"
   >
     character loves Wednesday
   </Text>,
@@ -28,7 +27,6 @@ Array [
         },
       ]
     }
-    testID="t"
   >
     because
   </Text>,
@@ -64,9 +62,6 @@ Array [
         },
       ]
     }
-    testID="t"
-  >
-    
-  </Text>,
+  />,
 ]
 `;

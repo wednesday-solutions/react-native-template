@@ -58,3 +58,6 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 /coverage/
+.expo/
+web-build/
+dist/

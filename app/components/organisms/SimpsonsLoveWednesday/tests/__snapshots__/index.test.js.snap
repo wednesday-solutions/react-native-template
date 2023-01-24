@@ -2,62 +2,46 @@
 
 exports[`<SimpsonsLoveWednesday /> Should render and match the snapshot 1`] = `
 Array [
-  <View
-    style={
-      Object {
-        "height": 150,
-        "marginBottom": 25,
-        "width": "100%",
-      }
-    }
-  >
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../app/assets/images/wednesday-logo.png",
-        }
-      }
+  <View>
+    <View
       style={
         Object {
-          "alignSelf": "center",
-          "height": "100%",
+          "height": 150,
+          "marginBottom": 25,
           "width": "100%",
         }
       }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../app/assets/images/wednesday-logo.png",
+          }
+        }
+        style={
+          Object {
+            "alignSelf": "center",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontStyle": "italic",
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
+      }
     />
   </View>,
-  <Text
-    style={
-      Array [
-        Object {
-          "fontSize": 17,
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        },
-      ]
-    }
-    testID="t"
-  >
-    To get started, edit App.js
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {
-          "fontSize": 17,
-          "fontStyle": "italic",
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        },
-      ]
-    }
-    testID="t"
-  >
-    
-  </Text>,
   <View
     style={
       Array [
@@ -76,7 +60,6 @@ Array [
           },
         ]
       }
-      testID="t"
     >
       character loves Wednesday
     </Text>
@@ -91,7 +74,6 @@ Array [
           },
         ]
       }
-      testID="t"
     >
       because
     </Text>
@@ -127,10 +109,7 @@ Array [
           },
         ]
       }
-      testID="t"
-    >
-      
-    </Text>
+    />
   </View>,
 ]
 `;

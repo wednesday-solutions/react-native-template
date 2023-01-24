@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "react-native-template-ws",
+    "slug": "rnt-ws",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,11 +14,11 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
-    },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.wednesdaysolutions.rntws"
     }
   }
 }

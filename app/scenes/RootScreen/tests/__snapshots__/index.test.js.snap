@@ -42,7 +42,16 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
       >
         <RNSScreen
           activityState={2}
+          collapsable={false}
           forwardedRef={[Function]}
+          gestureResponseDistance={
+            Object {
+              "bottom": -1,
+              "end": -1,
+              "start": -1,
+              "top": -1,
+            }
+          }
           pointerEvents="box-none"
           style={
             Object {
@@ -116,6 +125,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
             }
           >
             <View
+              collapsable={false}
               needsOffscreenAlphaCompositing={false}
               pointerEvents="box-none"
               style={
@@ -127,6 +137,8 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
               <View
                 collapsable={false}
                 forwardedRef={[Function]}
+                handlerTag={1}
+                handlerType="PanGestureHandler"
                 onGestureHandlerEvent={[Function]}
                 onGestureHandlerStateChange={[Function]}
                 style={
@@ -144,6 +156,7 @@ exports[`<HomeScreen /> container should render and match the snapshot 1`] = `
                 }
               >
                 <View
+                  collapsable={false}
                   pointerEvents="none"
                   style={
                     Object {

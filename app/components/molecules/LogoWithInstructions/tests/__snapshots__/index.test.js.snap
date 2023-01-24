@@ -55,8 +55,6 @@ Array [
       ]
     }
     testID="t"
-  >
-    
-  </Text>,
+  />,
 ]
 `;

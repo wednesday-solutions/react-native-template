@@ -154,14 +154,12 @@ Cmd+D or shake for dev menu.
           ]
         }
         testID="t"
-      >
-        
-      </Text>
+      />
     </View>
     <View
       accessibilityRole="button"
-      accessibilityState={Object {}}
       accessible={true}
+      collapsable={false}
       focusable={true}
       onClick={[Function]}
       onResponderGrant={[Function]}

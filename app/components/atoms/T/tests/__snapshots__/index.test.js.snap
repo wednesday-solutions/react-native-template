@@ -3,7 +3,5 @@
 exports[`<T /> should render and match the snapshot 1`] = `
 <Text
   testID="t"
->
-  
-</Text>
+/>
 `;

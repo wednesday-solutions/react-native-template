@@ -55,9 +55,7 @@ Array [
       ]
     }
     testID="t"
-  >
-    
-  </Text>,
+  />,
   <View
     style={
       Array [
@@ -128,9 +126,7 @@ Array [
         ]
       }
       testID="t"
-    >
-      
-    </Text>
+    />
   </View>,
 ]
 `;

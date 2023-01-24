@@ -1,5 +1,5 @@
 import { takeLatest } from 'redux-saga/effects';
-import NavigationService from 'app/services/NavigationService';
+import NavigationService from '@app/services/NavigationService';
 import { rootScreenTypes } from './reducer';
 
 /**

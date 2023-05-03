@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - dev
+  pull:
+    branches:
+      - dev
 jobs:
   expo-build:
     runs-on: ubuntu-latest
@@ -21,7 +24,7 @@ jobs:
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: 'CDVJGKmBs741Tt1urS4nZVKG_spylxTsP-n9SubW'
+          token: ${{ secrets.EXPO_TOKEN }}
 
       - name: 📦 Install dependencies
         run: yarn install

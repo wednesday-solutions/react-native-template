@@ -1,0 +1,30 @@
+name: Deploy to Testflight
+on:
+  push:
+    branches:
+      - main
+jobs:
+  expo-build:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: yarn
+
+      - name: 🏗 Setup EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🚀 Build app
+        run: eas build --platform ios --profile production --non-interactive

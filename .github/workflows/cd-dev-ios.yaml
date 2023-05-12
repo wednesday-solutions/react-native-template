@@ -1,6 +1,6 @@
 name: Deploy to Expo
 on:
-  pull_request:
+  push:
     branches:
       - dev
 jobs:

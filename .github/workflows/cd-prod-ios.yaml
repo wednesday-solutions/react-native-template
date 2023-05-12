@@ -1,8 +1,8 @@
-name: Deploy to Expo
+name: Deploy to Testflight
 on:
-  pull_request:
+  push:
     branches:
-      - dev
+      - main
 jobs:
   expo-build:
     runs-on: ubuntu-latest

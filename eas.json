@@ -8,17 +8,23 @@
       "ios": {
         "simulator": true,
         "resourceClass": "m-medium"
-      }
+      },
+      "channel": "development"
     },
     "preview": {
       "ios": {
         "resourceClass": "m-medium"
-      }
+      },
+      "android": {
+        "resourceClass": "medium"
+      },
+      "channel": "preview"
     },
     "production": {
       "ios": {
         "resourceClass": "m-medium"
-      }
+      },
+      "channel": "production"
     }
   },
   "submit": {

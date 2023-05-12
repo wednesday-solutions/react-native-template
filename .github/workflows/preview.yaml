@@ -1,9 +1,9 @@
-name: preview
+name: Create PR Preview
 on: pull_request
 
 jobs:
   update:
-    name: EAS Update
+    name: Preview
     runs-on: ubuntu-latest
     environment: development
     permissions:

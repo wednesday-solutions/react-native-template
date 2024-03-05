@@ -19,6 +19,9 @@
     },
     "android": {
       "package": "com.wednesdaysolutions.rntws"
+    },
+    "ios": {
+      "bundleIdentifier": "com.wednesdaysolutions.rntws"
     }
   }
 }

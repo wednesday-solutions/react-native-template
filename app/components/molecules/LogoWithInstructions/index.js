@@ -29,6 +29,11 @@ const Instructions = styled(T)`
   font-style: italic;
 `;
 
+/**
+ * Description
+ * @param {any} {instructions}
+ * @returns {any}
+ */
 function LogoWithInstructions({ instructions }) {
   return (
     <View>

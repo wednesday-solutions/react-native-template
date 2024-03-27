@@ -32,9 +32,9 @@ describe('<If />', () => {
       </If>
     );
     expect(getByText(conditionTrueText)).toBeTruthy();
-    props.condition = false;
+    const falseProps = { ...props, condition: false };
     const { getByText: textQueryOnReRender } = render(
-      <If {...props}>
+      <If {...falseProps}>
         <TrueConditionComponent />
       </If>
     );

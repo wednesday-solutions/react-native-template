@@ -61,3 +61,5 @@ buck-out/
 .expo/
 web-build/
 dist/
+ios
+android

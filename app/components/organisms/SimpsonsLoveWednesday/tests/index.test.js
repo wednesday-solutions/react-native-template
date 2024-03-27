@@ -29,9 +29,9 @@ describe('<SimpsonsLoveWednesday />', () => {
     };
     const { getByText } = renderWithIntl(<SimpsonsLoveWednesday {...props} />);
     expect(getByText(props.userErrorMessage)).toBeTruthy();
-    props.userErrorMessage = null;
+    const updatedPropWithNullError = { ...props, userErrorMessage: null };
     const { getByText: textQueryOnReRender } = renderWithIntl(
-      <SimpsonsLoveWednesday {...props} />,
+      <SimpsonsLoveWednesday {...updatedPropWithNullError} />,
       rerender
     );
     expect(

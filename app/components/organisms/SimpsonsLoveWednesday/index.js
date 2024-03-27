@@ -6,7 +6,7 @@ import If from '@molecules/If';
 import CharacterWithQuote from '@molecules/CharacterWithQuote';
 import LogoWithInstructions from '@molecules/LogoWithInstructions';
 
-const Error = styled.Text`
+const Err = styled.Text`
   ${fonts.style.standard()};
   text-align: center;
   margin-bottom: 5px;
@@ -19,13 +19,20 @@ const SeparatedView = styled.View`
   }
 `;
 
+/**
+ * Description
+ * @param {any} {instructions
+ * @param {any} user
+ * @param {any} userErrorMessage}
+ * @returns {any}
+ */
 function SimpsonsLoveWednesday({ instructions, user, userErrorMessage }) {
   return (
     <>
       <LogoWithInstructions instructions={instructions} />
       <If
         condition={!userErrorMessage}
-        otherwise={<Error>{userErrorMessage}</Error>}
+        otherwise={<Err>{userErrorMessage}</Err>}
       >
         <SeparatedView>
           <CharacterWithQuote user={user} />

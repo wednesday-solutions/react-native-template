@@ -17,6 +17,11 @@ const CharacterImage = styled.Image`
   margin: 0 auto;
 `;
 
+/**
+ * Description
+ * @param {any} {user}
+ * @returns {any}
+ */
 function CharacterWithQuote({ user }) {
   return (
     <>

@@ -14,6 +14,11 @@ import { IntlProvider } from 'react-intl';
 
 import { makeSelectLocale } from './selectors';
 
+/**
+ * Description
+ * @param {any} props
+ * @returns {any}
+ */
 export function LanguageProvider(props) {
   return (
     <IntlProvider
@@ -36,6 +41,11 @@ const mapStateToProps = createSelector(makeSelectLocale(), locale => ({
   locale
 }));
 
+/**
+ * Description
+ * @param {any} dispatch
+ * @returns {any}
+ */
 function mapDispatchToProps(dispatch) {
   return {
     dispatch

@@ -22,12 +22,9 @@ export const initialState = fromJS({
 /* eslint-disable default-case, no-param-reassign */
 export const languageProviderReducer = (state = initialState, action) =>
   produce(state, (/* draft */) => {
-    switch (action.type) {
-      case languageProviderTypes.CHANGE_LOCALE:
-        return state.set('locale', action.locale);
-      default:
-        return state;
-    }
+    if (action.type === languageProviderTypes.CHANGE_LOCALE)
+      return state.set('locale', action.locale);
+    return state;
   });
 
 export default languageProviderReducer;

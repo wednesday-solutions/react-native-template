@@ -6,11 +6,8 @@ import {
 
 /* eslint-disable default-case, no-param-reassign */
 describe('Tests for reducers used in the ExampleScreen', () => {
-  let state;
-  beforeEach(() => {
-    state = initialState;
-  });
-
+  const state = initialState;
+  const user = 'Mohammed Ali Chherawalla';
   it('should return the initial state', () => {
     expect(exampleContainerReducer(undefined, {})).toEqual(state);
   });
@@ -22,20 +19,20 @@ describe('Tests for reducers used in the ExampleScreen', () => {
     expect(
       exampleContainerReducer(state, {
         type: exampleScreenTypes.REQUEST_FETCH_USER,
-        user: 'Mohammed Ali Chherawalla'
+        user
       })
     ).toEqual(expectedResult);
   });
 
   it('should ensure that the user data is present and userLoading = false when SUCCESS_FETCH_USER is dispatched', () => {
     const expectedResult = state
-      .set('user', { name: 'Mohammed Ali Chherawalla' })
+      .set('user', { name: user })
       .set('userIsLoading', false)
       .set('userErrorMessage', null);
     expect(
       exampleContainerReducer(state, {
         type: exampleScreenTypes.SUCCESS_FETCH_USER,
-        user: { name: 'Mohammed Ali Chherawalla' }
+        user: { name: user }
       })
     ).toEqual(expectedResult);
   });
@@ -44,11 +41,11 @@ describe('Tests for reducers used in the ExampleScreen', () => {
     const expectedResult = state
       .set('user', {})
       .set('userIsLoading', false)
-      .set('userErrorMessage', 'There was some error bro');
+      .set('userErrorMessage', 'There was some error');
     expect(
       exampleContainerReducer(state, {
         type: exampleScreenTypes.FAILURE_FETCH_USER,
-        errorMessage: 'There was some error bro'
+        errorMessage: 'There was some error'
       })
     ).toEqual(expectedResult);
   });

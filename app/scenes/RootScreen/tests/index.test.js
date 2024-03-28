@@ -6,14 +6,9 @@
 
 import React from 'react';
 import { renderWithIntl } from 'app/utils/testUtils';
-import { RootScreen as RootScreenTest } from '../index';
-
+import { RootScreenTest } from '../index';
 describe('<HomeScreen /> container', () => {
-  let submitSpy;
-
-  beforeAll(() => {
-    submitSpy = jest.fn();
-  });
+  const submitSpy = jest.fn();
 
   it('should render and match the snapshot', () => {
     const baseElement = renderWithIntl(<RootScreenTest startup={submitSpy} />);

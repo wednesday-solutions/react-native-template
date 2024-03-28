@@ -9,14 +9,18 @@ export const apiClients = {
 };
 export const getApiClient = (type = 'configApi') => apiClients[type];
 export const generateApiClient = (type = 'configApi') => {
-  switch (type) {
-    case 'configApi':
+  const apiClientOption = {
+    configApi: () => {
       apiClients[type] = createApiClientWithTransForm(Config.API_URL);
       return apiClients[type];
-    default:
+    },
+    default: () => {
       apiClients.default = createApiClientWithTransForm(Config.API_URL);
       return apiClients.default;
-  }
+    }
+  };
+  if (apiClientOption[type]) return apiClientOption[type]();
+  return apiClientOption.default();
 };
 
 export const createApiClientWithTransForm = baseURL => {

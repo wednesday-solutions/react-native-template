@@ -28,11 +28,15 @@ export const formatTranslationMessages = (locale, messages) => {
       ? formatTranslationMessages(DEFAULT_LOCALE, enTranslationMessages)
       : {};
   const flattenFormattedMessages = (formattedMessages, key) => {
-    const formattedMessage =
-      !messages[key] && locale !== DEFAULT_LOCALE
-        ? defaultFormattedMessages[key]
-        : messages[key];
-    return Object.assign(formattedMessages, { [key]: formattedMessage });
+    const formattedMessageOptions = {
+      true: defaultFormattedMessages[key],
+      false: messages[key]
+    };
+    const formattedCondition = !messages[key] && locale !== DEFAULT_LOCALE;
+    return {
+      ...formattedMessages,
+      [key]: formattedMessageOptions[formattedCondition]
+    };
   };
   return Object.keys(messages).reduce(flattenFormattedMessages, {});
 };

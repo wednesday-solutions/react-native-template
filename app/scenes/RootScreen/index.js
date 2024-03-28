@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import NavigationService from '@services/NavigationService';
@@ -6,25 +5,24 @@ import AppNavigator from '@navigators/AppNavigator';
 import Container from '@atoms/Container';
 
 import { rootScreenActions } from './reducer';
+import React, { useEffect } from 'react';
 
-export class RootScreen extends Component {
-  componentDidMount() {
-    // Run the startup saga when the application is starting
-    this.props.startup();
-  }
+const RootScreen = props => {
+  useEffect(() => {
+    // Run the startup function when the component mounts
+    props.startup();
+  }, []);
 
-  setRefForTopLevelNavigtor = navigatorRef => {
+  const setRefForTopLevelNavigtor = navigatorRef => {
     NavigationService.setTopLevelNavigator(navigatorRef);
   };
 
-  render() {
-    return (
-      <Container testID="root-screen">
-        <AppNavigator />
-      </Container>
-    );
-  }
-}
+  return (
+    <Container testID="root-screen">
+      <AppNavigator />
+    </Container>
+  );
+};
 
 RootScreen.propTypes = {
   startup: PropTypes.func
@@ -33,5 +31,5 @@ RootScreen.propTypes = {
 const mapDispatchToProps = dispatch => ({
   startup: () => dispatch(rootScreenActions.startup())
 });
-
 export default connect(null, mapDispatchToProps)(RootScreen);
+export { RootScreen as RootScreenTest };

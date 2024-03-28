@@ -15,8 +15,9 @@ export const initialState = fromJS({
 
 export const rootContainerReducer = (state = initialState, action) =>
   produce(state, () => {
-    switch (action.type) {
-      default:
-        return state;
-    }
+    const stateReturn = {
+      [rootScreenTypes.STARTUP]: state
+    };
+    if (stateReturn[action.type]) return stateReturn[action.type];
+    return state;
   });

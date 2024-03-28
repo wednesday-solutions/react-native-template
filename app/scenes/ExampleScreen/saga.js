@@ -23,6 +23,10 @@ export function* fetchUser() {
   }
 }
 
+/**
+ * Description
+ * @returns {any}
+ */
 export default function* searchListContainerSaga() {
   yield takeLatest(exampleScreenTypes.REQUEST_FETCH_USER, fetchUser);
 }

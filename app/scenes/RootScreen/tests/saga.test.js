@@ -11,15 +11,13 @@ import rootScreenSaga, { startup } from '../saga';
 import { rootScreenTypes } from '../reducer';
 
 describe('Tests for RootScreen sagas', () => {
-  let generator;
-  let submitSpy;
-
-  beforeEach(() => {
-    generator = rootScreenSaga();
-    submitSpy = jest.fn();
+  const setupTests = () => ({
+    generator: rootScreenSaga(),
+    submitSpy: jest.fn()
   });
 
   it('should start task to watch for STARTUP action', () => {
+    const { generator } = setupTests();
     expect(generator.next().value).toEqual(
       takeLatest(rootScreenTypes.STARTUP, startup)
     );
@@ -27,13 +25,19 @@ describe('Tests for RootScreen sagas', () => {
 
   it('should ensure that the navigation service is called after waiting for 1000ms', async () => {
     const method = startup();
-    NavigationService.navigateAndReset = submitSpy;
+    NavigationService.setTopLevelNavigator({ dispatch: () => {} });
+    const navigateAndResetSpy = jest.spyOn(
+      NavigationService,
+      'navigateAndReset'
+    );
     method.next();
     await timeout(1000);
-    expect(submitSpy).toHaveBeenCalled();
+    expect(navigateAndResetSpy).toHaveBeenCalled();
+    expect(navigateAndResetSpy).toHaveBeenCalledWith('MainScreen');
   });
 
   it('should ensure that the navigation service is called after waiting for 1000ms', async () => {
+    const { submitSpy } = setupTests();
     const method = startup();
     NavigationService.navigateAndReset = submitSpy;
     method.next();

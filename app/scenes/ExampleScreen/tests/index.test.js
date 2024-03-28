@@ -9,11 +9,7 @@ import { renderProvider } from 'app/utils/testUtils';
 import { ExampleScreenTest } from '../index';
 
 describe('<ExampleScreen /> Container tests', () => {
-  let submitSpy;
-
-  beforeAll(() => {
-    submitSpy = jest.fn();
-  });
+  const submitSpy = jest.fn();
 
   it('should render and match the snapshot', () => {
     const baseElement = renderProvider(

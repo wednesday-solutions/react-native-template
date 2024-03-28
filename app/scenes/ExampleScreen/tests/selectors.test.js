@@ -6,26 +6,19 @@ import {
 } from '../selectors';
 
 describe('Tests for selectors to get data from state for the ExampleScreen', () => {
-  let mockedState;
-  let username;
-  let userIsLoading;
-  let userErrorMessage;
+  const username = 'Mohammed Ali Chherawalla';
+  const userErrorMessage = 'Some error';
+  const userIsLoading = false;
 
-  beforeEach(() => {
-    username = 'Mohammed Ali Chherawalla';
-    userErrorMessage = 'Some error';
-    userIsLoading = false;
-
-    mockedState = {
-      example: fromJS({
-        user: {
-          username
-        },
-        userErrorMessage,
-        userIsLoading
-      })
-    };
-  });
+  const mockedState = {
+    example: fromJS({
+      user: {
+        username
+      },
+      userErrorMessage,
+      userIsLoading
+    })
+  };
 
   it('should select the user state', () => {
     const userSelector = selectUser();

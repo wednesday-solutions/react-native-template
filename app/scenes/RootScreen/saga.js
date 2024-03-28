@@ -9,6 +9,10 @@ export function* startup() {
   setTimeout(() => NavigationService.navigateAndReset('MainScreen'), 1000);
 }
 
+/**
+ * Description
+ * @returns {any}
+ */
 export default function* startUpSaga() {
   yield takeLatest(rootScreenTypes.STARTUP, startup);
 }

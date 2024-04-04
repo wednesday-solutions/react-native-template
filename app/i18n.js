@@ -7,12 +7,12 @@
  *   script `extract-intl`, and must use CommonJS module syntax
  *   You CANNOT use import/export in this file.
  */
+import { _ } from 'lodash';
 const addLocaleData = require('react-intl').addLocaleData; //eslint-disable-line
 
 const enLocaleData = require('react-intl/locale-data/en');
 
 const enTranslationMessages = require('./translations/en.json');
-const _ = require('lodash');
 addLocaleData(enLocaleData);
 
 export const DEFAULT_LOCALE = 'en';

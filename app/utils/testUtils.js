@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import createStore from 'app/rootReducer';
 import { DEFAULT_LOCALE, translationMessages } from '@app/i18n';
 import ConnectedLanguageProvider from '@atoms/LanguageProvider';
-const _ = require('lodash');
+import { _ } from 'lodash';
 export const apiResponseGenerator = (ok, data) => ({
   ok,
   data

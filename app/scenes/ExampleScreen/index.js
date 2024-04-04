@@ -71,37 +71,6 @@ const ExampleScreen = props => {
   );
 };
 
-// class ExampleScreen extends React.Component {
-//   componentDidMount() {
-//     this.requestFetchUser()();
-//   }
-
-//   requestFetchUser = () => () => {
-//     this.props.fetchUser();
-//   };
-
-//   render() {
-//     return (
-//       <Container>
-//         {this.props.userIsLoading ? (
-//           <ActivityIndicator testID="loader" size="large" color="#0000ff" />
-//         ) : (
-//           <View testID="example-container-content">
-//             <SimpsonsLoveWednesday
-//               instructions={instructions}
-//               userErrorMessage={this.props.userErrorMessage}
-//               user={this.props.user}
-//             />
-//             <CustomButtonParentView>
-//               <Button onPress={this.requestFetchUser()} title="Refresh" />
-//             </CustomButtonParentView>
-//           </View>
-//         )}
-//       </Container>
-//     );
-//   }
-// }
-
 ExampleScreen.propTypes = {
   user: PropTypes.object,
   userIsLoading: PropTypes.bool,

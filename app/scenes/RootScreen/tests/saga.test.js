@@ -9,7 +9,7 @@ import NavigationService from 'app/services/NavigationService';
 import { timeout } from 'app/utils/testUtils';
 import rootScreenSaga, { startup } from '../saga';
 import { rootScreenTypes } from '../reducer';
-const _ = require('lodash');
+import { _ } from 'lodash';
 describe('Tests for RootScreen sagas', () => {
   const setupTests = () => ({
     generator: rootScreenSaga(),

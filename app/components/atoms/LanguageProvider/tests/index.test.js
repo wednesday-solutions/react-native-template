@@ -22,10 +22,10 @@ describe('<LanguageProvider /> container tests', () => {
     expect(container.firstChild).not.toBeNull();
   });
 });
-
+const setupReduxStore = () => ({ reduxStore: createStore().store });
 describe('<ConnectedLanguageProvider /> container tests', () => {
-  const reduxStore = createStore().store;
   it('should render the default language messages', () => {
+    const { reduxStore } = setupReduxStore();
     const { queryByText } = render(
       <Provider store={reduxStore}>
         <ConnectedLanguageProvider messages={translationMessages}>

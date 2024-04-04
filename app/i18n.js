@@ -12,7 +12,7 @@ const addLocaleData = require('react-intl').addLocaleData; //eslint-disable-line
 const enLocaleData = require('react-intl/locale-data/en');
 
 const enTranslationMessages = require('./translations/en.json');
-
+const _ = require('lodash');
 addLocaleData(enLocaleData);
 
 export const DEFAULT_LOCALE = 'en';
@@ -29,13 +29,14 @@ export const formatTranslationMessages = (locale, messages) => {
       : {};
   const flattenFormattedMessages = (formattedMessages, key) => {
     const formattedMessageOptions = {
-      true: defaultFormattedMessages[key],
-      false: messages[key]
+      true: _.get(defaultFormattedMessages, key),
+      false: _.get(messages, key)
     };
-    const formattedCondition = !messages[key] && locale !== DEFAULT_LOCALE;
+    const formattedCondition =
+      !_.get(messages, key) && locale !== DEFAULT_LOCALE;
     return {
       ...formattedMessages,
-      [key]: formattedMessageOptions[formattedCondition]
+      [key]: _.get(formattedMessageOptions, formattedCondition)
     };
   };
   return Object.keys(messages).reduce(flattenFormattedMessages, {});

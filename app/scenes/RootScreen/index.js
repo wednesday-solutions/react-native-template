@@ -19,7 +19,7 @@ const RootScreen = props => {
 
   return (
     <Container testID="root-screen">
-      <AppNavigator />
+      <AppNavigator ref={setRefForTopLevelNavigtor} />
     </Container>
   );
 };

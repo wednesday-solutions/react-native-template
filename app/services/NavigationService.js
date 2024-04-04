@@ -5,7 +5,7 @@ import { NavigationActions, StackActions } from '@react-navigation/compat';
  *
  * @see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html
  */
-
+const _ = require('lodash');
 const navigatorObject = {
   navigator: null
 };
@@ -14,7 +14,7 @@ const navigatorObject = {
  */
 
 const setTopLevelNavigator = navigatorRef => {
-  navigatorObject.navigator = navigatorRef;
+  _.set(navigatorObject, 'navigator', navigatorRef);
 };
 
 /**

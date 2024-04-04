@@ -1,4 +1,10 @@
-module.exports = function(api = { cache: () => {} }) {
+/* eslint-disable fp/no-mutation */
+/**
+ * Description
+ * @param {any} api={cache:(
+ * @returns {any}
+ */
+module.exports = (api = { cache: () => {} }) => {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],

@@ -30,9 +30,10 @@ const Instructions = styled(T)`
 `;
 
 /**
- * Description
- * @param {any} {instructions}
- * @returns {any}
+ * A component that displays a logo along with instructions.
+ * @param {object} props - The props object containing component properties.
+ * @param {string} props.instructions - The instructions text to display.
+ * @returns {React.ReactNode} JSX elements displaying the logo and instructions.
  */
 function LogoWithInstructions({ instructions }) {
   return (

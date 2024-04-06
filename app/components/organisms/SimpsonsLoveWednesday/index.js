@@ -20,11 +20,12 @@ const SeparatedView = styled.View`
 `;
 
 /**
- * Description
- * @param {any} {instructions
- * @param {any} user
- * @param {any} userErrorMessage}
- * @returns {any}
+ * A component that displays Simpsons-themed content related to Wednesday, including instructions, character details, and error messages.
+ * @param {object} props - The props object containing component properties.
+ * @param {string} props.instructions - The instructions text to display.
+ * @param {object} props.user - The user object representing character details and quote.
+ * @param {string} props.userErrorMessage - The error message to display if user data retrieval fails.
+ * @returns {React.ReactNode} JSX elements displaying Simpsons-themed content based on provided props.
  */
 function SimpsonsLoveWednesday({ instructions, user, userErrorMessage }) {
   return (

@@ -18,9 +18,13 @@ const CharacterImage = styled.Image`
 `;
 
 /**
- * Description
- * @param {any} {user}
- * @returns {any}
+ * A component that displays a character's information along with their quote.
+ * @param {object} props - The props object containing component properties.
+ * @param {object} props.user - The user object representing the character's details.
+ * @param {string} props.user.character - The character's name.
+ * @param {string} props.user.image - The URL of the character's image.
+ * @param {string} props.user.quote - The character's quote.
+ * @returns {React.ReactNode} JSX elements displaying the character's information and quote.
  */
 function CharacterWithQuote({ user }) {
   return (

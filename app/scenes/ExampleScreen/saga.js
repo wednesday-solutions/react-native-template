@@ -24,8 +24,9 @@ export function* fetchUser() {
 }
 
 /**
- * Description
- * @returns {any}
+ * Saga responsible for managing user search requests and fetching user data.
+ * Watches for specific action types and triggers corresponding worker sagas.
+ * @returns {IterableIterator<any>} An iterator for handling user search and data fetching.
  */
 export default function* searchListContainerSaga() {
   yield takeLatest(exampleScreenTypes.REQUEST_FETCH_USER, fetchUser);

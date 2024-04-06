@@ -10,8 +10,9 @@ export function* startup() {
 }
 
 /**
- * Description
- * @returns {any}
+ * Saga responsible for handling application startup actions.
+ * Watches for the STARTUP action and triggers the startup process.
+ * @returns {IterableIterator<any>} An iterator for managing application startup logic.
  */
 export default function* startUpSaga() {
   yield takeLatest(rootScreenTypes.STARTUP, startup);

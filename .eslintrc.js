@@ -18,7 +18,6 @@ module.exports = {
     'plugin:fp/recommended'
   ],
   plugins: [
-    'prettier',
     'github',
     'immutable',
     'sonarjs',
@@ -120,7 +119,7 @@ module.exports = {
       }
     ],
     'no-shadow': 'error',
-    complexity: ['error', 2],
+    complexity: ['error', 10],
     'no-empty': 'error',
     'import/order': [
       'error',

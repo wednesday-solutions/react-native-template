@@ -18,8 +18,8 @@ export const generateApiClient = (type = 'configApi') => {
       return apiClients.default;
     }
   };
-  if (get(apiClientOption, type)) return get(apiClientOption, type)();
-  return apiClientOption.default();
+  const clientGenerator = get(apiClientOption, type, apiClientOption.default);
+  return clientGenerator();
 };
 
 export const createApiClientWithTransForm = baseURL => {

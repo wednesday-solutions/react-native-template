@@ -45,11 +45,11 @@ const instructions = Platform.select({
 });
 
 const ExampleScreen = props => {
-  const requestFetchUser = () => () => {
+  const requestFetchUser = () => {
     props.fetchUser();
   };
   useEffect(() => {
-    requestFetchUser()();
+    requestFetchUser();
   }, []);
   return (
     <Container>
@@ -63,7 +63,7 @@ const ExampleScreen = props => {
             user={props.user}
           />
           <CustomButtonParentView>
-            <Button onPress={requestFetchUser()} title="Refresh" />
+            <Button onPress={requestFetchUser} title="Refresh" />
           </CustomButtonParentView>
         </View>
       )}

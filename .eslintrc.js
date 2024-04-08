@@ -21,7 +21,6 @@ module.exports = {
     'github',
     'immutable',
     'sonarjs',
-    'prettier',
     'redux-saga',
     'react-native',
     'react',

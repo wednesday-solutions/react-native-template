@@ -6,14 +6,14 @@ import set from 'lodash/set';
  *
  * @see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html
  */
-const navigatorObject = {
+export const navigatorObject = {
   navigator: null
 };
 /**
  * This function is called when the RootScreen is created to set the navigator instance to use.
  */
 
-const setTopLevelNavigator = navigatorRef => {
+export const setTopLevelNavigator = navigatorRef => {
   set(navigatorObject, 'navigator', navigatorRef);
 };
 

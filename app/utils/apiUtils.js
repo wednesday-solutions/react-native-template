@@ -1,28 +1,24 @@
 import { create } from 'apisauce';
 import mapKeysDeep from 'map-keys-deep';
-import { camelCase, snakeCase, _ } from 'lodash';
+import { camelCase, snakeCase, set, get } from 'lodash';
 import { Config } from '@app/config/index';
 export const apiClients = {
   configApi: null,
   default: null
 };
-export const getApiClient = (type = 'configApi') => _.get(apiClients, type);
+export const getApiClient = (type = 'configApi') => get(apiClients, type);
 export const generateApiClient = (type = 'configApi') => {
   const apiClientOption = {
     configApi: () => {
-      _.set(apiClients, type, createApiClientWithTransForm(Config.API_URL));
-      return _.get(apiClients, type);
+      set(apiClients, type, createApiClientWithTransForm(Config.API_URL));
+      return get(apiClients, type);
     },
     default: () => {
-      _.set(
-        apiClients,
-        'default',
-        createApiClientWithTransForm(Config.API_URL)
-      );
+      set(apiClients, 'default', createApiClientWithTransForm(Config.API_URL));
       return apiClients.default;
     }
   };
-  if (_.get(apiClientOption, type)) return _.get(apiClientOption, type)();
+  if (get(apiClientOption, type)) return get(apiClientOption, type)();
   return apiClientOption.default();
 };
 
@@ -36,7 +32,7 @@ export const createApiClientWithTransForm = baseURL => {
   api.addResponseTransform(response => {
     const { ok, data } = response;
     if (ok && data) {
-      _.set(
+      set(
         response,
         'data',
         mapKeysDeep(data, keys => camelCase(keys))
@@ -48,7 +44,7 @@ export const createApiClientWithTransForm = baseURL => {
   api.addRequestTransform(request => {
     const { data } = request;
     if (data) {
-      _.set(
+      set(
         request,
         'data',
         mapKeysDeep(data, keys => snakeCase(keys))

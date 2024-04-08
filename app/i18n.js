@@ -7,7 +7,7 @@
  *   script `extract-intl`, and must use CommonJS module syntax
  *   You CANNOT use import/export in this file.
  */
-import { _ } from 'lodash';
+import { get } from 'lodash';
 const addLocaleData = require('react-intl').addLocaleData; //eslint-disable-line
 
 const enLocaleData = require('react-intl/locale-data/en');
@@ -29,14 +29,13 @@ export const formatTranslationMessages = (locale, messages) => {
       : {};
   const flattenFormattedMessages = (formattedMessages, key) => {
     const formattedMessageOptions = {
-      true: _.get(defaultFormattedMessages, key),
-      false: _.get(messages, key)
+      true: get(defaultFormattedMessages, key),
+      false: get(messages, key)
     };
-    const formattedCondition =
-      !_.get(messages, key) && locale !== DEFAULT_LOCALE;
+    const formattedCondition = !get(messages, key) && locale !== DEFAULT_LOCALE;
     return {
       ...formattedMessages,
-      [key]: _.get(formattedMessageOptions, formattedCondition)
+      [key]: get(formattedMessageOptions, formattedCondition)
     };
   };
   return Object.keys(messages).reduce(flattenFormattedMessages, {});

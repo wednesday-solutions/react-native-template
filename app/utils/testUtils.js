@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import createStore from 'app/rootReducer';
 import { DEFAULT_LOCALE, translationMessages } from '@app/i18n';
 import ConnectedLanguageProvider from '@atoms/LanguageProvider';
-import { _ } from 'lodash';
+import { get } from 'lodash';
 export const apiResponseGenerator = (ok, data) => ({
   ok,
   data
@@ -14,7 +14,7 @@ export const renderWithIntl = (children, renderFunction = render) =>
   renderFunction(
     <IntlProvider
       locale={DEFAULT_LOCALE}
-      messages={_.get(translationMessages, DEFAULT_LOCALE)}
+      messages={get(translationMessages, DEFAULT_LOCALE)}
     >
       {children}
     </IntlProvider>

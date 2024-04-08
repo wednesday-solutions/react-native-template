@@ -1,5 +1,5 @@
 import { NavigationActions, StackActions } from '@react-navigation/compat';
-import { _ } from 'lodash';
+import { set } from 'lodash';
 
 /**
  * The navigation is implemented as a service so that it can be used outside of components, for example in sagas.
@@ -14,7 +14,7 @@ const navigatorObject = {
  */
 
 const setTopLevelNavigator = navigatorRef => {
-  _.set(navigatorObject, 'navigator', navigatorRef);
+  set(navigatorObject, 'navigator', navigatorRef);
 };
 
 /**

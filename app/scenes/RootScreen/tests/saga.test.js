@@ -9,7 +9,7 @@ import NavigationService from 'app/services/NavigationService';
 import { timeout } from 'app/utils/testUtils';
 import rootScreenSaga, { startup } from '../saga';
 import { rootScreenTypes } from '../reducer';
-import { _ } from 'lodash';
+import { set } from 'lodash';
 describe('Tests for RootScreen sagas', () => {
   const setupTests = () => ({
     generator: rootScreenSaga(),
@@ -39,7 +39,7 @@ describe('Tests for RootScreen sagas', () => {
   it('should ensure that the navigation service is called after waiting for 1000ms', async () => {
     const { submitSpy } = setupTests();
     const method = startup();
-    _.set(NavigationService, 'navigateAndReset', submitSpy);
+    set(NavigationService, 'navigateAndReset', submitSpy);
     method.next();
     await timeout(650);
     expect(submitSpy).not.toHaveBeenCalled();

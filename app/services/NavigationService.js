@@ -41,7 +41,7 @@ export function navigate(routeName, params) {
  * @param routeName The name of the route to navigate to. Routes are defined in RootScreen using createStackNavigator()
  * @param params Route parameters.
  */
-function navigateAndReset(routeName, params) {
+export function navigateAndReset(routeName, params) {
   navigatorObject.navigator.dispatch(
     StackActions.replace({
       routeName,

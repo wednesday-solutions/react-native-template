@@ -6,8 +6,12 @@
 
 import React from 'react';
 import { renderWithIntl } from 'app/utils/testUtils';
-import { RootScreenTest } from '../index';
+import { RootScreenTest, setRefForTopLevelNavigtor } from '../index';
+import NavigationService from '@services/NavigationService';
 export const setupJest = () => ({ submitSpy: jest.fn() });
+jest.mock('@services/NavigationService', () => ({
+  setTopLevelNavigator: jest.fn()
+}));
 describe('<HomeScreen /> container', () => {
   it('should render and match the snapshot', () => {
     const { submitSpy } = setupJest();
@@ -28,5 +32,14 @@ describe('<HomeScreen /> container', () => {
     );
     expect(getByTestId('root-screen').type).toBe('View');
     expect(submitSpy).toHaveBeenCalled();
+  });
+  describe('setRefForTopLevelNavigtor', () => {
+    it('sets top-level navigator reference using NavigationService', () => {
+      const navigatorRef = { navigation: { dispatch: jest.fn() } }; // Mock navigator reference
+      setRefForTopLevelNavigtor(navigatorRef);
+      expect(NavigationService.setTopLevelNavigator).toHaveBeenCalledWith(
+        navigatorRef
+      );
+    });
   });
 });

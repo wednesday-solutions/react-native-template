@@ -7,15 +7,14 @@ import Container from '@atoms/Container';
 import { rootScreenActions } from './reducer';
 import React, { useEffect } from 'react';
 
+const setRefForTopLevelNavigtor = navigatorRef => {
+  NavigationService.setTopLevelNavigator(navigatorRef);
+};
 const RootScreen = props => {
   useEffect(() => {
     // Run the startup function when the component mounts
     props.startup();
   }, []);
-
-  const setRefForTopLevelNavigtor = navigatorRef => {
-    NavigationService.setTopLevelNavigator(navigatorRef);
-  };
 
   return (
     <Container testID="root-screen">
@@ -33,3 +32,4 @@ const mapDispatchToProps = dispatch => ({
 });
 export default connect(null, mapDispatchToProps)(RootScreen);
 export { RootScreen as RootScreenTest };
+export { setRefForTopLevelNavigtor };

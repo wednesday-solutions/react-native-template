@@ -1,15 +1,12 @@
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
-import NavigationService from '@services/NavigationService';
 import AppNavigator from '@navigators/AppNavigator';
 import Container from '@atoms/Container';
 
 import { rootScreenActions } from './reducer';
 import React, { useEffect } from 'react';
+import setRefForTopLevelNavigtor from '@app/services/NavigationService';
 
-const setRefForTopLevelNavigtor = navigatorRef => {
-  NavigationService.setTopLevelNavigator(navigatorRef);
-};
 const RootScreen = props => {
   useEffect(() => {
     // Run the startup function when the component mounts
@@ -32,4 +29,3 @@ const mapDispatchToProps = dispatch => ({
 });
 export default connect(null, mapDispatchToProps)(RootScreen);
 export { RootScreen as RootScreenTest };
-export { setRefForTopLevelNavigtor };

@@ -1,6 +1,7 @@
 import { createActions } from 'reduxsauce';
 import { fromJS } from 'immutable';
 import produce from 'immer';
+import { get } from 'lodash';
 export const {
   Types: rootScreenTypes,
   Creators: rootScreenActions
@@ -18,6 +19,5 @@ export const rootContainerReducer = (state = initialState, action) =>
     const stateReturn = {
       [rootScreenTypes.STARTUP]: state
     };
-    if (stateReturn[action.type]) return stateReturn[action.type];
-    return state;
+    return get(stateReturn, [action.type], state);
   });

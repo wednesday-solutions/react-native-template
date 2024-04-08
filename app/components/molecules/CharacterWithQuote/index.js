@@ -32,7 +32,7 @@ function CharacterWithQuote({ user }) {
       <Result
         id="wednesday_lover"
         values={{
-          username: get(user, 'character') || 'character'
+          username: get(user, 'character', 'character')
         }}
       />
       <Result id="because" />

@@ -10,7 +10,7 @@ import React from 'react';
 import { renderWithIntl } from '@utils/testUtils';
 import { rerender } from '@testing-library/react-native';
 import SimpsonsLoveWednesday from '../index';
-
+import { set } from 'lodash';
 describe('<SimpsonsLoveWednesday />', () => {
   it('Should render and match the snapshot', () => {
     const baseElement = renderWithIntl(<SimpsonsLoveWednesday />);
@@ -29,9 +29,9 @@ describe('<SimpsonsLoveWednesday />', () => {
     };
     const { getByText } = renderWithIntl(<SimpsonsLoveWednesday {...props} />);
     expect(getByText(props.userErrorMessage)).toBeTruthy();
-    const updatedPropWithNullError = { ...props, userErrorMessage: null };
+    set(props, 'userErrorMessage', null);
     const { getByText: textQueryOnReRender } = renderWithIntl(
-      <SimpsonsLoveWednesday {...updatedPropWithNullError} />,
+      <SimpsonsLoveWednesday {...props} />,
       rerender
     );
     expect(

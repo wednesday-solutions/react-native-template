@@ -6,7 +6,7 @@ import set from 'lodash/set';
  *
  * @see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html
  */
-export const navigatorObject = {
+const navigatorObject = {
   navigator: null
 };
 /**

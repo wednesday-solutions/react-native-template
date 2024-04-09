@@ -10,7 +10,7 @@ import React from 'react';
 import { renderWithIntl } from '@utils/testUtils';
 import { rerender } from '@testing-library/react-native';
 import SimpsonsLoveWednesday from '../index';
-import { set } from 'lodash';
+import set from 'lodash/set';
 describe('<SimpsonsLoveWednesday />', () => {
   it('Should render and match the snapshot', () => {
     const baseElement = renderWithIntl(<SimpsonsLoveWednesday />);

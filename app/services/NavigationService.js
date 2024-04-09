@@ -1,5 +1,5 @@
 import { NavigationActions, StackActions } from '@react-navigation/compat';
-import { set } from 'lodash';
+import set from 'lodash/set';
 
 /**
  * The navigation is implemented as a service so that it can be used outside of components, for example in sagas.

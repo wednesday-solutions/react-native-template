@@ -1,7 +1,7 @@
 import { createActions } from 'reduxsauce';
 import { fromJS } from 'immutable';
 import produce from 'immer';
-import { get } from 'lodash';
+import get from 'lodash/get';
 export const {
   Types: rootScreenTypes,
   Creators: rootScreenActions

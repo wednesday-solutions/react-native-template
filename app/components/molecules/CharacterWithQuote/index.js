@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { get } from 'lodash';
+import get from 'lodash/get';
 import PropTypes from 'prop-types';
 import { fonts } from '@themes';
 import T from '@atoms/T';

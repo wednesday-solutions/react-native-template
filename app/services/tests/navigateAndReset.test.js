@@ -1,4 +1,5 @@
-import { navigatorObject, navigateAndReset } from '../NavigationService';
+import { navigatorObject } from '../NavigationService';
+import NavigationService from '@app/services/NavigationService';
 import { set } from 'lodash';
 import { StackActions } from '@react-navigation/compat';
 
@@ -9,6 +10,7 @@ jest.mock('@react-navigation/compat', () => ({
 }));
 const mockDispatch = jest.fn();
 describe('test navigateAndReset', () => {
+  const { navigateAndReset } = NavigationService;
   beforeEach(() => {
     set(navigatorObject, 'navigator', { dispatch: mockDispatch });
   });
@@ -19,10 +21,10 @@ describe('test navigateAndReset', () => {
   });
 
   it('dispatches stack action with the correct routeName and params', () => {
-    const routeName = '/home';
-    const params = { screen: 'exampleScreen' };
+    const routeName = '/test';
+    const params = { screen: 'MainScreen' };
     StackActions.replace.mockReturnValueOnce({
-      type: 'homeScreen',
+      type: 'NAVIGATE_ACTION',
       payload: { routeName, params }
     });
     navigateAndReset(routeName, params);
@@ -31,7 +33,7 @@ describe('test navigateAndReset', () => {
       params
     });
     expect(mockDispatch).toHaveBeenCalledWith({
-      type: 'homeScreen',
+      type: 'NAVIGATE_ACTION',
       payload: { routeName, params }
     });
   });

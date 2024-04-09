@@ -1,11 +1,9 @@
-import { setTopLevelNavigator, navigatorObject } from '../NavigationService';
-import { set } from 'lodash';
-
-jest.mock('lodash', () => ({
-  set: jest.fn()
-}));
-
+import { navigatorObject } from '../NavigationService';
+import set from 'lodash/set';
+import NavigationService from '@app/services/NavigationService';
+jest.mock('lodash/set', () => jest.fn());
 describe('setTopLevelNavigator', () => {
+  const { setTopLevelNavigator } = NavigationService;
   afterEach(() => {
     jest.clearAllMocks();
   });

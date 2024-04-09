@@ -4,7 +4,7 @@ import AppNavigator from '@navigators/AppNavigator';
 import Container from '@atoms/Container';
 import { rootScreenActions } from './reducer';
 import React, { useEffect } from 'react';
-import NavigationService from '@app/services/NavigationService';
+import { setRefForTopLevelNavigtor } from '@app/services/NavigationService';
 
 const RootScreen = props => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const RootScreen = props => {
 
   return (
     <Container testID="root-screen">
-      <AppNavigator ref={NavigationService.setRefForTopLevelNavigtor} />
+      <AppNavigator ref={setRefForTopLevelNavigtor} />
     </Container>
   );
 };

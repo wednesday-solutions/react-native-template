@@ -1,21 +1,14 @@
-import { navigatorObject } from '../NavigationService';
-import NavigationService from '@app/services/NavigationService';
-import { set } from 'lodash';
+import { navigate, setTopLevelNavigator } from '../NavigationService';
 import { NavigationActions } from '@react-navigation/compat';
 jest.mock('@react-navigation/compat', () => ({
   NavigationActions: {
     navigate: jest.fn()
   }
 }));
-const mockDispatch = jest.fn();
+const navigatorRef = { goBack: 'goBack', dispatch: jest.fn() };
+setTopLevelNavigator(navigatorRef);
 describe('navigate', () => {
-  const { navigate } = NavigationService;
-  beforeEach(() => {
-    set(navigatorObject, 'navigator', { dispatch: mockDispatch });
-  });
-
   afterEach(() => {
-    // Reset mocks after each test
     jest.clearAllMocks();
   });
 
@@ -31,7 +24,7 @@ describe('navigate', () => {
       routeName,
       params
     });
-    expect(mockDispatch).toHaveBeenCalledWith({
+    expect(navigatorRef.dispatch).toHaveBeenCalledWith({
       type: 'NAVIGATE_ACTION',
       payload: { routeName, params }
     });

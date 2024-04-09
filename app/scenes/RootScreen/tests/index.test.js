@@ -8,9 +8,6 @@ import React from 'react';
 import { renderWithIntl } from 'app/utils/testUtils';
 import { RootScreenTest } from '../index';
 export const setupJest = () => ({ submitSpy: jest.fn() });
-jest.mock('@services/NavigationService', () => ({
-  setTopLevelNavigator: jest.fn()
-}));
 describe('<HomeScreen /> container', () => {
   it('should render and match the snapshot', () => {
     const { submitSpy } = setupJest();

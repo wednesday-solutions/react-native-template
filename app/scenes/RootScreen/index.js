@@ -1,21 +1,16 @@
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
-import NavigationService from '@services/NavigationService';
 import AppNavigator from '@navigators/AppNavigator';
 import Container from '@atoms/Container';
-
 import { rootScreenActions } from './reducer';
 import React, { useEffect } from 'react';
+import { setRefForTopLevelNavigtor } from '@app/services/NavigationService';
 
 const RootScreen = props => {
   useEffect(() => {
     // Run the startup function when the component mounts
     props.startup();
   }, []);
-
-  const setRefForTopLevelNavigtor = navigatorRef => {
-    NavigationService.setTopLevelNavigator(navigatorRef);
-  };
 
   return (
     <Container testID="root-screen">

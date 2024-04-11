@@ -1,16 +1,19 @@
 import React from 'react';
-import 'react-native';
 import { render } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
 import T from '@atoms/T';
 import createStore from 'app/rootReducer';
 import { translationMessages } from 'app/i18n';
 import { renderWithIntl } from '@utils/testUtils';
+import { Text } from 'react-native';
 import ConnectedLanguageProvider, { LanguageProvider } from '../index';
-
 describe('<LanguageProvider /> container tests', () => {
   it('should render its children', () => {
-    const children = <h1>Test</h1>;
+    const children = (
+      <h1>
+        <Text>Test</Text>
+      </h1>
+    );
     const container = renderWithIntl(
       <LanguageProvider messages={translationMessages} locale="en">
         {children}
@@ -19,16 +22,10 @@ describe('<LanguageProvider /> container tests', () => {
     expect(container.firstChild).not.toBeNull();
   });
 });
-
+const setupReduxStore = () => ({ reduxStore: createStore().store });
 describe('<ConnectedLanguageProvider /> container tests', () => {
-  let reduxStore;
-
-  beforeAll(() => {
-    const { store } = createStore();
-    reduxStore = store;
-  });
-
   it('should render the default language messages', () => {
+    const { reduxStore } = setupReduxStore();
     const { queryByText } = render(
       <Provider store={reduxStore}>
         <ConnectedLanguageProvider messages={translationMessages}>

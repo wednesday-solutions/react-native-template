@@ -39,14 +39,11 @@ export const failureFetchUser = (state, { errorMessage }) =>
  */
 export const exampleContainerReducer = (state = initialState, action) =>
   produce(state, () => {
-    switch (action.type) {
-      case exampleScreenTypes.REQUEST_FETCH_USER:
-        return fetchUser(state, action);
-      case exampleScreenTypes.SUCCESS_FETCH_USER:
-        return successFetchUser(state, action);
-      case exampleScreenTypes.FAILURE_FETCH_USER:
-        return failureFetchUser(state, action);
-      default:
-        return state;
-    }
+    const actionTypes = {
+      [exampleScreenTypes.REQUEST_FETCH_USER]: fetchUser(state),
+      [exampleScreenTypes.SUCCESS_FETCH_USER]: successFetchUser(state, action),
+      [exampleScreenTypes.FAILURE_FETCH_USER]: failureFetchUser(state, action)
+    };
+    if (actionTypes[action.type]) return actionTypes[action.type];
+    return state;
   });

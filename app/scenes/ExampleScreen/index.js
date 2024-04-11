@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, Platform, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
@@ -6,6 +5,7 @@ import { PropTypes } from 'prop-types';
 import styled from 'styled-components/native';
 import { createStructuredSelector } from 'reselect';
 import { injectIntl } from 'react-intl';
+import React, { useEffect } from 'react';
 
 import AppContainer from '@atoms/Container';
 import SimpsonsLoveWednesday from '@organisms/SimpsonsLoveWednesday';
@@ -44,36 +44,32 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\nShake or press menu button for dev menu.'
 });
 
-class ExampleScreen extends React.Component {
-  componentDidMount() {
-    this.requestFetchUser()();
-  }
-
-  requestFetchUser = () => () => {
-    this.props.fetchUser();
+const ExampleScreen = props => {
+  const requestFetchUser = () => {
+    props.fetchUser();
   };
-
-  render() {
-    return (
-      <Container>
-        {this.props.userIsLoading ? (
-          <ActivityIndicator testID="loader" size="large" color="#0000ff" />
-        ) : (
-          <View testID="example-container-content">
-            <SimpsonsLoveWednesday
-              instructions={instructions}
-              userErrorMessage={this.props.userErrorMessage}
-              user={this.props.user}
-            />
-            <CustomButtonParentView>
-              <Button onPress={this.requestFetchUser()} title="Refresh" />
-            </CustomButtonParentView>
-          </View>
-        )}
-      </Container>
-    );
-  }
-}
+  useEffect(() => {
+    requestFetchUser();
+  }, []);
+  return (
+    <Container>
+      {props.userIsLoading ? (
+        <ActivityIndicator testID="loader" size="large" color="#0000ff" />
+      ) : (
+        <View testID="example-container-content">
+          <SimpsonsLoveWednesday
+            instructions={instructions}
+            userErrorMessage={props.userErrorMessage}
+            user={props.user}
+          />
+          <CustomButtonParentView>
+            <Button onPress={requestFetchUser} title="Refresh" />
+          </CustomButtonParentView>
+        </View>
+      )}
+    </Container>
+  );
+};
 
 ExampleScreen.propTypes = {
   user: PropTypes.object,

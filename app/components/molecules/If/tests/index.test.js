@@ -9,7 +9,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { render } from '@testing-library/react-native';
-
+import set from 'lodash/set';
 import If from '../index';
 
 describe('<If />', () => {
@@ -32,7 +32,7 @@ describe('<If />', () => {
       </If>
     );
     expect(getByText(conditionTrueText)).toBeTruthy();
-    props.condition = false;
+    set(props, 'condition', false);
     const { getByText: textQueryOnReRender } = render(
       <If {...props}>
         <TrueConditionComponent />

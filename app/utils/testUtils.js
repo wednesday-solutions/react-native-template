@@ -3,6 +3,7 @@ import { IntlProvider } from 'react-intl';
 import { render } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
 import createStore from 'app/rootReducer';
+import get from 'lodash/get';
 import { DEFAULT_LOCALE, translationMessages } from '@app/i18n';
 import ConnectedLanguageProvider from '@atoms/LanguageProvider';
 
@@ -14,7 +15,7 @@ export const renderWithIntl = (children, renderFunction = render) =>
   renderFunction(
     <IntlProvider
       locale={DEFAULT_LOCALE}
-      messages={translationMessages[DEFAULT_LOCALE]}
+      messages={get(translationMessages, DEFAULT_LOCALE)}
     >
       {children}
     </IntlProvider>

@@ -4,21 +4,24 @@
  *
  */
 // eslint-disable-next-line
-import React from 'react'
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
+
 const If = props => (props.condition ? props.children : props.otherwise);
-If.propsTypes = {
-  condition: Proptypes.bool,
-  otherwise: Proptypes.oneOfType([
-    Proptypes.arrayOf(Proptypes.node),
-    Proptypes.node
+
+If.propTypes = {
+  condition: PropTypes.bool,
+  otherwise: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
   ]),
-  children: Proptypes.oneOfType([
-    Proptypes.arrayOf(Proptypes.node),
-    Proptypes.node
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
   ])
 };
+
 If.defaultProps = {
   otherwise: null
 };
+
 export default If;

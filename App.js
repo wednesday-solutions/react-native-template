@@ -12,9 +12,7 @@ if (!window.Intl) {
   })
     .then(() => Promise.all([import('intl/locale-data/jsonp/en.js')]))
     .then(() => AppRegistry.registerComponent(appName, () => App))
-    .catch(err => {
-      throw err;
-    });
+    .catch(alert);
 } else {
   AppRegistry.registerComponent(appName, () => App);
 }

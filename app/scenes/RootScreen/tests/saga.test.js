@@ -6,6 +6,7 @@
 /* eslint-disable redux-saga/yield-effects */
 
 import { takeLatest } from 'redux-saga/effects';
+// import NavigationService from 'app/services/NavigationService';
 import { navigateAndReset } from '@app/services/NavigationService';
 import { timeout } from 'app/utils/testUtils';
 import set from 'lodash/set';

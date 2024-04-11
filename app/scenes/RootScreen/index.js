@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
-import NavigationService from '@services/NavigationService';
+import { setTopLevelNavigator } from '@services/NavigationService';
 import AppNavigator from '@navigators/AppNavigator';
 import Container from '@atoms/Container';
 
@@ -14,7 +14,7 @@ export class RootScreen extends Component {
   }
 
   setRefForTopLevelNavigtor = navigatorRef => {
-    NavigationService.setTopLevelNavigator(navigatorRef);
+    setTopLevelNavigator(navigatorRef);
   };
 
   render() {

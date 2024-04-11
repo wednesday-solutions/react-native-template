@@ -1,6 +1,6 @@
 import { put, call, takeLatest } from 'redux-saga/effects';
 import { get } from 'lodash';
-import { getUser } from '@app/services/UserService';
+import { getUser } from '@app/services/userService';
 import { exampleScreenActions, exampleScreenTypes } from './reducer';
 
 /**

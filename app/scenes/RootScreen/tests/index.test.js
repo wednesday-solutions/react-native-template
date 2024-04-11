@@ -6,26 +6,23 @@
 
 import React from 'react';
 import { renderWithIntl } from 'app/utils/testUtils';
-import { RootScreen as RootScreenTest } from '../index';
-
+import { RootScreenTest } from '../index';
+export const setupJest = () => ({ submitSpy: jest.fn() });
 describe('<HomeScreen /> container', () => {
-  let submitSpy;
-
-  beforeAll(() => {
-    submitSpy = jest.fn();
-  });
-
   it('should render and match the snapshot', () => {
+    const { submitSpy } = setupJest();
     const baseElement = renderWithIntl(<RootScreenTest startup={submitSpy} />);
     expect(baseElement).toMatchSnapshot();
   });
 
   it('should call the startup prop on mount', () => {
+    const { submitSpy } = setupJest();
     renderWithIntl(<RootScreenTest startup={submitSpy} />);
     expect(submitSpy).toHaveBeenCalled();
   });
 
   it('should not render rootSceen Container', () => {
+    const { submitSpy } = setupJest();
     const { getByTestId } = renderWithIntl(
       <RootScreenTest startup={submitSpy} />
     );

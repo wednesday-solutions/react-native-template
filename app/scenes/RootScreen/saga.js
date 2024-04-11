@@ -1,12 +1,12 @@
 import { takeLatest } from 'redux-saga/effects';
-import { navigateAndReset } from '@app/services/NavigationService';
+import NavigationService from '@app/services/NavigationService';
 import { rootScreenTypes } from './reducer';
 
 /**
  * The startup saga is the place to define behavior to execute when the application starts.
  */
 export function* startup() {
-  setTimeout(() => navigateAndReset('MainScreen'), 1000);
+  setTimeout(() => NavigationService.navigateAndReset('MainScreen'), 1000);
 }
 
 /**

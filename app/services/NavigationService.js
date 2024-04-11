@@ -50,4 +50,8 @@ function navigateAndReset(routeName, params) {
   );
 }
 
-export { navigate, navigateAndReset, setTopLevelNavigator };
+export default {
+  navigate,
+  navigateAndReset,
+  setTopLevelNavigator
+};

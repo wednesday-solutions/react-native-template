@@ -14,12 +14,12 @@ describe('Tests for LanguageProvider actions', () => {
   it('changes the locale', () => {
     const { mockedState } = setupMockedState();
     const locale = 'de';
-    const UpdateMockedState = mockedState.set('locale', locale);
+    const updateMockedState = mockedState.set('locale', locale);
     expect(
       languageProviderReducer(undefined, {
         type: languageProviderTypes.CHANGE_LOCALE,
         locale
       })
-    ).toEqual(UpdateMockedState);
+    ).toEqual(updateMockedState);
   });
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { fonts } from '@themes';
-import If from '@molecules/If';
+import If from '@app/components/atoms/If';
 import CharacterWithQuote from '@molecules/CharacterWithQuote';
 import LogoWithInstructions from '@molecules/LogoWithInstructions';
 

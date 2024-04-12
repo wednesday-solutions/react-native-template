@@ -44,6 +44,8 @@ export const exampleContainerReducer = (state = initialState, action) =>
       [exampleScreenTypes.SUCCESS_FETCH_USER]: successFetchUser(state, action),
       [exampleScreenTypes.FAILURE_FETCH_USER]: failureFetchUser(state, action)
     };
-    if (actionTypes[action.type]) return actionTypes[action.type];
+    if (actionTypes[action.type]) {
+      return actionTypes[action.type];
+    }
     return state;
   });

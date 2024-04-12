@@ -3,7 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from '@scenes/SplashScreen/';
 import ExampleScreen from '@scenes/ExampleScreen';
 import { NavigationContainer } from '@react-navigation/native';
-import { setTopLevelNavigator } from '../services/NavigationService';
+import { setTopLevelNavigator } from '@app/services/NavigationService';
 const Stack = createStackNavigator();
 /**
  * The root screen contains the application's navigation.

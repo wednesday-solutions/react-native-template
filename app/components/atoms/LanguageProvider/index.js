@@ -13,7 +13,14 @@ import { createSelector } from 'reselect';
 import { IntlProvider } from 'react-intl';
 
 import { makeSelectLocale } from './selectors';
-
+/**
+ * Provides internationalization (i18n) support by wrapping components with an IntlProvider.
+ * @param {object} props - The props object containing component properties.
+ * @param {string} props.locale - The locale/language code for internationalization.
+ * @param {object} props.messages - An object containing locale-specific message translations.
+ * @param {React.ReactNode} props.children - The child elements/components to be wrapped and rendered.
+ * @returns {React.ReactNode} A JSX element wrapping the provided child components with IntlProvider.
+ */
 export function LanguageProvider(props) {
   return (
     <IntlProvider
@@ -35,7 +42,11 @@ LanguageProvider.propTypes = {
 const mapStateToProps = createSelector(makeSelectLocale(), locale => ({
   locale
 }));
-
+/**
+ * Generates and returns an object containing action dispatch functions.
+ * @param {function} dispatch - The Redux store's dispatch function.
+ * @returns {object} An object containing action dispatch functions wrapped for use in components.
+ */
 function mapDispatchToProps(dispatch) {
   return {
     dispatch

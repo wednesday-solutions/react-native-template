@@ -5,24 +5,21 @@ import snakeCase from 'lodash/snakeCase';
 import set from 'lodash/set';
 import get from 'lodash/get';
 import { Config } from '@app/config/index';
+
 export const apiClients = {
   configApi: null,
   default: null
 };
-export const getApiClient = (type = 'configApi') => get(apiClients, type);
+export const getApiClient = (type = 'configApi') => apiClients[type];
 export const generateApiClient = (type = 'configApi') => {
-  const apiClientOption = {
-    configApi: () => {
+  switch (type) {
+    case 'configApi':
       set(apiClients, type, createApiClientWithTransForm(Config.API_URL));
       return get(apiClients, type);
-    },
-    default: () => {
+    default:
       set(apiClients, 'default', createApiClientWithTransForm(Config.API_URL));
       return apiClients.default;
-    }
-  };
-  const clientGenerator = get(apiClientOption, type, apiClientOption.default);
-  return clientGenerator();
+  }
 };
 
 export const createApiClientWithTransForm = baseURL => {
@@ -30,8 +27,6 @@ export const createApiClientWithTransForm = baseURL => {
     baseURL,
     headers: { 'Content-Type': 'application/json' }
   });
-
-  // eslint-disable-next-line complexity
   api.addResponseTransform(response => {
     const { ok, data } = response;
     if (ok && data) {

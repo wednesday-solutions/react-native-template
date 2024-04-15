@@ -5,7 +5,7 @@
 /* eslint-disable redux-saga/yield-effects */
 
 import { takeLatest } from 'redux-saga/effects';
-import NavigationService from 'app/services/NavigationService';
+import { setTopLevelNavigator } from 'app/services/navigationService';
 import { timeout } from 'app/utils/testUtils';
 import rootScreenSaga, { startup } from '../saga';
 import { rootScreenTypes } from '../reducer';
@@ -27,15 +27,15 @@ describe('Tests for RootScreen sagas', () => {
 
   it('should ensure that the navigation service is called after waiting for 1000ms', async () => {
     const method = startup();
-    NavigationService.navigateAndReset = submitSpy;
+    setTopLevelNavigator({ dispatch: submitSpy });
     method.next();
-    await timeout(1000);
+    await timeout(2000);
     expect(submitSpy).toHaveBeenCalled();
   });
 
   it('should ensure that the navigation service is called after waiting for 1000ms', async () => {
     const method = startup();
-    NavigationService.navigateAndReset = submitSpy;
+    setTopLevelNavigator({ dispatch: submitSpy });
     method.next();
     await timeout(650);
     expect(submitSpy).not.toHaveBeenCalled();

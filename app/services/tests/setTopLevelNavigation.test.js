@@ -1,5 +1,5 @@
 import set from 'lodash/set';
-import { setTopLevelNavigator } from '../NavigationService';
+import { setTopLevelNavigator } from '@app/services/NavigationService';
 jest.mock('lodash/set', () => jest.fn());
 describe('setTopLevelNavigator', () => {
   afterEach(() => {

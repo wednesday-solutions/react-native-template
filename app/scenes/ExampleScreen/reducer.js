@@ -41,7 +41,7 @@ export const exampleContainerReducer = (state = initialState, action) =>
   produce(state, () => {
     switch (action.type) {
       case exampleScreenTypes.REQUEST_FETCH_USER:
-        return fetchUser(state, action);
+        return fetchUser(state);
       case exampleScreenTypes.SUCCESS_FETCH_USER:
         return successFetchUser(state, action);
       case exampleScreenTypes.FAILURE_FETCH_USER:

@@ -5,13 +5,13 @@
 /* eslint-disable redux-saga/yield-effects */
 
 import { takeLatest } from 'redux-saga/effects';
-import { navigateAndReset } from '@app/services/NavigationService';
+import { navigateAndReset } from '@app/services/navigationService';
 import { timeout } from 'app/utils/testUtils';
 import rootScreenSaga, { startup } from '../saga';
 import { rootScreenTypes } from '../reducer';
 
-jest.mock('@app/services/NavigationService', () => ({
-  ...jest.requireActual('@app/services/NavigationService'),
+jest.mock('@app/services/navigationService', () => ({
+  ...jest.requireActual('@app/services/navigationService'),
   navigateAndReset: jest.fn()
 }));
 describe('Tests for RootScreen sagas', () => {

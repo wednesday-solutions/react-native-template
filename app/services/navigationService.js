@@ -12,9 +12,9 @@ const navigatorObject = {
 /**
  * This function is called when the RootScreen is created to set the navigator instance to use.
  */
-const setTopLevelNavigator = navigatorRef => {
+export function setTopLevelNavigator(navigatorRef) {
   Object.assign(navigatorObject, { navigator: navigatorRef });
-};
+}
 
 /**
  * Call this function when you want to navigate to a specific route.
@@ -22,7 +22,7 @@ const setTopLevelNavigator = navigatorRef => {
  * @param routeName The name of the route to navigate to. Routes are defined in RootScreen using createStackNavigator()
  * @param params Route parameters.
  */
-function navigate(routeName, params) {
+export function navigate(routeName, params) {
   navigatorObject.navigator.dispatch(
     NavigationActions.navigate({
       routeName,
@@ -40,7 +40,7 @@ function navigate(routeName, params) {
  * @param routeName The name of the route to navigate to. Routes are defined in RootScreen using createStackNavigator()
  * @param params Route parameters.
  */
-function navigateAndReset(routeName, params) {
+export function navigateAndReset(routeName, params) {
   navigatorObject.navigator.dispatch(
     StackActions.replace({
       routeName,
@@ -48,5 +48,3 @@ function navigateAndReset(routeName, params) {
     })
   );
 }
-
-export { navigate, navigateAndReset, setTopLevelNavigator };

@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
-import AppNavigator from '@navigators/AppNavigator';
+import AppNavigator from '@navigators/appNavigator';
 import Container from '@atoms/Container';
 import React, { useEffect } from 'react';
-import { setRefForTopLevelNavigtor } from '@app/services/NavigationService';
+import { setRefForTopLevelNavigtor } from '@app/services/navigationService';
 import { rootScreenActions } from './reducer';
 
 const RootScreen = props => {

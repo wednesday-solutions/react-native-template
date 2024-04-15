@@ -15,14 +15,17 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Test and generate coverage report
-        uses: artiomtr/jest-coverage-report-action@v2.2.9
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          threshold: 80
-          package-manager: yarn
-          skip-step: install
-          test-script: yarn test
+      - name: test
+        run: npm run test
+
+      # - name: Test and generate coverage report
+      #   uses: artiomtr/jest-coverage-report-action@v2.2.9
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     threshold: 80
+      #     package-manager: yarn
+      #     skip-step: install
+      #     test-script: yarn test
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master

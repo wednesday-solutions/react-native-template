@@ -20,6 +20,7 @@ jobs:
           threshold: 80
           package-manager: yarn
           skip-step: install
+          test-script: yarn test
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:

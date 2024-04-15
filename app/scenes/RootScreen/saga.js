@@ -1,5 +1,5 @@
 import { takeLatest } from 'redux-saga/effects';
-import { navigateAndReset } from '@app/services/NavigationService';
+import { navigateAndReset } from '@app/services/navigationService';
 import { rootScreenTypes } from './reducer';
 
 /**

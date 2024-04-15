@@ -25,7 +25,7 @@ describe('Tests for RootScreen sagas', () => {
     );
   });
 
-  it('should ensure that the navigation service is called after waiting for 1000ms11', async () => {
+  it('should ensure that the navigation service is called after waiting for 1000ms', async () => {
     const method = startup();
     setTopLevelNavigator({ dispatch: submitSpy });
     method.next();

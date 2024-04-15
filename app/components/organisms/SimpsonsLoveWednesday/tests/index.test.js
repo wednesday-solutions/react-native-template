@@ -9,7 +9,6 @@
 import React from 'react';
 import { renderWithIntl } from '@utils/testUtils';
 import { rerender } from '@testing-library/react-native';
-import set from 'lodash/set';
 import SimpsonsLoveWednesday from '../index';
 describe('<SimpsonsLoveWednesday />', () => {
   it('Should render and match the snapshot', () => {
@@ -29,7 +28,18 @@ describe('<SimpsonsLoveWednesday />', () => {
     };
     const { getByText } = renderWithIntl(<SimpsonsLoveWednesday {...props} />);
     expect(getByText(props.userErrorMessage)).toBeTruthy();
-    set(props, 'userErrorMessage', null);
+  });
+  it('Should render the component if userErrorMessage is empty', () => {
+    const props = {
+      userErrorMessage: null,
+      instructions: 'PRESS CMD + D for iOS',
+      user: {
+        character: 'Homer',
+        image:
+          'https://www.onthisday.com/images/people/homer-simpson-medium.jpg',
+        quote: "D'Oh!"
+      }
+    };
     const { getByText: textQueryOnReRender } = renderWithIntl(
       <SimpsonsLoveWednesday {...props} />,
       rerender

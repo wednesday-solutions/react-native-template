@@ -3,23 +3,24 @@ import {
   languageProviderTypes,
   languageProviderReducer
 } from '../reducer';
-const setupMockedState = () => ({ mockedState: initialState });
+const setupMockedState = state => ({ mockedState: state });
 /* eslint-disable default-case, no-param-reassign */
 describe('Tests for LanguageProvider actions', () => {
   it('returns the initial state', () => {
-    const { mockedState } = setupMockedState();
+    const { mockedState } = setupMockedState(initialState);
     expect(languageProviderReducer(undefined, {})).toEqual(mockedState);
   });
 
   it('changes the locale', () => {
-    const { mockedState } = setupMockedState();
     const locale = 'de';
-    const updateMockedState = mockedState.set('locale', locale);
+    const { mockedState } = setupMockedState(
+      initialState.set('locale', locale)
+    );
     expect(
       languageProviderReducer(undefined, {
         type: languageProviderTypes.CHANGE_LOCALE,
         locale
       })
-    ).toEqual(updateMockedState);
+    ).toEqual(mockedState);
   });
 });

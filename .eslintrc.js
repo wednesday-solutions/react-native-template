@@ -54,6 +54,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/prefer-default-export': 0,
     'react/jsx-props-no-spreading': 0,
+    'camelcase': ['error', { 'properties': 'always', ignoreImports: false}],
     indent: [
       2,
       2,

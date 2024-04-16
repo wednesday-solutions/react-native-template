@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { get } from 'lodash';
+import get from 'lodash/get';
 import PropTypes from 'prop-types';
 import { fonts } from '@themes';
 import T from '@atoms/T';
@@ -23,7 +23,7 @@ function CharacterWithQuote({ user }) {
       <Result
         id="wednesday_lover"
         values={{
-          username: get(user, 'character') || 'character'
+          username: get(user, 'character', 'character')
         }}
       />
       <Result id="because" />

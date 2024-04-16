@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { fonts } from '@themes';
-import If from '@molecules/If';
+import If from '@app/components/atoms/If';
 import CharacterWithQuote from '@molecules/CharacterWithQuote';
 import LogoWithInstructions from '@molecules/LogoWithInstructions';
 
-const Error = styled.Text`
+const Err = styled.Text`
   ${fonts.style.standard()};
   text-align: center;
   margin-bottom: 5px;
@@ -32,7 +32,7 @@ function SimpsonsLoveWednesday({ instructions, user, userErrorMessage }) {
       <LogoWithInstructions instructions={instructions} />
       <If
         condition={!userErrorMessage}
-        otherwise={<Error>{userErrorMessage}</Error>}
+        otherwise={<Err>{userErrorMessage}</Err>}
       >
         <SeparatedView>
           <CharacterWithQuote user={user} />

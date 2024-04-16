@@ -1,3 +1,4 @@
+/* eslint-disable fp/no-mutating-assign */
 /**
  * i18n.js
  *

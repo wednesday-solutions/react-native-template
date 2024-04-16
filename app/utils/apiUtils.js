@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/no-small-switch */
+/* eslint-disable fp/no-mutating-assign */
 import { create } from 'apisauce';
 import mapKeysDeep from 'map-keys-deep';
 import camelCase from 'lodash/camelCase';

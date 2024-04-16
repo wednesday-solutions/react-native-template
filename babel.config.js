@@ -6,7 +6,7 @@
  * @returns {object} Babel configuration object with presets and plugins.
  */
 // eslint-disable-next-line fp/no-mutation
-module.exports = (api = { cache: () => {} }) => {
+module.exports = function(api = { cache: () => {} }) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],

@@ -1,6 +1,6 @@
 import MockAdapter from 'axios-mock-adapter';
 import { getApiClient } from 'app/utils/apiUtils';
-import { getUser } from './userService';
+import { getUser } from '../userService';
 
 describe('UserService tests', () => {
   it('should make the api call to "/quotes?count=1"', async () => {

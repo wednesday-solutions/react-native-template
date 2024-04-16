@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-small-switch */
 /*
  *
  * LanguageProvider reducer

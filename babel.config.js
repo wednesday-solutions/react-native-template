@@ -5,6 +5,7 @@
  * @param {Function} api.cache - Function used for caching Babel configuration.
  * @returns {object} Babel configuration object with presets and plugins.
  */
+// eslint-disable-next-line fp/no-mutation
 module.exports = function(api = { cache: () => {} }) {
   api.cache(true);
   return {

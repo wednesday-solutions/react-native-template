@@ -2,7 +2,4 @@
 const { getDefaultConfig } = require('@expo/metro-config');
 
 // eslint-disable-next-line fp/no-mutation
-module.exports = getDefaultConfig(__dirname, {
-  // Disable CSS support.
-  isCSSEnabled: false
-});
+module.exports = getDefaultConfig(__dirname);

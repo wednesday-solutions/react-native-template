@@ -39,5 +39,4 @@ module.exports = {
   },
   setupFiles: ['./node_modules/react-native-gesture-handler/jestSetup.js'],
   setupFilesAfterEnv: ['./setupTests.js'],
-  transformIgnorePatterns: ['/node_modules/(?!react-native)/.+']
-};
+  transformIgnorePatterns: ['/node_modules/(?!react-native)/.+']};

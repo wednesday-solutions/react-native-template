@@ -59,7 +59,7 @@
     "expo-splash-screen": "~0.26.4",
     "expo-status-bar": "~1.11.1",
     "global": "^4.4.0",
-    "immer": "^10.0.4",
+    "immer": "^4.0.0",
     "immutable": "^5.0.0-beta.5",
     "intl": "1.2.5",
     "lodash": "^4.17.15",

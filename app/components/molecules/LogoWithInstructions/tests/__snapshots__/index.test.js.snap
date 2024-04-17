@@ -4,7 +4,7 @@ exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
 <View>
   <View
     style={
-      Object {
+      {
         "height": 150,
         "marginBottom": 25,
         "width": "100%",
@@ -14,12 +14,12 @@ exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
     <Image
       resizeMode="contain"
       source={
-        Object {
+        {
           "testUri": "../../../app/assets/images/wednesday-logo.png",
         }
       }
       style={
-        Object {
+        {
           "alignSelf": "center",
           "height": "100%",
           "width": "100%",
@@ -29,16 +29,15 @@ exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
   </View>
   <Text
     style={
-      Array [
-        Object {
-          "fontSize": 17,
-          "fontStyle": "italic",
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        },
-      ]
+      {
+        "fontSize": 17,
+        "fontStyle": "italic",
+        "fontWeight": "normal",
+        "marginBottom": 5,
+        "textAlign": "center",
+      }
     }
+    testID="t"
   />
 </View>
 `;

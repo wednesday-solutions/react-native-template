@@ -16,13 +16,13 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: "18" # Choose appropriate JDK version
+          java-version: "18" 
           distribution: "adopt"
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '21' # Choose appropriate Node.js version
+          node-version: '21'
 
       - name: Install dependencies
         run: |
@@ -40,16 +40,25 @@ jobs:
           name: app-release
           path: ./android/app/build/outputs/apk/release/app-release.apk
 
-      # Optionally, create a GitHub release
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v1.0.0  # Specify your release tag
-          release_name: Release v1.0.0  # Specify your release name
+          tag_name: v1.0.0  
+          release_name: Release v1.0.0  
           body: |
             Test Release
           draft: false
           prerelease: false
+          
+      - name: Upload APK to GitHub Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./android/app/build/outputs/apk/release/app-release.apk
+          asset_name: react-native-template.apk
+          asset_content_type: application/vnd.android.package-archive

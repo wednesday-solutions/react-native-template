@@ -69,6 +69,3 @@ jobs:
           asset_path: ./android/app/build/outputs/apk/release/app-release.apk
           asset_name: react-native-template.apk
           asset_content_type: application/zip
-      
-      
-  

@@ -30,3 +30,8 @@ jobs:
         run: |
           eas init --non-interactive --id 3d81ac4a-f8fe-4ba4-99d0-0623c7780991 --force
           eas update --auto --non-interactive
+          
+      - name: 🚀 Upload to TestFlight
+        env:
+          EXPO_CLI_YES: 1
+        run: eas submit --platform ios --release-channel default

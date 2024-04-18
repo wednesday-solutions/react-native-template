@@ -31,16 +31,15 @@ jobs:
 
       - name: Run Yarn Install
         run: |
-             cd ./packages/app-mobile/
              npm i -g corepack
              yarn install             
       - name: Build application
         run: |
-             cd ./packages/app-mobile/android
+             cd ./android
              ./gradlew assembleDebug             
       - name: Upload application
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: ./packages/app-mobile/android/app/build/outputs/apk/debug/app-debug.apk
+          path: ./android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 3

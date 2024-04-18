@@ -3,7 +3,7 @@ name: Deploy to Testflight
 on:
   push:
     branches:
-      - feat/cd-workflow
+      - feat/ios-workflow
 
 jobs:
   expo-build:

@@ -1,46 +1,48 @@
-name: "Build and Release Android app"
+name: Build and Release Android App
 on:
-    push:
-        branches:
-            - feat/cd-workflow
-        tags:
-            - v*
+  push:
+    branches:
+      - feat/cd-workflow
+    tags:
+      - v*
 permissions:
-    contents: write
+  contents: write
+
 jobs:
   build:
+    name: Build APK
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: "18" 
-          distribution: "adopt"
+          java-version: "18"  # Specify the desired Java version
+          distribution: "adopt"  # Choose the JDK distribution
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '21'
+          node-version: '21'  # Specify the Node.js version needed for your project
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
-          npm install -g corepack
-          yarn install
+          npm install -g corepack  # Install global npm package (if needed)
+          yarn install  # Install project dependencies
 
-      - name: Build release APK
+      - name: Build Release APK
         run: |
           cd android
-          ./gradlew assembleRelease
+          ./gradlew assembleRelease  # Execute Gradle task to build release APK
 
-      - name: Upload release APK
+      - name: Upload Release APK
         uses: actions/upload-artifact@v2
         with:
           name: app-release
-          path: ./android/app/build/outputs/apk/release/app-release.apk
+          path: ./android/app/build/outputs/apk/release/app-release.apk  # Path to the generated release APK
 
   create_release:
     name: Create GitHub Release
@@ -56,18 +58,20 @@ jobs:
           tag=$(echo "${GITHUB_REF#refs/tags/}")
           gh release create "$tag" \
             --repo="$GITHUB_REPOSITORY" \
-            --title="${GITHUB_REPOSITORY#*/} ${tag}" \
-            --generate-notes
+            --title="${GITHUB_REPOSITORY#*/} $tag" \
+            --notes "Release notes for $tag"  # Add custom release notes as needed
         shell: bash
-        
+
   upload_asset:
     name: Upload APK to GitHub Release
     runs-on: ubuntu-latest
     needs: create_release
     steps:
-      - name: Download Release URL
+      - name: Get Release Upload URL
         id: get_release_url
-        run: echo "::set-output name=upload_url::$(gh release view ${{ github.repository }} ${GITHUB_REF#refs/tags/} --json upload_url -q)"
+        run: |
+          upload_url=$(gh release view ${{ github.repository }} ${GITHUB_REF#refs/tags/} --json upload_url -q)
+          echo "::set-output name=upload_url::$upload_url"
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         env:
@@ -75,5 +79,5 @@ jobs:
         with:
           upload_url: ${{ needs.create_release.outputs.upload_url }}
           asset_path: ./android/app/build/outputs/apk/release/app-release.apk
-          asset_name: react-native-template.apk
+          asset_name: app-release-${{ github.run_number }}.apk  # Set a unique asset name
           asset_content_type: application/vnd.android.package-archive

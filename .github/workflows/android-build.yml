@@ -1,10 +1,29 @@
 name: "Build and Release Android app"
-
 on:
-  push:
-    branches:
-      - feat/cd-workflow
-
+    push:
+        branches:
+            - feat/cd-workflow
+    workflow_dispatch:
+      inputs:
+        tag_name:
+          description: 'Tag name for the release'
+          required: true
+        release_name:
+          description: 'Release name'
+          required: true
+          default: 'Release v2.0.0'
+        major_version:
+              description: 'Major version number'
+              required: true
+              default: '1'
+        minor_version:
+              description: 'Minor version number'
+              required: true
+              default: '0'
+        patch_version:
+              description: 'Patch version number'
+              required: true
+              default: '0'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -46,12 +65,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v2.0.0  
-          release_name: Release v1.0.0  
-          body: |
-            Test Release
-          draft: false
-          prerelease: false
+            tag_name: v${{ github.event.inputs.major_version }}.${{ github.event.inputs.minor_version }}.${{ github.event.inputs.patch_version }}
+            release_name: Release v${{ github.event.inputs.major_version }}.${{ github.event.inputs.minor_version }}.${{ github.event.inputs.patch_version }}
+            draft: false
+            prerelease: false
           
       - name: Upload APK to GitHub Release
         uses: actions/upload-release-asset@v1

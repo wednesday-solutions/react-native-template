@@ -2,7 +2,7 @@ name: Build and Release Android App
 on:
   push:
     branches:
-      - feat/cd-workflow
+      - master
     tags:
       - v*
 permissions:

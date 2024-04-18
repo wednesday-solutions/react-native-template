@@ -1,0 +1,71 @@
+name: Build and Release Android App
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build APK 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: "18"
+          distribution: "adopt"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+
+      - name: Install Dependencies
+        run: |
+          npm install -g corepack
+          yarn install
+
+      - name: Build Release APK
+        run: |
+          cd android
+          ./gradlew assembleRelease
+
+      - name: Set tag name
+        id: set_tag_name
+        uses: martinbeentjes/npm-get-version-action@master
+
+      - name: Upload Release APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release
+          path: ./android/app/build/outputs/apk/release/app-release.apk
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.set_tag_name.outputs.current-version }}
+          release_name: Release ${{ steps.set_tag_name.outputs.current-version }}
+          draft: false
+          prerelease: false
+
+      - name: Upload APK to Release
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./android/app/build/outputs/apk/release/app-release.apk
+          asset_name: react-native-template.apk
+          asset_content_type: application/zip

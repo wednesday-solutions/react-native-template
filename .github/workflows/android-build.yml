@@ -10,70 +10,67 @@ permissions:
 
 jobs:
   build:
-    name: Build APK
+    name: Build APK 
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
+        
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: "18"  # Specify the desired Java version
-          distribution: "adopt"  # Choose the JDK distribution
+          java-version: "18"
+          distribution: "adopt"
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '21'  # Specify the Node.js version needed for your project
+          node-version: '21'
 
       - name: Install Dependencies
         run: |
-          npm install -g corepack  # Install global npm package (if needed)
-          yarn install  # Install project dependencies
+          npm install -g corepack
+          yarn install
 
       - name: Build Release APK
         run: |
           cd android
-          ./gradlew assembleRelease  # Execute Gradle task to build release APK
+          ./gradlew assembleRelease
 
-      - name: Upload Release APK
-        uses: actions/upload-artifact@v2
-        with:
-          name: app-release
-          path: ./android/app/build/outputs/apk/release/app-release.apk  # Path to the generated release APK
-
-  create_release:
-    name: Create Release
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: Set tag name
         id: set_tag_name
         run: |
           TAG_NAME="v$(date +'%Y%m%d')-${GITHUB_SHA::8}"
           echo "::set-output name=tag_name::$TAG_NAME"
+
+      - name: Upload Release APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release
+          path: ./android/app/build/outputs/apk/release/app-release.apk
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.set_tag_name.outputs.tag_name }}
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+
       - name: Upload APK to Release
-        id: upload-release-asset 
+        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./android/app/build/outputs/apk/release/app-release.apk
           asset_name: react-native-template.apk
           asset_content_type: application/zip
+      
+      
   

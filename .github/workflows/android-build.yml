@@ -40,35 +40,7 @@ jobs:
 
       - name: Set tag name
         id: set_tag_name
-        run: |
-          # Determine the latest tag and commit messages since that tag
-          LAST_TAG=$(git describe --tags --abbrev=0)
-          COMMITS=$(git log --oneline ${LAST_TAG}..HEAD --format="%s")
-          
-          # Initialize version components
-          MAJOR=0
-          MINOR=0
-          PATCH=0
-          
-          # Analyze commit messages to determine version bump
-          while read -r line; do
-            if [[ "$line" == feat:* ]]; then
-              # Increment minor version for feature commits
-              ((MINOR++))
-            elif [[ "$line" == chore:* ]]; then
-              # Increment major version for chore commits
-              ((MAJOR++))
-              MINOR=0  # Reset minor version
-            elif [[ "$line" == fix:* ]]; then
-              # Increment patch version for fix commits
-              ((PATCH++))
-            fi
-          done <<< "$COMMITS"
-          
-          # Determine the next version based on commit analysis
-          NEXT_VERSION="${MAJOR}.${MINOR}.${PATCH}"
-          
-          echo "::set-output name=next_version::$NEXT_VERSION"
+        uses: martinbeentjes/npm-get-version-action@master
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v2
@@ -82,8 +54,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.set_tag_name.outputs.next_version }}
-          release_name: Release ${{ steps.set_tag_name.outputs.next_version }}
+          tag_name: ${{ steps.set_tag_name.outputs.current-version }}
+          release_name: Release ${{ steps.set_tag_name.outputs.current-version }}
           draft: false
           prerelease: false
 

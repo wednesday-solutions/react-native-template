@@ -1,16 +1,14 @@
 {
   "build": {
-    "release": {
-      "workflow": "generic",
-      "distribution": "store",
-      "releaseChannel": "default",
-      "credentialsSource": "auto"
+    "production": {
+      "env": {
+        "APP_ENV": "production"
+      }
     },
-    "preview": {
-      "workflow": "generic",
-      "distribution": "internal",
-      "releaseChannel": "preview",
-      "credentialsSource": "auto"
+    "development": {
+      "env": {
+        "APP_ENV": "development"
+      }
     }
   }
 }

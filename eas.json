@@ -1,0 +1,16 @@
+{
+  "build": {
+    "release": {
+      "workflow": "generic",
+      "distribution": "store",
+      "releaseChannel": "default",
+      "credentialsSource": "auto"
+    },
+    "preview": {
+      "workflow": "generic",
+      "distribution": "internal",
+      "releaseChannel": "preview",
+      "credentialsSource": "auto"
+    }
+  }
+}

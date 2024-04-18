@@ -53,18 +53,16 @@ jobs:
         uses: actions/checkout@v2
       - name: Set tag name
         id: set_tag_name
-        uses: amitsingh-007/next-release-tag@v5.0.0
+        uses: thenativeweb/get-next-version@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: 'v'
-          tag_template: 'yyyy.mm.dd.i'
+          prefix: 'v'
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ steps.set_tag_name.outputs.next_release_tag }}
+          tag_name: ${{ steps.set_tag_name.outputs.version }}
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false

@@ -27,4 +27,6 @@ jobs:
       - name: 🚀 Create update
         env:
           EXPO_CLI_YES: 1
-        run: eas init && eas update --auto --non-interactive
+        run: |
+          eas init --non-interactive
+          eas update --auto --non-interactive

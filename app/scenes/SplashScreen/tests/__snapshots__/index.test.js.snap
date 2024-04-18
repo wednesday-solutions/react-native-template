@@ -3,14 +3,14 @@
 exports[`<SplashScreen /> should render and match the snapshot 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "display": "flex",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
       },
-      Object {
+      {
         "alignItems": "center",
         "backgroundColor": "#fcedda",
         "display": "flex",
@@ -23,19 +23,17 @@ exports[`<SplashScreen /> should render and match the snapshot 1`] = `
   <Image
     resizeMode="contain"
     source={
-      Object {
+      {
         "testUri": "../../../app/assets/images/wednesday-logo.png",
       }
     }
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "justifyContent": "center",
-          "width": 200,
-        },
-      ]
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+        "width": 200,
+      }
     }
   />
 </View>

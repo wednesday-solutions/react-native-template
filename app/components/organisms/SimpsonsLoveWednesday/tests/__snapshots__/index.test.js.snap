@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SimpsonsLoveWednesday /> Should render and match the snapshot 1`] = `
-Array [
+[
   <View>
     <View
       style={
-        Object {
+        {
           "height": 150,
           "marginBottom": 25,
           "width": "100%",
@@ -15,12 +15,12 @@ Array [
       <Image
         resizeMode="contain"
         source={
-          Object {
+          {
             "testUri": "../../../app/assets/images/wednesday-logo.png",
           }
         }
         style={
-          Object {
+          {
             "alignSelf": "center",
             "height": "100%",
             "width": "100%",
@@ -30,85 +30,75 @@ Array [
     </View>
     <Text
       style={
-        Array [
-          Object {
-            "fontSize": 17,
-            "fontStyle": "italic",
-            "fontWeight": "normal",
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
+        {
+          "fontSize": 17,
+          "fontStyle": "italic",
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        }
       }
+      testID="t"
     />
   </View>,
   <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
+    style={{}}
   >
     <Text
       style={
-        Array [
-          Object {
-            "fontSize": 17,
-            "fontWeight": "normal",
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
+        {
+          "fontSize": 17,
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        }
       }
+      testID="t"
     >
       character loves Wednesday
     </Text>
     <Text
       style={
-        Array [
-          Object {
-            "fontSize": 17,
-            "fontWeight": "normal",
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
+        {
+          "fontSize": 17,
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        }
       }
+      testID="t"
     >
       because
     </Text>
     <Image
       resizeMode="contain"
       source={
-        Object {
+        {
           "uri": undefined,
         }
       }
       style={
-        Array [
-          Object {
-            "height": 80,
-            "marginBottom": 0,
-            "marginLeft": "auto",
-            "marginRight": "auto",
-            "marginTop": 0,
-            "width": 80,
-          },
-        ]
+        {
+          "height": 80,
+          "marginBottom": 0,
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "marginTop": 0,
+          "width": 80,
+        }
       }
       testID="character-image"
     />
     <Text
       style={
-        Array [
-          Object {
-            "fontSize": 17,
-            "fontWeight": "normal",
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
+        {
+          "fontSize": 17,
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        }
       }
+      testID="t"
     />
   </View>,
 ]

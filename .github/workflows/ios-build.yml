@@ -1,14 +1,10 @@
-name: Deploy to Testflight
-
 on:
   push:
     branches:
       - feat/ios-workflow
-
 jobs:
-  expo-build:
-    runs-on: macos-14
-    environment: development
+  update:
+    runs-on: ubuntu-latest
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v3
@@ -16,21 +12,17 @@ jobs:
       - name: 🏗 Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '21.x'
-          cache: 'yarn'
+          node-version: 21.x
+          cache: yarn
 
       - name: 🏗 Setup EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+          token: XCaGI7YtuvlztcNSZwTbTQLGk3FfYabJ9HCa8Hkp
 
       - name: 📦 Install dependencies
         run: yarn install
 
-      - name: 🚀 Build app
-        run: |
-          eas build \
-            --platform ios \
-            --profile production \
-            --non-interactive
+      - name: 🚀 Create update
+        run: eas update --auto --non-interactive

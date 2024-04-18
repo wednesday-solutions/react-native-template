@@ -25,4 +25,6 @@ jobs:
         run: yarn install
 
       - name: 🚀 Create update
+        env:
+          EXPO_CLI_YES: 1
         run: eas init && eas update --auto --non-interactive

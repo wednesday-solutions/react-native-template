@@ -3,27 +3,10 @@ on:
     push:
         branches:
             - feat/cd-workflow
-    workflow_dispatch:
-      inputs:
-        tag_name:
-          description: 'Tag name for the release'
-          required: true
-        release_name:
-          description: 'Release name'
-          required: true
-          default: 'Release v2.0.0'
-        major_version:
-              description: 'Major version number'
-              required: true
-              default: '1'
-        minor_version:
-              description: 'Minor version number'
-              required: true
-              default: '0'
-        patch_version:
-              description: 'Patch version number'
-              required: true
-              default: '0'
+        tags:
+            - v*
+permissions:
+    contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -61,14 +44,14 @@ jobs:
 
       - name: Create GitHub Release
         id: create_release
-        uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-            tag_name: v${{ github.event.inputs.major_version }}.${{ github.event.inputs.minor_version }}.${{ github.event.inputs.patch_version }}
-            release_name: Release v${{ github.event.inputs.major_version }}.${{ github.event.inputs.minor_version }}.${{ github.event.inputs.patch_version }}
-            draft: false
-            prerelease: false
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            tag: ${{ github.ref_name }}
+        run: |
+            gh release create "$tag" \
+                --repo="$GITHUB_REPOSITORY" \
+                --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
+                --generate-notes
           
       - name: Upload APK to GitHub Release
         uses: actions/upload-release-asset@v1

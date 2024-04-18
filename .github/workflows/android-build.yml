@@ -1,45 +1,55 @@
-name: "Build Android app"
+name: "Build and Release Android app"
 
 on:
   push:
     branches:
       - feat/cd-workflow
-    # can add push and pull_request here
-
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Java
+      - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: "18"
+          java-version: "18" # Choose appropriate JDK version
           distribution: "adopt"
-          cache: "gradle"
 
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v1
-
-      - name: Setup Node  
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '21' # Choose appropriate Node.js version
 
-      - name: Run Yarn Install
+      - name: Install dependencies
         run: |
-             npm i -g corepack
-             yarn install             
-      - name: Build application
+          npm install -g corepack
+          yarn install
+
+      - name: Build release APK
         run: |
-             cd ./android
-             ./gradlew assembleDebug             
-      - name: Upload application
+          cd android
+          ./gradlew assembleRelease
+
+      - name: Upload release APK
         uses: actions/upload-artifact@v2
         with:
-          name: app
-          path: ./android/app/build/outputs/apk/debug/app-debug.apk
-          retention-days: 3
+          name: app-release
+          path: ./android/app/build/outputs/apk/release/app-release.apk
+
+      # Optionally, create a GitHub release
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v1.0.0  # Specify your release tag
+          release_name: Release v1.0.0  # Specify your release name
+          body: |
+            Test Release
+          draft: false
+          prerelease: false

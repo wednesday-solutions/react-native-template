@@ -1,27 +1,28 @@
-name: iOS Build
-
 on:
-  workflow_dispatch:
   push:
     branches:
-      - feat/ios-workflow
-
+      - main
 jobs:
   build:
-    name: Install and build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 21.x
+          node-version: 18.x
           cache: yarn
-      - name: Setup Expo and EAS
+
+      - name: 🏗 Setup EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: "1KN9lFRor6yda_6Q0vSxwClEBfrdq8xhYo7klaQ5"
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Build on EAS
-        run: eas build -p ios --profile preview --non-interactive --no-wait
+          token: 1KN9lFRor6yda_6Q0vSxwClEBfrdq8xhYo7klaQ5
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🚀 Build app
+        run: eas build -p ios --non-interactive

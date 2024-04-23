@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - feat/ios-workflow
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -20,8 +20,8 @@ jobs:
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: 1KN9lFRor6yda_6Q0vSxwClEBfrdq8xhYo7klaQ5
+          token: "1KN9lFRor6yda_6Q0vSxwClEBfrdq8xhYo7klaQ5"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build on EAS
-        run: eas build -p ios --non-interactive --no-wait
+        run: eas build -p ios --profile internal --non-interactive --no-wait

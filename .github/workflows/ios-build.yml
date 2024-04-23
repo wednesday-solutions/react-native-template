@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - ios-workflow
+      - feat/ios-workflow
 jobs:
   build:
     name: Install and build

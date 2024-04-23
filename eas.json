@@ -1,14 +1,12 @@
 {
   "build": {
-    "production": {
-      "env": {
-        "APP_ENV": "production"
-      }
-    },
     "development": {
-      "env": {
-        "APP_ENV": "development"
-      }
-    }
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
   }
 }

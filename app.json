@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "react-native-template-ws",
-    "slug": "rnt-ws",
+    "slug": "react-native-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +22,12 @@
     },
     "ios": {
       "bundleIdentifier": "com.wednesdaysolutions.rntws"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b4d70ad4-c9b0-4886-8784-ba7eaa4827f6"
+      }
+    },
+    "owner": "delivery_wednesday"
   }
 }

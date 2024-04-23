@@ -1,37 +1,25 @@
+name: IOS Build
 on:
+  workflow_dispatch:
   push:
     branches:
-      - feat/ios-workflow
+      - ios-workflow
 jobs:
-  update:
+  build:
+    name: Install and build
     runs-on: ubuntu-latest
     steps:
-      - name: 🏗 Setup repo
-        uses: actions/checkout@v3
-
-      - name: 🏗 Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 21.x
-          cache: yarn
-
-      - name: 🏗 Setup EAS
+          node-version: 14.17.x
+          cache: npm
+      - name: Setup Expo and EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: XCaGI7YtuvlztcNSZwTbTQLGk3FfYabJ9HCa8Hkp
-
-      - name: 📦 Install dependencies
-        run: yarn install
-
-      - name: 🚀 Create update
-        env:
-          EXPO_CLI_YES: 1
-        run: |
-          eas init --non-interactive --id 3d81ac4a-f8fe-4ba4-99d0-0623c7780991 --force
-          eas update --auto --non-interactive
-          
-      - name: 🚀 Upload to TestFlight
-        env:
-          EXPO_CLI_YES: 1
-        run: eas submit --platform ios --release-channel default
+          token: 1KN9lFRor6yda_6Q0vSxwClEBfrdq8xhYo7klaQ5
+      - name: Install dependencies
+        run: npm ci
+      - name: Build on EAS
+        run: eas build --platform all --non-interactive --no-wait

@@ -1,16 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 
-
 const prettierOptions = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'),
+  fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8')
 );
 module.exports = {
   root: true,
   parser: 'babel-eslint',
   extends: [
     'airbnb',
-    'prettier', 
+    'prettier',
     'prettier/react',
     'plugin:prettier/recommended',
     'plugin:sonarjs/recommended',
@@ -54,13 +53,13 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/prefer-default-export': 0,
     'react/jsx-props-no-spreading': 0,
-    'camelcase': ['error', { 'properties': 'always', ignoreImports: false}],
+    camelcase: ['error', { properties: 'always', ignoreImports: false }],
     indent: [
       2,
       2,
       {
-        SwitchCase: 1,
-      },
+        SwitchCase: 1
+      }
     ],
     'jsx-a11y/aria-props': 2,
     'jsx-a11y/heading-has-content': 0,

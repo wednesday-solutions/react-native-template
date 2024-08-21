@@ -32,6 +32,17 @@ module.exports = function(api = { cache: () => {} }) {
             '@utils': './app/utils'
           }
         }
+      ],
+      [
+        'module:react-native-dotenv',
+        {
+          moduleName: '@env',
+          path: '.env',
+          blacklist: null,
+          whitelist: null,
+          safe: false,
+          allowUndefined: true
+        }
       ]
     ]
   };

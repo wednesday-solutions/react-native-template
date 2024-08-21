@@ -120,7 +120,7 @@ module.exports = {
       }
     ],
     'no-shadow': 'error',
-    complexity: ['error', 10],
+    complexity: ['error', 2],
     'no-empty': 'error',
     'import/order': [
       'error',

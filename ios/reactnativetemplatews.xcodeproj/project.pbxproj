@@ -150,7 +150,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				89B7E046AC9A4A4E23D27FA2 /* [CP] Embed Pods Frameworks */,
+				82FD35964231D76992DBB587 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,7 +269,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactnativetemplatews/Pods-reactnativetemplatews-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89B7E046AC9A4A4E23D27FA2 /* [CP] Embed Pods Frameworks */ = {
+		82FD35964231D76992DBB587 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

@@ -86,7 +86,7 @@ Cmd+D or shake for dev menu.
         }
         testID="t"
       >
-        character loves Wednesday
+        wednesday_lover
       </Text>
       <Text
         style={

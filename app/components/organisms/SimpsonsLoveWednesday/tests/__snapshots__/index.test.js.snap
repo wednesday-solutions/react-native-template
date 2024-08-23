@@ -55,7 +55,7 @@ exports[`<SimpsonsLoveWednesday /> Should render and match the snapshot 1`] = `
       }
       testID="t"
     >
-      character loves Wednesday
+      wednesday_lover
     </Text>
     <Text
       style={

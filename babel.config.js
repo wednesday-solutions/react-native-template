@@ -1,3 +1,11 @@
+/**
+ * Configure Babel for Expo project with module resolution aliases.
+ * This function sets up Babel presets and plugins, including module resolution with aliases.
+ * @param {object} api - The Babel API object (optional, used for caching).
+ * @param {Function} api.cache - Function used for caching Babel configuration.
+ * @returns {object} Babel configuration object with presets and plugins.
+ */
+// eslint-disable-next-line fp/no-mutation
 module.exports = function(api = { cache: () => {} }) {
   api.cache(true);
   return {

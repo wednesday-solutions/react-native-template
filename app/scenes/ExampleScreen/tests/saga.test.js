@@ -5,7 +5,7 @@
 /* eslint-disable redux-saga/yield-effects */
 
 import { takeLatest, call, put } from 'redux-saga/effects';
-import { getUser } from 'app/services/UserService';
+import { getUser } from 'app/services/userService';
 import { apiResponseGenerator } from 'app/utils/testUtils';
 import exampleScreenSaga, { fetchUser } from '../saga';
 import { exampleScreenTypes } from '../reducer';

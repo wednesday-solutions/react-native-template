@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-small-switch */
 import { createActions } from 'reduxsauce';
 import { fromJS } from 'immutable';
 import produce from 'immer';

@@ -1,18 +1,20 @@
+/* eslint-disable fp/no-mutating-assign */
 import { NavigationActions, StackActions } from '@react-navigation/compat';
-
 /**
  * The navigation is implemented as a service so that it can be used outside of components, for example in sagas.
  *
  * @see https://reactnavigation.org/docs/en/navigating-without-navigation-prop.html
  */
 
-let navigator;
+const navigatorObject = {
+  navigator: null
+};
 
 /**
  * This function is called when the RootScreen is created to set the navigator instance to use.
  */
-function setTopLevelNavigator(navigatorRef) {
-  navigator = navigatorRef;
+export function setTopLevelNavigator(navigatorRef) {
+  Object.assign(navigatorObject, { navigator: navigatorRef });
 }
 
 /**
@@ -21,8 +23,8 @@ function setTopLevelNavigator(navigatorRef) {
  * @param routeName The name of the route to navigate to. Routes are defined in RootScreen using createStackNavigator()
  * @param params Route parameters.
  */
-function navigate(routeName, params) {
-  navigator.dispatch(
+export function navigate(routeName, params) {
+  navigatorObject.navigator.dispatch(
     NavigationActions.navigate({
       routeName,
       params
@@ -39,17 +41,11 @@ function navigate(routeName, params) {
  * @param routeName The name of the route to navigate to. Routes are defined in RootScreen using createStackNavigator()
  * @param params Route parameters.
  */
-function navigateAndReset(routeName, params) {
-  navigator.dispatch(
+export function navigateAndReset(routeName, params) {
+  navigatorObject.navigator.dispatch(
     StackActions.replace({
       routeName,
       params
     })
   );
 }
-
-export default {
-  navigate,
-  navigateAndReset,
-  setTopLevelNavigator
-};

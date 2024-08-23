@@ -1,6 +1,6 @@
 import { put, call, takeLatest } from 'redux-saga/effects';
-import { get } from 'lodash';
-import { getUser } from '@app/services/UserService';
+import get from 'lodash/get';
+import { getUser } from '@app/services/userService';
 import { exampleScreenActions, exampleScreenTypes } from './reducer';
 
 /**
@@ -22,7 +22,11 @@ export function* fetchUser() {
     );
   }
 }
-
+/**
+ * Saga responsible for managing user search requests and fetching user data.
+ * Watches for specific action types and triggers corresponding worker sagas.
+ * @returns {IterableIterator<any>} An iterator for handling user search and data fetching.
+ */
 export default function* searchListContainerSaga() {
   yield takeLatest(exampleScreenTypes.REQUEST_FETCH_USER, fetchUser);
 }

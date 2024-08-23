@@ -1,8 +1,11 @@
+/* eslint-disable sonarjs/no-small-switch */
+/* eslint-disable fp/no-mutating-assign */
 import { create } from 'apisauce';
 import mapKeysDeep from 'map-keys-deep';
-import { camelCase, snakeCase } from 'lodash';
+import camelCase from 'lodash/camelCase';
+import snakeCase from 'lodash/snakeCase';
 import { Config } from '@app/config/index';
-
+import get from 'lodash/get';
 export const apiClients = {
   configApi: null,
   default: null
@@ -11,10 +14,14 @@ export const getApiClient = (type = 'configApi') => apiClients[type];
 export const generateApiClient = (type = 'configApi') => {
   switch (type) {
     case 'configApi':
-      apiClients[type] = createApiClientWithTransForm(Config.API_URL);
-      return apiClients[type];
+      Object.assign(apiClients, {
+        [type]: createApiClientWithTransForm(Config.API_URL)
+      });
+      return get(apiClients, type);
     default:
-      apiClients.default = createApiClientWithTransForm(Config.API_URL);
+      Object.assign(apiClients, {
+        default: createApiClientWithTransForm(Config.API_URL)
+      });
       return apiClients.default;
   }
 };
@@ -27,7 +34,9 @@ export const createApiClientWithTransForm = baseURL => {
   api.addResponseTransform(response => {
     const { ok, data } = response;
     if (ok && data) {
-      response.data = mapKeysDeep(data, keys => camelCase(keys));
+      Object.assign(response, {
+        data: mapKeysDeep(data, keys => camelCase(keys))
+      });
     }
     return response;
   });
@@ -35,7 +44,9 @@ export const createApiClientWithTransForm = baseURL => {
   api.addRequestTransform(request => {
     const { data } = request;
     if (data) {
-      request.data = mapKeysDeep(data, keys => snakeCase(keys));
+      Object.assign(request, {
+        data: mapKeysDeep(data, keys => snakeCase(keys))
+      });
     }
     return request;
   });

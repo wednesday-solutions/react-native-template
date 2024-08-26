@@ -45,6 +45,7 @@
     "@react-navigation/compat": "^5.3.15",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/stack": "^6.3.29",
+    "@sentry/react-native": "^5.30.0",
     "apisauce": "^3.0.1",
     "axios-mock-adapter": "^1.17.0",
     "babel-plugin-module-resolver": "^5.0.0",

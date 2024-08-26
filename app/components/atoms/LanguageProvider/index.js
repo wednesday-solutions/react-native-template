@@ -1,56 +1,23 @@
-/*
- *
- * LanguageProvider
- *
- * this component connects the redux state language locale to the
- * IntlProvider component and i18n messages (loaded from `app/translations`)
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { createSelector } from 'reselect';
-import { IntlProvider } from 'react-intl';
+import { useTranslation } from 'react-i18next';
 
-import { makeSelectLocale } from './selectors';
 /**
- * Provides internationalization (i18n) support by wrapping components with an IntlProvider.
+ * Provides internationalization (i18n) support by ensuring that the necessary
+ * translations and locale information are available throughout the app.
+ *
  * @param {object} props - The props object containing component properties.
- * @param {string} props.locale - The locale/language code for internationalization.
- * @param {object} props.messages - An object containing locale-specific message translations.
- * @param {React.ReactNode} props.children - The child elements/components to be wrapped and rendered.
- * @returns {React.ReactNode} A JSX element wrapping the provided child components with IntlProvider.
+ * @param {React.ReactNode} props.children - The child elements/components to be rendered.
+ * @returns {React.ReactNode} A JSX element wrapping the provided child components.
  */
-export function LanguageProvider(props) {
-  return (
-    <IntlProvider
-      locale={props.locale}
-      key={props.locale}
-      messages={props.messages[props.locale]}
-    >
-      {React.Children.only(props.children)}
-    </IntlProvider>
-  );
+export function LanguageProvider({ children }) {
+  useTranslation(); // This initializes the i18next context for this component tree
+
+  return <>{React.Children.only(children)}</>;
 }
 
 LanguageProvider.propTypes = {
-  locale: PropTypes.string,
-  messages: PropTypes.object,
   children: PropTypes.element.isRequired
 };
 
-const mapStateToProps = createSelector(makeSelectLocale(), locale => ({
-  locale
-}));
-/**
- * Generates and returns an object containing action dispatch functions.
- * @param {function} dispatch - The Redux store's dispatch function.
- * @returns {object} An object containing action dispatch functions wrapped for use in components.
- */
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(LanguageProvider);
+export default LanguageProvider;

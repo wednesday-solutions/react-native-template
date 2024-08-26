@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 /* eslint-disable fp/no-mutating-assign */
 /**
@@ -31,7 +31,7 @@ const languageDetector = {
   cacheUserLanguage: () => {}
 };
 
-i18next
+i18n
   .use(languageDetector)
   .use(initReactI18next)
   .init({
@@ -46,6 +46,8 @@ i18next
       escapeValue: true // not needed for react!!
     }
   });
+
+export default i18n;
 
 // Add a log to check if the initialization is successful
 export const formatTranslationMessages = (locale, messages) => {

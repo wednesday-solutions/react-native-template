@@ -22,6 +22,16 @@
     },
     "ios": {
       "bundleIdentifier": "com.wednesdaysolutions.rntws"
-    }
+    },
+    "plugins": [
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "wednesday-solutions-5p"
+        }
+      ]
+    ]
   }
 }

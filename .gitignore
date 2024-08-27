@@ -63,3 +63,4 @@ web-build/
 dist/
 reports
 coverage
+.env.local

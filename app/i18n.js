@@ -36,20 +36,19 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     resources: {
       en: {
-        translation: enTranslationMessages // log this object to ensure it's correctly loaded
+        translation: enTranslationMessages
       }
     },
     interpolation: {
-      escapeValue: true // not needed for react!!
+      escapeValue: true
     }
   });
 
 export default i18n;
 
-// Add a log to check if the initialization is successful
 export const formatTranslationMessages = (locale, messages) => {
   const defaultFormattedMessages =
     locale !== DEFAULT_LOCALE

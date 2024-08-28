@@ -8,12 +8,12 @@
 
 import React from 'react';
 import get from 'lodash/get';
-import { renderWithIntl } from '@utils/testUtils';
+import { renderWithI18next } from '@utils/testUtils';
 import CharacterWithQuote from '../index';
 
 describe('<CharacterWithQuote />', () => {
   it('Should render and match the snapshot', () => {
-    const baseElement = renderWithIntl(<CharacterWithQuote />);
+    const baseElement = renderWithI18next(<CharacterWithQuote />);
     expect(baseElement).toMatchSnapshot();
   });
 
@@ -26,10 +26,10 @@ describe('<CharacterWithQuote />', () => {
         quote: "D'Oh!"
       }
     };
-    const { getByText, getByTestId } = renderWithIntl(
+    const { getByText, getByTestId } = renderWithI18next(
       <CharacterWithQuote {...props} />
     );
-    expect(getByText('Homer loves Wednesday')).toBeTruthy();
+    expect(getByText('wednesday_lover')).toBeTruthy();
     expect(getByText(props.user.quote)).toBeTruthy();
     const characterImageURI = get(
       getByTestId('character-image'),

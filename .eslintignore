@@ -4,3 +4,10 @@ ios/**
 __tests__/**
 **/tests/***
 .eslintrc.js
+e2e/**/*.*
+metrics/*
+jest.setup.js
+babel.config.js
+reports
+report.json
+**/tests/*.test.js

@@ -4,17 +4,17 @@
  *
  */
 import React from 'react';
-import { renderWithIntl } from 'app/utils/testUtils';
+import { renderWithI18next } from 'app/utils/testUtils';
 import Container from '../index';
 
 describe('<Container />', () => {
   it('should render and match the snapshot', () => {
-    const baseElement = renderWithIntl(<Container />);
+    const baseElement = renderWithI18next(<Container />);
     expect(baseElement).toMatchSnapshot();
   });
 
   it('should contain 1 container', () => {
-    const { getAllByTestId } = renderWithIntl(<Container />);
+    const { getAllByTestId } = renderWithI18next(<Container />);
     expect(getAllByTestId('container').length).toBe(1);
   });
 });

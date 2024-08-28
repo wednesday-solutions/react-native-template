@@ -1,3 +1,5 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 /* eslint-disable fp/no-mutating-assign */
 /**
  * i18n.js
@@ -15,13 +17,37 @@ const enLocaleData = require('react-intl/locale-data/en');
 const enTranslationMessages = require('./translations/en.json');
 
 addLocaleData(enLocaleData);
-
 export const DEFAULT_LOCALE = 'en';
 
 // prettier-ignore
 export const appLocales = [
   'en',
 ];
+const languageDetector = {
+  type: 'languageDetector',
+  async: true,
+  detect: cb => cb('en'),
+  init: () => {},
+  cacheUserLanguage: () => {}
+};
+
+i18n
+  .use(languageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    debug: false,
+    resources: {
+      en: {
+        translation: enTranslationMessages
+      }
+    },
+    interpolation: {
+      escapeValue: true
+    }
+  });
+
+export default i18n;
 
 export const formatTranslationMessages = (locale, messages) => {
   const defaultFormattedMessages =

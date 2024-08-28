@@ -7,12 +7,12 @@
  */
 
 import React from 'react';
-import { renderWithIntl } from '@utils/testUtils';
+import { renderWithI18next } from '@utils/testUtils';
 import { rerender } from '@testing-library/react-native';
 import SimpsonsLoveWednesday from '../index';
 describe('<SimpsonsLoveWednesday />', () => {
   it('Should render and match the snapshot', () => {
-    const baseElement = renderWithIntl(<SimpsonsLoveWednesday />);
+    const baseElement = renderWithI18next(<SimpsonsLoveWednesday />);
     expect(baseElement).toMatchSnapshot();
   });
   it('Should render the Error component if userErrorMessage is not empty', () => {
@@ -26,7 +26,9 @@ describe('<SimpsonsLoveWednesday />', () => {
         quote: "D'Oh!"
       }
     };
-    const { getByText } = renderWithIntl(<SimpsonsLoveWednesday {...props} />);
+    const { getByText } = renderWithI18next(
+      <SimpsonsLoveWednesday {...props} />
+    );
     expect(getByText(props.userErrorMessage)).toBeTruthy();
   });
   it('Should render the component if userErrorMessage is empty', () => {
@@ -40,12 +42,10 @@ describe('<SimpsonsLoveWednesday />', () => {
         quote: "D'Oh!"
       }
     };
-    const { getByText: textQueryOnReRender } = renderWithIntl(
+    const { getByText: textQueryOnReRender } = renderWithI18next(
       <SimpsonsLoveWednesday {...props} />,
       rerender
     );
-    expect(
-      textQueryOnReRender(`${props.user.character} loves Wednesday`)
-    ).toBeTruthy();
+    expect(textQueryOnReRender(`wednesday_lover`)).toBeTruthy();
   });
 });

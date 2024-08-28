@@ -89,5 +89,5 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
-export default compose(withConnect, injectIntl)(ExampleScreen);
+export default compose(withConnect)(ExampleScreen);
 export { ExampleScreen as ExampleScreenTest };

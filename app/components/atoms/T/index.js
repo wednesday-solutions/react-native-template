@@ -9,12 +9,13 @@ import PropTypes from 'prop-types';
 import { Text } from 'react-native';
 
 import { useTranslation } from 'react-i18next';
+import { conditionalOperatorFunction } from '@app/utils/common';
 
 const T = ({ intl, id, values, style, text, ...otherProps }) => {
   const { t } = useTranslation();
   return (
     <Text testID="t" style={style} {...otherProps}>
-      {id ? t(id, { ...values }) : text}
+      {conditionalOperatorFunction(id, t(id, { ...values }), text)}
     </Text>
   );
 };

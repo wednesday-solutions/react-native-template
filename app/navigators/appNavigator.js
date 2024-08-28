@@ -13,7 +13,10 @@ const Stack = createStackNavigator();
 export default function AppNavigator() {
   return (
     <NavigationContainer ref={setTopLevelNavigator}>
-      <Stack.Navigator headerMode="none" initialRouteName="SplashScreen">
+      <Stack.Navigator
+        screenOptions={{ headerShown: false }}
+        initialRouteName="SplashScreen"
+      >
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
         <Stack.Screen name="MainScreen" component={ExampleScreen} />
       </Stack.Navigator>

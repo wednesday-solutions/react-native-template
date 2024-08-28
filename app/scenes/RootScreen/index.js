@@ -1,30 +1,26 @@
-import { connect } from 'react-redux';
-import { PropTypes } from 'prop-types';
+import React, { useEffect } from 'react';
+import { useRecoilValue } from 'recoil';
+import { appState } from './recoilState';
 import AppNavigator from '@navigators/appNavigator';
 import Container from '@atoms/Container';
-import React, { useEffect } from 'react';
-import { setTopLevelNavigator } from '@app/services/navigationService';
-import { rootScreenActions } from './reducer';
+import { navigateAndReset } from '@app/services/navigationService';
 
-const RootScreen = props => {
+const RootScreen = () => {
+  const app = useRecoilValue(appState);
+
   useEffect(() => {
-    // Run the startup function when the component mounts
-    props.startup();
-  }, []);
+    // Simulate startup effect
+    if (!app) {
+      setTimeout(() => navigateAndReset('MainScreen'), 1000);
+    }
+  }, [app]);
 
   return (
     <Container testID="root-screen">
-      <AppNavigator ref={setTopLevelNavigator} />
+      <AppNavigator />
     </Container>
   );
 };
 
-RootScreen.propTypes = {
-  startup: PropTypes.func
-};
-
-const mapDispatchToProps = dispatch => ({
-  startup: () => dispatch(rootScreenActions.startup())
-});
-export default connect(null, mapDispatchToProps)(RootScreen);
+export default RootScreen;
 export { RootScreen as RootScreenTest };

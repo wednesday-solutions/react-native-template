@@ -1113,6 +1113,12 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
+  - RNSentry (5.30.0):
+    - hermes-engine
+    - React-Core
+    - React-hermes
+    - Sentry/HybridSDK (= 8.34.0)
+  - Sentry/HybridSDK (8.34.0)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -1183,12 +1189,14 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - "RNSentry (from `../node_modules/@sentry/react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - fmt
     - libevent
+    - Sentry
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1319,6 +1327,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSentry:
+    :path: "../node_modules/@sentry/react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1388,8 +1398,10 @@ SPEC CHECKSUMS:
   RNGestureHandler: 96439cf6543defdde87459e48cd1a3f0e45a008e
   RNReanimated: ba95f6d26ca4b8a8f7f2b15f62a3513750762f6b
   RNScreens: b6b64d956af3715adbfe84808694ae82d3fec74f
+  RNSentry: 038afe562a53fa0ec791e1cd9fb66239c77a2818
+  Sentry: 1183df2306eea74ff0564c4bb1c2577ccd15d054
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  Yoga: d17d2cc8105eed528474683b42e2ea310e1daf61
+  Yoga: 805bf71192903b20fc14babe48080582fee65a80
 
 PODFILE CHECKSUM: 71a7eba1109c7de188217c03cf1824ab1d487aec
 

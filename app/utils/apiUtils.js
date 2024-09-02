@@ -26,29 +26,33 @@ export const generateApiClient = (type = 'configApi') => {
   }
 };
 
-export const createApiClientWithTransForm = baseURL => {
-  const api = create({
-    baseURL,
-    headers: { 'Content-Type': 'application/json' }
-  });
-  api.addResponseTransform(response => {
-    const { ok, data } = response;
-    if (ok && data) {
-      Object.assign(response, {
-        data: mapKeysDeep(data, keys => camelCase(keys))
-      });
-    }
-    return response;
-  });
+export const createApiClientWithTransForm = async baseURL => {
+  try {
+    const api = create({
+      baseURL,
+      headers: { 'Content-Type': 'application/json' }
+    });
+    api.addResponseTransform(response => {
+      const { ok, data } = response;
+      if (ok && data) {
+        Object.assign(response, {
+          data: mapKeysDeep(data, keys => camelCase(keys))
+        });
+      }
+      return response;
+    });
 
-  api.addRequestTransform(request => {
-    const { data } = request;
-    if (data) {
-      Object.assign(request, {
-        data: mapKeysDeep(data, keys => snakeCase(keys))
-      });
-    }
-    return request;
-  });
-  return api;
+    api.addRequestTransform(request => {
+      const { data } = request;
+      if (data) {
+        Object.assign(request, {
+          data: mapKeysDeep(data, keys => snakeCase(keys))
+        });
+      }
+      return request;
+    });
+    return api;
+  } catch (err) {
+    console.log(err);
+  }
 };

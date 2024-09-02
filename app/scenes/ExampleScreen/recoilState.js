@@ -33,11 +33,11 @@ export const fetchUserSelector = selector({
     get(fetchTriggerState); // Read the trigger state to force re-fetch
 
     const response = await getUser();
-    if (response.ok) {
-      const { data } = response;
 
-      return data[0];
+    if (!response.ok) {
+      throw new Error(Errors.USER_FETCH_ERROR);
     }
-    throw new Error(Errors.USER_FETCH_ERROR);
+    const { data } = response;
+    return data[0];
   }
 });

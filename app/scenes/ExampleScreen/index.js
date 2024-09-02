@@ -72,7 +72,7 @@ const ExampleScreen = () => {
               instructions={instructions}
               userErrorMessage={conditionalOperatorFunction(
                 userLoadable.state === 'hasError',
-                userLoadable.contents.message,
+                userLoadable.contents?.message,
                 null
               )}
               user={user}

@@ -13,7 +13,11 @@ export const apiResponseGenerator = (ok, data) => ({
 });
 
 export const renderWithI18next = (children, renderFunction = render) =>
-  renderFunction(<I18nextProvider i18n={i18n}>{children}</I18nextProvider>);
+  renderFunction(
+    <RecoilRoot>
+      <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
+    </RecoilRoot>
+  );
 
 export const renderProvider = children => {
   return render(

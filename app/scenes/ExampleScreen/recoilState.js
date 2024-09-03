@@ -1,6 +1,6 @@
 import { atom, selector } from 'recoil';
 import { getUser } from '@app/services/userService';
-import { Errors } from '@app/utils/erros';
+import { Errors } from '@app/utils/errors';
 
 // Atom to manage user state
 export const userState = atom({

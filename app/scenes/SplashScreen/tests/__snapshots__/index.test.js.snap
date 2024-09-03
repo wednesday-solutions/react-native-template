@@ -28,12 +28,14 @@ exports[`<SplashScreen /> should render and match the snapshot 1`] = `
       }
     }
     style={
-      {
-        "alignItems": "center",
-        "display": "flex",
-        "justifyContent": "center",
-        "width": 200,
-      }
+      [
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+          "width": 200,
+        },
+      ]
     }
   />
 </View>

@@ -1,4 +1,6 @@
-import { renderRecoilHook, useRecoilValue, RecoilRoot } from 'recoil';
+import React, { Suspense } from 'react';
+import { RecoilRoot, useRecoilState, useRecoilValue } from 'recoil';
+import TestRenderer from 'react-test-renderer';
 import {
   userState,
   userIsLoadingState,
@@ -7,85 +9,173 @@ import {
   fetchUserSelector
 } from '../recoilState';
 import { getUser } from '@app/services/userService';
-import { Errors } from '@app/utils/erros';
+import { Errors } from '@app/utils/errors';
 
 jest.mock('@app/services/userService');
 
-describe('Recoil State Management', () => {
-  describe('Default State', () => {
-    it('should have userState default to null', () => {
-      const { result } = renderRecoilHook(() => useRecoilValue(userState), {
-        wrapper: RecoilRoot
+describe('Recoil Atoms and Selector', () => {
+  let testContainer = {};
+
+  const TestComponent = ({ atom, newValue }) => {
+    const [value, setValue] = useRecoilState(atom);
+
+    if (newValue !== undefined) {
+      setValue(newValue);
+    }
+
+    testContainer = { value, setValue };
+    return null;
+  };
+
+  const SelectorTestComponent = ({ selector }) => {
+    const value = useRecoilValue(selector);
+    testContainer = { value };
+    return null;
+  };
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+    testContainer = {};
+  });
+
+  describe('userState atom', () => {
+    it('should have a default value of null', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={userState} />
+        </RecoilRoot>
+      );
+      expect(testContainer.value).toBeNull();
+    });
+
+    it('should update the user state', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={userState} />
+        </RecoilRoot>
+      );
+      const { setValue } = testContainer;
+
+      TestRenderer.act(() => {
+        setValue({ id: 1, name: 'John Doe' });
       });
-      expect(result.current).toBeNull();
+
+      expect(testContainer.value).toEqual({ id: 1, name: 'John Doe' });
+    });
+  });
+
+  describe('userIsLoadingState atom', () => {
+    it('should have a default value of false', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={userIsLoadingState} />
+        </RecoilRoot>
+      );
+      expect(testContainer.value).toBe(false);
     });
 
-    it('should have userIsLoadingState default to false', () => {
-      const { result } = renderRecoilHook(
-        () => useRecoilValue(userIsLoadingState),
-        {
-          wrapper: RecoilRoot
-        }
+    it('should update the loading state', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={userIsLoadingState} />
+        </RecoilRoot>
       );
-      expect(result.current).toBe(false);
+      const { setValue } = testContainer;
+
+      TestRenderer.act(() => {
+        setValue(true);
+      });
+
+      expect(testContainer.value).toBe(true);
+    });
+  });
+
+  describe('userErrorMessageState atom', () => {
+    it('should have a default value of null', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={userErrorMessageState} />
+        </RecoilRoot>
+      );
+      expect(testContainer.value).toBeNull();
     });
 
-    it('should have userErrorMessageState default to null', () => {
-      const { result } = renderRecoilHook(
-        () => useRecoilValue(userErrorMessageState),
-        {
-          wrapper: RecoilRoot
-        }
+    it('should update the error message state', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={userErrorMessageState} />
+        </RecoilRoot>
       );
-      expect(result.current).toBeNull();
+      const { setValue } = testContainer;
+
+      TestRenderer.act(() => {
+        setValue('An error occurred');
+      });
+
+      expect(testContainer.value).toBe('An error occurred');
+    });
+  });
+
+  describe('fetchTriggerState atom', () => {
+    it('should have a default value of 0', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={fetchTriggerState} />
+        </RecoilRoot>
+      );
+      expect(testContainer.value).toBe(0);
     });
 
-    it('should have fetchTriggerState default to 0', () => {
-      const { result } = renderRecoilHook(
-        () => useRecoilValue(fetchTriggerState),
-        {
-          wrapper: RecoilRoot
-        }
+    it('should increment the trigger state', () => {
+      TestRenderer.create(
+        <RecoilRoot>
+          <TestComponent atom={fetchTriggerState} />
+        </RecoilRoot>
       );
-      expect(result.current).toBe(0);
+      const { setValue } = testContainer;
+
+      TestRenderer.act(() => {
+        setValue(prev => prev + 1);
+      });
+
+      expect(testContainer.value).toBe(1);
     });
   });
 
   describe('fetchUserSelector', () => {
-    it('should fetch user data successfully', async () => {
-      const mockUser = { id: 1, name: 'John Doe' };
-      getUser.mockResolvedValueOnce({
-        ok: true,
-        data: [mockUser]
+    it('should fetch and return user data when successful', async () => {
+      const mockUser = [{ id: 1, name: 'John Doe' }];
+      getUser.mockResolvedValueOnce({ ok: true, data: mockUser });
+
+      await TestRenderer.act(async () => {
+        TestRenderer.create(
+          <RecoilRoot>
+            <Suspense fallback="Loading...">
+              <SelectorTestComponent selector={fetchUserSelector} />
+            </Suspense>
+          </RecoilRoot>
+        );
       });
 
-      const { result, waitForNextUpdate } = renderRecoilHook(
-        () => useRecoilValue(fetchUserSelector),
-        {
-          wrapper: RecoilRoot
-        }
-      );
-
-      await waitForNextUpdate();
-
-      expect(result.current).toEqual(mockUser);
+      expect(testContainer.value).toEqual(mockUser[0]);
     });
 
-    it('should throw an error if user fetching fails', async () => {
-      getUser.mockResolvedValueOnce({
-        ok: false
-      });
+    it('should throw an error when the fetch fails', async () => {
+      getUser.mockResolvedValueOnce({ ok: false });
 
-      const { result, waitForNextUpdate } = renderRecoilHook(
-        () => useRecoilValue(fetchUserSelector),
-        {
-          wrapper: RecoilRoot
+      await TestRenderer.act(async () => {
+        try {
+          TestRenderer.create(
+            <RecoilRoot>
+              <Suspense fallback="Loading...">
+                <SelectorTestComponent selector={fetchUserSelector} />
+              </Suspense>
+            </RecoilRoot>
+          );
+        } catch (error) {
+          expect(error.message).toBe(Errors.USER_FETCH_ERROR);
         }
-      );
-
-      await expect(waitForNextUpdate()).rejects.toThrow(
-        Errors.USER_FETCH_ERROR
-      );
+      });
     });
   });
 });

@@ -18,14 +18,10 @@ export const getApiClient = (type = 'configApi') =>
 export const generateApiClient = (type = 'configApi') => {
   switch (type) {
     case 'configApi':
-      Object.assign(apiClients, {
-        [type]: createApiClientWithTransForm(Config.API_URL)
-      });
+      apiClients[type] = createApiClientWithTransForm(Config.API_URL);
       return get(apiClients, type);
     default:
-      Object.assign(apiClients, {
-        default: createApiClientWithTransForm(Config.API_URL)
-      });
+      apiClients.default = createApiClientWithTransForm(Config.API_URL);
       return apiClients.default;
   }
 };
@@ -42,9 +38,7 @@ export const createApiClientWithTransForm = baseURL => {
       response => {
         const { data } = response;
         if (data) {
-          Object.assign(response, {
-            data: mapKeysDeep(data, keys => camelCase(keys))
-          });
+          response.data = mapKeysDeep(data, keys => camelCase(keys));
         }
         return {
           ok: true,
@@ -53,23 +47,19 @@ export const createApiClientWithTransForm = baseURL => {
           originalResponse: response
         };
       },
-      error => {
-        return {
-          ok: false,
-          data: null,
-          error: error || 'Something went wrong',
-          originalResponse: error.response
-        };
-      }
+      error => ({
+        ok: false,
+        data: null,
+        error: error || 'Something went wrong',
+        originalResponse: error.response
+      })
     );
 
     // Request interceptor to transform keys to snake_case
     api.interceptors.request.use(request => {
       const { data } = request;
       if (data) {
-        Object.assign(request, {
-          data: mapKeysDeep(data, keys => snakeCase(keys))
-        });
+        request.data = mapKeysDeep(data, keys => snakeCase(keys));
       }
       return request;
     });

@@ -1,7 +1,7 @@
 import { generateApiClient } from '@app/utils/apiUtils';
 import { set } from 'lodash';
 
-const createApiClient = async () => await generateApiClient('configApi');
+const createApiClient = async () => generateApiClient('configApi');
 const getApiClient = async () => {
   try {
     if (!client.apiClient) {

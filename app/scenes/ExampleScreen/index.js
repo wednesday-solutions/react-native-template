@@ -1,24 +1,16 @@
 import React, { useEffect } from 'react';
-import { Button, Platform, View, ActivityIndicator, Text } from 'react-native';
+import { Button, Platform, View, ActivityIndicator } from 'react-native';
 import {
   useRecoilState,
   useSetRecoilState,
-  useRecoilValue,
   useRecoilValueLoadable
 } from 'recoil';
 import styled from 'styled-components/native';
-import { injectIntl } from 'react-intl';
 
 import AppContainer from '@atoms/Container';
 import SimpsonsLoveWednesday from '@organisms/SimpsonsLoveWednesday';
 
-import {
-  userState,
-  userIsLoadingState,
-  userErrorMessageState,
-  fetchUserSelector,
-  fetchTriggerState
-} from './recoilState';
+import { userState, fetchUserSelector, fetchTriggerState } from './recoilState';
 import If from '@app/components/atoms/If';
 import { conditionalOperatorFunction } from '@app/utils/common';
 

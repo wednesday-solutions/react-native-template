@@ -9,7 +9,7 @@ const RootScreen = () => {
   const app = useRecoilValue(appState);
 
   useEffect(() => {
-    // Simulate startup effect
+    // Startup function
     if (!app) {
       setTimeout(() => navigateAndReset('MainScreen'), 1000);
     }

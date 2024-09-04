@@ -6,11 +6,13 @@ import {
   useRecoilValueLoadable
 } from 'recoil';
 import styled from 'styled-components/native';
+import { useTranslation } from 'react-i18next';
 
 import AppContainer from '@atoms/Container';
 import SimpsonsLoveWednesday from '@organisms/SimpsonsLoveWednesday';
 import If from '@app/components/atoms/If';
 import { conditionalOperatorFunction } from '@app/utils/common';
+import { LoadingStates } from '@app/utils/constants';
 
 import { userState, fetchUserSelector, fetchTriggerState } from './recoilState';
 
@@ -39,7 +41,7 @@ const ExampleScreen = () => {
   const [user, setUser] = useRecoilState(userState);
   const setFetchTrigger = useSetRecoilState(fetchTriggerState);
   const userLoadable = useRecoilValueLoadable(fetchUserSelector);
-
+  const { t } = useTranslation();
   const requestFetchUser = () => {
     setFetchTrigger(prev => prev + 1);
   };
@@ -49,7 +51,7 @@ const ExampleScreen = () => {
   }, []);
 
   useEffect(() => {
-    if (userLoadable.state === 'hasValue') {
+    if (userLoadable.state === LoadingStates.HAS_VALUE) {
       setUser(userLoadable.contents);
     }
   }, [userLoadable?.contents?.character]);
@@ -57,20 +59,20 @@ const ExampleScreen = () => {
   return (
     <Container>
       <If
-        condition={userLoadable.state === 'loading'}
+        condition={userLoadable.state === LoadingStates.LOADING}
         otherwise={
           <View testID="example-container-content">
             <SimpsonsLoveWednesday
               instructions={instructions}
               userErrorMessage={conditionalOperatorFunction(
-                userLoadable.state === 'hasError',
+                userLoadable.state === LoadingStates.HAS_ERROR,
                 userLoadable.contents?.message,
                 null
               )}
               user={user}
             />
             <CustomButtonParentView>
-              <Button onPress={requestFetchUser} title="Refresh" />
+              <Button onPress={requestFetchUser} title={t('refresh')}></Button>
             </CustomButtonParentView>
           </View>
         }

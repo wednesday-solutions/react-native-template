@@ -84,7 +84,7 @@ describe('ExampleScreen', () => {
       </RecoilRoot>
     );
 
-    fireEvent.press(getByText('Refresh'));
+    fireEvent.press(getByText('refresh'));
     expect(mockSetFetchTrigger).toHaveBeenCalled();
   });
 

@@ -2,13 +2,6 @@ import mockAsyncStorage from '@react-native-async-storage/async-storage/jest/asy
 import { LogBox } from 'react-native';
 jest.mock('@react-native-async-storage/async-storage', () => mockAsyncStorage);
 
-jest.mock('redux-persist', () => {
-  const real = jest.requireActual('redux-persist');
-  return {
-    ...real,
-    persistReducer: jest.fn().mockImplementation((config, reducers) => reducers)
-  };
-});
 jest.mock('i18next', () => {
   const originalI18next = jest.requireActual('i18next');
 

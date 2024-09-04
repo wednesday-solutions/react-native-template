@@ -1,6 +1,7 @@
 import { atom, selector } from 'recoil';
 import { getUser } from '@app/services/userService';
 import { Errors } from '@app/utils/errors';
+import { errorHandlerFunction } from '@app/utils/common';
 
 const stateKeys = {
   USER_STATE: 'userState',
@@ -42,9 +43,7 @@ export const fetchUserSelector = selector({
 
     const response = await getUser();
 
-    if (!response.ok) {
-      throw new Error(Errors.USER_FETCH_ERROR);
-    }
+    errorHandlerFunction(response, Errors.GET_USER_ERROR);
     const { data } = response;
     return data[0];
   }

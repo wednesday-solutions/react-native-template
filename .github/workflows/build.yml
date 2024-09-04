@@ -1,9 +1,9 @@
 name: react-native-template
 on:
   push:
-    branches: [ master ]
+    branches: [master, dev]
   pull_request:
-    branches: [ master ]
+    branches: [master, dev]
 jobs:
   install-and-test:
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
         run: yarn
 
       - name: Lint
-        run: npm run lint
+        run: yarn lint
 
       - name: Test and generate coverage report
         uses: artiomtr/jest-coverage-report-action@v2.2.9

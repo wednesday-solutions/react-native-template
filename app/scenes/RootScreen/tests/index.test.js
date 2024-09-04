@@ -1,8 +1,8 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react-native';
 import { useRecoilValue } from 'recoil';
-import { RootScreenTest } from '../index';
+import { render, waitFor } from '@testing-library/react-native';
 import { navigateAndReset } from '@app/services/navigationService';
+import { RootScreenTest } from '../index';
 
 jest.mock('recoil');
 jest.mock('@app/services/navigationService');

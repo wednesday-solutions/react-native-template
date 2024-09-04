@@ -9,10 +9,10 @@ import styled from 'styled-components/native';
 
 import AppContainer from '@atoms/Container';
 import SimpsonsLoveWednesday from '@organisms/SimpsonsLoveWednesday';
-
-import { userState, fetchUserSelector, fetchTriggerState } from './recoilState';
 import If from '@app/components/atoms/If';
 import { conditionalOperatorFunction } from '@app/utils/common';
+
+import { userState, fetchUserSelector, fetchTriggerState } from './recoilState';
 
 const Container = styled(AppContainer)`
   margin: 30px;

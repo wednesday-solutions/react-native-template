@@ -1,6 +1,8 @@
 import React, { Suspense } from 'react';
 import { RecoilRoot, useRecoilState, useRecoilValue } from 'recoil';
 import TestRenderer from 'react-test-renderer';
+import { getUser } from '@app/services/userService';
+import { Errors } from '@app/utils/errors';
 import {
   userState,
   userIsLoadingState,
@@ -8,8 +10,6 @@ import {
   fetchTriggerState,
   fetchUserSelector
 } from '../recoilState';
-import { getUser } from '@app/services/userService';
-import { Errors } from '@app/utils/errors';
 
 jest.mock('@app/services/userService');
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import { render, fireEvent, act } from '@testing-library/react-native';
-import { RecoilRoot } from 'recoil';
-import { ExampleScreenTest } from '../index';
 import {
+  RecoilRoot,
   useRecoilValueLoadable,
   useSetRecoilState,
   useRecoilState
 } from 'recoil';
+import { render, fireEvent } from '@testing-library/react-native';
+import { ExampleScreenTest } from '../index';
 
 jest.mock('recoil', () => ({
   ...jest.requireActual('recoil'),

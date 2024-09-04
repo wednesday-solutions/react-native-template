@@ -1,5 +1,5 @@
-import { generateApiClient } from '@app/utils/apiUtils';
 import { set } from 'lodash';
+import { generateApiClient } from '@app/utils/apiUtils';
 
 const createApiClient = async () => generateApiClient('configApi');
 const getApiClient = async () => {

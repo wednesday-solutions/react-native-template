@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react-native';
-import { I18nextProvider } from 'react-i18next';
-import i18n from '@app/utils/i18nextTestUtils';
 import { RecoilRoot } from 'recoil';
+import { I18nextProvider } from 'react-i18next';
+import { render } from '@testing-library/react-native';
+import i18n from '@app/utils/i18nextTestUtils';
 
 export const apiResponseGenerator = (ok, data) => ({
   ok,

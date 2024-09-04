@@ -4,9 +4,9 @@ import axios from 'axios';
 import mapKeysDeep from 'map-keys-deep';
 import camelCase from 'lodash/camelCase';
 import snakeCase from 'lodash/snakeCase';
-import { Config } from '@app/config/index';
 import get from 'lodash/get';
 import { set } from 'lodash';
+import { Config } from '@app/config/index';
 
 export const apiClients = {
   configApi: null,

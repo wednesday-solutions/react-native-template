@@ -1,10 +1,10 @@
 import React from 'react';
+import { RecoilRoot } from 'recoil';
 import { I18nextProvider } from 'react-i18next';
+import 'react-native-gesture-handler';
 import LanguageProvider from '@atoms/LanguageProvider';
 import RootScreen from '@scenes/RootScreen';
 import i18n from '@app/i18n';
-import 'react-native-gesture-handler';
-import { RecoilRoot } from 'recoil';
 
 const App = () => (
   <RecoilRoot>

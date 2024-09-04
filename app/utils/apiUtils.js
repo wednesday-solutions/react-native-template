@@ -6,6 +6,7 @@ import camelCase from 'lodash/camelCase';
 import snakeCase from 'lodash/snakeCase';
 import { Config } from '@app/config/index';
 import get from 'lodash/get';
+import { set } from 'lodash';
 
 export const apiClients = {
   configApi: null,
@@ -18,10 +19,11 @@ export const getApiClient = (type = 'configApi') =>
 export const generateApiClient = (type = 'configApi') => {
   switch (type) {
     case 'configApi':
-      apiClients[type] = createApiClientWithTransForm(Config.API_URL);
+      set(apiClients, type, createApiClientWithTransForm(Config.API_URL));
+
       return get(apiClients, type);
     default:
-      apiClients.default = createApiClientWithTransForm(Config.API_URL);
+      set(apiClients, 'default', createApiClientWithTransForm(Config.API_URL));
       return apiClients.default;
   }
 };
@@ -38,7 +40,13 @@ export const createApiClientWithTransForm = baseURL => {
       response => {
         const { data } = response;
         if (data) {
-          response.data = mapKeysDeep(data, keys => camelCase(keys));
+          const keysData = mapKeysDeep(data, keys => camelCase(keys));
+          return {
+            ok: true,
+            data: keysData,
+            error: null,
+            originalResponse: response
+          };
         }
         return {
           ok: true,
@@ -59,7 +67,8 @@ export const createApiClientWithTransForm = baseURL => {
     api.interceptors.request.use(request => {
       const { data } = request;
       if (data) {
-        request.data = mapKeysDeep(data, keys => snakeCase(keys));
+        const keysData = mapKeysDeep(data, keys => snakeCase(keys));
+        return { ...request, data: keysData };
       }
       return request;
     });

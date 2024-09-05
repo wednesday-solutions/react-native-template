@@ -3,12 +3,14 @@
 exports[`<Container /> should render and match the snapshot 1`] = `
 <View
   style={
-    {
-      "display": "flex",
-      "flexBasis": 0,
-      "flexGrow": 1,
-      "flexShrink": 1,
-    }
+    [
+      {
+        "display": "flex",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
   }
   testID="container"
 />

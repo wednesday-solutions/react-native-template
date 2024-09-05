@@ -21,7 +21,6 @@ module.exports = {
     'immutable',
     'sonarjs',
     'prettier',
-    'redux-saga',
     'react-native',
     'react',
     'react-hooks',
@@ -95,8 +94,6 @@ module.exports = {
     'react/require-extension': 0,
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
-    'redux-saga/no-yield-in-race': 2,
-    'redux-saga/yield-effects': 2,
     'require-yield': 0,
     'react/no-array-index-key': 0,
     'react/jsx-curly-newline': 0,
@@ -119,7 +116,7 @@ module.exports = {
       }
     ],
     'no-shadow': 'error',
-    complexity: ['error', 2],
+    complexity: ['error', 4],
     'no-empty': 'error',
     'import/order': [
       'error',
@@ -145,7 +142,8 @@ module.exports = {
       }
     ],
     'fp/no-nil': 0,
-    'fp/no-unused-expression': 0
+    'fp/no-unused-expression': 0,
+    'fp/no-throw': 0
   },
   settings: {
     'import/resolver': {

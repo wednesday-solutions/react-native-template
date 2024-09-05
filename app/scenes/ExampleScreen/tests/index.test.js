@@ -1,43 +1,105 @@
-/**
- *
- * Tests for ExampleScreen
- *
- */
-
 import React from 'react';
-import { renderProvider } from 'app/utils/testUtils';
+import {
+  RecoilRoot,
+  useRecoilValueLoadable,
+  useSetRecoilState,
+  useRecoilState
+} from 'recoil';
+import { render, fireEvent } from '@testing-library/react-native';
 import { ExampleScreenTest } from '../index';
-const setupJest = () => ({ submitSpy: jest.fn() });
-describe('<ExampleScreen /> Container tests', () => {
-  it('should render and match the snapshot', () => {
-    const { submitSpy } = setupJest();
-    const baseElement = renderProvider(
-      <ExampleScreenTest fetchUser={submitSpy} />
-    );
-    expect(baseElement).toMatchSnapshot();
+
+jest.mock('recoil', () => ({
+  ...jest.requireActual('recoil'),
+  useRecoilValueLoadable: jest.fn(),
+  useSetRecoilState: jest.fn(),
+  useRecoilState: jest.fn()
+}));
+
+describe('ExampleScreen', () => {
+  const mockSetFetchTrigger = jest.fn();
+  const mockSetUser = jest.fn();
+  const mockUseRecoilState = jest.fn();
+
+  beforeEach(() => {
+    useSetRecoilState.mockReturnValue(mockSetFetchTrigger);
+    useRecoilValueLoadable.mockReturnValue({ state: 'loading' });
+    mockUseRecoilState.mockReturnValue([null, mockSetUser]);
+    useRecoilState.mockImplementation(mockUseRecoilState);
+    jest.spyOn(global.console, 'error').mockImplementation(() => {});
   });
 
-  it('should fetch the user data on mount', () => {
-    const { submitSpy } = setupJest();
-    renderProvider(<ExampleScreenTest fetchUser={submitSpy} />);
-    expect(submitSpy).toHaveBeenCalled();
-  });
-  it('should render ActivityIndicator if userIsLoading is true', () => {
-    const { submitSpy } = setupJest();
-    const { getByTestId } = renderProvider(
-      <ExampleScreenTest fetchUser={submitSpy} userIsLoading />
-    );
-
-    expect(getByTestId('loader').type).toBe('ActivityIndicator');
-    expect(submitSpy).toHaveBeenCalled();
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
-  it('should not render ActivityIndicator if userIsLoading is false, should instead render exampleContainerContent', () => {
-    const { submitSpy } = setupJest();
-    const { getByTestId } = renderProvider(
-      <ExampleScreenTest fetchUser={submitSpy} userIsLoading={false} />
+  test('renders loading indicator initially', () => {
+    const { getByTestId } = render(
+      <RecoilRoot>
+        <ExampleScreenTest />
+      </RecoilRoot>
     );
-    expect(getByTestId('example-container-content').type).toBe('View');
-    expect(submitSpy).toHaveBeenCalled();
+
+    expect(getByTestId('loader')).toBeTruthy();
+  });
+
+  test('renders content when userLoadable.state is "hasValue"', () => {
+    useRecoilValueLoadable.mockReturnValue({
+      state: 'hasValue',
+      contents: { character: 'Homer' }
+    });
+
+    const { getByTestId } = render(
+      <RecoilRoot>
+        <ExampleScreenTest />
+      </RecoilRoot>
+    );
+
+    expect(getByTestId('example-container-content')).toBeTruthy();
+  });
+
+  test('renders error message when userLoadable.state is "hasError"', () => {
+    useRecoilValueLoadable.mockReturnValue({
+      state: 'hasError',
+      contents: { message: 'Error occurred' }
+    });
+
+    const { getByText } = render(
+      <RecoilRoot>
+        <ExampleScreenTest />
+      </RecoilRoot>
+    );
+
+    expect(getByText('Error occurred')).toBeTruthy();
+  });
+
+  test('calls requestFetchUser on button press', () => {
+    useRecoilValueLoadable.mockReturnValue({
+      state: 'hasValue',
+      contents: { character: 'Homer' }
+    });
+
+    const { getByText } = render(
+      <RecoilRoot>
+        <ExampleScreenTest />
+      </RecoilRoot>
+    );
+
+    fireEvent.press(getByText('refresh'));
+    expect(mockSetFetchTrigger).toHaveBeenCalled();
+  });
+
+  test('sets user when userLoadable.state is "hasValue"', () => {
+    useRecoilValueLoadable.mockReturnValue({
+      state: 'hasValue',
+      contents: { character: 'Homer' }
+    });
+
+    render(
+      <RecoilRoot>
+        <ExampleScreenTest />
+      </RecoilRoot>
+    );
+
+    expect(mockSetUser).toHaveBeenCalledWith({ character: 'Homer' });
   });
 });

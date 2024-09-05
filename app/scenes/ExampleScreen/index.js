@@ -1,28 +1,20 @@
-import { Button, Platform, View, ActivityIndicator } from 'react-native';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
-import { PropTypes } from 'prop-types';
-import styled from 'styled-components/native';
-import { createStructuredSelector } from 'reselect';
-import { injectIntl } from 'react-intl';
 import React, { useEffect } from 'react';
+import { Button, Platform, View, ActivityIndicator } from 'react-native';
+import {
+  useRecoilState,
+  useSetRecoilState,
+  useRecoilValueLoadable
+} from 'recoil';
+import styled from 'styled-components/native';
+import { useTranslation } from 'react-i18next';
 
 import AppContainer from '@atoms/Container';
 import SimpsonsLoveWednesday from '@organisms/SimpsonsLoveWednesday';
+import If from '@app/components/atoms/If';
+import { conditionalOperatorFunction } from '@app/utils/common';
+import { LoadingStates } from '@app/utils/constants';
 
-import {
-  selectUser,
-  selectUserIsLoading,
-  selectUserErrorMessage
-} from './selectors';
-import { exampleScreenActions } from './reducer';
-
-/**
- * This is an example of a container component.
- *
- * This screen displays a little help message and informations about a fake user.
- * Feel free to remove it.
- */
+import { userState, fetchUserSelector, fetchTriggerState } from './recoilState';
 
 const Container = styled(AppContainer)`
   margin: 30px;
@@ -38,56 +30,58 @@ const CustomButtonParentView = styled(View)`
   max-width: 80px;
   align-self: center;
 `;
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu.',
   android:
     'Double tap R on your keyboard to reload,\nShake or press menu button for dev menu.'
 });
 
-const ExampleScreen = props => {
+const ExampleScreen = () => {
+  const [user, setUser] = useRecoilState(userState);
+  const setFetchTrigger = useSetRecoilState(fetchTriggerState);
+  const userLoadable = useRecoilValueLoadable(fetchUserSelector);
+  const { t } = useTranslation();
   const requestFetchUser = () => {
-    props.fetchUser();
+    setFetchTrigger(prev => prev + 1);
   };
+
   useEffect(() => {
     requestFetchUser();
   }, []);
+
+  useEffect(() => {
+    if (userLoadable.state === LoadingStates.HAS_VALUE) {
+      setUser(userLoadable.contents);
+    }
+  }, [userLoadable?.contents?.character]);
+
   return (
     <Container>
-      {props.userIsLoading ? (
+      <If
+        condition={userLoadable.state === LoadingStates.LOADING}
+        otherwise={
+          <View testID="example-container-content">
+            <SimpsonsLoveWednesday
+              instructions={instructions}
+              userErrorMessage={conditionalOperatorFunction(
+                userLoadable.state === LoadingStates.HAS_ERROR,
+                userLoadable.contents?.message,
+                null
+              )}
+              user={user}
+            />
+            <CustomButtonParentView>
+              <Button onPress={requestFetchUser} title={t('refresh')}></Button>
+            </CustomButtonParentView>
+          </View>
+        }
+      >
         <ActivityIndicator testID="loader" size="large" color="#0000ff" />
-      ) : (
-        <View testID="example-container-content">
-          <SimpsonsLoveWednesday
-            instructions={instructions}
-            userErrorMessage={props.userErrorMessage}
-            user={props.user}
-          />
-          <CustomButtonParentView>
-            <Button onPress={requestFetchUser} title="Refresh" />
-          </CustomButtonParentView>
-        </View>
-      )}
+      </If>
     </Container>
   );
 };
 
-ExampleScreen.propTypes = {
-  user: PropTypes.object,
-  userIsLoading: PropTypes.bool,
-  userErrorMessage: PropTypes.string,
-  fetchUser: PropTypes.func
-};
-
-const mapStateToProps = createStructuredSelector({
-  user: selectUser(),
-  userIsLoading: selectUserIsLoading(),
-  userErrorMessage: selectUserErrorMessage()
-});
-
-const mapDispatchToProps = dispatch => ({
-  fetchUser: () => dispatch(exampleScreenActions.requestFetchUser())
-});
-
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
-export default compose(withConnect)(ExampleScreen);
+export default ExampleScreen;
 export { ExampleScreen as ExampleScreenTest };

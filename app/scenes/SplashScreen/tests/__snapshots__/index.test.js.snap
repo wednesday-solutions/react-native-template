@@ -24,16 +24,18 @@ exports[`<SplashScreen /> should render and match the snapshot 1`] = `
     resizeMode="contain"
     source={
       {
-        "testUri": "../../../app/assets/images/wednesday-logo.png",
+        "testUri": "../../../app/assets/images/wednesday-logo-new.png",
       }
     }
     style={
-      {
-        "alignItems": "center",
-        "display": "flex",
-        "justifyContent": "center",
-        "width": 200,
-      }
+      [
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+          "width": 200,
+        },
+      ]
     }
   />
 </View>

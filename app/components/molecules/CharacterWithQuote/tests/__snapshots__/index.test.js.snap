@@ -4,27 +4,29 @@ exports[`<CharacterWithQuote /> Should render and match the snapshot 1`] = `
 [
   <Text
     style={
-      {
-        "fontSize": 17,
-        "fontWeight": "normal",
-        "marginBottom": 5,
-        "textAlign": "center",
-      }
+      [
+        {
+          "fontSize": 17,
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        },
+      ]
     }
-    testID="t"
   >
     wednesday_lover
   </Text>,
   <Text
     style={
-      {
-        "fontSize": 17,
-        "fontWeight": "normal",
-        "marginBottom": 5,
-        "textAlign": "center",
-      }
+      [
+        {
+          "fontSize": 17,
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        },
+      ]
     }
-    testID="t"
   >
     because
   </Text>,
@@ -36,27 +38,30 @@ exports[`<CharacterWithQuote /> Should render and match the snapshot 1`] = `
       }
     }
     style={
-      {
-        "height": 80,
-        "marginBottom": 0,
-        "marginLeft": "auto",
-        "marginRight": "auto",
-        "marginTop": 0,
-        "width": 80,
-      }
+      [
+        {
+          "height": 80,
+          "marginBottom": 0,
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "marginTop": 0,
+          "width": 80,
+        },
+      ]
     }
     testID="character-image"
   />,
   <Text
     style={
-      {
-        "fontSize": 17,
-        "fontWeight": "normal",
-        "marginBottom": 5,
-        "textAlign": "center",
-      }
+      [
+        {
+          "fontSize": 17,
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        },
+      ]
     }
-    testID="t"
   />,
 ]
 `;

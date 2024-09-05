@@ -4,5 +4,6 @@
   "dont_live_in_europe": "I don't live in europe",
   "because": "because",
   "wednesday_lover": "{{username}} loves Wednesday",
-  "get_started": "To get started, edit App.js"
+  "get_started": "To get started, edit App.js",
+  "refresh": "Refresh"
 }

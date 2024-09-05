@@ -14,7 +14,12 @@ jest.mock('recoil', () => ({
   useSetRecoilState: jest.fn(),
   useRecoilState: jest.fn()
 }));
-
+jest.mock('posthog-react-native', () => ({
+  usePostHog: jest.fn(() => ({
+    identify: jest.fn(),
+    capture: jest.fn()
+  }))
+}));
 describe('ExampleScreen', () => {
   const mockSetFetchTrigger = jest.fn();
   const mockSetUser = jest.fn();

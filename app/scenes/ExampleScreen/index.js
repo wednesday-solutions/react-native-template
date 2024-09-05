@@ -7,6 +7,7 @@ import {
 } from 'recoil';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
+import { usePostHog } from 'posthog-react-native';
 
 import AppContainer from '@atoms/Container';
 import SimpsonsLoveWednesday from '@organisms/SimpsonsLoveWednesday';
@@ -41,6 +42,7 @@ const ExampleScreen = () => {
   const [user, setUser] = useRecoilState(userState);
   const setFetchTrigger = useSetRecoilState(fetchTriggerState);
   const userLoadable = useRecoilValueLoadable(fetchUserSelector);
+  const posthog = usePostHog();
   const { t } = useTranslation();
   const requestFetchUser = () => {
     setFetchTrigger(prev => prev + 1);
@@ -55,6 +57,11 @@ const ExampleScreen = () => {
       setUser(userLoadable.contents);
     }
   }, [userLoadable?.contents?.character]);
+
+  const refreshButtonHandler = () => {
+    posthog.capture('refresh_button_clicked');
+    requestFetchUser();
+  };
 
   return (
     <Container>
@@ -72,7 +79,10 @@ const ExampleScreen = () => {
               user={user}
             />
             <CustomButtonParentView>
-              <Button onPress={requestFetchUser} title={t('refresh')}></Button>
+              <Button
+                onPress={refreshButtonHandler}
+                title={t('refresh')}
+              ></Button>
             </CustomButtonParentView>
           </View>
         }

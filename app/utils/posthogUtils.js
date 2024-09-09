@@ -11,9 +11,7 @@ export const getPostHogClient = () => {
       posthog,
       'client',
       new PostHog(POSTHOG_KEY, {
-        // usually 'https://us.i.posthog.com' or 'https://eu.i.posthog.com'
-
-        host: 'https://us.i.posthog.com'
+        // In-case of custom endpoint please add 'host' property here with url
       })
     );
   }

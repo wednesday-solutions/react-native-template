@@ -3,9 +3,14 @@ import { useRecoilValue } from 'recoil';
 import { render, waitFor } from '@testing-library/react-native';
 import { navigateAndReset } from '@app/services/navigationService';
 import { RootScreenTest } from '../index';
+import { PostHogProvider } from 'posthog-react-native';
 
 jest.mock('recoil');
 jest.mock('@app/services/navigationService');
+jest.mock('@app/utils/posthogUtils');
+jest.mock('posthog-react-native', () => ({
+  PostHogProvider: jest.fn(({ children }) => children)
+}));
 
 describe('<RootScreen />', () => {
   beforeEach(() => {

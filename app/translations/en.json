@@ -5,5 +5,7 @@
   "because": "because",
   "wednesday_lover": "{{username}} loves Wednesday",
   "get_started": "To get started, edit App.js",
-  "refresh": "Refresh"
+  "refresh": "Refresh",
+  "ios_instructions": "Press Cmd+R to reload,\nCmd+D or shake for dev menu.",
+  "'android_instructions": "Double tap R on your keyboard to reload,\nShake or press menu button for dev menu."
 }

@@ -2199,10 +2199,10 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31"
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
-"@react-native-async-storage/async-storage@1.23.1":
-  version "1.23.1"
-  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.23.1.tgz#cad3cd4fab7dacfe9838dce6ecb352f79150c883"
-  integrity sha512-Qd2kQ3yi6Y3+AcUlrHxSLlnBvpdCEMVGFlVBneVOjaFaPU61g1huc38g339ysXspwY1QZA2aNhrk/KlHGO+ewA==
+"@react-native-async-storage/async-storage@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-2.0.0.tgz#22373f7f83132547701637fc574ddb83b83b384e"
+  integrity sha512-af6H9JjfL6G/PktBfUivvexoiFKQTJGQCtSWxMdivLzNIY94mu9DdiY0JqCSg/LyPCLGKhHPUlRQhNvpu3/KVA==
   dependencies:
     merge-options "^3.0.4"
 
@@ -3182,6 +3182,11 @@
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.3.tgz#6209321eb2c1712a7e7466422b8cb1fc0d9dd5d8"
   integrity sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==
+
+"@types/use-sync-external-store@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz#b6725d5f4af24ace33b36fafd295136e75509f43"
+  integrity sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==
 
 "@types/ws@^8.5.5":
   version "8.5.12"
@@ -10446,11 +10451,6 @@ mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nanoid@3.3.5:
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.5.tgz#07ef5fb44ece2bc8574af317015e645d5f681422"
-  integrity sha512-nvgaJGpIANf4+VWJAaDGORQyMzhFkze8aXVdrHq+BaSvzfpOuponEysaVFKV/0Bca5V+3SBiDvRabEPbpalEBg==
-
 nanoid@^3.1.23, nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
@@ -11426,6 +11426,11 @@ postcss@^8.3.5, postcss@^8.4.33, postcss@~8.4.32:
     picocolors "^1.0.1"
     source-map-js "^1.2.0"
 
+posthog-react-native@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/posthog-react-native/-/posthog-react-native-3.1.2.tgz#e2fcb2854960d367680dd8f4d218b4643a40f080"
+  integrity sha512-2yylwM6recNFF5uvx+TYzb2DDBgXDrLj7xqVY+mggwYn00vIkZD6E7d/LqmFhsH4ZqrMzORq8Xq5kWScLKSrgg==
+
 pre-commit@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/pre-commit/-/pre-commit-1.2.2.tgz#dbcee0ee9de7235e57f79c56d7ce94641a69eec6"
@@ -11790,6 +11795,11 @@ react-native-cli@^2.0.1:
     prompt "^0.2.14"
     semver "^5.0.3"
 
+react-native-device-info@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-11.1.0.tgz#7db5c4e5a179dce761efac155a493aa0956a40ab"
+  integrity sha512-hzXJSObJdezEz0hF7MAJ3tGeoesuQWenXXt9mrQR9Mjb8kXpZ09rqSsZ/quNpJdZpQ3rYiFa3/0GFG5KNn9PBg==
+
 react-native-dotenv@^3.4.11:
   version "3.4.11"
   resolved "https://registry.yarnpkg.com/react-native-dotenv/-/react-native-dotenv-3.4.11.tgz#2e6c4eabd55d5f1bf109b3dd9141dadf9c55cdd4"
@@ -11919,6 +11929,14 @@ react-proxy@^1.1.7:
   dependencies:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
+
+react-redux@^9.1.1:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-9.1.2.tgz#deba38c64c3403e9abd0c3fbeab69ffd9d8a7e4b"
+  integrity sha512-0OA4dhM1W48l3uzmv6B7TXPCGmokUU4p1M44DGN2/D9a1FjVPukVjER1PcPX97jIg6aUeLq1XJo1IpfbgULn0w==
+  dependencies:
+    "@types/use-sync-external-store" "^0.0.3"
+    use-sync-external-store "^1.0.0"
 
 react-refresh@0.14.0:
   version "0.14.0"
@@ -13745,6 +13763,11 @@ use-latest-callback@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/use-latest-callback/-/use-latest-callback-0.2.1.tgz#4d4e6a9e4817b13142834850dcfa8d24ca4569cf"
   integrity sha512-QWlq8Is8BGWBf883QOEQP5HWYX/kMI+JTbJ5rdtvJLmXTIh9XoHIO3PQcmQl8BU44VKxow1kbQUHa6mQSMALDQ==
+
+use-sync-external-store@^1.0.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.2.tgz#c3b6390f3a30eba13200d2302dcdf1e7b57b2ef9"
+  integrity sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"

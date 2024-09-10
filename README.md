@@ -10,11 +10,10 @@
   </p>
 
   <p>
-An enterprise React Native template application showcasing - Testing strategies, Global state management, middleware support, a network layer, component library integration, localization, navigation configuration, and Continuous integration.
+An enterprise React Native template application showcasing - Testing strategies, Global state management, middleware support, a network layer, component library integration, localization, navigation configuration, Continuous integration, analytics, feature flagging, and error tracking.
   </p>
 
-  ___
-
+---
 
   <p>
     <h4>
@@ -31,9 +30,10 @@ An enterprise React Native template application showcasing - Testing strategies,
     </a>
   </div>
 
-  ___
+---
 
-  <span>We’re always looking for people who value their work, so come and join us. <a href="https://www.wednesday.is/hiring">We are hiring!</a></span>
+<span>We’re always looking for people who value their work, so come and join us. <a href="https://www.wednesday.is/hiring">We are hiring!</a></span>
+
 </div>
 
 ## Architecture
@@ -42,51 +42,58 @@ The driving goal of the architecture of the template is separation of concerns. 
 
 - **Presentational components are separated from scenes** (aka "screens").
 
-    Presentational components are small components that are concerned with *how things look*. Scenes usually define whole application screens and are concerned with *how things work*: they include presentational components and wire everything together.
-    
-    If you are interested you can [read more about it here](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
-    
+  Presentational components are small components that are concerned with _how things look_. Scenes usually define whole application screens and are concerned with _how things work_: they include presentational components and wire everything together.
+
+  If you are interested you can [read more about it here](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
+
 ### Atomic Design for react native architecture
-Atomic design further solidifies the idea of seperating screens into components and scenes (containers). The design primarily focuses on reusablity of code, which brings us to the differentiation of components into atoms, molecules and organisms. Analogous to the Atomic design of chemicals, components are seperated by their composition. The components require increasing context as their complexity increases, since each component is tested, this promotes a more granular test coverage.
-        
- - **Atoms**
-        Atoms are the smallest components that can be reused. Button, Text, and Icons are good example of Atoms. Atoms can be used without context and cannot be further divided.
 
-- **Molecules**
-        Molecules are built from one or more atoms that are slightly complex presentational components.
+Atomic design further solidifies the idea of separating screens into components and scenes (containers). The design primarily focuses on reusability of code, which brings us to the differentiation of components into atoms, molecules, and organisms. Analogous to the Atomic design of chemicals, components are separated by their composition. The components require increasing context as their complexity increases, since each component is tested, this promotes a more granular test coverage.
 
-- **Organisms**
-        Organisms contain multiple molecules, atoms and perform a specific purpose. In the example screen, an organism is used that displays the fetched character and quote.
+- **Atoms**  
+   Atoms are the smallest components that can be reused. Button, Text, and Icons are good examples of Atoms. Atoms can be used without context and cannot be further divided.
 
-- **State is managed using global [Redux](https://redux.js.org/) stores**.
+- **Molecules**  
+   Molecules are built from one or more atoms that are slightly complex presentational components.
 
-    When applications grow, sharing state and its changes can become very hard. Questions like "How can I access this data?" or "When did this change?" are common, just like passing data around components just to be able to use it in nested components.
-     
-    With Redux, state is shared using global *stores*, and changes are predictable: *actions* are applied by *reducers* to the state. While the pattern can be a bit much for small projects, the clear separation of responsibilities and predictability helps with bigger applications.
-    
-    If you are interested you can [read more about it here](https://redux.js.org/introduction/motivation).
-    
-- **Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/)**.
+- **Organisms**  
+   Organisms contain multiple molecules, atoms, and perform a specific purpose. In the example screen, an organism is used that displays the fetched character and quote.
 
-    Using Redux Saga has two benefits: keeping application side-effects and related business logic out of UI components, as well as executing that logic in an asynchronous way without ending in callback hell.
-    
-    Sagas are triggered by Redux actions and can also trigger Redux actions to alter state. By using JavaScript generators (`yield`), sagas are written in a synchronous-like manner while still executing asynchronously.
+- **State is managed using [Recoil](https://recoiljs.org/)**.
+
+  Recoil provides a set of utilities to manage global state in React Native. It allows for atoms (the smallest units of state) and selectors (to transform or combine state) to handle the app's state efficiently. This eliminates the need for Redux, actions, and reducers, simplifying the process for managing state across components.
+
+  Atoms are the core units of state, and selectors are derived state values computed from one or more atoms. Recoil's state management is highly reactive and more efficient for handling state at a granular level.
+
+  If you are interested you can [read more about it here](https://recoiljs.org/docs/introduction/getting-started).
+
+- **Side Effects (API calls, etc.) are managed within components or with Recoil selectors**.
+
+  Unlike Redux which uses middleware like Sagas, Recoil allows for managing side effects within the components themselves or through asynchronous selectors. This keeps your side effects closer to where they are needed.
+
+## Analytics, Feature Flagging, and Error Tracking
+
+- **[PostHog](https://posthog.com/)** is integrated to provide analytics and event tracking across the application. PostHog captures user interactions and events, which helps in analyzing user behavior and improving the app based on data-driven insights.
+
+- **[GrowthBook](https://www.growthbook.io/)** is used for feature flagging. With GrowthBook, you can easily manage the rollout of features to users, enabling A/B testing, and controlling which features are visible to which segments of your user base without redeploying the app.
+
+- **[Sentry](https://sentry.io/)** is used for error tracking and reporting. Sentry captures errors and exceptions from the app in real time, providing detailed insights into the errors that occur, enabling faster bug fixing and better app stability.
 
 ## Content
 
 The React Native Template contains:
 
-- a [React Native](https://facebook.github.io/react-native/) (v**0.60.6**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
+- a [React Native](https://facebook.github.io/react-native/) (v**0.73.6**) application (in "[ejected](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md)" mode to allow using dependencies that rely on native code)
 - a [clear directory layout](#directory-layout) to provide a base architecture for your application
-- [Redux](https://redux.js.org/) (v4.0.1) to help manage state
-- [Redux Persist](https://github.com/rt2zz/redux-persist) (v5.10.0) to persist the Redux state
-- [Redux Sagas](https://redux-saga.js.org) (v1.0.2) to separate side-effects and logic from state and UI logic
-- [React Navigation](https://reactnavigation.org/) (v3.11.2) with a [`NavigationService`](app/services/navigationService.js) to handle routing and navigation in the app, with a splash screen setup by default
-- [reduxsauce](https://github.com/infinitered/reduxsauce) (v1.0.1) to facilitate using Redux
-- [apisauce](https://github.com/infinitered/apisauce/) to make API calls (v0.19.0)
+- [Recoil](https://recoiljs.org/) to manage global state
+- [React Navigation](https://reactnavigation.org/) (v5.3.15) with a [`NavigationService`](app/services/navigationService.js) to handle routing and navigation in the app, with a splash screen setup by default
+- [axios](https://github.com/axios/axios/) to make API calls (v0.27.2)
+- [PostHog](https://posthog.com/) for analytics
+- [GrowthBook](https://www.growthbook.io/) for feature flagging
+- [Sentry](https://sentry.io/) for error tracking
 - [prettier](https://prettier.io/) and [eslint](https://eslint.org/) preconfigured for React Native
 
-The template includes an example (displaying fake user data) from UI components to the saga. The example is easy to remove so that it doesn't get in the way.
+The template includes an example (displaying fake user data) from UI components to state management using Recoil. The example is easy to remove so that it doesn't get in the way.
 
 ## Directory layout
 
@@ -97,12 +104,10 @@ The template includes an example (displaying fake user data) from UI components 
 - [`app/scenes`](app/components/scenes): scenes are screens that can be navigated to
 - [`app/config`](app/config): configuration of the application
 - [`app/assets`](app/assets): assets (image, audio files, ...) used by the application
-- [`app/navigators`](app/navigators): react navigation navigators 
+- [`app/navigators`](app/navigators): react navigation navigators
 - [`app/services`](app/services): application services, e.g. API clients
 - [`app/utils`](app/utils): Util methods and constants
 - [`app/themes`](app/themes): base styles for the application
-- [`app/rootSaga`](app/rootSaga): all the individual sagas need to be added here.
-- [`app/rootReducer`](app/rootReducer): all the individual reducers need to be added here.
 
 For more information on each directory, click the link and read the directory's README.
 
@@ -115,7 +120,6 @@ You also need to install the dependencies required by React Native:
 - for [Android development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies-3)
 - for [iOS development](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies)
 
-
 ## Using the template
 
 To create a new project using the template:
@@ -126,16 +130,16 @@ To create a new project using the template:
 - rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` (the default name is `ReactNativeApplication`)
 - remove the LICENSE file and the "License" section from the README if your project is not open source
 
-
 ### Running expo project
 
 ### Android
- - `yarn run android`
+
+- `yarn run android`
 
 ### iOS
+
 - `yarn run ios`
 
- 
 ## Useful documentation
 
 ### Deployment
@@ -145,5 +149,5 @@ To create a new project using the template:
 
 ### Package dependencies
 
-- You may want to use [CocoaPods](https://cocoapods.org/) to manage your dependencies (iOS only) 
+- You may want to use [CocoaPods](https://cocoapods.org/) to manage your dependencies (iOS only)
   - [Using CocoaPods to manage your package dependencies](docs/setup%20cocoapods.md)

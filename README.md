@@ -69,7 +69,7 @@ Atomic design further solidifies the idea of separating screens into components 
 
 - **Side Effects (API calls, etc.) are managed within components or with Recoil selectors**.
 
-  Unlike Redux which uses middleware like Sagas, Recoil allows for managing side effects within the components themselves or through asynchronous selectors. This keeps your side effects closer to where they are needed.
+  Recoil allows for managing side effects within the components themselves or through asynchronous selectors. This keeps your side effects closer to where they are needed.
 
 ## Analytics, Feature Flagging, and Error Tracking
 

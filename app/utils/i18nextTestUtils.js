@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 /* eslint-disable fp/no-mutating-assign */
 /**
@@ -10,10 +10,13 @@ import { initReactI18next } from 'react-i18next';
  *   script `extract-intl`, and must use CommonJS module syntax
  *   You CANNOT use import/export in this file.
  */
+// // const addLocaleData = require('react-intl').addLocaleData; //eslint-disable-line
 
-const enTranslationMessages = require('./translations/en.json');
+// // const enLocaleData = require('react-intl/locale-data/en');
 
-export const languageDetector = {
+const enTranslationMessages = require('@app/translations/en.json');
+
+const languageDetector = {
   type: 'languageDetector',
   async: true,
   detect: cb => cb('en'),
@@ -21,20 +24,18 @@ export const languageDetector = {
   cacheUserLanguage: () => {}
 };
 
-i18n
+i18next
   .use(languageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: false,
+    debug: true,
     resources: {
       en: {
-        translation: enTranslationMessages
+        translation: enTranslationMessages // log this object to ensure it's correctly loaded
       }
     },
     interpolation: {
-      escapeValue: true
+      escapeValue: true // not needed for react!!
     }
   });
-
-export default i18n;

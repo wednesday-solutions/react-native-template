@@ -1,9 +1,11 @@
 import React from 'react';
+import { PostHogProvider } from 'posthog-react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from '@scenes/SplashScreen/';
 import ExampleScreen from '@scenes/ExampleScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { setTopLevelNavigator } from '@services/navigationService';
+import { getPostHogClient } from '@app/utils/posthogUtils';
 const Stack = createStackNavigator();
 /**
  * The root screen contains the application's navigation.
@@ -13,10 +15,15 @@ const Stack = createStackNavigator();
 export default function AppNavigator() {
   return (
     <NavigationContainer ref={setTopLevelNavigator}>
-      <Stack.Navigator headerMode="none" initialRouteName="SplashScreen">
-        <Stack.Screen name="SplashScreen" component={SplashScreen} />
-        <Stack.Screen name="MainScreen" component={ExampleScreen} />
-      </Stack.Navigator>
+      <PostHogProvider client={getPostHogClient()}>
+        <Stack.Navigator
+          screenOptions={{ headerShown: false }}
+          initialRouteName="SplashScreen"
+        >
+          <Stack.Screen name="SplashScreen" component={SplashScreen} />
+          <Stack.Screen name="MainScreen" component={ExampleScreen} />
+        </Stack.Navigator>
+      </PostHogProvider>
     </NavigationContainer>
   );
 }

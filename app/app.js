@@ -1,22 +1,19 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/lib/integration/react';
+import { RecoilRoot } from 'recoil';
+import { I18nextProvider } from 'react-i18next';
+import 'react-native-gesture-handler';
 import LanguageProvider from '@atoms/LanguageProvider';
 import RootScreen from '@scenes/RootScreen';
-import createStore from '@app/rootReducer';
-import { translationMessages } from './i18n';
-import 'react-native-gesture-handler';
-
-const { store, persistor } = createStore();
+import i18n from '@app/i18n';
 
 const App = () => (
-  <Provider store={store}>
-    <LanguageProvider messages={translationMessages}>
-      <PersistGate loading={null} persistor={persistor}>
+  <RecoilRoot>
+    <I18nextProvider i18n={i18n}>
+      <LanguageProvider>
         <RootScreen />
-      </PersistGate>
-    </LanguageProvider>
-  </Provider>
+      </LanguageProvider>
+    </I18nextProvider>
+  </RecoilRoot>
 );
 
 export default App;

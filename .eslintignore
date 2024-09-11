@@ -3,4 +3,14 @@ android/**
 ios/**
 __tests__/**
 **/tests/***
+web-build/**
 .eslintrc.js
+e2e/**/*.*
+metrics/*
+jest.setup.js
+babel.config.js
+reports
+report.json
+growthbook.js
+**/tests/*.test.js
+webpack.config.js

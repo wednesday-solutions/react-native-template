@@ -15,7 +15,7 @@ exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
       resizeMode="contain"
       source={
         {
-          "testUri": "../../../app/assets/images/wednesday-logo.png",
+          "testUri": "../../../app/assets/images/wednesday-logo-new.png",
         }
       }
       style={
@@ -29,15 +29,16 @@ exports[`<LogoWithInstructions /> Should render and match the snapshot 1`] = `
   </View>
   <Text
     style={
-      {
-        "fontSize": 17,
-        "fontStyle": "italic",
-        "fontWeight": "normal",
-        "marginBottom": 5,
-        "textAlign": "center",
-      }
+      [
+        {
+          "fontSize": 17,
+          "fontStyle": "italic",
+          "fontWeight": "normal",
+          "marginBottom": 5,
+          "textAlign": "center",
+        },
+      ]
     }
-    testID="t"
   />
 </View>
 `;

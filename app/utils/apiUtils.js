@@ -1,54 +1,80 @@
 /* eslint-disable sonarjs/no-small-switch */
 /* eslint-disable fp/no-mutating-assign */
-import { create } from 'apisauce';
+import axios from 'axios';
 import mapKeysDeep from 'map-keys-deep';
 import camelCase from 'lodash/camelCase';
 import snakeCase from 'lodash/snakeCase';
-import { Config } from '@app/config/index';
 import get from 'lodash/get';
+import { set } from 'lodash';
+import { Config } from '@app/config/index';
+
 export const apiClients = {
   configApi: null,
   default: null
 };
-export const getApiClient = (type = 'configApi') => apiClients[type];
+
+export const getApiClient = (type = 'configApi') =>
+  get(apiClients, type, apiClients.default);
+
 export const generateApiClient = (type = 'configApi') => {
   switch (type) {
     case 'configApi':
-      Object.assign(apiClients, {
-        [type]: createApiClientWithTransForm(Config.API_URL)
-      });
+      set(apiClients, type, createApiClientWithTransForm(Config.API_URL));
+
       return get(apiClients, type);
     default:
-      Object.assign(apiClients, {
-        default: createApiClientWithTransForm(Config.API_URL)
-      });
+      set(apiClients, 'default', createApiClientWithTransForm(Config.API_URL));
       return apiClients.default;
   }
 };
 
 export const createApiClientWithTransForm = baseURL => {
-  const api = create({
-    baseURL,
-    headers: { 'Content-Type': 'application/json' }
-  });
-  api.addResponseTransform(response => {
-    const { ok, data } = response;
-    if (ok && data) {
-      Object.assign(response, {
-        data: mapKeysDeep(data, keys => camelCase(keys))
-      });
-    }
-    return response;
-  });
+  try {
+    const api = axios.create({
+      baseURL,
+      headers: { 'Content-Type': 'application/json' }
+    });
 
-  api.addRequestTransform(request => {
-    const { data } = request;
-    if (data) {
-      Object.assign(request, {
-        data: mapKeysDeep(data, keys => snakeCase(keys))
-      });
-    }
-    return request;
-  });
-  return api;
+    // Response interceptor to transform keys to camelCase and structure response
+    api.interceptors.response.use(
+      response => {
+        const { data } = response;
+        if (data) {
+          const keysData = mapKeysDeep(data, keys => camelCase(keys));
+          return {
+            ok: true,
+            data: keysData,
+            error: null,
+            originalResponse: response
+          };
+        }
+        return {
+          ok: true,
+          data: response.data,
+          error: null,
+          originalResponse: response
+        };
+      },
+      error => ({
+        ok: false,
+        data: null,
+        error: error || 'Something went wrong',
+        originalResponse: error.response
+      })
+    );
+
+    // Request interceptor to transform keys to snake_case
+    api.interceptors.request.use(request => {
+      const { data } = request;
+      if (data) {
+        const keysData = mapKeysDeep(data, keys => snakeCase(keys));
+        return { ...request, data: keysData };
+      }
+      return request;
+    });
+
+    return api;
+  } catch (err) {
+    throw new Error(err);
+  }
 };

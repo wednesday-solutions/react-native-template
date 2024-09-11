@@ -16,7 +16,7 @@ exports[`<SimpsonsLoveWednesday /> Should render and match the snapshot 1`] = `
         resizeMode="contain"
         source={
           {
-            "testUri": "../../../app/assets/images/wednesday-logo.png",
+            "testUri": "../../../app/assets/images/wednesday-logo-new.png",
           }
         }
         style={
@@ -30,43 +30,50 @@ exports[`<SimpsonsLoveWednesday /> Should render and match the snapshot 1`] = `
     </View>
     <Text
       style={
-        {
-          "fontSize": 17,
-          "fontStyle": "italic",
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        }
+        [
+          {
+            "fontSize": 17,
+            "fontStyle": "italic",
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
       }
-      testID="t"
     />
   </View>,
   <View
-    style={{}}
+    style={
+      [
+        {},
+      ]
+    }
   >
     <Text
       style={
-        {
-          "fontSize": 17,
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        }
+        [
+          {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
       }
-      testID="t"
     >
-      character loves Wednesday
+      wednesday_lover
     </Text>
     <Text
       style={
-        {
-          "fontSize": 17,
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        }
+        [
+          {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
       }
-      testID="t"
     >
       because
     </Text>
@@ -78,27 +85,30 @@ exports[`<SimpsonsLoveWednesday /> Should render and match the snapshot 1`] = `
         }
       }
       style={
-        {
-          "height": 80,
-          "marginBottom": 0,
-          "marginLeft": "auto",
-          "marginRight": "auto",
-          "marginTop": 0,
-          "width": 80,
-        }
+        [
+          {
+            "height": 80,
+            "marginBottom": 0,
+            "marginLeft": "auto",
+            "marginRight": "auto",
+            "marginTop": 0,
+            "width": 80,
+          },
+        ]
       }
       testID="character-image"
     />
     <Text
       style={
-        {
-          "fontSize": 17,
-          "fontWeight": "normal",
-          "marginBottom": 5,
-          "textAlign": "center",
-        }
+        [
+          {
+            "fontSize": 17,
+            "fontWeight": "normal",
+            "marginBottom": 5,
+            "textAlign": "center",
+          },
+        ]
       }
-      testID="t"
     />
   </View>,
 ]

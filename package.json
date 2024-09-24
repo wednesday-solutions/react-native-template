@@ -74,7 +74,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "^15.0.1",
     "react-intl": "2.8.0",
-    "react-native": "0.73.6",
+    "react-native": "0.75.2",
     "react-native-cli": "^2.0.1",
     "react-native-device-info": "^11.1.0",
     "react-native-gesture-handler": "~2.16.0",

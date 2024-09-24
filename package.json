@@ -59,7 +59,7 @@
     "expo": "^50.0.17",
     "expo-crypto": "^13.0.2",
     "expo-image-picker": "~14.7.1",
-    "expo-splash-screen": "~0.26.4",
+    "expo-splash-screen": "~0.27.5",
     "expo-status-bar": "~1.11.1",
     "global": "^4.4.0",
     "i18next": "^23.14.0",

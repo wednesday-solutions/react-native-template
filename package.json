@@ -43,7 +43,7 @@
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native/metro-config": "^0.75.0-main",
     "@react-navigation/compat": "^5.3.15",
-    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native": "^7.0.14",
     "@react-navigation/stack": "^6.3.29",
     "@sentry/react-native": "^5.30.0",
     "axios": "^0.27.2",

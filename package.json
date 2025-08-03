@@ -68,7 +68,7 @@
     "intl": "1.2.5",
     "lodash": "^4.17.15",
     "map-keys-deep": "^0.0.2",
-    "posthog-react-native": "^3.1.2",
+    "posthog-react-native": "^3.16.1",
     "prop-types": "^15.7.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

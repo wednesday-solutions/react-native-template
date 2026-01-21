@@ -66,7 +66,7 @@
     "immer": "^4.0.0",
     "immutable": "^5.0.0-beta.5",
     "intl": "1.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.23",
     "map-keys-deep": "^0.0.2",
     "posthog-react-native": "^3.1.2",
     "prop-types": "^15.7.2",
